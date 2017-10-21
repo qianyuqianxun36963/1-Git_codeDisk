@@ -1,0 +1,9 @@
+url请求后，jsp中getparameter获得的参数中文乱码。
+
+对于URL传递中文参数乱码这个问题，其处理方法比较特殊，仅仅转换这个中文字符串或者设置JSP页面显示编码都是不能解决问题的，需要修改Tomcat服务器的配置文件才能解决问题。在这里修改Tomcat的conf目录下的server.xml配置文件，具体改后的代码如下
+[html] view plain copy print?
+<Connector port="8080" protocol="HTTP/1.1" URIEncoding="utf-8"  
+    connectionTimeout="20000"    
+    redirectPort="8443" />  
+    
+在原来代码中添加URI编码设置URIEncoding=“utf-8”即可，重启Tomcat服务器可以得到正确的页面。其原理也和上面的情况类似，就是向程序指明编码类型，然后显示就正常了。

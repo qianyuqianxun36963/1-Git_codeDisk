@@ -1,0 +1,12 @@
+ckfinder 的位置是随意的，但是在移动位置之后，然记得修改 两个地方。
+
+一个是web.xml 里面的serverlet设置。
+ 还有就是ckeditor里面与结合ckeditor的初始化。
+
+ 
+ 乱码问题
+ 
+可以在tomcat中配置解决中文乱码问题。方法如下：
+在tomcat的conf文件夹下的conf中找到server.xml文件 再端口的那个地方 <Connector port="8081" protocol="HTTP/1.1"
+connectionTimeout="20000"
+redirectPort="8443" URIEncoding="UTF-8"/>

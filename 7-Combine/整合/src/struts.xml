@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+	<package name="default" namespace="/" extends="struts-default">
+	
+        <!-- 在这里进行了修改，有时需要重启服务。 -->
+		<action name="hellostruts" class="">
+			<result>/views/struts/index_struts.jsp</result></action>
+	
+		<action name="hello" class="com.struts_1.begin.Hello_Action">
+			<result>/views/struts/1_begin/hello.jsp</result></action>
+		<action name="login" class="com.struts_1.begin.Login_Action">
+			<result>/views/struts/1_begin/login.jsp</result></action>
+			
+		<!--数据处理: -->
+		<!--基本类型转换: -->
+		<action name="list" class="com.struts_2.dataHand.BaseTypeConvertor.UserList_Action">
+			<result>/views/struts/2_dataHand/UserList.jsp</result></action>
+		<action name="map" class="com.struts_2.dataHand.BaseTypeConvertor.UserMap_Action">
+			<result>/views/struts/2_dataHand/UserMap.jsp</result></action>
+			
+		<!--自定义类型转换: -->
+		<action name="user" class="com.struts_2.dataHand.CustomTypeConvertor.UserLine_Action">
+			<result>/views/struts/2_dataHand/UserLine.jsp</result></action>
+			
+		
+	</package>
+
+</struts>
+
+
+
+
+
+
+
+
+
+
