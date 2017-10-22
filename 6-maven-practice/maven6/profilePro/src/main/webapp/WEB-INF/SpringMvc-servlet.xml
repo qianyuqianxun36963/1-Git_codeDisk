@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans
+xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:p="http:www.springframework.org/schema/p"
+xmlns:aop="http:www.springframework.org/schema/aop"
+xmlns:context="http://www.springframework.org/schema/context"
+xmlns:mvc="http://www.springframework.org/schema/mvc"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+http://www.springframework.org/schema/context  
+http://www.springframework.org/schema/context/spring-context-3.0.xsd
+http://www.springframework.org/schema/mvc 
+http://www.springframework.org/schema/mvc/spring-mvc-4.1.xsd">
+
+	<!-- 将URL直接映射到具体的业务控制器 --> 
+	<!-- HandlerMapping -->  
+	
+	<!--方式一:使用注解的形式 -->
+	<!-- 默认的注解映射的支持，自动注册DefaultAnnotationHandlerMapping和AnnotationMethodHandlerAdapter --> 
+	<!-- 使用了注释，这里就必须配置 -->
+	<mvc:annotation-driven />
+	<!-- 自动扫描的包名 -->  
+	<context:component-scan base-package="spring.frame.controller.jsp"/>
+	<context:component-scan base-package="spring.frame.controller.ajax"/>
+
+	<!-- 方式二: SimpleUrlHandlerMapping -->    
+    <bean class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+	    <property name="mappings">
+	        <props>
+	            <prop key="Jspnormal.do">Jspnormal</prop><!-- 其中Jspnormal.do是匹配，Jspnormal是bean的名字-->
+	        </props>
+	    </property>
+	</bean> 
+	<bean id="Jspnormal" class="spring.frame.controller.jsp.JspController_Normal"></bean>
+	<!-- id的名字必须和HandlerMapping中保持一致。因为我们用的是SimpleUrlHandlerMapping。-->
+	
+	
+	<!-- BeanNameUrlHandlerMapping:查找spring容器中和请求的url同名的bean.这个映射器不需要配置,因为spring在找不到handlerMapping的情况下会使用 -->
+    <bean  class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping" />  
+	<bean name="/Ajax_normal" class="spring.frame.controller.ajax.AjaxController_Normal">  </bean>
+	
+	<!-- HandlerAdapter -->  
+    <bean  class="org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter" />  
+    
+    <!--配置视图解析器  -->
+	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix"><value>/views/</value></property>
+		<property name="suffix"><value>.jsp</value></property>
+	</bean>
+	
+</beans>

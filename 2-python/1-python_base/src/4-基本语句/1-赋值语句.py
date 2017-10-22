@@ -1,0 +1,12 @@
+#coding=gbk
+
+#¸³ÖµÓï¾ä
+
+span = 'span'
+
+print (span)
+
+span,han,wang = 'yun','YUN','wang'
+
+print (span)
+
