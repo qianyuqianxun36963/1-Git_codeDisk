@@ -5,6 +5,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+import java.util.Map.Entry;
 
 import org.junit.Test;
 
@@ -18,6 +19,7 @@ public class MyMap {
 
 }
 
+//EnumMap
 class MyMap_EnumMap{
 	enum Season {  SPRING, SUMMER, FALL, WINNTER }  
 	
@@ -121,10 +123,43 @@ class MyMap_Properties{
 }
 
 class MapUtil{
-	//遍历一个list对象。
-	public static void visitMap_iterator(Map<?,?> Map){
-		
+	//遍历一个map对象。
+	public static void visitMap_forNum(Map<?,?> map){
+		for(int i = 0 ; i < map.size() ; i++){  
+	        System.out.println(map.get(i).toString());
+	    }  
 	}
+	
+	//遍历一个map对象。当数据上万时，这种方法的效率更高。
+	public static void visitMap_EntrySet(Map<?,?> map){
+		for(Map.Entry<?, ?> entry:map.entrySet()){  
+	        System.out.println(entry.getKey()+": "+entry.getValue());
+	    }  
+	}
+	
+	//遍历一个map对象。
+	public static void visitMap_KeySet(Map<?,?> map){
+		for(Object key: map.keySet()){  
+	        System.out.println(key.toString()+": "+map.get(key));
+	    }  
+	}
+	
+	//遍历一个map对象。
+	public static void visitMap_Values(Map<?,?> map){
+		for(Object value: map.values()){
+			System.out.println("Value = " + value); 
+		}
+	}
+	
+	//遍历一个map对象iterator。
+	public static void visitMap_iterator(Map<?,?> map){
+		Iterator<?> entries = map.entrySet().iterator();  
+		while (entries.hasNext()) {  
+		    Map.Entry<?, ?> entry = (Entry<?, ?>) entries.next();  
+		    System.out.println("Key = " + entry.getKey() + ", Value = " + entry.getValue());  
+		}  
+	}
+	
 }
 
 class Point{
