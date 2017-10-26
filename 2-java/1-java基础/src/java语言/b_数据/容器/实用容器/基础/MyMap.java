@@ -12,9 +12,11 @@ import org.junit.Test;
 public class MyMap {
 	
 	public static void main(String args[]) {
-		MyMap_HashMap.once();
+				
+		MyMap_HashMap.unique();
 		MyMap_HashMap.complexkey();
 		MyMap_EnumMap.testEnumMap();
+		MapUtil.testTraverse();
 	}
 
 }
@@ -51,9 +53,9 @@ class MyMap_EnumMap{
 class MyMap_HashMap{
 	//键是唯一的。
 		@SuppressWarnings({ "unchecked", "rawtypes" })
-		public static void once(){
+		public static void unique(){
 			   //两个map具有不同的key
-			   HashMap map1=new HashMap(); 
+			   HashMap map1 = new HashMap(); 
 			   map1.put("1", "A"); 
 			   HashMap map2 = new HashMap(); 
 			   map2.put("2", "B"); 
@@ -61,7 +63,7 @@ class MyMap_HashMap{
 			   map1.putAll(map2); 
 			   System.out.println(map1);
 			   //两个map具有重复的key
-			   HashMap map3=new HashMap(); 
+			   HashMap map3 = new HashMap(); 
 			   map3.put("1", "A"); 
 			   HashMap map4 = new HashMap(); 
 			   map4.put("1", "B"); 
@@ -119,16 +121,26 @@ class MyMap_TreeMap{
 
 
 class MyMap_Properties{
-	
+
 }
 
 class MapUtil{
-	//遍历一个map对象。
+	public static void testTraverse(){
+		Map<String, String> map = new HashMap<String, String>();
+		map.put("A","wang");
+		map.put("B","zhang");
+		visitMap_EntrySet(map);
+		visitMap_KeySet(map);
+		visitMap_Values(map);
+		visitMap_iterator(map);
+	}
+	
+	/*遍历一个map对象。这种方法是错误的。
 	public static void visitMap_forNum(Map<?,?> map){
-		for(int i = 0 ; i < map.size() ; i++){  
+		for(int i = 0 ; i < map.size() ; i++){ 
 	        System.out.println(map.get(i).toString());
 	    }  
-	}
+	}*/
 	
 	//遍历一个map对象。当数据上万时，这种方法的效率更高。
 	public static void visitMap_EntrySet(Map<?,?> map){

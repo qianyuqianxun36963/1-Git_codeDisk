@@ -2,47 +2,50 @@
 
 select brandid,sum(cnt) as counts from goods where userid = 1 group by brandid
 
-
 select * from finance_invoice_order IO left join finance_invoice I on IO.invoice_id = I.id left join finance_order O on IO.order_id = O.id;
 
 发票1：
 
-finance_invoice id 24e84e9c66344470b8aedb0c4c198821 schoolroll_id 2f8eb64ad1f84e05aced94ee561bcb7d 
+finance_invoice id 001 userid 001 
 
-finance_invoice_order id 24e84e9c66344470b8aedb0c4c198821 invoice_id 24e84e9c66344470b8aedb0c4c198821 order_id 9bd06071e34243f6be46484e0ddac721
+finance_invoice_order id 001 invoice_id 001 order_id 001
 
-finance_invoice_order id 24e84e9c66344470b8aedb0c4c198822 invoice_id 24e84e9c66344470b8aedb0c4c198821 order_id 9bd06071e34243f6be46484e0ddac723
+finance_invoice_order id 002 invoice_id 001 order_id 002
 
-finance_invoice_order id 24e84e9c66344470b8aedb0c4c198823 invoice_id 24e84e9c66344470b8aedb0c4c198821 order_id e462eb33ddf0470087e346675272bf95
+finance_invoice_order id 003 invoice_id 001 order_id 003
 
-finance_order id 9bd06071e34243f6be46484e0ddac723 schoolroll_id 2f8eb64ad1f84e05aced94ee561bcb7d pay_account 46
+finance_order id 001 userid 001 account 46
 
-finance_order id 9bd06071e34243f6be46484e0ddac723 schoolroll_id 2f8eb64ad1f84e05aced94ee561bcb7d pay_account 50
+finance_order id 002 userid 001 account 50
 
-finance_order id e462eb33ddf0470087e346675272bf95 schoolroll_id 2f8eb64ad1f84e05aced94ee561bcb7d pay_account 23
+finance_order id 003 userid 001 account 23
 
 发票2：
 
-finance_invoice id 24e84e9c66344470b8aedb0c4c198822 schoolroll_id 42034aca2d194217a8d0a0c3fd120399 
+finance_invoice id 002 userid 002 
 
-finance_invoice_order id 44e84e9c66344470b8aedb0c4c198824 invoice_id 24e84e9c66344470b8aedb0c4c198822 order_id 9bd06071e34243f6be46484e0ddac724
+finance_invoice_order id 004 invoice_id 002 order_id 001
 
-finance_invoice_order id 44e84e9c66344470b8aedb0c4c198825 invoice_id 24e84e9c66344470b8aedb0c4c198822 order_id 9bd06071e34243f6be46484e0ddac725
+finance_invoice_order id 005 invoice_id 002 order_id 002
 
-finance_invoice_order id 44e84e9c66344470b8aedb0c4c198826 invoice_id 24e84e9c66344470b8aedb0c4c198822 order_id 9bd06071e34243f6be46484e0ddac726
+finance_invoice_order id 006 invoice_id 002 order_id 003
 
-finance_order id 9bd06071e34243f6be46484e0ddac724 schoolroll_id 42034aca2d194217a8d0a0c3fd120399 pay_account 10
+finance_order id 004 userid 002 account 10
 
-finance_order id 9bd06071e34243f6be46484e0ddac725 schoolroll_id 42034aca2d194217a8d0a0c3fd120399 pay_account 20
+finance_order id 005 userid 002 account 20
 
-finance_order id 9bd06071e34243f6be46484e0ddac726 schoolroll_id 42034aca2d194217a8d0a0c3fd120399 pay_account 15
+finance_order id 006 userid 002 account 15
 
 
-select O.schoolroll_id,O.pay_type_id,sum(pay_account) from finance_invoice_order IO left join finance_invoice I on IO.invoice_id = I.id left join finance_order O on IO.order_id = O.id group by O.pay_type_id,O.schoolroll_id 
+select O.userid,O.pay_type,sum(account) from finance_invoice_order IO left join finance_invoice I on IO.invoice_id = I.id left join finance_order O on IO.order_id = O.id group by O.pay_type,O.userid 
 
-schoolroll_id						pay_type_id							sum(pay_account)
-2f8eb64ad1f84e05aced94ee561bcb7d	0a1eec7fa7444856984be054c485cfd1	50.00
-42034aca2d194217a8d0a0c3fd120399	0a1eec7fa7444856984be054c485cfd1	35.00
-2f8eb64ad1f84e05aced94ee561bcb7d	0a1eec7fa7444856984be054c485cfd3	69.00
-42034aca2d194217a8d0a0c3fd120399	0a1eec7fa7444856984be054c485cfd3	10.00
+userid						pay_type							sum(account)
 
+001                         学分费                               40.00
+002	                        学分费                               50.00
+001	                        考试费                               90.00
+002	                        考试费                               25.00
+
+	
+        MAX(case T.typecode when '001' then T.account else 0 end) 'scoreFee',
+        MAX(case T.typecode when '002' then T.account else 0 end) 'examFee',

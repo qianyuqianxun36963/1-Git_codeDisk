@@ -24,3 +24,5 @@ create table classroom(
     place varchar(20)
 );
 
+
+
