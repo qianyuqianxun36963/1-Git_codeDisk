@@ -1,0 +1,49 @@
+使用命令行查看当前所有的路径: 'improt sys'  'sys.path'  
+
+有时需要手动设置sys.path来将所需的源代码目录包含在内。通常使用'sys.path.append(dirname)'.然而这个修改只在脚本存在期间有效。
+
+模块搜索路径：
+1.程序主目录
+2.PythonPath目录
+3.标准链接库目录
+4.任何.pth文件的内容
+
+1.Python有个相当新的功能，允许用户把有效的目录添加到模块搜索路径中，也就是在后缀名为.pth(路径的意思)的文本文件中，一行一行的列出目录。这些路径配置文件是和安装相关的高级功能。
+当内含目录名称的文本文件放在适当目录中时，也可以概括的扮演与PythonPath设置一样的替代方案。
+例如，如果运行在windows和Python3.0，一个名为myconfig.pth的文件可以放在
+<1>Python的安装目录的顶层(C:\Python30)
+<2>或者在标准库所在的位置的sitepackages子目录中(C:\Python30\Lib\sitepackages)
+在linux中，文件可能位于
+usr/local/lib/site-python 或者 usr/local/lib/python3.0/site-packages
+
+2.把自己编写的Python模块添加到PYTHONPATH上
+要想让python解释器找到自己编写的模块，则该模块必须PYTHONPATH上，否则在导入该模块时会出现找不到该模块的错误，因此必须把所需要的模块的路径添加到PYTHONPATH（一般情况下是把lib/python2.6/site-packages添加到PYTHONPATH）。具体做法如下：
+a. 假设所需要的python模块（或包）位于/home/lxc/software/program/python
+b. 把/home/lxc/software/program/python添加到PYTHONPATH，语法与shell里面的PATH一样：
+export PYTHONPATH=$PYTHONPATH:/home/lxc/software/program/python
+现在就可以使用getopt_exam.py模块了，示例如下：
+$python
+>>>import getopt_exam
+>>>getopt_exam
+version v1.0
+>>>
+注意：当第一次导入getopt_exam时，getopt_exam.py就会被编译为字节码，此时该目录下就会出现一个名为getopt_exam.pyc的文件，因为*.pyc格式比*.py格式导出的速度更快，如果更新了getopt_exam.py则必须把它之前被编译的字节码getopt_exam.pyc删除，否则在使用这个模块的时候就不会看到更新的部分，因为它是从第一次生成的getopt_exam.pyc里面导出来；我们必要对新的getopt_exam.py脚本编译成*.pyc文件或是直接把getopt_exam.pyc（第一次生成）删掉，python解释器会自动没有没有相应*.pyc的*.py文件生成相应的*.pyc文件（基本规则：当导入一个模块时，python解释器先把*.py文件编译成*.pyc，然后在从*.pyc里面导出）。
+
+3.在python脚本里面使用那些不再PYTHONPATH上的第三方包或是自己编写的模块
+以使用/home/lxc/software/program/python/getopt_exam.py为例。
+$python
+>>>import sys
+>>>sys.path.append(“/home/lxc/software/program/python”)
+>>>import getopt_exam
+>>>getopt_exam.version()
+version v1.0
+>>>
+
+4.使用easy_install来自动安装python包
+以安装networkx为例，把networkx安装到路面/home/lxc/software/program/python/site-packages下
+a.先将/home/lxc/software/program/python/site-packages添加到PYTHONPATH；
+export PYTHONPATH=$PYTHONPATH:/home/lxc/software/program/python/site-packages
+b.安装版本号大于1.1的包
+easy_install-2.6 -d /home/lxc/software/program/python/site-packages "networkx>1.1"
+lxc/software/INSTALL/epd-6.2-2-rh5-x86/lib/python2.6/site-packages必须首先被添加到PYTHONPATH
+
