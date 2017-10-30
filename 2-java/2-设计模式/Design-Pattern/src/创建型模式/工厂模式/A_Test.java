@@ -1,18 +1,18 @@
-package ´´½¨ĞÍÄ£Ê½.¹¤³§Ä£Ê½;
+package åˆ›å»ºå‹æ¨¡å¼.å·¥å‚æ¨¡å¼;
 
 public class A_Test {
 	public static void main(String args[]){
-    	// ¼òµ¥¹¤³§Ä£Ê½²âÊÔ      ÀàºÜ¼òµ¥£¬µ«Ê¹ÓÃÁË¶¯Ì¬Àà×°ÈëÆ÷£¬×öµ½¶àÑù»¯¡£
+    	// ç®€å•å·¥å‚æ¨¡å¼æµ‹è¯•      ç±»å¾ˆç®€å•ï¼Œä½†ä½¿ç”¨äº†åŠ¨æ€ç±»è£…å…¥å™¨ï¼Œåšåˆ°å¤šæ ·åŒ–ã€‚
         Factory_Simple simpleFactory = new Factory_Simple();
-        Impl_Broom broom = (Impl_Broom) simpleFactory.create(Impl_Broom.class);//²úÆ·µÄ¾ßÌåÀàÔÚÕâÀïÑ¡¡£
-        broom.run(); //ÎªÁËÔÚÕâÀïµ÷ÓÃ²»»áÎª¿Õ£¬ËùÒÔËùÓĞµÄ»ñµÃµÄ¶ÔÏó¶¼ÊµÏÖÁËÒ»¸ö½Ó¿Ú£¬ÕâÀï·½·¨¶¼ÊÇ½Ó¿ÚÖĞÒÑ¾­¶¨ÒåµÄ¡£
+        Impl_Broom broom = (Impl_Broom) simpleFactory.create(Impl_Broom.class);//äº§å“çš„å…·ä½“ç±»åœ¨è¿™é‡Œé€‰ã€‚
+        broom.run(); //ä¸ºäº†åœ¨è¿™é‡Œè°ƒç”¨ä¸ä¼šä¸ºç©ºï¼Œæ‰€ä»¥æ‰€æœ‰çš„è·å¾—çš„å¯¹è±¡éƒ½å®ç°äº†ä¸€ä¸ªæ¥å£ï¼Œè¿™é‡Œæ–¹æ³•éƒ½æ˜¯æ¥å£ä¸­å·²ç»å®šä¹‰çš„ã€‚
         
-        // ¹¤³§·½·¨Ä£Ê½²âÊÔ
-        Factory_Vehicle factory = new Xtd_PlaneFactory();//²úÆ·µÄ¾ßÌåÀàÔÚÀïÍ¨¹ıÑ¡Ê²Ã´¹¤³§À´ÊµÏÖ¡£
-        I_Moveable moveable = factory.create(); //×¢Òâ!!: ¿´ÕâÀï£¬ÊÇ¹¤³§µÄ·½·¨À´ÊµÀı»¯ËùĞè¶ÔÏóµÄ!!
+        // å·¥å‚æ–¹æ³•æ¨¡å¼æµ‹è¯•
+        Factory_Vehicle factory = new Xtd_PlaneFactory();//äº§å“çš„å…·ä½“ç±»åœ¨é‡Œé€šè¿‡é€‰ä»€ä¹ˆå·¥å‚æ¥å®ç°ã€‚
+        I_Moveable moveable = factory.create(); //æ³¨æ„!!: çœ‹è¿™é‡Œï¼Œæ˜¯å·¥å‚çš„æ–¹æ³•æ¥å®ä¾‹åŒ–æ‰€éœ€å¯¹è±¡çš„!!
         moveable.run();
         
-        //³éÏó¹¤³§Ä£Ê½
+        //æŠ½è±¡å·¥å‚æ¨¡å¼
         Factory_Abstract factoryA = new Xtd_ExtendFactoryA();
         I_Moveable m = factoryA.getMoveable();
         I_Writeable w = factoryA.getWriteable();

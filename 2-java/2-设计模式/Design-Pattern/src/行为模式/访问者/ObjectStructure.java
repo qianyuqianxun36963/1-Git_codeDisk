@@ -1,9 +1,9 @@
-package ĞĞÎªÄ£Ê½.·ÃÎÊÕß;
+package è¡Œä¸ºæ¨¡å¼.è®¿é—®è€…;
 
 import java.util.*;
 
 public class ObjectStructure {
-	//ÁĞ¶Ó»¶Ó­£¬ÕâÀïÊÇÒ»¸öÔªËØµÄ¶ÓÁĞ¡£
+	//åˆ—é˜Ÿæ¬¢è¿ï¼Œè¿™é‡Œæ˜¯ä¸€ä¸ªå…ƒç´ çš„é˜Ÿåˆ—ã€‚
 	private List<I_Element> elements = new ArrayList<I_Element>();
 	
 	public void attach(I_Element element){
@@ -16,7 +16,7 @@ public class ObjectStructure {
 	
 	public void display(I_Visitor visitor){
 		for(I_Element e : elements){
-			e.accpet(visitor);//¶ÓÁĞÖĞÃ¿Ò»¸öÈË¶¼½Ó´ıµ±Ç°µÄ·ÃÎÊÕß¡£
+			e.accpet(visitor);//é˜Ÿåˆ—ä¸­æ¯ä¸€ä¸ªäººéƒ½æ¥å¾…å½“å‰çš„è®¿é—®è€…ã€‚
 		}
 	};
 }

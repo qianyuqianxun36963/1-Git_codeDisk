@@ -1,7 +1,7 @@
-//package javaÓïÑÔ.¶Ô½Ó.web·şÎñ;
+//package javaè¯­è¨€.å¯¹æ¥.webæœåŠ¡;
 //
-//import javaÓïÑÔ.¶Ô½Ó.web·şÎñ.jdkAPI.Éú³ÉµÄÎÄ¼ş.Service;
-//import javaÓïÑÔ.¶Ô½Ó.web·şÎñ.jdkAPI.Éú³ÉµÄÎÄ¼ş.ServiceService;
+//import javaè¯­è¨€.å¯¹æ¥.webæœåŠ¡.jdkAPI.ç”Ÿæˆçš„æ–‡ä»¶.Service;
+//import javaè¯­è¨€.å¯¹æ¥.webæœåŠ¡.jdkAPI.ç”Ÿæˆçš„æ–‡ä»¶.ServiceService;
 //
 //public class WebService_JdkAPI_client {
 //

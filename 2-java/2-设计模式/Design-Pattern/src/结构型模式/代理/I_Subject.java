@@ -1,4 +1,4 @@
-package ½á¹¹ĞÍÄ£Ê½.´úÀí;
+package ç»“æ„å‹æ¨¡å¼.ä»£ç†;
 
 public interface I_Subject {
 	void operate();

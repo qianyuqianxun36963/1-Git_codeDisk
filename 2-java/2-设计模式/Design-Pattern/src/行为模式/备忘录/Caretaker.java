@@ -1,5 +1,5 @@
-package ĞĞÎªÄ£Ê½.±¸ÍüÂ¼;
-//±¸ÍüÂ¼¹ÜÀíÕß
+package è¡Œä¸ºæ¨¡å¼.å¤‡å¿˜å½•;
+//å¤‡å¿˜å½•ç®¡ç†è€…
 public class Caretaker {
 	private I_Memento m ;
 	public void saveMemento(I_Memento m){

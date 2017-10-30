@@ -1,4 +1,4 @@
-package javaÓïÑÔ.f_ÎÄµµ.xml¸ñÊ½;
+package javaè¯­è¨€.f_æ–‡æ¡£.xmlæ ¼å¼;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -11,26 +11,26 @@ import javax.xml.transform.*;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.*;
 import javax.xml.xpath.*;
-public class  XmlÔöÉ¾¸Ä²é{
+public class  Xmlå¢åˆ æ”¹æŸ¥{
     public static void main(String[] args) {
         DocumentBuilderFactory factory=DocumentBuilderFactory.newInstance();
         Element theBook=null, theElem=null, root=null;
         try {
             factory.setIgnoringElementContentWhitespace(true);
             
-            //½âÎöXMLÎÄ¼ş£¬Í¨ß^XMLÎÄ¼şĞÂ½¨documentŒ¦Ïó¡£
+            //è§£æXMLæ–‡ä»¶ï¼Œé€šéXMLæ–‡ä»¶æ–°å»ºdocumentå°è±¡ã€‚
             DocumentBuilder db=factory.newDocumentBuilder();
             Document xmldoc=db.parse(new File("MyXml.xml")); 
             root=xmldoc.getDocumentElement();
 
-//ĞÂÔöÒ»¸ö½Úµã¡£
-            //--- ĞÂ½¨Ò»±¾Êé¿ªÊ¼ ----
-            //ĞÂ½¨Ò»¸öÔªËØ½Úµã£¬ ÍùÀïÃæ¼ÓÊôĞÔ¡£
+//æ–°å¢ä¸€ä¸ªèŠ‚ç‚¹ã€‚
+            //--- æ–°å»ºä¸€æœ¬ä¹¦å¼€å§‹ ----
+            //æ–°å»ºä¸€ä¸ªå…ƒç´ èŠ‚ç‚¹ï¼Œ å¾€é‡Œé¢åŠ å±æ€§ã€‚
             theBook=xmldoc.createElement("book");
             
-            //ĞÂ½¨Ò»‚€ÊôĞÔ½Úµã¡£ÈçÏÂ:<name>ĞÂÊé</name>
+            //æ–°å»ºä¸€å€‹å±æ€§èŠ‚ç‚¹ã€‚å¦‚ä¸‹:<name>æ–°ä¹¦</name>
             theElem=xmldoc.createElement("name");
-            theElem.setTextContent("ĞÂÊé");
+            theElem.setTextContent("æ–°ä¹¦");
             theBook.appendChild(theElem);
             
             theElem=xmldoc.createElement("price");
@@ -38,45 +38,45 @@ public class  XmlÔöÉ¾¸Ä²é{
             theBook.appendChild(theElem);
             
             theElem=xmldoc.createElement("memo");
-            theElem.setTextContent("ĞÂÊéµÄ¸üºÃ¿´¡£");
+            theElem.setTextContent("æ–°ä¹¦çš„æ›´å¥½çœ‹ã€‚");
             theBook.appendChild(theElem);
             
             root.appendChild(theBook);
             
-            System.out.println("--- ĞÂ½¨Ò»±¾Êé¿ªÊ¼ ----");
+            System.out.println("--- æ–°å»ºä¸€æœ¬ä¹¦å¼€å§‹ ----");
             output(xmldoc);
-            //--- ĞÂ½¨Ò»±¾ÊéÍê³É ----
+            //--- æ–°å»ºä¸€æœ¬ä¹¦å®Œæˆ ----
             
-//ĞŞ¸Ä½Úµã            
-            //--- ÏÂÃæ¶Ô¡¶¹şÀï²¨ÌØ¡·×öÒ»Ğ©ĞŞ¸Ä¡£ ----
-            //--- ²éÑ¯ÕÒ¡¶¹şÀï²¨ÌØ¡·----
-            theBook=(Element) selectSingleNode("/books/book[name='¹şÀï²¨ÌØ']", root);
-            System.out.println("--- ²éÑ¯ÕÒ¡¶¹şÀï²¨ÌØ¡· ----");
+//ä¿®æ”¹èŠ‚ç‚¹            
+            //--- ä¸‹é¢å¯¹ã€Šå“ˆé‡Œæ³¢ç‰¹ã€‹åšä¸€äº›ä¿®æ”¹ã€‚ ----
+            //--- æŸ¥è¯¢æ‰¾ã€Šå“ˆé‡Œæ³¢ç‰¹ã€‹----
+            theBook=(Element) selectSingleNode("/books/book[name='å“ˆé‡Œæ³¢ç‰¹']", root);
+            System.out.println("--- æŸ¥è¯¢æ‰¾ã€Šå“ˆé‡Œæ³¢ç‰¹ã€‹ ----");
             output(theBook);
-            //--- ´ËÊ±ĞŞ¸ÄÕâ±¾ÊéµÄ¼Û¸ñ -----
-            theBook.getElementsByTagName("price").item(0).setTextContent("15");//getElementsByTagName ·µ»ØµÄÊÇNodeList£¬ËùÒÔÒª¸úÉÏitem(0)¡£ÁíÍâ£¬getElementsByTagName("price")Ïàµ±ÓÚxpath µÄ".//price"¡£
-            System.out.println("--- ´ËÊ±ĞŞ¸ÄÕâ±¾ÊéµÄ¼Û¸ñ ----");
+            //--- æ­¤æ—¶ä¿®æ”¹è¿™æœ¬ä¹¦çš„ä»·æ ¼ -----
+            theBook.getElementsByTagName("price").item(0).setTextContent("15");//getElementsByTagName è¿”å›çš„æ˜¯NodeListï¼Œæ‰€ä»¥è¦è·Ÿä¸Šitem(0)ã€‚å¦å¤–ï¼ŒgetElementsByTagName("price")ç›¸å½“äºxpath çš„".//price"ã€‚
+            System.out.println("--- æ­¤æ—¶ä¿®æ”¹è¿™æœ¬ä¹¦çš„ä»·æ ¼ ----");
             output(theBook);
-            //--- ÁíÍâ»¹Ïë¼ÓÒ»¸öÊôĞÔid£¬ÖµÎªB01 ----
+            //--- å¦å¤–è¿˜æƒ³åŠ ä¸€ä¸ªå±æ€§idï¼Œå€¼ä¸ºB01 ----
             theBook.setAttribute("id", "B01");
-            System.out.println("--- ÁíÍâ»¹Ïë¼ÓÒ»¸öÊôĞÔid£¬ÖµÎªB01 ----");
+            System.out.println("--- å¦å¤–è¿˜æƒ³åŠ ä¸€ä¸ªå±æ€§idï¼Œå€¼ä¸ºB01 ----");
             output(theBook);
-            //--- ¶Ô¡¶¹şÀï²¨ÌØ¡·ĞŞ¸ÄÍê³É¡£ ----
+            //--- å¯¹ã€Šå“ˆé‡Œæ³¢ç‰¹ã€‹ä¿®æ”¹å®Œæˆã€‚ ----
             
             
-//É¾³ı½Úµã           
-            //--- ÒªÓÃidÊôĞÔÉ¾³ı¡¶Èı¹úÑİÒå¡·Õâ±¾Êé ----
+//åˆ é™¤èŠ‚ç‚¹           
+            //--- è¦ç”¨idå±æ€§åˆ é™¤ã€Šä¸‰å›½æ¼”ä¹‰ã€‹è¿™æœ¬ä¹¦ ----
             theBook=(Element) selectSingleNode("/books/book[@id='B02']", root);
-            System.out.println("--- ÒªÓÃidÊôĞÔÉ¾³ı¡¶Èı¹úÑİÒå¡·Õâ±¾Êé ----");
+            System.out.println("--- è¦ç”¨idå±æ€§åˆ é™¤ã€Šä¸‰å›½æ¼”ä¹‰ã€‹è¿™æœ¬ä¹¦ ----");
             output(theBook);
             theBook.getParentNode().removeChild(theBook);
-            System.out.println("--- É¾³ıºóµÄ£Ø£Í£Ì ----");
+            System.out.println("--- åˆ é™¤åçš„ï¼¸ï¼­ï¼¬ ----");
             output(xmldoc);
             
-            //--- ÔÙ½«ËùÓĞ¼Û¸ñµÍÓÚ10µÄÊéÉ¾³ı ----
+            //--- å†å°†æ‰€æœ‰ä»·æ ¼ä½äº10çš„ä¹¦åˆ é™¤ ----
             NodeList someBooks=selectNodes("/books/book[price<10]", root);
-            System.out.println("--- ÔÙ½«ËùÓĞ¼Û¸ñµÍÓÚ10µÄÊéÉ¾³ı ---");
-            System.out.println("--- ·ûºÏÌõ¼şµÄÊéÓĞ¡¡"+someBooks.getLength()+"±¾¡£ ---");
+            System.out.println("--- å†å°†æ‰€æœ‰ä»·æ ¼ä½äº10çš„ä¹¦åˆ é™¤ ---");
+            System.out.println("--- ç¬¦åˆæ¡ä»¶çš„ä¹¦æœ‰ã€€"+someBooks.getLength()+"æœ¬ã€‚ ---");
             for(int i=0;i<someBooks.getLength();i++) {
                 someBooks.item(i).getParentNode().removeChild(someBooks.item(i));
             }
@@ -86,7 +86,7 @@ public class  XmlÔöÉ¾¸Ä²é{
             output(xmldoc);
             
             
-            //½«Document¶ÔÏó±£´æµ½ÎïÀíÎÄ¼şÖĞ¡£
+            //å°†Documentå¯¹è±¡ä¿å­˜åˆ°ç‰©ç†æ–‡ä»¶ä¸­ã€‚
             saveXml("Test1_Edited.xml", xmldoc);
             
         } catch (ParserConfigurationException e) {
@@ -98,8 +98,8 @@ public class  XmlÔöÉ¾¸Ä²é{
         }
     }
     
-//Êä³ö½ÚµãÄÚÈİµ½¿ØÖÆÌ¨¡£
-    public static void output(Node node) {//½«nodeµÄXML×Ö·û´®Êä³öµ½¿ØÖÆÌ¨
+//è¾“å‡ºèŠ‚ç‚¹å†…å®¹åˆ°æ§åˆ¶å°ã€‚
+    public static void output(Node node) {//å°†nodeçš„XMLå­—ç¬¦ä¸²è¾“å‡ºåˆ°æ§åˆ¶å°
         TransformerFactory transFactory=TransformerFactory.newInstance();
         try {
             Transformer transformer = transFactory.newTransformer();
@@ -119,13 +119,13 @@ public class  XmlÔöÉ¾¸Ä²é{
     }
     
     
-//Ñ¡ÖĞÒ»¸ö½Úµã¡£
-    public static Node selectSingleNode(String express, Object source) {//²éÕÒ½Úµã£¬²¢·µ»ØµÚÒ»¸ö·ûºÏÌõ¼ş½Úµã
+//é€‰ä¸­ä¸€ä¸ªèŠ‚ç‚¹ã€‚
+    public static Node selectSingleNode(String express, Object source) {//æŸ¥æ‰¾èŠ‚ç‚¹ï¼Œå¹¶è¿”å›ç¬¬ä¸€ä¸ªç¬¦åˆæ¡ä»¶èŠ‚ç‚¹
         Node result=null;
         XPathFactory xpathFactory=XPathFactory.newInstance();
         XPath xpath=xpathFactory.newXPath();
         try {
-        	//evaluate Çó¡­µÄÖµ
+        	//evaluate æ±‚â€¦çš„å€¼
             result=(Node) xpath.evaluate(express, source, XPathConstants.NODE);
         } catch (XPathExpressionException e) {
             e.printStackTrace();
@@ -134,8 +134,8 @@ public class  XmlÔöÉ¾¸Ä²é{
         return result;
     }
     
-//É¸Ñ¡Ò»Åú½Úµã¡£
-    public static NodeList selectNodes(String express, Object source) {//²éÕÒ½Úµã£¬·µ»Ø·ûºÏÌõ¼şµÄ½Úµã¼¯¡£
+//ç­›é€‰ä¸€æ‰¹èŠ‚ç‚¹ã€‚
+    public static NodeList selectNodes(String express, Object source) {//æŸ¥æ‰¾èŠ‚ç‚¹ï¼Œè¿”å›ç¬¦åˆæ¡ä»¶çš„èŠ‚ç‚¹é›†ã€‚
         NodeList result=null;
         XPathFactory xpathFactory=XPathFactory.newInstance();
         XPath xpath=xpathFactory.newXPath();
@@ -149,8 +149,8 @@ public class  XmlÔöÉ¾¸Ä²é{
     }
     
     
-//±£´æXML¶ÔÏóµ½ÎÄ¼şµÄ·½·¨£¡£¡£¡
-    public static void saveXml(String fileName, Document doc) {//½«DocumentÊä³öµ½ÎÄ¼ş
+//ä¿å­˜XMLå¯¹è±¡åˆ°æ–‡ä»¶çš„æ–¹æ³•ï¼ï¼ï¼
+    public static void saveXml(String fileName, Document doc) {//å°†Documentè¾“å‡ºåˆ°æ–‡ä»¶
         TransformerFactory transFactory=TransformerFactory.newInstance();
         try {
             Transformer transformer = transFactory.newTransformer();

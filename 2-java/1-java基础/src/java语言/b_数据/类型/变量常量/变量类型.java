@@ -1,5 +1,5 @@
-package java语言.b_数据.类型.变量常量;
+package java璇█.b_鏁版嵁.绫诲瀷.鍙橀噺甯搁噺;
 
-public class 变量类型 {
+public class 鍙橀噺绫诲瀷 {
 
 }

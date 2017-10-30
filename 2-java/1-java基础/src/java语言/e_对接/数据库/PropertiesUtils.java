@@ -1,4 +1,4 @@
-package javaÓïÑÔ.e_¶Ô½Ó.Êı¾İ¿â;
+package javaè¯­è¨€.e_å¯¹æ¥.æ•°æ®åº“;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -8,13 +8,13 @@ public class PropertiesUtils {
 private static Properties file = null;
 	
 	/**
-	 * <p>Description: »ñÈ¡ÎÄ¼şÉÏ´«ÊôĞÔÎÄ¼ş</p>
+	 * <p>Description: è·å–æ–‡ä»¶ä¸Šä¼ å±æ€§æ–‡ä»¶</p>
 	 * @param key
 	 * @return
 	 * @throws IOException
 	 */
 
-	//Ê¹ÓÃ·½Ê½:PropertiesUtils.getFileConfigValue("ftp_file_url")
+	//ä½¿ç”¨æ–¹å¼:PropertiesUtils.getFileConfigValue("ftp_file_url")
 
 	public static String getFileConfigValue(String key){
 		if(null!=file) return file.getProperty(key);

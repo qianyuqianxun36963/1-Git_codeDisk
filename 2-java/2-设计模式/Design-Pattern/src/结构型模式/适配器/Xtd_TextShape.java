@@ -1,6 +1,6 @@
-package ½á¹¹ĞÍÄ£Ê½.ÊÊÅäÆ÷;
+package ç»“æ„å‹æ¨¡å¼.é€‚é…å™¨;
 
-//Õâ¸öÊÇTextViewµÄÊÊÅäÆ÷
+//è¿™ä¸ªæ˜¯TextViewçš„é€‚é…å™¨
 public class Xtd_TextShape extends Shape{
 	public void draw() {new TextView().draw();};
 	public String getText(){return "this is TextView's append function";};

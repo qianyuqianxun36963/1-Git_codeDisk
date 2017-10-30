@@ -7,7 +7,7 @@
 * ArrayList<Integer> the word count associated with that word - that is,
 * in effect, the location in the file where that word was found.
 */
-package javaÓïÑÔ.b_Êı¾İ.ÈİÆ÷.ÊµÓÃÈİÆ÷;
+package javaè¯­è¨€.b_æ•°æ®.å®¹å™¨.å®ç”¨å®¹å™¨;
 
 import java.util.*;
 

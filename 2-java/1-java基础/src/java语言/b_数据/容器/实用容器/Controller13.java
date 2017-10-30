@@ -4,7 +4,7 @@
 * Controller uses an ArrayList. Change the code to use a LinkedList
 * instead, and use an Iterator to cycle through the set of events.
 */
-package javaÓïÑÔ.b_Êı¾İ.ÈİÆ÷.ÊµÓÃÈİÆ÷;
+package javaè¯­è¨€.b_æ•°æ®.å®¹å™¨.å®ç”¨å®¹å™¨;
 
 import java.awt.Event;
 import java.util.*;

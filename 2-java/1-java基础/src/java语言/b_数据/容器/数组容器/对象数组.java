@@ -1,31 +1,31 @@
-package javaÓïÑÔ.b_Êı¾İ.ÈİÆ÷.Êı×éÈİÆ÷;
+package javaè¯­è¨€.b_æ•°æ®.å®¹å™¨.æ•°ç»„å®¹å™¨;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
-public class ¶ÔÏóÊı×é {
+public class å¯¹è±¡æ•°ç»„ {
 	public static void main(String[] args) {
 //		Scanner in=new Scanner(System.in);
 		
 		int[] a=new int[4];
-//		a[0]=in.nextInt();          //¼òµ¥Êı¾İÀàĞÍÊı×é¿ÉÒÔÖ±½ÓÊ¹ÓÃ¡£
+//		a[0]=in.nextInt();          //ç®€å•æ•°æ®ç±»å‹æ•°ç»„å¯ä»¥ç›´æ¥ä½¿ç”¨ã€‚
 		a[0]=1; 
 		System.out.println(a[0]);
 		
 		Edge[] edge=new Edge[4];
-		edge[0] = new Edge(1,2,3);  //¶ÔÏóÊı×éÔÚÊ¹ÓÃÊ±£¬±ØĞëÒªÏÈÊµÀı»¯Êı×é¶ÔÏó¡£ ²»ÄÜÖ±½ÓÊ¹ÓÃ¡£
+		edge[0] = new Edge(1,2,3);  //å¯¹è±¡æ•°ç»„åœ¨ä½¿ç”¨æ—¶ï¼Œå¿…é¡»è¦å…ˆå®ä¾‹åŒ–æ•°ç»„å¯¹è±¡ã€‚ ä¸èƒ½ç›´æ¥ä½¿ç”¨ã€‚
 //		edge[0].u=in.nextInt();
 		edge[0].u=1;
 		System.out.println(edge[0].u);
 
-//		ÈİÆ÷Êı×é
-//		ArrayList[] zoneArrows = new ArrayList[4](); //ÕâÖÖ·½Ê½ÊÇ²»ĞĞµÄ¡£
+//		å®¹å™¨æ•°ç»„
+//		ArrayList[] zoneArrows = new ArrayList[4](); //è¿™ç§æ–¹å¼æ˜¯ä¸è¡Œçš„ã€‚
 		ArrayList[] zoneArrows = new ArrayList[4];
 		
 //		ArrayList<Integer>[] typeArrays = new ArrayList<Integer>[4]();
-//		ArrayList<Integer>[] typeArrows = new ArrayList<Integer>[4]; //ÕâÀïÈ¥µô·ºĞÍÏŞ¶¨¾Í¿ÉÒÔ¡£¼ÓÁË·ºĞÍÏŞ¶¨ºó£¬Êı×éµÄ¶¨ÒåĞÎÊ½¾Í²»ĞĞÁË¡£
+//		ArrayList<Integer>[] typeArrows = new ArrayList<Integer>[4]; //è¿™é‡Œå»æ‰æ³›å‹é™å®šå°±å¯ä»¥ã€‚åŠ äº†æ³›å‹é™å®šåï¼Œæ•°ç»„çš„å®šä¹‰å½¢å¼å°±ä¸è¡Œäº†ã€‚
 		ArrayList<Integer> zoneArrow = new ArrayList<Integer>(); 
 		
 		ArrayList al=new ArrayList();
@@ -33,7 +33,7 @@ public class ¶ÔÏóÊı×é {
 		ArrayList al2=new ArrayList(); al2.add("222");
 		
 		ArrayList[] ArrayListArrays = new ArrayList[4];
-//		ArrayList<Integer> result = new ArrayList<Integer>[4]; //¼Ó·ºĞÍÏŞ¶¨¾Í²»ĞĞÁË¡£
+//		ArrayList<Integer> result = new ArrayList<Integer>[4]; //åŠ æ³›å‹é™å®šå°±ä¸è¡Œäº†ã€‚
 		ArrayListArrays[0] = al;
 		ArrayListArrays[1] = al1;
 		ArrayListArrays[2] = al2;
@@ -41,7 +41,7 @@ public class ¶ÔÏóÊı×é {
 		ArrayListArrays[3] = al3;
 		visitList_every(ArrayListArrays);
 		
-//		Ê×Ñ¡ÊÇÕâÖÖ·½Ê½£¬Ê×ÏÈÊı×éÀïÃæ¶¼Ö¸ÏòÍ¬Ò»¸öArrayList¶ÔÏóÒıÓÃ£¬ËäÈ»¸Ä±ä¸ÃÒıÓÃ£¬È«²¿ÔªËØ¶¼»áĞŞ¸Ä£¬µ«ÊÇÃ»ÊÂ£¡£¡
+//		é¦–é€‰æ˜¯è¿™ç§æ–¹å¼ï¼Œé¦–å…ˆæ•°ç»„é‡Œé¢éƒ½æŒ‡å‘åŒä¸€ä¸ªArrayListå¯¹è±¡å¼•ç”¨ï¼Œè™½ç„¶æ”¹å˜è¯¥å¼•ç”¨ï¼Œå…¨éƒ¨å…ƒç´ éƒ½ä¼šä¿®æ”¹ï¼Œä½†æ˜¯æ²¡äº‹ï¼ï¼
 		ArrayList[] sameElementArrayListArrays = new ArrayList[]{al,al};
 		sameElementArrayListArrays[0] = al1;
 		sameElementArrayListArrays[1] = al2;
@@ -56,18 +56,18 @@ public class ¶ÔÏóÊı×é {
 //		nullArrayListArrays[0] = al; //NullPointerException
 //		visitList_every(nullArrayListArrays);
 		
-//		Êı×éÈİÆ÷	
+//		æ•°ç»„å®¹å™¨	
 		ArrayList<int[]> myList=new ArrayList<int[]>();
 		myList.add(new int[]{2,3,0});
 		myList.add(new int[]{1,2,3,4});
 		myList.add(new int[]{2,5,6,1,5});
-		//myList.add(new char[]{'a'});  //±àÒëÍ¨²»¹ı¡£
+		//myList.add(new char[]{'a'});  //ç¼–è¯‘é€šä¸è¿‡ã€‚
 		for(int[] intArr:myList){
 			System.out.println(Arrays.toString(intArr));
 		}
 	}
 	
-	//±éÀúÒ»¸ölist¶ÔÏó¡£
+	//éå†ä¸€ä¸ªlistå¯¹è±¡ã€‚
 	public static void visitList_every(ArrayList[] zoneArrows){
 		for(ArrayList zoneArrow: zoneArrows){
 			for(Object value:zoneArrow){  
@@ -79,8 +79,8 @@ public class ¶ÔÏóÊı×é {
 }
 
 class Edge{
-	public int u,v;//Æğµã£¬ÖÕµã
-	int weight;//±ßµÄÈ¨ÖØ
+	public int u,v;//èµ·ç‚¹ï¼Œç»ˆç‚¹
+	int weight;//è¾¹çš„æƒé‡
 	Edge(int a,int b,int c){
 		u=a;v=b;weight=c;
 	}

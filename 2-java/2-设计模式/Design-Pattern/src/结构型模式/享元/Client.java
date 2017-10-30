@@ -1,12 +1,12 @@
-package ½á¹¹ĞÍÄ£Ê½.ÏíÔª;
+package ç»“æ„å‹æ¨¡å¼.äº«å…ƒ;
 
 import java.util.*;
 
-//µäĞÍµÄ°¸Àı¾ÍÊÇjavaÀïÃæµÄStringÀà¡£
+//å…¸å‹çš„æ¡ˆä¾‹å°±æ˜¯javaé‡Œé¢çš„Stringç±»ã€‚
 //String n = "hello";String m = "hello"
-//ÕâÊ±ºò£¬m=nÊÇtrue¡£ mÒ»¿ªÊ¼ÊÇÃ»ÊµÀı»¯µÄ¡£
-//µ±m = m+"you"
-//ÕâÊ±ÄØ£¬m=n²ÅÊÇfalse¡£mÕâÊ±ºò²ÅÊµÀı»¯µÄ¡£
+//è¿™æ—¶å€™ï¼Œm=næ˜¯trueã€‚ mä¸€å¼€å§‹æ˜¯æ²¡å®ä¾‹åŒ–çš„ã€‚
+//å½“m = m+"you"
+//è¿™æ—¶å‘¢ï¼Œm=næ‰æ˜¯falseã€‚mè¿™æ—¶å€™æ‰å®ä¾‹åŒ–çš„ã€‚
 
 public class Client  {
     public static void main(String[] args) {

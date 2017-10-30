@@ -1,6 +1,6 @@
-package ½á¹¹ĞÍÄ£Ê½.×°ÊÎ;
+package ç»“æ„å‹æ¨¡å¼.è£…é¥°;
 
-//javaµÄioAPI¾ÍÊÇÊ¹ÓÃ×°ÊÎÄ£Ê½µÄ¡£
+//javaçš„ioAPIå°±æ˜¯ä½¿ç”¨è£…é¥°æ¨¡å¼çš„ã€‚
 
 public class Client {
 	public static void main(String args[]){

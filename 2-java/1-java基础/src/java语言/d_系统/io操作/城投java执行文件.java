@@ -1,4 +1,4 @@
-package javaÓïÑÔ.d_ÏµÍ³.io²Ù×÷;
+package javaè¯­è¨€.d_ç³»ç»Ÿ.ioæ“ä½œ;
 
 import java.io.*;
 import java.text.SimpleDateFormat;
@@ -9,12 +9,12 @@ import java.util.TimerTask;
 /*import com.eos.system.annotation.Bizlet;
 
 @Bizlet*/
-public class ³ÇÍ¶javaÖ´ĞĞÎÄ¼ş {
+public class åŸæŠ•javaæ‰§è¡Œæ–‡ä»¶ {
 	
 	static String curday=getCurtime("yyyyMMdd");
 	static String curtime=getCurtime("yyyyMMddHHmmss");
 	
-	//´æ·ÅÁÙÊ±ÎÄ¼şµÄÄ¿Â¼¡£
+	//å­˜æ”¾ä¸´æ—¶æ–‡ä»¶çš„ç›®å½•ã€‚
 	static String dirPath="C:\\exchangusermanager\\add\\"+curday+"\\";
 	
 	static String userfilePath=dirPath+curtime+"mailbox.csv";
@@ -40,7 +40,7 @@ public class ³ÇÍ¶javaÖ´ĞĞÎÄ¼ş {
 		Runtime runtime=Runtime.getRuntime();
 		try{
 			//runtime.exec(execFile);
-			timer();//Ö´ĞĞ¶¨Ê±³ÌĞò£¬É¾³ıÁÙÊ±ÎÄ¼ş¡£
+			timer();//æ‰§è¡Œå®šæ—¶ç¨‹åºï¼Œåˆ é™¤ä¸´æ—¶æ–‡ä»¶ã€‚
 		}catch(Exception e){
 			System.out.println("Error!");
 		}
@@ -54,7 +54,7 @@ public class ³ÇÍ¶javaÖ´ĞĞÎÄ¼ş {
 		Runtime runtime=Runtime.getRuntime();
 		try{
 			runtime.exec(execFile);
-			timer();//Ö´ĞĞ¶¨Ê±³ÌĞò£¬É¾³ıÁÙÊ±ÎÄ¼ş¡£
+			timer();//æ‰§è¡Œå®šæ—¶ç¨‹åºï¼Œåˆ é™¤ä¸´æ—¶æ–‡ä»¶ã€‚
 		}catch(Exception e){
 			System.out.println("Error!");
 		}
@@ -76,7 +76,7 @@ public class ³ÇÍ¶javaÖ´ĞĞÎÄ¼ş {
 		return stime;
 	}
 	
-	/******************************** Éú³ÉÁÙÊ±ÎÄ¼ş   *******************************/
+	/******************************** ç”Ÿæˆä¸´æ—¶æ–‡ä»¶   *******************************/
 	public static void creatfiles() throws IOException {  
 		 File f=new File(dirPath);
 		 if(!f.exists()){
@@ -86,7 +86,7 @@ public class ³ÇÍ¶javaÖ´ĞĞÎÄ¼ş {
 		 new File(shellfilePath).createNewFile(); 
 	}
 	
-	/******************************** Êı¾İĞ´ÈëÁÙÊ±ÎÄ¼ş   *******************************/
+	/******************************** æ•°æ®å†™å…¥ä¸´æ—¶æ–‡ä»¶   *******************************/
 	public static void writetoUserfile(String infotoWrite){
 		try{
 			File userfile=new File(userfilePath);
@@ -115,38 +115,38 @@ public class ³ÇÍ¶javaÖ´ĞĞÎÄ¼ş {
 		}
 	}
 	
-	/******************************** ¶¨Ê±É¾³ıÁÙÊ±ÎÄ¼ş   *******************************/
-	// µÚÒ»ÖÖ·½·¨£ºÉè¶¨Ö¸¶¨ÈÎÎñtaskÔÚÖ¸¶¨Ê±¼ätimeÖ´ĞĞ schedule(TimerTask task, Date time)  
+	/******************************** å®šæ—¶åˆ é™¤ä¸´æ—¶æ–‡ä»¶   *******************************/
+	// ç¬¬ä¸€ç§æ–¹æ³•ï¼šè®¾å®šæŒ‡å®šä»»åŠ¡taskåœ¨æŒ‡å®šæ—¶é—´timeæ‰§è¡Œ schedule(TimerTask task, Date time)  
     public static void timer() {  
         Timer timer = new Timer();  
         timer.schedule(new TimerTask() {  
             public void run() {  
-                System.out.println("-------¶¨Ê±É¾³ıÁÙÊ±ÎÄ¼ş-------");
+                System.out.println("-------å®šæ—¶åˆ é™¤ä¸´æ—¶æ–‡ä»¶-------");
                 deleteTempFiles();
                 
             }  
-        }, 8000);// Éè¶¨Ö¸¶¨µÄÊ±¼ätime,´Ë´¦Îª8000ºÁÃë  
+        }, 8000);// è®¾å®šæŒ‡å®šçš„æ—¶é—´time,æ­¤å¤„ä¸º8000æ¯«ç§’  
     } 
 	
-	//É¾³ıÉú³ÉµÄÁÙÊ±½Å±¾ÎÄ¼şºÍÓÃ»§ĞÅÏ¢¡£
+	//åˆ é™¤ç”Ÿæˆçš„ä¸´æ—¶è„šæœ¬æ–‡ä»¶å’Œç”¨æˆ·ä¿¡æ¯ã€‚
 	public static void deleteTempFiles(){
 		deleteFile(new File(dirPath));
 		/*delete(userfilePath);
 		delete(shellfilePath);*/
 	}
 	
-	//É¾³ıµ¥¸öÎÄ¼ş¡£
+	//åˆ é™¤å•ä¸ªæ–‡ä»¶ã€‚
 	public static boolean delete(String fileName) {  
 		  File file = new File(fileName);  
 		  if (!file.exists()) {  
-			  System.out.println("É¾³ıÎÄ¼şÊ§°Ü:" + fileName + "²»´æÔÚ£¡");  
+			  System.out.println("åˆ é™¤æ–‡ä»¶å¤±è´¥:" + fileName + "ä¸å­˜åœ¨ï¼");  
 			  return false;  
 		  } else {  
 			  if (file.delete()) {  
-			    System.out.println("É¾³ıµ¥¸öÎÄ¼ş" + fileName + "³É¹¦£¡");  
+			    System.out.println("åˆ é™¤å•ä¸ªæ–‡ä»¶" + fileName + "æˆåŠŸï¼");  
 			    return true;  
 			  } else {  
-			    System.out.println("É¾³ıµ¥¸öÎÄ¼ş" + fileName + "Ê§°Ü£¡");  
+			    System.out.println("åˆ é™¤å•ä¸ªæ–‡ä»¶" + fileName + "å¤±è´¥ï¼");  
 			    return false;  
 			  }  
 		  }  
@@ -154,10 +154,10 @@ public class ³ÇÍ¶javaÖ´ĞĞÎÄ¼ş {
 	
 		
 	public static void deleteFile(File file){  
-        if(file.isFile()){//±íÊ¾¸ÃÎÄ¼ş²»ÊÇÎÄ¼ş¼Ğ  
+        if(file.isFile()){//è¡¨ç¤ºè¯¥æ–‡ä»¶ä¸æ˜¯æ–‡ä»¶å¤¹  
             file.delete();  
         }else{  
-            //Ê×ÏÈµÃµ½µ±Ç°µÄÂ·¾¶  
+            //é¦–å…ˆå¾—åˆ°å½“å‰çš„è·¯å¾„  
             String[] childFilePaths = file.list();  
             for(String childFilePath : childFilePaths){  
                 File childFile=new File(file.getAbsolutePath()+"\\"+childFilePath);  

@@ -1,4 +1,4 @@
-package javaÓïÑÔ.b_Êı¾İ.ÈİÆ÷.ÊµÓÃÈİÆ÷.»ù´¡;
+package javaè¯­è¨€.b_æ•°æ®.å®¹å™¨.å®ç”¨å®¹å™¨.åŸºç¡€;
 
 import java.util.*;
 
@@ -21,7 +21,7 @@ public class MySet {
 	}
 }
 
-//ÓÉÓÚHashSetµ×²ãÊ¹ÓÃÁËHashMapÊµÏÖ£¬Ê¹ÆäµÄÊµÏÖ¹ı³Ì±äµÃ·Ç³£¼òµ¥£¬Èç¹ûÄã¶ÔHashMap±È½ÏÁË½â£¬ÄÇÃ´HashSet¼òÖ±ÊÇĞ¡²ËÒ»µú¡£
+//ç”±äºHashSetåº•å±‚ä½¿ç”¨äº†HashMapå®ç°ï¼Œä½¿å…¶çš„å®ç°è¿‡ç¨‹å˜å¾—éå¸¸ç®€å•ï¼Œå¦‚æœä½ å¯¹HashMapæ¯”è¾ƒäº†è§£ï¼Œé‚£ä¹ˆHashSetç®€ç›´æ˜¯å°èœä¸€ç¢Ÿã€‚
 class MySet_HashSet{
 	HashSet<Object> set = new HashSet<Object>();
 	HashSet<Object> objectSet = new HashSet<Object>();
@@ -38,20 +38,20 @@ class MySet_HashSet{
 	}
 }
 
-//ÓÉÓÚTreeSetÊÇ»ùÓÚTreeMapÊµÏÖµÄ£¬ËùÒÔÈç¹ûÎÒÃÇ¶ÔtreeMapÓĞÁËÒ»¶¨µÄÁË½â£¬¶ÔTreeSetÄÇÊÇĞ¡²ËÒ»µú£¬ÎÒÃÇ´ÓTreeSetÖĞµÄÔ´Âë¿ÉÒÔ¿´³ö£¬ÆäÊµÏÖ¹ı³Ì·Ç³£¼òµ¥£¬¼¸ºõËùÓĞµÄ·½·¨ÊµÏÖÈ«²¿¶¼ÊÇ»ùÓÚTreeMapµÄ¡£
+//ç”±äºTreeSetæ˜¯åŸºäºTreeMapå®ç°çš„ï¼Œæ‰€ä»¥å¦‚æœæˆ‘ä»¬å¯¹treeMapæœ‰äº†ä¸€å®šçš„äº†è§£ï¼Œå¯¹TreeSeté‚£æ˜¯å°èœä¸€ç¢Ÿï¼Œæˆ‘ä»¬ä»TreeSetä¸­çš„æºç å¯ä»¥çœ‹å‡ºï¼Œå…¶å®ç°è¿‡ç¨‹éå¸¸ç®€å•ï¼Œå‡ ä¹æ‰€æœ‰çš„æ–¹æ³•å®ç°å…¨éƒ¨éƒ½æ˜¯åŸºäºTreeMapçš„ã€‚
 class MySet_TreeSet{
 	TreeSet<Object> set = new TreeSet<Object>();
 	TreeSet<Object> compSet = new TreeSet<Object>(new A(0));
 	public void initset(){
-//		ÏÂÃæÕâ¸ö¿ÉÒÔ
+//		ä¸‹é¢è¿™ä¸ªå¯ä»¥
 //		set.add(123);
 //		set.add(345);
 	
-//		ÏÂÃæÕâ¸öÒ²¿ÉÒÔ
+//		ä¸‹é¢è¿™ä¸ªä¹Ÿå¯ä»¥
 //		set.add("a");
 //		set.add("b");
 		
-//		ÏÂÃæÕâ¸ö²»¿ÉÒÔ  ÒòÎªtreesetÀïµÄÔªËØÒª½øĞĞÅÅĞò£¬ĞèÒª±È½Ï¡£
+//		ä¸‹é¢è¿™ä¸ªä¸å¯ä»¥  å› ä¸ºtreeseté‡Œçš„å…ƒç´ è¦è¿›è¡Œæ’åºï¼Œéœ€è¦æ¯”è¾ƒã€‚
 //		set.add(123);
 //		set.add("b");
 		
@@ -81,7 +81,7 @@ class MySet_EnumSet{
 }
 
 class SetUtil{
-	//±éÀúÒ»¸öset¶ÔÏó¡£
+	//éå†ä¸€ä¸ªsetå¯¹è±¡ã€‚
 	public static void visitMap_every(Set<?> set){
 		for(Object value:set){  
 	        System.out.println(value);
@@ -89,7 +89,7 @@ class SetUtil{
 	    }
 	}
 	
-	//±éÀúÒ»¸öset¶ÔÏó¡£
+	//éå†ä¸€ä¸ªsetå¯¹è±¡ã€‚
 	public static void visitMap_iterator(Set<?> set){
 		Iterator<?> it = set.iterator();  
 		while(it.hasNext()){  
@@ -97,7 +97,7 @@ class SetUtil{
 		}
 	}
 	
-	// ÄæĞò±éÀúTreeSet
+	// é€†åºéå†TreeSet
 	public static void descIteratorThroughIterator(TreeSet<?> set) {
 		for(Iterator<?> iter = set.descendingIterator(); iter.hasNext(); )
 		System.out.printf("desc : %s\n", (String)iter.next());
@@ -119,7 +119,7 @@ class A implements Comparator<Object>{
 	}
 }
 
-//ÍùsetÖĞ¼ÓÈëµÄ¶ÔÏóÊµÀı£¬ĞèÒªÖØĞ´ÆäÖØĞ´hashCodeÓëequals·½·¨¡£
+//å¾€setä¸­åŠ å…¥çš„å¯¹è±¡å®ä¾‹ï¼Œéœ€è¦é‡å†™å…¶é‡å†™hashCodeä¸equalsæ–¹æ³•ã€‚
 class B{
 	String name;int age;String sex;
 	public B(String name,int age,String sex){

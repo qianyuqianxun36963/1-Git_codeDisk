@@ -1,29 +1,29 @@
-package ½á¹¹ĞÍÄ£Ê½.Íâ¹Û;
+package ç»“æ„å‹æ¨¡å¼.å¤–è§‚;
 
 class BaseClass {
 	public void sing(){
-		System.out.println("»ù±¾¶ÔÏó: »ù±¾³ª·¨¡£");
+		System.out.println("åŸºæœ¬å¯¹è±¡: åŸºæœ¬å”±æ³•ã€‚");
 	}
 	public void dance(){
-		System.out.println("»ù±¾¶ÔÏó: ÌøÎè»¹ĞĞ¡£");
+		System.out.println("åŸºæœ¬å¯¹è±¡: è·³èˆè¿˜è¡Œã€‚");
 	}
 }
 
 class OldClass {
 	public void sing(){
-		System.out.println("³Â¾É¶ÔÏó: ¾­µä³ª·¨¡£");
+		System.out.println("é™ˆæ—§å¯¹è±¡: ç»å…¸å”±æ³•ã€‚");
 	}
 	public void dance(){
-		System.out.println("³Â¾É¶ÔÏó: ÌøÎè²»ºÃ¡£");
+		System.out.println("é™ˆæ—§å¯¹è±¡: è·³èˆä¸å¥½ã€‚");
 	}
 }
 
 class BadClass {
 	public void sing(){
-		System.out.println("ÁÓÖÊ¶ÔÏó: ÁÓÖÊ³ª·¨¡£");
+		System.out.println("åŠ£è´¨å¯¹è±¡: åŠ£è´¨å”±æ³•ã€‚");
 	}
 	
 	public void dance(){
-		System.out.println("ÁÓÖÊ¶ÔÏó: ÌøÎèºÜºÃ¡£");
+		System.out.println("åŠ£è´¨å¯¹è±¡: è·³èˆå¾ˆå¥½ã€‚");
 	}
 }

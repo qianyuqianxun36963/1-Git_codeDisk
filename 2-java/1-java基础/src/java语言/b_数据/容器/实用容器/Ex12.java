@@ -5,7 +5,7 @@
 * List and insert them into the second in reverse order. (You may want to 
 * explore a number of different ways to solve this problem.)
 */
-package javaÓïÑÔ.b_Êı¾İ.ÈİÆ÷.ÊµÓÃÈİÆ÷;
+package javaè¯­è¨€.b_æ•°æ®.å®¹å™¨.å®ç”¨å®¹å™¨;
 
 import java.util.*;
 

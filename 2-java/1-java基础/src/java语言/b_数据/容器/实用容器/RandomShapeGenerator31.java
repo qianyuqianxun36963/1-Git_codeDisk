@@ -1,4 +1,4 @@
-package javaÓïÑÔ.b_Êı¾İ.ÈİÆ÷.ÊµÓÃÈİÆ÷;
+package javaè¯­è¨€.b_æ•°æ®.å®¹å™¨.å®ç”¨å®¹å™¨;
 /*// holding/shape/RcdandomShapeGenerator31.java
 // TIJ4 Chapter Holding, Exercise 31, page 434
  Modify polymorphism/shape/RandomShapeGenerator.java to make it
@@ -32,8 +32,8 @@ package javaÓïÑÔ.b_Êı¾İ.ÈİÆ÷.ÊµÓÃÈİÆ÷;
 *	@Override public String toString() { return "Triangle"; }
 * }
 
-package javaÓïÑÔ.Êı¾İ.ÈİÆ÷.ÊµÓÃÈİÆ÷;
-import static javaÓïÑÔ.common.utils.Myutils.*;
+package javaè¯­è¨€.æ•°æ®.å®¹å™¨.å®ç”¨å®¹å™¨;
+import static javaè¯­è¨€.common.utils.Myutils.*;
 import java.util.*;
 
 public class RandomShapeGenerator31 implements Iterable<Shape> {

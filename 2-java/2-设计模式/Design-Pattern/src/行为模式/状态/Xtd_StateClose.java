@@ -1,4 +1,4 @@
-package ��Ϊģʽ.״̬;
+package 行为模式.状态;
 
 public class Xtd_StateClose extends Impl_State{
 	private static Xtd_StateClose stateclosed = null;

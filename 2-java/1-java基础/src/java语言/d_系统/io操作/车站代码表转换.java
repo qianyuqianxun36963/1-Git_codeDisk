@@ -1,16 +1,16 @@
-package javaÓïÑÔ.d_ÏµÍ³.io²Ù×÷;
+package javaè¯­è¨€.d_ç³»ç»Ÿ.ioæ“ä½œ;
 
 import java.io.*;
 
-public class ³µÕ¾´úÂë±í×ª»» {
+public class è½¦ç«™ä»£ç è¡¨è½¬æ¢ {
 	public static void main(String args[]){
 		func.deal();
 	}
 }
 
 class cities{
-	static File readerFile=new File("E:\\java\\workspace\\Á·Ï°\\src\\ÆäËû\\io²Ù×÷\\files\\cities.txt");
-	static File writerFile=new File("E:\\java\\workspace\\Á·Ï°\\src\\ÆäËû\\io²Ù×÷\\files\\cities.json");
+	static File readerFile=new File("E:\\java\\workspace\\ç»ƒä¹ \\src\\å…¶ä»–\\ioæ“ä½œ\\files\\cities.txt");
+	static File writerFile=new File("E:\\java\\workspace\\ç»ƒä¹ \\src\\å…¶ä»–\\ioæ“ä½œ\\files\\cities.json");
 }
 
 class func{

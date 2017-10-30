@@ -1,18 +1,18 @@
-package javaÓïÑÔ.b_Êı¾İ.ÀàĞÍ.Ã¶¾ÙÀà;
+package javaè¯­è¨€.b_æ•°æ®.ç±»å‹.æšä¸¾ç±»;
 
 //java.lang.Object
-//¼Ì³ĞÕß java.lang.Enum<E>
+//ç»§æ‰¿è€… java.lang.Enum<E>
 
-//²»Òª½«ËüÓëswitchÊÊÓÃµÄ»ù±¾ÀàĞÍ»ìÏıÁË¡£
-//ÔÚ Java 7Ö®Ç°£¬switch Ö»ÄÜÖ§³Ö byte¡¢short¡¢char¡¢int»òÕßÆä¶ÔÓ¦µÄ·â×°ÀàÒÔ¼° Enum ÀàĞÍ¡£ÔÚ Java 7ÖĞ£¬StringÖ§³Ö±»¼ÓÉÏÁË¡£
-//Ã¶¾ÙµÄÉùÃ÷ÖĞ£¬Ö»ÄÜÊ¹ÓÃ×Ö·û´®¡£
+//ä¸è¦å°†å®ƒä¸switché€‚ç”¨çš„åŸºæœ¬ç±»å‹æ··æ·†äº†ã€‚
+//åœ¨ Java 7ä¹‹å‰ï¼Œswitch åªèƒ½æ”¯æŒ byteã€shortã€charã€intæˆ–è€…å…¶å¯¹åº”çš„å°è£…ç±»ä»¥åŠ Enum ç±»å‹ã€‚åœ¨ Java 7ä¸­ï¼ŒStringæ”¯æŒè¢«åŠ ä¸Šäº†ã€‚
+//æšä¸¾çš„å£°æ˜ä¸­ï¼Œåªèƒ½ä½¿ç”¨å­—ç¬¦ä¸²ã€‚
 
 enum Shrubbery { GROUND, CRAWLING, HANGING }
-//enum BooleanEnum {true,false} ´íÎó
-//enum IntEnum {1,2,3} ´íÎó
-//enum CharEnum {a,b,c} ÕıÈ·
+//enum BooleanEnum {true,false} é”™è¯¯
+//enum IntEnum {1,2,3} é”™è¯¯
+//enum CharEnum {a,b,c} æ­£ç¡®
 
-public class Ã¶¾Ù_Enum {
+public class æšä¸¾_Enum {
 	 public static void main(String[] args) {
 		 for(Shrubbery s : Shrubbery.values()) {
 			 System.out.println(s + " ordinal: " + s.ordinal());

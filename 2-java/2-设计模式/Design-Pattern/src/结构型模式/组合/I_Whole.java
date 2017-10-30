@@ -1,4 +1,4 @@
-package ½á¹¹ĞÍÄ£Ê½.×éºÏ;
+package ç»“æ„å‹æ¨¡å¼.ç»„åˆ;
 
 import java.util.ArrayList;
 
@@ -16,7 +16,7 @@ public class I_Whole  implements Cloneable{
 		I_Whole whole = null;
 		try{  
             whole = (I_Whole)super.clone();  
-            whole.parts = (ArrayList<I_Part>) this.parts.clone(); //ÕâÀïÓĞ²Ù×÷£¬ÊÖ¶¯½øĞĞÁËÉî¿½±´¡£
+            whole.parts = (ArrayList<I_Part>) this.parts.clone(); //è¿™é‡Œæœ‰æ“ä½œï¼Œæ‰‹åŠ¨è¿›è¡Œäº†æ·±æ‹·è´ã€‚
         }catch(CloneNotSupportedException e){  
             e.printStackTrace();  
         }  

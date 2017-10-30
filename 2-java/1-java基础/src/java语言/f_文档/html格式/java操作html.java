@@ -1,6 +1,6 @@
-package java语言.f_文档.html格式;
+package java璇█.f_鏂囨。.html鏍煎紡;
 
-public class java操作html {
+public class java鎿嶄綔html {
 
 }
 

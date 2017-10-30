@@ -2,7 +2,7 @@
 // TIJ4 Chapter Holding, Exercise 9, page 409
 // Modify innerclasses/Sequence.java so that Sequence works with an Iterator
 // instead of a Selector.
-package javaÓïÑÔ.b_Êı¾İ.ÈİÆ÷.ÊµÓÃÈİÆ÷;
+package javaè¯­è¨€.b_æ•°æ®.å®¹å™¨.å®ç”¨å®¹å™¨;
 import java.util.*;
 
 public class Sequence9 {

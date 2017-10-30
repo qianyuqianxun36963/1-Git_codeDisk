@@ -1,4 +1,4 @@
-package javaÓïÑÔ.f_ÎÄµµ.json¸ñÊ½;
+package javaè¯­è¨€.f_æ–‡æ¡£.jsonæ ¼å¼;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -8,17 +8,17 @@ import java.util.Map;
 import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
 
-public class Java´¦Àíjson {
+public class Javaå¤„ç†json {
     /**
-     * ¹¹ÔìJsonÊı¾İ
+     * æ„é€ Jsonæ•°æ®
      * 
      * @return
      */
     public static String BuildJson() {
-        // JSON¸ñÊ½Êı¾İ½âÎö¶ÔÏó
+        // JSONæ ¼å¼æ•°æ®è§£æå¯¹è±¡
         JSONObject jo = new JSONObject();
 
-        // ÏÂÃæ¹¹ÔìÁ½¸ömap¡¢Ò»¸ölistºÍÒ»¸öEmployee¶ÔÏó
+        // ä¸‹é¢æ„é€ ä¸¤ä¸ªmapã€ä¸€ä¸ªlistå’Œä¸€ä¸ªEmployeeå¯¹è±¡
         Map<String, String> map1 = new HashMap<String, String>();
         map1.put("name", "Alexia");
         map1.put("sex", "female");
@@ -38,22 +38,22 @@ public class Java´¦Àíjson {
         employee.setSex("female");
         employee.setAge(24);
 
-        // ½«Map×ª»»ÎªJSONArrayÊı¾İ
+        // å°†Mapè½¬æ¢ä¸ºJSONArrayæ•°æ®
         JSONArray ja1 = JSONArray.fromObject(map1);
-        // ½«List×ª»»ÎªJSONArrayÊı¾İ
+        // å°†Listè½¬æ¢ä¸ºJSONArrayæ•°æ®
         JSONArray ja2 = JSONArray.fromObject(list);
-        // ½«Bean×ª»»ÎªJSONArrayÊı¾İ
+        // å°†Beanè½¬æ¢ä¸ºJSONArrayæ•°æ®
         JSONArray ja3 = JSONArray.fromObject(employee);
 
-        System.out.println("JSONArray¶ÔÏóÊı¾İ¸ñÊ½£º");
+        System.out.println("JSONArrayå¯¹è±¡æ•°æ®æ ¼å¼ï¼š");
         System.out.println(ja1.toString());
         System.out.println(ja2.toString());
         System.out.println(ja3.toString());
 
-        // ¹¹ÔìJsonÊı¾İ£¬°üÀ¨Ò»¸ömapºÍÒ»¸öEmployee¶ÔÏó
+        // æ„é€ Jsonæ•°æ®ï¼ŒåŒ…æ‹¬ä¸€ä¸ªmapå’Œä¸€ä¸ªEmployeeå¯¹è±¡
         jo.put("map", ja1);
         jo.put("employee", ja2);
-        System.out.println("\n×îÖÕ¹¹ÔìµÄJSONÊı¾İ¸ñÊ½£º");
+        System.out.println("\næœ€ç»ˆæ„é€ çš„JSONæ•°æ®æ ¼å¼ï¼š");
         System.out.println(jo.toString());
 
         return jo.toString();
@@ -61,19 +61,19 @@ public class Java´¦Àíjson {
     }
 
     /**
-     * ½âÎöJsonÊı¾İ
+     * è§£æJsonæ•°æ®
      * 
-     * @param jsonString JsonÊı¾İ×Ö·û´®
+     * @param jsonString Jsonæ•°æ®å­—ç¬¦ä¸²
      */
     public static void ParseJson(String jsonString) {
 
-        // ÒÔemployeeÎªÀı½âÎö£¬mapÀàËÆ
+        // ä»¥employeeä¸ºä¾‹è§£æï¼Œmapç±»ä¼¼
         JSONObject jb = JSONObject.fromObject(jsonString);
         JSONArray ja = jb.getJSONArray("employee");
 
         List<Employee> empList = new ArrayList<Employee>();
 
-        // Ñ­»·Ìí¼ÓEmployee¶ÔÏó£¨¿ÉÄÜÓĞ¶à¸ö£©
+        // å¾ªç¯æ·»åŠ Employeeå¯¹è±¡ï¼ˆå¯èƒ½æœ‰å¤šä¸ªï¼‰
         for (int i = 0; i < ja.size(); i++) {
             Employee employee = new Employee();
 
@@ -84,7 +84,7 @@ public class Java´¦Àíjson {
             empList.add(employee);
         }
 
-        System.out.println("\n½«JsonÊı¾İ×ª»»ÎªEmployee¶ÔÏó£º");
+        System.out.println("\nå°†Jsonæ•°æ®è½¬æ¢ä¸ºEmployeeå¯¹è±¡ï¼š");
         for (int i = 0; i < empList.size(); i++) {
             Employee emp = empList.get(i);
             System.out.println("name: " + emp.getName() + " sex: "

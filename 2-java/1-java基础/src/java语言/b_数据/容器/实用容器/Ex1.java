@@ -6,7 +6,7 @@
 * add Gerbil objects to the List. Now use the get() method to move through
 * the List and call hop() for each Gerbil.
 */
-package javaÓïÑÔ.b_Êı¾İ.ÈİÆ÷.ÊµÓÃÈİÆ÷;
+package javaè¯­è¨€.b_æ•°æ®.å®¹å™¨.å®ç”¨å®¹å™¨;
 
 import java.util.*;
 

@@ -1,10 +1,10 @@
-package javaÓïÑÔ.d_ÏµÍ³.ÍøÂç±à³Ì;
+package javaè¯­è¨€.d_ç³»ç»Ÿ.ç½‘ç»œç¼–ç¨‹;
 
 import java.io.*;
 import java.net.*;
 import java.util.*;
 
-import javaÓïÑÔ.d_ÏµÍ³.ÍøÂç±à³Ì.Server.CreateServerThread;
+import javaè¯­è¨€.d_ç³»ç»Ÿ.ç½‘ç»œç¼–ç¨‹.Server.CreateServerThread;
 //import java.lang.*;
 @SuppressWarnings("unused")
 public class Server extends ServerSocket
@@ -45,7 +45,7 @@ public static void main(String[] args) throws IOException
 new Server();
 }
 
-//--- Broadcast ¹ã²¥Ïß³Ì
+//--- Broadcast å¹¿æ’­çº¿ç¨‹
 class Broadcast extends Thread
 {
 public Broadcast()

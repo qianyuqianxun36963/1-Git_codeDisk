@@ -1,4 +1,4 @@
-package javaÓïÑÔ.f_ÎÄµµ.html¸ñÊ½;
+package javaè¯­è¨€.f_æ–‡æ¡£.htmlæ ¼å¼;
 
 import java.io.File;
 
@@ -10,24 +10,24 @@ import org.htmlparser.tags.LinkTag;
 import org.htmlparser.util.NodeList;
 import org.htmlparser.util.ParserException;
 
-public class ¸øhtml±êÌâ¼ÓÃªµã {
+public class ç»™htmlæ ‡é¢˜åŠ é”šç‚¹ {
     public static void main(String[] args) throws ParserException {
     	System.out.println("this is head");
 	    File directory = new File("");
 		String curPath=directory.getAbsolutePath(); 
-        String szContent = Utils.openFile(curPath+"\\src\\javaÓïÑÔ\\e_ÎÄµµ\\html¸ñÊ½\\test.html");
-        Parser parser = new Parser( szContent ); //ÕâÀïÊ¹ÓÃµÄ¾ÍÊÇµÚÒ»ÖÖ¹¹Ôì·½·¨¡£
+        String szContent = Utils.openFile(curPath+"\\src\\javaè¯­è¨€\\e_æ–‡æ¡£\\htmlæ ¼å¼\\test.html");
+        Parser parser = new Parser( szContent ); //è¿™é‡Œä½¿ç”¨çš„å°±æ˜¯ç¬¬ä¸€ç§æ„é€ æ–¹æ³•ã€‚
         changeH(parser);
     }
     
-    //ÎªÃ¿Ò»¸öh±êÇ©¼ÓÒ»¸öa±êÇ©£¬×÷ÎªÃªµã¡£²»¹ıºÃÏñµÃ²»µ½ÏëÒªµÄ½á¹û£¬ËùÒÔ¡£¡£»ù±¾Ã»ÓÃ¡£
+    //ä¸ºæ¯ä¸€ä¸ªhæ ‡ç­¾åŠ ä¸€ä¸ªaæ ‡ç­¾ï¼Œä½œä¸ºé”šç‚¹ã€‚ä¸è¿‡å¥½åƒå¾—ä¸åˆ°æƒ³è¦çš„ç»“æœï¼Œæ‰€ä»¥ã€‚ã€‚åŸºæœ¬æ²¡ç”¨ã€‚
 	public static void changeH(Parser parser) throws ParserException{
 		NodeFilter filter = new NodeClassFilter(HeadingTag.class);  
         NodeList nodes = parser.extractAllNodesThatMatch(filter);  
         
         if(nodes!=null) {
             for (int i = 0; i < nodes.size(); i++) {
-            	HeadingTag headTag = (HeadingTag) nodes.elementAt(i); //»ñÈ¡½Úµã¼¯ÖĞµÄÄ³Ò»¸ö½Úµã¡£
+            	HeadingTag headTag = (HeadingTag) nodes.elementAt(i); //è·å–èŠ‚ç‚¹é›†ä¸­çš„æŸä¸€ä¸ªèŠ‚ç‚¹ã€‚
             	Utils.message("headTag:"+headTag.getText());
             	NodeList list = new NodeList();
             	LinkTag linkTag = new LinkTag();

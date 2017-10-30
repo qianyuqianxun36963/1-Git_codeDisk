@@ -1,4 +1,4 @@
-package javaÓïÑÔ.d_ÏµÍ³.io²Ù×÷;
+package javaè¯­è¨€.d_ç³»ç»Ÿ.ioæ“ä½œ;
 
 import java.io.BufferedReader;  
 import java.io.File;  
@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.regex.Matcher;  
 import java.util.regex.Pattern;  
 
-public class ÎÄ¼ş¶ÁÈë»º´æ {
+public class æ–‡ä»¶è¯»å…¥ç¼“å­˜ {
 	public static void main(String args[]){
 		CacheTest.test();
 	}
@@ -17,7 +17,7 @@ public class ÎÄ¼ş¶ÁÈë»º´æ {
 
 class Cache {  
     @SuppressWarnings("rawtypes")
-	private ArrayList list = new ArrayList();  //±£´æ´ÓÎÄ¼şÖĞ¶ÁÈ¡µÄÄÚÈİ  
+	private ArrayList list = new ArrayList();  //ä¿å­˜ä»æ–‡ä»¶ä¸­è¯»å–çš„å†…å®¹  
     @SuppressWarnings("unchecked")
 	public Cache(File file){  
         try {  
@@ -48,31 +48,31 @@ class CacheTest{
   
     	File directory = new File("");
     	String curPath=directory.getAbsolutePath();
-    	File file = new File(curPath+"/src/javaÓïÑÔ/d_ÏµÍ³/io²Ù×÷/files/BufferTest.txt");
+    	File file = new File(curPath+"/src/javaè¯­è¨€/d_ç³»ç»Ÿ/ioæ“ä½œ/files/BufferTest.txt");
 
     	CacheTest t = new CacheTest();  
           
         long start = System.currentTimeMillis();  
         for(int i=0;i<1000;i++)
-        t.search1(file, "//.+");   //Æ¥Åä×¢ÊÍ 
-        System.out.println("Ã»ÓĞÓÃ»º´æºÄÊ±£º"+(System.currentTimeMillis()-start)+"MS");  
+        t.search1(file, "//.+");   //åŒ¹é…æ³¨é‡Š 
+        System.out.println("æ²¡æœ‰ç”¨ç¼“å­˜è€—æ—¶ï¼š"+(System.currentTimeMillis()-start)+"MS");  
           
         start = System.currentTimeMillis();  
         for(int i=0;i<1000;i++)
-        t.search2(file, "//.+");   //Æ¥Åä×¢ÊÍ 
-        System.out.println("ÓÃ»º´æºÄÊ±£º"+(System.currentTimeMillis()-start)+"MS");  
+        t.search2(file, "//.+");   //åŒ¹é…æ³¨é‡Š 
+        System.out.println("ç”¨ç¼“å­˜è€—æ—¶ï¼š"+(System.currentTimeMillis()-start)+"MS");  
     }  
   
     
     
-    public void search1(File file,String pattern){  //²»Ê¹ÓÃ»º´æ  
+    public void search1(File file,String pattern){  //ä¸ä½¿ç”¨ç¼“å­˜  
         try {  
             FileReader fr = new FileReader(file);  
             BufferedReader br = new BufferedReader(fr);  
             String line;  
             Pattern searched = Pattern.compile(pattern);  
             Matcher lm;  
-            int lines = 0; //¼ÇÂ¼×¢ÊÍĞĞÊı  
+            int lines = 0; //è®°å½•æ³¨é‡Šè¡Œæ•°  
             while((line = br.readLine())!=null){  
                 lm = searched.matcher(line);  
                 if(lm.find()) lines ++;  
@@ -87,7 +87,7 @@ class CacheTest{
           
     }  
       
-    public void search2(File file,String pattern){ //Ê¹ÓÃ»º´æ£¬  
+    public void search2(File file,String pattern){ //ä½¿ç”¨ç¼“å­˜ï¼Œ  
         if(cache==null)  
             cache = new Cache(file);  
             String line;  

@@ -1,11 +1,11 @@
-package javaÓïÑÔ.d_ÏµÍ³.Ê±¼äÏà¹Ø;
+package javaè¯­è¨€.d_ç³»ç»Ÿ.æ—¶é—´ç›¸å…³;
 
 import java.util.Calendar;  
 import java.util.Date;  
 import java.util.Timer;  
 import java.util.TimerTask;  
   
-public class ¼ÆÊ±³ÌĞò {  
+public class è®¡æ—¶ç¨‹åº {  
     public static void main(String[] args) {  
         timer1();  
 //        timer2();  
@@ -13,54 +13,54 @@ public class ¼ÆÊ±³ÌĞò {
 //        timer4();  
     }  
   
-    // µÚÒ»ÖÖ·½·¨£ºÉè¶¨Ö¸¶¨ÈÎÎñtaskÔÚÖ¸¶¨Ê±¼ätimeÖ´ĞĞ schedule(TimerTask task, Date time)  
+    // ç¬¬ä¸€ç§æ–¹æ³•ï¼šè®¾å®šæŒ‡å®šä»»åŠ¡taskåœ¨æŒ‡å®šæ—¶é—´timeæ‰§è¡Œ schedule(TimerTask task, Date time)  
     public static void timer1() {  
         Timer timer = new Timer();  
         timer.schedule(new TimerTask() {  
             public void run() {  
-                System.out.println("-------Éè¶¨ÒªÖ¸¶¨ÈÎÎñ--------");  
+                System.out.println("-------è®¾å®šè¦æŒ‡å®šä»»åŠ¡--------");  
             }  
-        }, 2000);// Éè¶¨Ö¸¶¨µÄÊ±¼ätime,´Ë´¦Îª2000ºÁÃë  
+        }, 2000);// è®¾å®šæŒ‡å®šçš„æ—¶é—´time,æ­¤å¤„ä¸º2000æ¯«ç§’  
     }  
   
-    // µÚ¶şÖÖ·½·¨£ºÉè¶¨Ö¸¶¨ÈÎÎñtaskÔÚÖ¸¶¨ÑÓ³Ùdelayºó½øĞĞ¹Ì¶¨ÑÓ³ÙperoidÖ´ĞĞ   //×¢Òâ£¬ÕâÀïÊÇ¹Ì¶¨ÑÓ³Ù¡£ 
+    // ç¬¬äºŒç§æ–¹æ³•ï¼šè®¾å®šæŒ‡å®šä»»åŠ¡taskåœ¨æŒ‡å®šå»¶è¿Ÿdelayåè¿›è¡Œå›ºå®šå»¶è¿Ÿperoidæ‰§è¡Œ   //æ³¨æ„ï¼Œè¿™é‡Œæ˜¯å›ºå®šå»¶è¿Ÿã€‚ 
     // schedule(TimerTask task, long delay, long period)  
     public static void timer2() {  
         Timer timer = new Timer();  
         timer.schedule(new TimerTask() {  
             public void run() {  
-                System.out.println("-------Éè¶¨ÒªÖ¸¶¨ÈÎÎñ--------");  
+                System.out.println("-------è®¾å®šè¦æŒ‡å®šä»»åŠ¡--------");  
             }  
         }, 1000, 1000);  
     }  
   
-    // µÚÈıÖÖ·½·¨£ºÉè¶¨Ö¸¶¨ÈÎÎñtaskÔÚÖ¸¶¨ÑÓ³Ùdelayºó½øĞĞ¹Ì¶¨ËÙÂÊperoidÖ´ĞĞ¡£  //×¢Òâ£¬ÕâÀïÊÇ¹Ì¶¨ËÙÂÊ¡£
+    // ç¬¬ä¸‰ç§æ–¹æ³•ï¼šè®¾å®šæŒ‡å®šä»»åŠ¡taskåœ¨æŒ‡å®šå»¶è¿Ÿdelayåè¿›è¡Œå›ºå®šé€Ÿç‡peroidæ‰§è¡Œã€‚  //æ³¨æ„ï¼Œè¿™é‡Œæ˜¯å›ºå®šé€Ÿç‡ã€‚
     // scheduleAtFixedRate(TimerTask task, long delay, long period)  
     public static void timer3() {  
         Timer timer = new Timer();  
         timer.scheduleAtFixedRate(new TimerTask() {  
             public void run() {  
-                System.out.println("-------Éè¶¨ÒªÖ¸¶¨ÈÎÎñ--------");  
+                System.out.println("-------è®¾å®šè¦æŒ‡å®šä»»åŠ¡--------");  
             }  
         }, 1000, 2000);  
     }  
      
-    // µÚËÄÖÖ·½·¨£º°²ÅÅÖ¸¶¨µÄÈÎÎñtaskÔÚÖ¸¶¨µÄÊ±¼äfirstTime¿ªÊ¼½øĞĞÖØ¸´µÄ¹Ì¶¨ËÙÂÊperiodÖ´ĞĞ£®  
+    // ç¬¬å››ç§æ–¹æ³•ï¼šå®‰æ’æŒ‡å®šçš„ä»»åŠ¡taskåœ¨æŒ‡å®šçš„æ—¶é—´firstTimeå¼€å§‹è¿›è¡Œé‡å¤çš„å›ºå®šé€Ÿç‡periodæ‰§è¡Œï¼  
     // Timer.scheduleAtFixedRate(TimerTask task,Date firstTime,long period)  
     public static void timer4() {  
         Calendar calendar = Calendar.getInstance();  
-        calendar.set(Calendar.HOUR_OF_DAY, 12); // ¿ØÖÆÊ±  
-        calendar.set(Calendar.MINUTE, 0);       // ¿ØÖÆ·Ö  
-        calendar.set(Calendar.SECOND, 0);       // ¿ØÖÆÃë  
+        calendar.set(Calendar.HOUR_OF_DAY, 12); // æ§åˆ¶æ—¶  
+        calendar.set(Calendar.MINUTE, 0);       // æ§åˆ¶åˆ†  
+        calendar.set(Calendar.SECOND, 0);       // æ§åˆ¶ç§’  
   
-        Date time = calendar.getTime();         // µÃ³öÖ´ĞĞÈÎÎñµÄÊ±¼ä,´Ë´¦Îª½ñÌìµÄ12£º00£º00  
+        Date time = calendar.getTime();         // å¾—å‡ºæ‰§è¡Œä»»åŠ¡çš„æ—¶é—´,æ­¤å¤„ä¸ºä»Šå¤©çš„12ï¼š00ï¼š00  
   
         Timer timer = new Timer();  
         timer.scheduleAtFixedRate(new TimerTask() {  
             public void run() {  
-                System.out.println("-------Éè¶¨ÒªÖ¸¶¨ÈÎÎñ--------");  
+                System.out.println("-------è®¾å®šè¦æŒ‡å®šä»»åŠ¡--------");  
             }  
-        }, time, 1000 * 60 * 60 * 24);// ÕâÀïÉè¶¨½«ÑÓÊ±Ã¿Ìì¹Ì¶¨Ö´ĞĞ 
+        }, time, 1000 * 60 * 60 * 24);// è¿™é‡Œè®¾å®šå°†å»¶æ—¶æ¯å¤©å›ºå®šæ‰§è¡Œ 
         
     }  
 }  

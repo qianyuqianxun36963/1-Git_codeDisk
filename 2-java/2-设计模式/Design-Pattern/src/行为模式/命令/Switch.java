@@ -1,4 +1,4 @@
-package 行为模式.命令;
+package 琛屼负妯″紡.鍛戒护;
 
 public class Switch {
 	private Command UpCommand, DownCommand;

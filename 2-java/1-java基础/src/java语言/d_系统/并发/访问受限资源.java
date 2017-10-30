@@ -1,6 +1,6 @@
-package java语言.d_系统.并发;
+package java璇█.d_绯荤粺.骞跺彂;
 
-public class 访问受限资源 {
+public class 璁块棶鍙楅檺璧勬簮 {
 
 	public static void main(String args[]){
 		WrongWay();

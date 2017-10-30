@@ -1,10 +1,10 @@
-package javaÓïÑÔ.b_Êı¾İ.ÈİÆ÷.ÊµÓÃÈİÆ÷.Ó¦ÓÃ;
+package javaè¯­è¨€.b_æ•°æ®.å®¹å™¨.å®ç”¨å®¹å™¨.åº”ç”¨;
 
 
 import java.util.HashMap;
 import java.util.Scanner;
 
-public class ÍøÒ×²âÊÔËØ²ÄÍ³¼Æ {
+public class ç½‘æ˜“æµ‹è¯•ç´ æç»Ÿè®¡ {
 
 	public static void main(String[] args) {
 		int count = 0;

@@ -1,4 +1,4 @@
-package ´´½¨ĞÍÄ£Ê½.¹¤³§Ä£Ê½;
+package åˆ›å»ºå‹æ¨¡å¼.å·¥å‚æ¨¡å¼;
 
 public abstract class Factory_Abstract {
 	abstract I_Moveable getMoveable();

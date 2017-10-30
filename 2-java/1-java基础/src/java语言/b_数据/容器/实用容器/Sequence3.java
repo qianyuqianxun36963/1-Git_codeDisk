@@ -3,7 +3,7 @@
 /* Modify innerclasses/Sequence.java so that you can add any number
 * of elements to it.
 */
-package javaÓïÑÔ.b_Êı¾İ.ÈİÆ÷.ÊµÓÃÈİÆ÷;
+package javaè¯­è¨€.b_æ•°æ®.å®¹å™¨.å®ç”¨å®¹å™¨;
 import java.util.*;
 
 interface Selector {

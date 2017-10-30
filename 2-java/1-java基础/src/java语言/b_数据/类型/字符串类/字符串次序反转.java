@@ -1,8 +1,8 @@
-package javaÓïÑÔ.b_Êı¾İ.ÀàĞÍ.×Ö·û´®Àà;
+package javaè¯­è¨€.b_æ•°æ®.ç±»å‹.å­—ç¬¦ä¸²ç±»;
 
 import org.junit.Test;
 
-public class ×Ö·û´®´ÎĞò·´×ª {
+public class å­—ç¬¦ä¸²æ¬¡åºåè½¬ {
 	@Test
 	public void test() {
 		String s = "hello";

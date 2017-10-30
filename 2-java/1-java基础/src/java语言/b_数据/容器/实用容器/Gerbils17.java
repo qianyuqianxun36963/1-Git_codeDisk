@@ -6,7 +6,7 @@
 * the keySet() and use it to move through the Map, looking up the Gerbil for
 * each key and printing out the key and telling the Gerbil to hop().
 */
-package javaÓïÑÔ.b_Êı¾İ.ÈİÆ÷.ÊµÓÃÈİÆ÷;
+package javaè¯­è¨€.b_æ•°æ®.å®¹å™¨.å®ç”¨å®¹å™¨;
 
 import java.util.*;
 

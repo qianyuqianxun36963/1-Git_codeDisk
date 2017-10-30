@@ -1,4 +1,4 @@
-package 行为模式.策略;
+package 琛屼负妯″紡.绛栫暐;
 //40 10 30 10 20 30 30 20 20 30 13645645571
 public class Client {
     public static void main(String[] args) {

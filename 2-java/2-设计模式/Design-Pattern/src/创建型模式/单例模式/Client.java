@@ -1,8 +1,8 @@
-package ´´½¨ĞÍÄ£Ê½.µ¥ÀıÄ£Ê½;
+package åˆ›å»ºå‹æ¨¡å¼.å•ä¾‹æ¨¡å¼;
 
 public class Client {
 	public static void main(String args[]){
-		//Õâ¸öµ¥Àı¹¤³§£¬±¾Éí¾ÍÊÇµ¥ÀıµÄ£¬ËüÖ»ÓĞÒ»¸öÊµÀı¡£
+		//è¿™ä¸ªå•ä¾‹å·¥å‚ï¼Œæœ¬èº«å°±æ˜¯å•ä¾‹çš„ï¼Œå®ƒåªæœ‰ä¸€ä¸ªå®ä¾‹ã€‚
 		SingletonFactory singFactory = SingletonFactory.getInstance();
 		singFactory.printLabel();
 	}

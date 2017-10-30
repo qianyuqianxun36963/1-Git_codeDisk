@@ -1,5 +1,5 @@
-package javaÓïÑÔ.b_Êı¾İ.ÈİÆ÷.ÊµÓÃÈİÆ÷;
-//package javaÓïÑÔ.Êı¾İ.ÈİÆ÷.ÊµÓÃÈİÆ÷;
+package javaè¯­è¨€.b_æ•°æ®.å®¹å™¨.å®ç”¨å®¹å™¨;
+//package javaè¯­è¨€.æ•°æ®.å®¹å™¨.å®ç”¨å®¹å™¨;
 //
 //// holding/CollectionSequence30.java
 //import typeinfo.pets.*;

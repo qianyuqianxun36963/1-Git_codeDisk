@@ -4,7 +4,7 @@
 * by hash code. Extract the pairs, sort by key, and place the result into a 
 * LinkedHashMap. Show that the insertion order is maintained. 
 */
-package javaÓïÑÔ.b_Êı¾İ.ÈİÆ÷.ÊµÓÃÈİÆ÷;
+package javaè¯­è¨€.b_æ•°æ®.å®¹å™¨.å®ç”¨å®¹å™¨;
 import java.util.*;
 
 public class Ex18 {

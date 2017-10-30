@@ -1,3 +1,5 @@
+本地还要配置下nginx服务。
+
 use my_web;
 
 drop table if exists fileinfo;

@@ -1,6 +1,7 @@
-package ĞĞÎªÄ£Ê½.¹Û²ìÕß;
+package è¡Œä¸ºæ¨¡å¼.è§‚å¯Ÿè€…;
 
 public class Xtd_ObserverManB extends A_Observer{
+	
 	Xtd_ObserverManB(A_Subject subject){
 		this.subject = subject;
 		this.subject.attach(this);

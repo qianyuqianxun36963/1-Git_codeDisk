@@ -1,4 +1,4 @@
-package ´´½¨ĞÍÄ£Ê½.Éú³ÉÆ÷;
+package åˆ›å»ºå‹æ¨¡å¼.ç”Ÿæˆå™¨;
 
 public abstract class I_Builder {
 	public abstract void buildComputer();

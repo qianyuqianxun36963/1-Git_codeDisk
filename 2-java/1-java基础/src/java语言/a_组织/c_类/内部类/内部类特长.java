@@ -1,10 +1,10 @@
-package javaÓïÑÔ.a_×éÖ¯.c_Àà.ÄÚ²¿Àà;
+package javaè¯­è¨€.a_ç»„ç»‡.c_ç±».å†…éƒ¨ç±»;
 
-//ÆÕÍ¨µÄ£¨·ÇÄÚ²¿µÄ£©Àà£¬²»ÄÜÉùÃ÷Îªprivate»òprotected£»ËûÃÇÖ»ÄÜ±»¸³Óèpublic»òÕß°ü·ÃÎÊÈ¨ÏŞ¡£
+//æ™®é€šçš„ï¼ˆéå†…éƒ¨çš„ï¼‰ç±»ï¼Œä¸èƒ½å£°æ˜ä¸ºprivateæˆ–protectedï¼›ä»–ä»¬åªèƒ½è¢«èµ‹äºˆpublicæˆ–è€…åŒ…è®¿é—®æƒé™ã€‚
 
-//javaÀàÖ»ÄÜµ¥¼Ì³Ğ£¬Ê¹ÓÃÄÚ²¿Àà£¬¿ÉÒÔÍ¨¹ıÄÚ²¿ÀàÀ´¼Ì³ĞÆäËû¸¸Àà¡£
+//javaç±»åªèƒ½å•ç»§æ‰¿ï¼Œä½¿ç”¨å†…éƒ¨ç±»ï¼Œå¯ä»¥é€šè¿‡å†…éƒ¨ç±»æ¥ç»§æ‰¿å…¶ä»–çˆ¶ç±»ã€‚
 
-public class ÄÚ²¿ÀàÌØ³¤ extends Father{
+public class å†…éƒ¨ç±»ç‰¹é•¿ extends Father{
 	private class SonA extends FatherA{}
 	protected class SonB extends FatherB{};
 	
@@ -12,7 +12,7 @@ public class ÄÚ²¿ÀàÌØ³¤ extends Father{
 	SonB sonb = new SonB();
 	
 	public static void main(String args[]){
-		ÄÚ²¿ÀàÌØ³¤  insideClass = new ÄÚ²¿ÀàÌØ³¤();
+		å†…éƒ¨ç±»ç‰¹é•¿  insideClass = new å†…éƒ¨ç±»ç‰¹é•¿();
 		insideClass.printname();
 		insideClass.sona.printname();
 		insideClass.sonb.printname();

@@ -1,8 +1,8 @@
-package ´´½¨ĞÍÄ£Ê½.Ô­ĞÍ;
+package åˆ›å»ºå‹æ¨¡å¼.åŸå‹;
 
 public class ConcretePrototype extends Prototype{  
     public void show(){  
-        System.out.println("Ô­ĞÍÄ£Ê½ÊµÏÖÀà");  
+        System.out.println("åŸå‹æ¨¡å¼å®ç°ç±»");  
         for(Object i:list1){
         	System.out.println("list1: "+i);
         }

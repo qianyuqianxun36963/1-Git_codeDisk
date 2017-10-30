@@ -1,4 +1,4 @@
-package ��Ϊģʽ.״̬;
+package 行为模式.状态;
 
 public class Xtd_StateSend extends Impl_State{
 	private static Xtd_StateSend statesend = null;

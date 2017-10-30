@@ -1,18 +1,18 @@
-package javaÓïÑÔ.d_ÏµÍ³.io²Ù×÷;
+package javaè¯­è¨€.d_ç³»ç»Ÿ.ioæ“ä½œ;
 
-import javaÓïÑÔ.e_¶Ô½Ó.ÕıÔò±í´ïÊ½.ÕıÔò±í´ïÊ½;
+import javaè¯­è¨€.e_å¯¹æ¥.æ­£åˆ™è¡¨è¾¾å¼.æ­£åˆ™è¡¨è¾¾å¼;
 
 import java.io.*;
 
 
-public class ÎÄ¼şÀà {
+public class æ–‡ä»¶ç±» {
 	public static void main(String[] args) throws IOException {
 		  String curpath = FileNameAndPath.getcurpath();
 		  System.out.println("current file path:" + curpath);
 //		  File dir=new File(FileNameAndPath.getcurpath());
 		  
-//		      ×¢ÒâÕâÀïÒª¼Ó¡®scr¡¯¡£
-		  String filepath = curpath+"/src/javaÓïÑÔ/c_ÏµÍ³/io²Ù×÷/files";
+//		      æ³¨æ„è¿™é‡Œè¦åŠ â€˜scrâ€™ã€‚
+		  String filepath = curpath+"/src/javaè¯­è¨€/c_ç³»ç»Ÿ/ioæ“ä½œ/files";
 		  ChangeFileUtil.changeName("2.txt", "1.txt", filepath);
 		  
 //		  MakeFileUtil.mkdir_withdir("C:/java/files");
@@ -20,15 +20,15 @@ public class ÎÄ¼şÀà {
 //		  MakeFileUtil.mkfile_withdir("C:/java/files/file.txt");
 //		  MakeFileUtil.mkfile_withoutdir("C:/java/files/file.txt");
 
-//		  ChangeFileUtil.changeNames_KeepPart("G:/Éú»î/ÊÓÆµ/Ò»È­³¬ÈË","Ò»È­³¬ÈË","\\d{2}","rmvb");
-//		  ChangeFileUtil.changeNames_RemovePart("E:/java/workspace/java¹¤¾ßÀà","\\[([\\s\\S]*)\\]","rmvb");
+//		  ChangeFileUtil.changeNames_KeepPart("G:/ç”Ÿæ´»/è§†é¢‘/ä¸€æ‹³è¶…äºº","ä¸€æ‹³è¶…äºº","\\d{2}","rmvb");
+//		  ChangeFileUtil.changeNames_RemovePart("E:/java/workspace/javaå·¥å…·ç±»","\\[([\\s\\S]*)\\]","rmvb");
 //        ShowFileUtil.showChildFiles(dir,"file");
 //        ShowFileUtil.showChildFiles(dir,"string");
 //        ShowFileUtil.showFileInfs(file);
 //        ShowFileUtil.showChoisedFiles(dir,"string","java");
 //        ExecuteFileUtil.executeFile();
       
-//        String filepath="E:/1-java\\\\webApps\\webÍøÂç¹¦ÄÜ/\3-¹¦ÄÜ³¡¾°\\excel²Ù×÷\\src\\exportExcel_freemark\\outExcel.xls";
+//        String filepath="E:/1-java\\\\webApps\\webç½‘ç»œåŠŸèƒ½/\3-åŠŸèƒ½åœºæ™¯\\excelæ“ä½œ\\src\\exportExcel_freemark\\outExcel.xls";
 //        System.out.println(FileNameAndPath.getfileDir(filepath));
 //        System.out.println(FileNameAndPath.getfilename(filepath));
 	}
@@ -39,12 +39,12 @@ class MakeFileUtil{
 	
 	public static void mkdir_withdir(String filePath){
  		File dir=new File(filePath);
-        System.out.println( dir.mkdir());//mkdir ´´½¨Ä¿Â¼£¬µ«ÊÇÈç¹û¸¸Ò»¼¶Ä¿Â¼²»´æÔÚ£¬Ëû»á·µ»Øfalse¶ø²»´´½¨Ä¿Â¼¡£API:mkdir
+        System.out.println( dir.mkdir());//mkdir åˆ›å»ºç›®å½•ï¼Œä½†æ˜¯å¦‚æœçˆ¶ä¸€çº§ç›®å½•ä¸å­˜åœ¨ï¼Œä»–ä¼šè¿”å›falseè€Œä¸åˆ›å»ºç›®å½•ã€‚API:mkdir
 	}
 	
 	public static void mkdir_withoutdir(String filePath){
  		File dir=new File(filePath);
-        System.out.println( dir.mkdirs());//mkdirs ´´½¨ËùÓĞÂ·¾¶£¬Æ¾¿Õ´´½¨£¬Ã»ÓĞ¸¸Ä¿Â¼µÄÊ±ºò»á´´½¨ËùÓĞĞèÒªµÄÇ°ÃæµÄÄ¿Â¼¡£¡£
+        System.out.println( dir.mkdirs());//mkdirs åˆ›å»ºæ‰€æœ‰è·¯å¾„ï¼Œå‡­ç©ºåˆ›å»ºï¼Œæ²¡æœ‰çˆ¶ç›®å½•çš„æ—¶å€™ä¼šåˆ›å»ºæ‰€æœ‰éœ€è¦çš„å‰é¢çš„ç›®å½•ã€‚ã€‚
 	}
 	
 	public static void mkfile_withdir(String filePath) throws IOException{
@@ -52,7 +52,7 @@ class MakeFileUtil{
 		System.out.println( file.createNewFile());
 	}
 	
-	//½ØÈ¡Ò»¸öÎÄ¼şÃûÇ°ÃæµÄÄ¿Â¼Ãû£¬Èç¹ûÄ¿Â¼ÒÑ¾­´æÔÚ£¬Ôò²»¶¯£¬Èô²»´æÔÚ£¬Ôò´´½¨¡£
+	//æˆªå–ä¸€ä¸ªæ–‡ä»¶åå‰é¢çš„ç›®å½•åï¼Œå¦‚æœç›®å½•å·²ç»å­˜åœ¨ï¼Œåˆ™ä¸åŠ¨ï¼Œè‹¥ä¸å­˜åœ¨ï¼Œåˆ™åˆ›å»ºã€‚
 	public static void mkfile_withoutdir(String filePath){
 		try{
 			filePath = filePath.replace("\\", "/");
@@ -69,7 +69,7 @@ class MakeFileUtil{
 }
 
 /** 
- * É¾³ıÎÄ¼şºÍÄ¿Â¼ 
+ * åˆ é™¤æ–‡ä»¶å’Œç›®å½• 
  *  
  * @author chen 
  *  
@@ -77,16 +77,16 @@ class MakeFileUtil{
 class DeleteFileUtil {  
   
  /** 
-  * É¾³ıÎÄ¼ş£¬¿ÉÒÔÊÇÎÄ¼ş»òÎÄ¼ş¼Ğ 
+  * åˆ é™¤æ–‡ä»¶ï¼Œå¯ä»¥æ˜¯æ–‡ä»¶æˆ–æ–‡ä»¶å¤¹ 
   *  
   * @param fileName 
-  *            ÒªÉ¾³ıµÄÎÄ¼şÃû 
-  * @return É¾³ı³É¹¦·µ»Øtrue£¬·ñÔò·µ»Øfalse 
+  *            è¦åˆ é™¤çš„æ–‡ä»¶å 
+  * @return åˆ é™¤æˆåŠŸè¿”å›trueï¼Œå¦åˆ™è¿”å›false 
   */  
 	public static boolean delete(String fileName) {  
 	    File file = new File(fileName);  
 	    if (!file.exists()) {  
-	        System.out.println("É¾³ıÎÄ¼şÊ§°Ü:" + fileName + "²»´æÔÚ£¡");  
+	        System.out.println("åˆ é™¤æ–‡ä»¶å¤±è´¥:" + fileName + "ä¸å­˜åœ¨ï¼");  
 	        return false;  
 	    } else {  
 	        if (file.isFile())  
@@ -97,58 +97,58 @@ class DeleteFileUtil {
 	}  
   
  /** 
-  * É¾³ıµ¥¸öÎÄ¼ş 
+  * åˆ é™¤å•ä¸ªæ–‡ä»¶ 
   *  
   * @param fileName 
-  *            ÒªÉ¾³ıµÄÎÄ¼şµÄÎÄ¼şÃû 
-  * @return µ¥¸öÎÄ¼şÉ¾³ı³É¹¦·µ»Øtrue£¬·ñÔò·µ»Øfalse 
+  *            è¦åˆ é™¤çš„æ–‡ä»¶çš„æ–‡ä»¶å 
+  * @return å•ä¸ªæ–‡ä»¶åˆ é™¤æˆåŠŸè¿”å›trueï¼Œå¦åˆ™è¿”å›false 
   */  
 	public static boolean deleteFile(String fileName) {  
 	    File file = new File(fileName);  
-	    // Èç¹ûÎÄ¼şÂ·¾¶Ëù¶ÔÓ¦µÄÎÄ¼ş´æÔÚ£¬²¢ÇÒÊÇÒ»¸öÎÄ¼ş£¬ÔòÖ±½ÓÉ¾³ı  
+	    // å¦‚æœæ–‡ä»¶è·¯å¾„æ‰€å¯¹åº”çš„æ–‡ä»¶å­˜åœ¨ï¼Œå¹¶ä¸”æ˜¯ä¸€ä¸ªæ–‡ä»¶ï¼Œåˆ™ç›´æ¥åˆ é™¤  
 	        if (file.exists() && file.isFile()) {  
 	        if (file.delete()) {  
-	            System.out.println("É¾³ıµ¥¸öÎÄ¼ş" + fileName + "³É¹¦£¡");  
+	            System.out.println("åˆ é™¤å•ä¸ªæ–‡ä»¶" + fileName + "æˆåŠŸï¼");  
 	            return true;  
 	        } else {  
-	            System.out.println("É¾³ıµ¥¸öÎÄ¼ş" + fileName + "Ê§°Ü£¡");  
+	            System.out.println("åˆ é™¤å•ä¸ªæ–‡ä»¶" + fileName + "å¤±è´¥ï¼");  
 	            return false;  
 	        }  
 	    } else {  
-	        System.out.println("É¾³ıµ¥¸öÎÄ¼şÊ§°Ü£º" + fileName + "²»´æÔÚ£¡");  
+	        System.out.println("åˆ é™¤å•ä¸ªæ–‡ä»¶å¤±è´¥ï¼š" + fileName + "ä¸å­˜åœ¨ï¼");  
 	        return false;  
 	    }  
 	} 
   
  /** 
-  * É¾³ıÄ¿Â¼¼°Ä¿Â¼ÏÂµÄÎÄ¼ş 
+  * åˆ é™¤ç›®å½•åŠç›®å½•ä¸‹çš„æ–‡ä»¶ 
   *  
   * @param dir 
-  *            ÒªÉ¾³ıµÄÄ¿Â¼µÄÎÄ¼şÂ·¾¶ 
-  * @return Ä¿Â¼É¾³ı³É¹¦·µ»Øtrue£¬·ñÔò·µ»Øfalse 
+  *            è¦åˆ é™¤çš„ç›®å½•çš„æ–‡ä»¶è·¯å¾„ 
+  * @return ç›®å½•åˆ é™¤æˆåŠŸè¿”å›trueï¼Œå¦åˆ™è¿”å›false 
   */  
 
 public static boolean deleteDirectory(String dir) {  
-    // Èç¹ûdir²»ÒÔÎÄ¼ş·Ö¸ô·û½áÎ²£¬×Ô¶¯Ìí¼ÓÎÄ¼ş·Ö¸ô·û  
+    // å¦‚æœdirä¸ä»¥æ–‡ä»¶åˆ†éš”ç¬¦ç»“å°¾ï¼Œè‡ªåŠ¨æ·»åŠ æ–‡ä»¶åˆ†éš”ç¬¦  
     if (!dir.endsWith(File.separator))  
         dir = dir + File.separator;  
     File dirFile = new File(dir);  
-    // Èç¹ûdir¶ÔÓ¦µÄÎÄ¼ş²»´æÔÚ£¬»òÕß²»ÊÇÒ»¸öÄ¿Â¼£¬ÔòÍË³ö  
+    // å¦‚æœdirå¯¹åº”çš„æ–‡ä»¶ä¸å­˜åœ¨ï¼Œæˆ–è€…ä¸æ˜¯ä¸€ä¸ªç›®å½•ï¼Œåˆ™é€€å‡º  
     if ((!dirFile.exists()) || (!dirFile.isDirectory())) {  
-        System.out.println("É¾³ıÄ¿Â¼Ê§°Ü£º" + dir + "²»´æÔÚ£¡");  
+        System.out.println("åˆ é™¤ç›®å½•å¤±è´¥ï¼š" + dir + "ä¸å­˜åœ¨ï¼");  
         return false;  
     }  
     boolean flag = true;  
-    // É¾³ıÎÄ¼ş¼ĞÖĞµÄËùÓĞÎÄ¼ş°üÀ¨×ÓÄ¿Â¼  
+    // åˆ é™¤æ–‡ä»¶å¤¹ä¸­çš„æ‰€æœ‰æ–‡ä»¶åŒ…æ‹¬å­ç›®å½•  
     File[] files = dirFile.listFiles();  
     for (int i = 0; i < files.length; i++) {  
-        // É¾³ı×ÓÎÄ¼ş  
+        // åˆ é™¤å­æ–‡ä»¶  
         if (files[i].isFile()) {  
             flag = DeleteFileUtil.deleteFile(files[i].getAbsolutePath());  
             if (!flag)  
                 break;  
         }  
-        // É¾³ı×ÓÄ¿Â¼  
+        // åˆ é™¤å­ç›®å½•  
         else if (files[i].isDirectory()) {  
             flag = DeleteFileUtil.deleteDirectory(files[i].getAbsolutePath());  
             if (!flag)  
@@ -156,12 +156,12 @@ public static boolean deleteDirectory(String dir) {
         }  
     }  
     if (!flag) {  
-        System.out.println("É¾³ıÄ¿Â¼Ê§°Ü£¡");  
+        System.out.println("åˆ é™¤ç›®å½•å¤±è´¥ï¼");  
         return false;  
     }  
-    // É¾³ıµ±Ç°Ä¿Â¼  
+    // åˆ é™¤å½“å‰ç›®å½•  
     if (dirFile.delete()) {  
-        System.out.println("É¾³ıÄ¿Â¼" + dir + "³É¹¦£¡");  
+        System.out.println("åˆ é™¤ç›®å½•" + dir + "æˆåŠŸï¼");  
         return true;  
     } else {  
         return false;  
@@ -169,15 +169,15 @@ public static boolean deleteDirectory(String dir) {
 }  
   
  public static void main(String[] args) {  
-//  // É¾³ıµ¥¸öÎÄ¼ş  
+//  // åˆ é™¤å•ä¸ªæ–‡ä»¶  
 //  String file = "c:/test/test.txt";  
 //  DeleteFileUtil.deleteFile(file);  
 //  System.out.println();  
-//  //É¾³ıÒ»¸öÄ¿Â¼  
+//  //åˆ é™¤ä¸€ä¸ªç›®å½•  
 //  String dir = "c:/test";  
 //  DeleteFileUtil.deleteDirectory(dir);  
 //  System.out.println();  
-//  // É¾³ıÎÄ¼ş  
+//  // åˆ é™¤æ–‡ä»¶  
 //  dir = "c:/test/test0";  
 //  DeleteFileUtil.delete(dir);  
   
@@ -187,17 +187,17 @@ public static boolean deleteDirectory(String dir) {
 
 class  FileNameAndPath{
 	
-//	×¢ÊÍ:
-//		ÒÔÖ´ĞĞÎÄ¼şÎªÀı¡£
-//		/*ÏÂÃæÎÄ¼şÂ·¾¶µÄĞ´·¨¶¼ĞĞ¡£*/
+//	æ³¨é‡Š:
+//		ä»¥æ‰§è¡Œæ–‡ä»¶ä¸ºä¾‹ã€‚
+//		/*ä¸‹é¢æ–‡ä»¶è·¯å¾„çš„å†™æ³•éƒ½è¡Œã€‚*/
 //		
-//		/* '/' ±íÊ¾ÎÄ¼şÂ·¾¶µÄ»°£¬ËæÒâ×éºÏ */
+//		/* '/' è¡¨ç¤ºæ–‡ä»¶è·¯å¾„çš„è¯ï¼Œéšæ„ç»„åˆ */
 //		//re.exec("D:/QvodPlayer/QvodPlayer.exe");
 //		//re.exec("D:/QvodPlayer///QvodPlayer.exe");
 //		//re.exec("D:/QvodPlayer//////QvodPlayer.exe");
 //		//re.exec("D:////QvodPlayer//QvodPlayer.exe");
 //		
-//		/* '\' ±íÊ¾ÎÄ¼şÂ·¾¶µÄ»°£¬Ö»ÒªÊÇË«ÊıÒ²ËæÒâ×éºÏ */
+//		/* '\' è¡¨ç¤ºæ–‡ä»¶è·¯å¾„çš„è¯ï¼Œåªè¦æ˜¯åŒæ•°ä¹Ÿéšæ„ç»„åˆ */
 //		re.exec("D:\\\\\\QvodPlayer\\QvodPlayer.exe");
 //		//re.exec("D:\\QvodPlayer\\QvodPlayer.exe");
 //		//re.exec("D:\\\\QvodPlayer\\\\QvodPlayer.exe");
@@ -228,26 +228,26 @@ class  FileNameAndPath{
 }
 
 class ChangeFileUtil{
-	//±£ÁôÎÄ¼şÃûÖĞµÄÄ³Ò»²¿·Ö¡£
-	//¶ÔÎÄ¼ş¼ĞÏÂµÄËùÓĞÎÄ¼şÖØĞÂÃüÃû¡£ÏÖÔÚ×öµÄ±È½Ï¼òµ¥£¬Ö»ÊÇÆ¥Åä³öÔ´ÎÄ¼şÏÂµÄ²¿·ÖÃû³Æ£¬È»ºóÆ´ÔÚĞÂÃû×Öºó¡£
+	//ä¿ç•™æ–‡ä»¶åä¸­çš„æŸä¸€éƒ¨åˆ†ã€‚
+	//å¯¹æ–‡ä»¶å¤¹ä¸‹çš„æ‰€æœ‰æ–‡ä»¶é‡æ–°å‘½åã€‚ç°åœ¨åšçš„æ¯”è¾ƒç®€å•ï¼Œåªæ˜¯åŒ¹é…å‡ºæºæ–‡ä»¶ä¸‹çš„éƒ¨åˆ†åç§°ï¼Œç„¶åæ‹¼åœ¨æ–°åå­—åã€‚
 	public static void changeNames_KeepPart(String dir,String newname,String regexStr,String suffix){
 		File file=new File(dir);
 		File[] files=file.listFiles();
 		for (File f : files){
-	    	String string=ÕıÔò±í´ïÊ½.matchString("\\d{2}",f.getName()).group();
+	    	String string=æ­£åˆ™è¡¨è¾¾å¼.matchString("\\d{2}",f.getName()).group();
 	    	//System.out.println(f.getName()+"  comesout  "+string);
 	    	File dest=new File(f.getParent()+"/"+newname+"_"+string+"."+suffix);
 	    	f.renameTo(dest);
 	    }
 	}
 	
-	//È¥µôÎÄ¼şÃûÖĞµÄÄ³Ò»²¿·Ö
+	//å»æ‰æ–‡ä»¶åä¸­çš„æŸä¸€éƒ¨åˆ†
 	public static void changeNames_RemovePart(String dir,String regexStr,String suffix){
 		File file=new File(dir);
 		File[] files=file.listFiles();
 		for (File f : files){
 			String filename=f.getName();
-	    	String stringtoremove=ÕıÔò±í´ïÊ½.matchString(regexStr,filename).group();
+	    	String stringtoremove=æ­£åˆ™è¡¨è¾¾å¼.matchString(regexStr,filename).group();
 	    	String newname=filename.replaceAll(stringtoremove,"");
 	    	System.out.println(stringtoremove);
 	    	File dest=new File(f.getParent()+"/"+newname+"."+suffix);
@@ -255,7 +255,7 @@ class ChangeFileUtil{
 	    }
 	}
 	
-	//ĞŞ¸ÄÎÄ¼ş¼ĞÏÂÄ³ÎÄ¼şµÄÎÄ¼şÃû
+	//ä¿®æ”¹æ–‡ä»¶å¤¹ä¸‹æŸæ–‡ä»¶çš„æ–‡ä»¶å
 	public static boolean changeName(String newname,String oldname,String filepath){
 		File oldfile = new File(filepath+"/"+oldname);
 		File newfile = new File(filepath+"/"+newname);
@@ -271,28 +271,28 @@ class ChangeFileUtil{
 }
 
 class ExecuteFileUtil{
-	//Ö´ĞĞ¿ÉÖ´ĞĞÎÄ¼ş
+	//æ‰§è¡Œå¯æ‰§è¡Œæ–‡ä»¶
 	public static void executeFile(){
 		try {
 			@SuppressWarnings("unused")
 			Runtime re=Runtime.getRuntime();
-			//re.exec("javac ÎÄ¼şÀà.java");
+			//re.exec("javac æ–‡ä»¶ç±».java");
 			
 			//File file=new File("C:\\Windows","Notepad.exe");
 			//re.exec(file.getAbsolutePath());
 			//re.exec("C:\\Windows/Notepad.exe");
 			
-			//re.exec("D:\\1-ÒÑ°²Èí¼ş/QQPlayer/QQPlayer.exe"); //×¢ÒâÂ·¾¶ÊéĞ´¸ñÊ½
+			//re.exec("D:\\1-å·²å®‰è½¯ä»¶/QQPlayer/QQPlayer.exe"); //æ³¨æ„è·¯å¾„ä¹¦å†™æ ¼å¼
 			
-			/*ÏÂÃæÎÄ¼şÂ·¾¶µÄĞ´·¨¶¼ĞĞ¡£*/
+			/*ä¸‹é¢æ–‡ä»¶è·¯å¾„çš„å†™æ³•éƒ½è¡Œã€‚*/
 			
-			/* '/' ±íÊ¾ÎÄ¼şÂ·¾¶µÄ»°£¬ËæÒâ×éºÏ */
+			/* '/' è¡¨ç¤ºæ–‡ä»¶è·¯å¾„çš„è¯ï¼Œéšæ„ç»„åˆ */
 			//re.exec("D:/QvodPlayer/QvodPlayer.exe");
 			//re.exec("D:/QvodPlayer///QvodPlayer.exe");
 			//re.exec("D:/QvodPlayer//////QvodPlayer.exe");
 			//re.exec("D:////QvodPlayer//QvodPlayer.exe");
 			
-			/* '\' ±íÊ¾ÎÄ¼şÂ·¾¶µÄ»°£¬Ö»ÒªÊÇË«ÊıÒ²ËæÒâ×éºÏ */
+			/* '\' è¡¨ç¤ºæ–‡ä»¶è·¯å¾„çš„è¯ï¼Œåªè¦æ˜¯åŒæ•°ä¹Ÿéšæ„ç»„åˆ */
 			//re.exec("D:\\\\\\QvodPlayer\\QvodPlayer.exe");
 			//re.exec("D:\\QvodPlayer\\QvodPlayer.exe");
 			//re.exec("D:\\\\QvodPlayer\\\\QvodPlayer.exe");
@@ -304,7 +304,7 @@ class ExecuteFileUtil{
 
 class ShowFileUtil{
 	public static void showChildFiles(File dir,String flag){
-		System.out.println(dir.getName()+"ÏÂµÄËùÓĞÎÄ¼ş£º");
+		System.out.println(dir.getName()+"ä¸‹çš„æ‰€æœ‰æ–‡ä»¶ï¼š");
 		if(flag.equals("string")){
 		File[] filesFile=dir.listFiles();
 	    for (File f : filesFile){
@@ -318,11 +318,11 @@ class ShowFileUtil{
 	}
 	
 	public static void showChoisedFiles(File dir,String flag,String type){
-		System.out.println(dir.getName()+"ÏÂµÄËùÓĞ\""+type+"\"ÀàĞÍµÄÎÄ¼ş£º");
+		System.out.println(dir.getName()+"ä¸‹çš„æ‰€æœ‰\""+type+"\"ç±»å‹çš„æ–‡ä»¶ï¼š");
 		Utils_Filter filter=new Utils_Filter("java");
 		
 		if(flag.equals("string")){
-		File[] filesFile=dir.listFiles(filter);//½«ÊµÏÖÁËFilenameFilter½Ó¿ÚµÄ¶ÔÏó´«Èë£¬×÷ÎªÉ¸Ñ¡Ìõ¼ş¡£
+		File[] filesFile=dir.listFiles(filter);//å°†å®ç°äº†FilenameFilteræ¥å£çš„å¯¹è±¡ä¼ å…¥ï¼Œä½œä¸ºç­›é€‰æ¡ä»¶ã€‚
 	    for (File f : filesFile){
 	    	System.out.println( f.toString());
 	    }}
@@ -335,14 +335,14 @@ class ShowFileUtil{
 	
 	public static void showFileInfs(File file){
 		String[] infs=new String[7];
-		infs[0]="ÎÄ¼şÃûÊÇ "+file.getName();
-		infs[1]="ÎÄ¼ş¾ø¶ÔÂ·¾¶ÊÇ "+file.getAbsolutePath();
-		infs[2]="ÎÄ¼ş¸¸Ä¿Â¼ÊÇ "+file.getParent();
+		infs[0]="æ–‡ä»¶åæ˜¯ "+file.getName();
+		infs[1]="æ–‡ä»¶ç»å¯¹è·¯å¾„æ˜¯ "+file.getAbsolutePath();
+		infs[2]="æ–‡ä»¶çˆ¶ç›®å½•æ˜¯ "+file.getParent();
 
-		Boolean canR=file.canRead();	infs[3]="ÎÄ¼ş¿É¶ÁĞÔ£º"+canR.toString();
-		Boolean canE=file.canExecute();	infs[4]="ÎÄ¼ş¿ÉÖ´ĞĞ£º"+canE.toString();
-		Boolean isFile=file.isFile();	infs[5]="ÊÇ·ñÎªÎÄ¼ş£º"+isFile.toString();
-		Boolean isDir=file.isDirectory();	infs[6]="ÊÇ·ñÎªÄ¿Â¼£º"+isDir.toString();
+		Boolean canR=file.canRead();	infs[3]="æ–‡ä»¶å¯è¯»æ€§ï¼š"+canR.toString();
+		Boolean canE=file.canExecute();	infs[4]="æ–‡ä»¶å¯æ‰§è¡Œï¼š"+canE.toString();
+		Boolean isFile=file.isFile();	infs[5]="æ˜¯å¦ä¸ºæ–‡ä»¶ï¼š"+isFile.toString();
+		Boolean isDir=file.isDirectory();	infs[6]="æ˜¯å¦ä¸ºç›®å½•ï¼š"+isDir.toString();
 		
 		for(String s: infs){
 			System.out.println(s);
@@ -391,17 +391,17 @@ class ReadFileUtil{
 		StringBuffer sb=new StringBuffer();
 		Reader reader = null;
 		try {
-			if((new File(filePath)).isFile()){ //±ØĞëÊÇÎÄ¼ş²ÅÈ¥¶ÁÎÄ¼şÄÚÈİ£¬Ä¿Â¼µÄ»°ÊÇ²»»áÈ¥¶ÁµÄ¡£
+			if((new File(filePath)).isFile()){ //å¿…é¡»æ˜¯æ–‡ä»¶æ‰å»è¯»æ–‡ä»¶å†…å®¹ï¼Œç›®å½•çš„è¯æ˜¯ä¸ä¼šå»è¯»çš„ã€‚
 			    FileInputStream fileinput = new FileInputStream(filePath);
-			    // System.out.println("ÒÔ×Ö·ûÎªµ¥Î»¶ÁÈ¡ÎÄ¼şÄÚÈİ£¬Ò»´Î¶Á¶à¸ö×Ö½Ú£º");
-			    // Ò»´Î¶Á¶à¸ö×Ö·û
+			    // System.out.println("ä»¥å­—ç¬¦ä¸ºå•ä½è¯»å–æ–‡ä»¶å†…å®¹ï¼Œä¸€æ¬¡è¯»å¤šä¸ªå­—èŠ‚ï¼š");
+			    // ä¸€æ¬¡è¯»å¤šä¸ªå­—ç¬¦
 			    char[] tempchars = new char[30];
 			    int charread = 0;
 				reader = new InputStreamReader(fileinput,encode);
 			
-			    // ¶ÁÈë¶à¸ö×Ö·ûµ½×Ö·ûÊı×éÖĞ£¬charreadÎªÒ»´Î¶ÁÈ¡×Ö·ûÊı
+			    // è¯»å…¥å¤šä¸ªå­—ç¬¦åˆ°å­—ç¬¦æ•°ç»„ä¸­ï¼Œcharreadä¸ºä¸€æ¬¡è¯»å–å­—ç¬¦æ•°
 			    while ((charread = reader.read(tempchars)) != -1) {
-			        // Í¬ÑùÆÁ±Îµô\r²»ÏÔÊ¾
+			        // åŒæ ·å±è”½æ‰\rä¸æ˜¾ç¤º
 			        if ((charread == tempchars.length)
 			                && (tempchars[tempchars.length - 1] != '\r')) {
 			            //System.out.print(tempchars);
@@ -435,7 +435,7 @@ class ReadFileUtil{
 
 
 
-//¹ıÂËÎÄ¼şºó×ºÃû¡£
+//è¿‡æ»¤æ–‡ä»¶åç¼€åã€‚
 class Utils_Filter implements FilenameFilter{
 	private String string=null;
 	Utils_Filter(String s){

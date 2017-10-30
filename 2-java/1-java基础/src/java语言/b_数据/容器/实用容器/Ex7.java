@@ -4,8 +4,8 @@
 * Fill a List from your array. Create a subset of your List by using 
 * subList(), then remove this subset from your List.
 */
-package javaÓïÑÔ.b_Êı¾İ.ÈİÆ÷.ÊµÓÃÈİÆ÷;
-import static javaÓïÑÔ.z_common.utils.Myutils.*;
+package javaè¯­è¨€.b_æ•°æ®.å®¹å™¨.å®ç”¨å®¹å™¨;
+import static javaè¯­è¨€.z_common.utils.Myutils.*;
 
 import java.util.*;
 

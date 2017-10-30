@@ -1,4 +1,4 @@
-package ´´½¨ĞÍÄ£Ê½.µ¥ÀıÄ£Ê½;
+package åˆ›å»ºå‹æ¨¡å¼.å•ä¾‹æ¨¡å¼;
 
 public class SingletonFactory {
 	private volatile static SingletonFactory mSingletonClass = null;

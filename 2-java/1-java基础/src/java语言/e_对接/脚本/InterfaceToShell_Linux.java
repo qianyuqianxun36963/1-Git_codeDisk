@@ -1,4 +1,4 @@
-package javaÓïÑÔ.e_¶Ô½Ó.½Å±¾;
+package javaè¯­è¨€.e_å¯¹æ¥.è„šæœ¬;
 
 import java.io.InputStreamReader;
 import java.io.LineNumberReader;
@@ -9,20 +9,20 @@ public class InterfaceToShell_Linux {
         String pwdString = runshellstring("pwd").toString();  
         String netsString = runshellstring("netstat -nat|grep -i \"80\"|wc -l").toString();  
            
-        System.out.println("==========»ñµÃÖµ=============");  
+        System.out.println("==========è·å¾—å€¼=============");  
         System.out.println(pwdString);  
         System.out.println(netsString);  
     }  
 	
 	public static Object runshellstring(String powershellstring) {
-		String[] cmds = { "/bin/sh -c "+powershellstring }; //Î´ÑéÖ¤£¬²»ÖªµÀ¶Ô²»¡£
+		String[] cmds = { "/bin/sh -c "+powershellstring }; //æœªéªŒè¯ï¼Œä¸çŸ¥é“å¯¹ä¸ã€‚
 //		String[] cmds = { "/bin/sh","-c ",powershellstring }; 
         return runshells(cmds);
     }
 	
 	public static Object runshellfile(String filename) {
-//		String[] cmds = { "powershell -file "+filename }; //Î´ÑéÖ¤£¬²»ÖªµÀ¶Ô²»¡£
-		String[] cmds = { "/bin/sh","-c ",filename }; //Î´ÑéÖ¤£¬²»ÖªµÀ¶Ô²»¡£
+//		String[] cmds = { "powershell -file "+filename }; //æœªéªŒè¯ï¼Œä¸çŸ¥é“å¯¹ä¸ã€‚
+		String[] cmds = { "/bin/sh","-c ",filename }; //æœªéªŒè¯ï¼Œä¸çŸ¥é“å¯¹ä¸ã€‚
 		return runshells(cmds);
     }
 	

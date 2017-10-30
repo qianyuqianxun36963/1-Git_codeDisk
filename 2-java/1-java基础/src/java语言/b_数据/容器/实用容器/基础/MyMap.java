@@ -1,4 +1,4 @@
-package javaÓïÑÔ.b_Êı¾İ.ÈİÆ÷.ÊµÓÃÈİÆ÷.»ù´¡;
+package javaè¯­è¨€.b_æ•°æ®.å®¹å™¨.å®ç”¨å®¹å™¨.åŸºç¡€;
 
 import java.util.EnumMap;
 import java.util.HashMap;
@@ -25,12 +25,12 @@ public class MyMap {
 class MyMap_EnumMap{
 	enum Season {  SPRING, SUMMER, FALL, WINNTER }  
 	
-	//×¢ÒâÕâÀïµÄ¶¨Òå·½Ê½¡£¹¹Ôìº¯ÊıĞèÒªÃ¶¾ÙÀàĞÍµÄÀàĞÍ×÷Îª²ÎÊı¡£
-	//ÁíÍâ£¬ÔÚjavaÖĞ£¬Ã»ÓĞnewµÄ»°£¬¶ÔÏóÊµÀıÊÇÃ»·ÖÅä¿Õ¼äµÄ£¬²»ÄÜÖ±½ÓÓÃ£¬ÓëC++²»Í¬£¡
-	static EnumMap<Season, String> enumMap = new EnumMap<Season, String>(Season.class);//ÕâÀï±ØĞëÒªÖ¸¶¨ÀàĞÍ£¬ÓÃEnumMap<?,?>ÕâÖÖĞÎÊ½ºóÃæµ÷ÓÃputÊÇ²»ĞĞµÄ¡£
+	//æ³¨æ„è¿™é‡Œçš„å®šä¹‰æ–¹å¼ã€‚æ„é€ å‡½æ•°éœ€è¦æšä¸¾ç±»å‹çš„ç±»å‹ä½œä¸ºå‚æ•°ã€‚
+	//å¦å¤–ï¼Œåœ¨javaä¸­ï¼Œæ²¡æœ‰newçš„è¯ï¼Œå¯¹è±¡å®ä¾‹æ˜¯æ²¡åˆ†é…ç©ºé—´çš„ï¼Œä¸èƒ½ç›´æ¥ç”¨ï¼Œä¸C++ä¸åŒï¼
+	static EnumMap<Season, String> enumMap = new EnumMap<Season, String>(Season.class);//è¿™é‡Œå¿…é¡»è¦æŒ‡å®šç±»å‹ï¼Œç”¨EnumMap<?,?>è¿™ç§å½¢å¼åé¢è°ƒç”¨putæ˜¯ä¸è¡Œçš„ã€‚
 	
 	public static void testEnumMap(){
-		//enumMap.put(123, 123); //ÕâÖÖĞ´·¨ÊÇ´íÎóµÄ£¬key±ØĞëÊÇenumÀàĞÍ¡£
+		//enumMap.put(123, 123); //è¿™ç§å†™æ³•æ˜¯é”™è¯¯çš„ï¼Œkeyå¿…é¡»æ˜¯enumç±»å‹ã€‚
 		enumMap.put(Season.SPRING,"spring");
 		
 		System.out.println(enumMap.get(Season.SPRING));
@@ -38,23 +38,23 @@ class MyMap_EnumMap{
 }
 
 
-//HashMapÊµ¼ÊÉÏÊÇÒ»¸ö¡°Á´±íÉ¢ÁĞ¡±µÄÊı¾İ½á¹¹£¬¼´Êı×éºÍÁ´±íµÄ½áºÏÌå¡£
-//Êı¾İ½á¹¹ÖĞ´¦Àíhash³åÍ»µÄÒ»ÖÖ·½·¨¾ÍÊÇ¡°Á´µØÖ··¨¡±
-//tableÊı×é£º[...]-[...]-[...]-[...]-[...]-[...]-[...]-[...]
+//HashMapå®é™…ä¸Šæ˜¯ä¸€ä¸ªâ€œé“¾è¡¨æ•£åˆ—â€çš„æ•°æ®ç»“æ„ï¼Œå³æ•°ç»„å’Œé“¾è¡¨çš„ç»“åˆä½“ã€‚
+//æ•°æ®ç»“æ„ä¸­å¤„ç†hashå†²çªçš„ä¸€ç§æ–¹æ³•å°±æ˜¯â€œé“¾åœ°å€æ³•â€
+//tableæ•°ç»„ï¼š[...]-[...]-[...]-[...]-[...]-[...]-[...]-[...]
 //             |           |
-//Á´±í                   [...]       [...]
+//é“¾è¡¨                   [...]       [...]
 //             |           
 //           [...]   
 
-//µ±ÎÒÃÇÍùHashMapÖĞputÔªËØµÄÊ±ºò£¬ÏÈ¸ù¾İkeyµÄhashCodeÖØĞÂ¼ÆËãhashÖµ£¬¸ù¾İhashÖµµÃµ½Õâ¸öÔªËØÔÚÊı×éÖĞµÄÎ»ÖÃ£¨¼´ÏÂ±ê£©£¬
-//Èç¹ûÊı×é¸ÃÎ»ÖÃÉÏÒÑ¾­´æ·ÅÓĞÆäËûÔªËØÁË£¬ÄÇÃ´ÔÚÕâ¸öÎ»ÖÃÉÏµÄÔªËØ½«ÒÔÁ´±íµÄĞÎÊ½´æ·Å£¬ĞÂ¼ÓÈëµÄ·ÅÔÚÁ´Í·£¬×îÏÈ¼ÓÈëµÄ·ÅÔÚÁ´Î²¡£
-//Èç¹ûÊı×é¸ÃÎ»ÖÃÉÏÃ»ÓĞÔªËØ£¬¾ÍÖ±½Ó½«¸ÃÔªËØ·Åµ½´ËÊı×éÖĞµÄ¸ÃÎ»ÖÃÉÏ¡£
+//å½“æˆ‘ä»¬å¾€HashMapä¸­putå…ƒç´ çš„æ—¶å€™ï¼Œå…ˆæ ¹æ®keyçš„hashCodeé‡æ–°è®¡ç®—hashå€¼ï¼Œæ ¹æ®hashå€¼å¾—åˆ°è¿™ä¸ªå…ƒç´ åœ¨æ•°ç»„ä¸­çš„ä½ç½®ï¼ˆå³ä¸‹æ ‡ï¼‰ï¼Œ
+//å¦‚æœæ•°ç»„è¯¥ä½ç½®ä¸Šå·²ç»å­˜æ”¾æœ‰å…¶ä»–å…ƒç´ äº†ï¼Œé‚£ä¹ˆåœ¨è¿™ä¸ªä½ç½®ä¸Šçš„å…ƒç´ å°†ä»¥é“¾è¡¨çš„å½¢å¼å­˜æ”¾ï¼Œæ–°åŠ å…¥çš„æ”¾åœ¨é“¾å¤´ï¼Œæœ€å…ˆåŠ å…¥çš„æ”¾åœ¨é“¾å°¾ã€‚
+//å¦‚æœæ•°ç»„è¯¥ä½ç½®ä¸Šæ²¡æœ‰å…ƒç´ ï¼Œå°±ç›´æ¥å°†è¯¥å…ƒç´ æ”¾åˆ°æ­¤æ•°ç»„ä¸­çš„è¯¥ä½ç½®ä¸Šã€‚
 
 class MyMap_HashMap{
-	//¼üÊÇÎ¨Ò»µÄ¡£
+	//é”®æ˜¯å”¯ä¸€çš„ã€‚
 		@SuppressWarnings({ "unchecked", "rawtypes" })
 		public static void unique(){
-			   //Á½¸ömap¾ßÓĞ²»Í¬µÄkey
+			   //ä¸¤ä¸ªmapå…·æœ‰ä¸åŒçš„key
 			   HashMap map1 = new HashMap(); 
 			   map1.put("1", "A"); 
 			   HashMap map2 = new HashMap(); 
@@ -62,7 +62,7 @@ class MyMap_HashMap{
 			   map2.put("3", "C"); 
 			   map1.putAll(map2); 
 			   System.out.println(map1);
-			   //Á½¸ömap¾ßÓĞÖØ¸´µÄkey
+			   //ä¸¤ä¸ªmapå…·æœ‰é‡å¤çš„key
 			   HashMap map3 = new HashMap(); 
 			   map3.put("1", "A"); 
 			   HashMap map4 = new HashMap(); 
@@ -72,7 +72,7 @@ class MyMap_HashMap{
 			   System.out.println(map3);
 		}
 		
-		//¼üÖµ¶ÔÖĞ£¬¼ü¿ÉÒÔÊÇ¸´ÔÓÀàĞÍÂğ¡¢
+		//é”®å€¼å¯¹ä¸­ï¼Œé”®å¯ä»¥æ˜¯å¤æ‚ç±»å‹å—ã€
 		@SuppressWarnings({ "rawtypes", "unchecked" })
 		public static void complexkey(){
 			Point p1 = new Point(0,0);
@@ -86,35 +86,35 @@ class MyMap_HashMap{
 }
 
 
-//Ê¹ÓÃµÄÊÇÉ¢ÁĞ±íµÄÊµÏÖ·½Ê½¡£
+//ä½¿ç”¨çš„æ˜¯æ•£åˆ—è¡¨çš„å®ç°æ–¹å¼ã€‚
 class MyMap_HashTable{
 	
 }
 
-//Ïß³Ì°²È«µÄmap
+//çº¿ç¨‹å®‰å…¨çš„map
 class MyMap_ConcurrentHashMap{
 	
 	
 }
 
 /*
-HashMapºÍHashtable¶¼ÊµÏÖÁËMap½Ó¿Ú£¬µ«¾ö¶¨ÓÃÄÄÒ»¸öÖ®Ç°ÏÈÒªÅªÇå³şËüÃÇÖ®¼äµÄ·Ö±ğ¡£Ö÷ÒªµÄÇø±ğÓĞ£ºÏß³Ì°²È«ĞÔ£¬Í¬²½(synchronization)£¬ÒÔ¼°ËÙ¶È¡£
+HashMapå’ŒHashtableéƒ½å®ç°äº†Mapæ¥å£ï¼Œä½†å†³å®šç”¨å“ªä¸€ä¸ªä¹‹å‰å…ˆè¦å¼„æ¸…æ¥šå®ƒä»¬ä¹‹é—´çš„åˆ†åˆ«ã€‚ä¸»è¦çš„åŒºåˆ«æœ‰ï¼šçº¿ç¨‹å®‰å…¨æ€§ï¼ŒåŒæ­¥(synchronization)ï¼Œä»¥åŠé€Ÿåº¦ã€‚
 
-	1.HashMap¼¸ºõ¿ÉÒÔµÈ¼ÛÓÚHashtable£¬³ıÁËHashMapÊÇ·ÇsynchronizedµÄ£¬²¢¿ÉÒÔ½ÓÊÜnull(HashMap¿ÉÒÔ½ÓÊÜÎªnullµÄ¼üÖµ(key)ºÍÖµ(value)£¬¶øHashtableÔò²»ĞĞ)¡£
+	1.HashMapå‡ ä¹å¯ä»¥ç­‰ä»·äºHashtableï¼Œé™¤äº†HashMapæ˜¯ésynchronizedçš„ï¼Œå¹¶å¯ä»¥æ¥å—null(HashMapå¯ä»¥æ¥å—ä¸ºnullçš„é”®å€¼(key)å’Œå€¼(value)ï¼Œè€ŒHashtableåˆ™ä¸è¡Œ)ã€‚
 
-	2.HashMapÊÇ·Çsynchronized£¬¶øHashtableÊÇsynchronized£¬ÕâÒâÎ¶×ÅHashtableÊÇÏß³Ì°²È«µÄ£¬¶à¸öÏß³Ì¿ÉÒÔ¹²ÏíÒ»¸öHashtable£»¶øÈç¹ûÃ»ÓĞÕıÈ·µÄÍ¬²½µÄ»°£¬¶à¸öÏß³ÌÊÇ²»ÄÜ¹²ÏíHashMapµÄ¡£Java 5Ìá¹©ÁËConcurrentHashMap£¬ËüÊÇHashTableµÄÌæ´ú£¬±ÈHashTableµÄÀ©Õ¹ĞÔ¸üºÃ¡£
+	2.HashMapæ˜¯ésynchronizedï¼Œè€ŒHashtableæ˜¯synchronizedï¼Œè¿™æ„å‘³ç€Hashtableæ˜¯çº¿ç¨‹å®‰å…¨çš„ï¼Œå¤šä¸ªçº¿ç¨‹å¯ä»¥å…±äº«ä¸€ä¸ªHashtableï¼›è€Œå¦‚æœæ²¡æœ‰æ­£ç¡®çš„åŒæ­¥çš„è¯ï¼Œå¤šä¸ªçº¿ç¨‹æ˜¯ä¸èƒ½å…±äº«HashMapçš„ã€‚Java 5æä¾›äº†ConcurrentHashMapï¼Œå®ƒæ˜¯HashTableçš„æ›¿ä»£ï¼Œæ¯”HashTableçš„æ‰©å±•æ€§æ›´å¥½ã€‚
 
-	3.ÁíÒ»¸öÇø±ğÊÇHashMapµÄµü´úÆ÷(Iterator)ÊÇfail-fastµü´úÆ÷£¬¶øHashtableµÄenumeratorµü´úÆ÷²»ÊÇfail-fastµÄ¡£ËùÒÔµ±ÓĞÆäËüÏß³Ì¸Ä±äÁËHashMapµÄ½á¹¹£¨Ôö¼Ó»òÕßÒÆ³ıÔªËØ£©£¬½«»áÅ×³öConcurrentModificationException£¬µ«µü´úÆ÷±¾ÉíµÄremove()·½·¨ÒÆ³ıÔªËØÔò²»»áÅ×³öConcurrentModificationExceptionÒì³£¡£µ«Õâ²¢²»ÊÇÒ»¸öÒ»¶¨·¢ÉúµÄĞĞÎª£¬Òª¿´JVM¡£ÕâÌõÍ¬ÑùÒ²ÊÇEnumerationºÍIteratorµÄÇø±ğ¡£
+	3.å¦ä¸€ä¸ªåŒºåˆ«æ˜¯HashMapçš„è¿­ä»£å™¨(Iterator)æ˜¯fail-fastè¿­ä»£å™¨ï¼Œè€ŒHashtableçš„enumeratorè¿­ä»£å™¨ä¸æ˜¯fail-fastçš„ã€‚æ‰€ä»¥å½“æœ‰å…¶å®ƒçº¿ç¨‹æ”¹å˜äº†HashMapçš„ç»“æ„ï¼ˆå¢åŠ æˆ–è€…ç§»é™¤å…ƒç´ ï¼‰ï¼Œå°†ä¼šæŠ›å‡ºConcurrentModificationExceptionï¼Œä½†è¿­ä»£å™¨æœ¬èº«çš„remove()æ–¹æ³•ç§»é™¤å…ƒç´ åˆ™ä¸ä¼šæŠ›å‡ºConcurrentModificationExceptionå¼‚å¸¸ã€‚ä½†è¿™å¹¶ä¸æ˜¯ä¸€ä¸ªä¸€å®šå‘ç”Ÿçš„è¡Œä¸ºï¼Œè¦çœ‹JVMã€‚è¿™æ¡åŒæ ·ä¹Ÿæ˜¯Enumerationå’ŒIteratorçš„åŒºåˆ«ã€‚
 
-	4.ÓÉÓÚHashtableÊÇÏß³Ì°²È«µÄÒ²ÊÇsynchronized£¬ËùÒÔÔÚµ¥Ïß³Ì»·¾³ÏÂËü±ÈHashMapÒªÂı¡£Èç¹ûÄã²»ĞèÒªÍ¬²½£¬Ö»ĞèÒªµ¥Ò»Ïß³Ì£¬ÄÇÃ´Ê¹ÓÃHashMapĞÔÄÜÒªºÃ¹ıHashtable¡£
+	4.ç”±äºHashtableæ˜¯çº¿ç¨‹å®‰å…¨çš„ä¹Ÿæ˜¯synchronizedï¼Œæ‰€ä»¥åœ¨å•çº¿ç¨‹ç¯å¢ƒä¸‹å®ƒæ¯”HashMapè¦æ…¢ã€‚å¦‚æœä½ ä¸éœ€è¦åŒæ­¥ï¼Œåªéœ€è¦å•ä¸€çº¿ç¨‹ï¼Œé‚£ä¹ˆä½¿ç”¨HashMapæ€§èƒ½è¦å¥½è¿‡Hashtableã€‚
 
-	5.HashMap²»ÄÜ±£Ö¤Ëæ×ÅÊ±¼äµÄÍÆÒÆMapÖĞµÄÔªËØ´ÎĞòÊÇ²»±äµÄ¡£
+	5.HashMapä¸èƒ½ä¿è¯éšç€æ—¶é—´çš„æ¨ç§»Mapä¸­çš„å…ƒç´ æ¬¡åºæ˜¯ä¸å˜çš„ã€‚
 	
-HashMap¿ÉÒÔÍ¨¹ıÏÂÃæµÄÓï¾ä½øĞĞÍ¬²½£º
+HashMapå¯ä»¥é€šè¿‡ä¸‹é¢çš„è¯­å¥è¿›è¡ŒåŒæ­¥ï¼š
 Map m = Collections.synchronizeMap(hashMap);
  * */
 
-//Ê¹ÓÃµÄÊÇºìºÚÊ÷µÄÊµÏÖ·½Ê½¡£
+//ä½¿ç”¨çš„æ˜¯çº¢é»‘æ ‘çš„å®ç°æ–¹å¼ã€‚
 class MyMap_TreeMap{
 	
 }
@@ -135,35 +135,35 @@ class MapUtil{
 		visitMap_iterator(map);
 	}
 	
-	/*±éÀúÒ»¸ömap¶ÔÏó¡£ÕâÖÖ·½·¨ÊÇ´íÎóµÄ¡£
+	/*éå†ä¸€ä¸ªmapå¯¹è±¡ã€‚è¿™ç§æ–¹æ³•æ˜¯é”™è¯¯çš„ã€‚
 	public static void visitMap_forNum(Map<?,?> map){
 		for(int i = 0 ; i < map.size() ; i++){ 
 	        System.out.println(map.get(i).toString());
 	    }  
 	}*/
 	
-	//±éÀúÒ»¸ömap¶ÔÏó¡£µ±Êı¾İÉÏÍòÊ±£¬ÕâÖÖ·½·¨µÄĞ§ÂÊ¸ü¸ß¡£
+	//éå†ä¸€ä¸ªmapå¯¹è±¡ã€‚å½“æ•°æ®ä¸Šä¸‡æ—¶ï¼Œè¿™ç§æ–¹æ³•çš„æ•ˆç‡æ›´é«˜ã€‚
 	public static void visitMap_EntrySet(Map<?,?> map){
 		for(Map.Entry<?, ?> entry:map.entrySet()){  
 	        System.out.println(entry.getKey()+": "+entry.getValue());
 	    }  
 	}
 	
-	//±éÀúÒ»¸ömap¶ÔÏó¡£
+	//éå†ä¸€ä¸ªmapå¯¹è±¡ã€‚
 	public static void visitMap_KeySet(Map<?,?> map){
 		for(Object key: map.keySet()){  
 	        System.out.println(key.toString()+": "+map.get(key));
 	    }  
 	}
 	
-	//±éÀúÒ»¸ömap¶ÔÏó¡£
+	//éå†ä¸€ä¸ªmapå¯¹è±¡ã€‚
 	public static void visitMap_Values(Map<?,?> map){
 		for(Object value: map.values()){
 			System.out.println("Value = " + value); 
 		}
 	}
 	
-	//±éÀúÒ»¸ömap¶ÔÏóiterator¡£
+	//éå†ä¸€ä¸ªmapå¯¹è±¡iteratorã€‚
 	public static void visitMap_iterator(Map<?,?> map){
 		Iterator<?> entries = map.entrySet().iterator();  
 		while (entries.hasNext()) {  

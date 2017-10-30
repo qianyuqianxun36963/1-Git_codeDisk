@@ -1,7 +1,7 @@
-package ½á¹¹ĞÍÄ£Ê½.×°ÊÎ;
+package ç»“æ„å‹æ¨¡å¼.è£…é¥°;
 
 
-//ÏÂÃæ¶¨ÒåÈıÖÖ×°ÊÎ£¬ÕâÊÇµÚÒ»¸ö£¬µÚ¶ş¸öµÚÈı¸ö¹¦ÄÜÒÀ´ÎÏ¸»¯£¬¼´×°ÊÎÕßµÄ¹¦ÄÜÔ½À´Ô½¶à  
+//ä¸‹é¢å®šä¹‰ä¸‰ç§è£…é¥°ï¼Œè¿™æ˜¯ç¬¬ä¸€ä¸ªï¼Œç¬¬äºŒä¸ªç¬¬ä¸‰ä¸ªåŠŸèƒ½ä¾æ¬¡ç»†åŒ–ï¼Œå³è£…é¥°è€…çš„åŠŸèƒ½è¶Šæ¥è¶Šå¤š  
 class Decorator_zero extends Decorator {  
 
   public Decorator_zero(I_Human I_Human) {  
@@ -9,11 +9,11 @@ class Decorator_zero extends Decorator {
   }  
 
   public void goHome() {  
-      System.out.println("½ø·¿×Ó¡£¡£");  
+      System.out.println("è¿›æˆ¿å­ã€‚ã€‚");  
   }  
 
   public void findMap() {  
-      System.out.println("Êé·¿ÕÒÕÒMap¡£¡£");  
+      System.out.println("ä¹¦æˆ¿æ‰¾æ‰¾Mapã€‚ã€‚");  
   }  
 
   @Override  
@@ -36,11 +36,11 @@ class Decorator_first extends Decorator {
   }  
 
   public void goClothespress() {  
-      System.out.println("È¥ÒÂ¹ñÕÒÕÒ¿´¡£¡£");  
+      System.out.println("å»è¡£æŸœæ‰¾æ‰¾çœ‹ã€‚ã€‚");  
   }  
 
   public void findPlaceOnMap() {  
-      System.out.println("ÔÚMapÉÏÕÒÕÒ¡£¡£");  
+      System.out.println("åœ¨Mapä¸Šæ‰¾æ‰¾ã€‚ã€‚");  
   }  
 
   @Override  
@@ -63,11 +63,11 @@ class Decorator_second extends Decorator {
   }  
 
   public void findClothes() {  
-      System.out.println("ÕÒµ½Ò»¼şD&G¡£¡£");  
+      System.out.println("æ‰¾åˆ°ä¸€ä»¶D&Gã€‚ã€‚");  
   }  
 
   public void findTheTarget() {  
-      System.out.println("ÔÚMapÉÏÕÒµ½ÉñÃØ»¨Ô°ºÍ³Ç±¤¡£¡£");  
+      System.out.println("åœ¨Mapä¸Šæ‰¾åˆ°ç¥ç§˜èŠ±å›­å’ŒåŸå ¡ã€‚ã€‚");  
   }  
 
   @Override  

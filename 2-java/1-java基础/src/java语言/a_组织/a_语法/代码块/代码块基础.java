@@ -1,6 +1,6 @@
-package javaÓïÑÔ.a_×éÖ¯.a_Óï·¨.´úÂë¿é;
+package javaè¯­è¨€.a_ç»„ç»‡.a_è¯­æ³•.ä»£ç å—;
 
-public class ´úÂë¿é»ù´¡ {
+public class ä»£ç å—åŸºç¡€ {
 	public static void main(String args[]){
 		NormalBlock.test();
 		ConstructBlock.test();
@@ -9,8 +9,8 @@ public class ´úÂë¿é»ù´¡ {
 	}
 }
 
-//ÆÕÍ¨´úÂë¿é 
-//Î»ÖÃ£ºÔÚ·½·¨»òÓï¾äÖĞ³öÏÖ£¡
+//æ™®é€šä»£ç å— 
+//ä½ç½®ï¼šåœ¨æ–¹æ³•æˆ–è¯­å¥ä¸­å‡ºç°ï¼
 class NormalBlock{
 	public static void test(){
 		{
@@ -20,7 +20,7 @@ class NormalBlock{
 		int i = 222;
 		System.out.println(i);
 		{
-//			int i =333;//±¾¾ä³ö´í£¬i ÒÑ¾­¶¨ÒåÁË£¡£¿¿ÉÄÜ¸úÇ°ÃæÒ»¸ö´úÂë¿éÖØµşÁË¡£
+//			int i =333;//æœ¬å¥å‡ºé”™ï¼Œi å·²ç»å®šä¹‰äº†ï¼ï¼Ÿå¯èƒ½è·Ÿå‰é¢ä¸€ä¸ªä»£ç å—é‡å äº†ã€‚
 			System.out.println(i);
 			i = 333;
 			System.out.println(i);
@@ -28,41 +28,41 @@ class NormalBlock{
 	}
 }
 
-//¹¹Ôì´úÂë¿é
-//Î»ÖÃ£ºÖ±½ÓÔÚÀàÖĞ¶¨Òå£¬ÇÒÃ»ÓĞ¼Óstatic¹Ø¼ü×ÖµÄ´úÂë¿é
+//æ„é€ ä»£ç å—
+//ä½ç½®ï¼šç›´æ¥åœ¨ç±»ä¸­å®šä¹‰ï¼Œä¸”æ²¡æœ‰åŠ staticå…³é”®å­—çš„ä»£ç å—
 class ConstructBlock{
 	{
-		System.out.println("Àà¶¨ÒåÖĞµÄ-¹¹Ôì´úÂë¿é");
+		System.out.println("ç±»å®šä¹‰ä¸­çš„-æ„é€ ä»£ç å—");
 	}
 	ConstructBlock(){
-		//Ö÷Òª·½·¨µÄµ÷ÓÃË³Ğò£¡--¶î¶î¶î£¬Õâ²»¾ÍÊÇÆÕÍ¨´úÂë¿éÂï¡£
-		//³öÏÖÔÚ¹¹Ôì·½·¨ÀïÃæµÄ´úÂë¿é£¬¿É²»ÊÇ¹¹Ôì´úÂë¿éÁË£¡£¡
-		{System.out.println("¹¹Ôì·½·¨ÀïµÄ-¹¹Ôì´úÂë¿é1");}
-		System.out.println("¹¹Ôì·½·¨");
-		{System.out.println("¹¹Ôì·½·¨ÀïµÄ-¹¹Ôì´úÂë¿é2");}
+		//ä¸»è¦æ–¹æ³•çš„è°ƒç”¨é¡ºåºï¼--é¢é¢é¢ï¼Œè¿™ä¸å°±æ˜¯æ™®é€šä»£ç å—å˜›ã€‚
+		//å‡ºç°åœ¨æ„é€ æ–¹æ³•é‡Œé¢çš„ä»£ç å—ï¼Œå¯ä¸æ˜¯æ„é€ ä»£ç å—äº†ï¼ï¼
+		{System.out.println("æ„é€ æ–¹æ³•é‡Œçš„-æ„é€ ä»£ç å—1");}
+		System.out.println("æ„é€ æ–¹æ³•");
+		{System.out.println("æ„é€ æ–¹æ³•é‡Œçš„-æ„é€ ä»£ç å—2");}
 	}
 	public static void test(){
-		System.out.println("Õı³£µÄ·½·¨");
+		System.out.println("æ­£å¸¸çš„æ–¹æ³•");
 	}
 }
 
-//¾²Ì¬´úÂë¿é
-//Î»ÖÃ£ºÔÚjavaÖĞÊ¹ÓÃstatic¹Ø¼ü×ÖÉùÃ÷µÄ´úÂë¿é£¡²»ÄÜ´æÔÚÓÚÈÎºÎ·½·¨ÌåÄÚ£¡
+//é™æ€ä»£ç å—
+//ä½ç½®ï¼šåœ¨javaä¸­ä½¿ç”¨staticå…³é”®å­—å£°æ˜çš„ä»£ç å—ï¼ä¸èƒ½å­˜åœ¨äºä»»ä½•æ–¹æ³•ä½“å†…ï¼
 class StaticBlock{
 	static{
-		System.out.println("StaticBlockµÄ¾²Ì¬´úÂë¿é");
+		System.out.println("StaticBlockçš„é™æ€ä»£ç å—");
 	}
 	
 	{
-		System.out.println("StaticBlockµÄ¹¹Ôì¿é");    
+		System.out.println("StaticBlockçš„æ„é€ å—");    
 	}
      
 	public StaticBlock(){
-		System.out.println("StaticBlockµÄ¹¹Ôì·½·¨");
+		System.out.println("StaticBlockçš„æ„é€ æ–¹æ³•");
    	}
         
 	public static void test(){
-		System.out.println("StaticBlockµÄÖ÷·½·¨");
+		System.out.println("StaticBlockçš„ä¸»æ–¹æ³•");
 		new Code();
 		new Code();
 		new StaticBlock();
@@ -71,22 +71,22 @@ class StaticBlock{
 }
 
 class Code{
-    //¾²Ì¬¿éÓÃÓÚ³õÊ¼»¯Àà£¬ÎªÀàµÄÊôĞÔ³õÊ¼»¯¡£Ã¿¸ö¾²Ì¬´úÂë¿éÖ»»áÖ´ĞĞÒ»´Î¡£ÓÉÓÚJVMÔÚ¼ÓÔØÀàÊ±»áÖ´ĞĞ¾²Ì¬´úÂë¿é£¬ËùÒÔ¾²Ì¬´úÂë¿éÏÈÓÚÖ÷·½·¨Ö´ĞĞ¡£
-    //1 ¾²Ì¬´úÂë¿é²»ÄÜ´æÔÚÓÚÈÎºÎ·½·¨ÌåÄÚ¡£2 ¾²Ì¬´úÂë¿é²»ÄÜÖ±½Ó·ÃÎÊ¾²Ì¬ÊµÀı±äÁ¿ºÍÊµÀı·½·¨£¬ĞèÒªÍ¨¹ıÀàµÄÊµÀı¶ÔÏóÀ´·ÃÎÊ¡£
+    //é™æ€å—ç”¨äºåˆå§‹åŒ–ç±»ï¼Œä¸ºç±»çš„å±æ€§åˆå§‹åŒ–ã€‚æ¯ä¸ªé™æ€ä»£ç å—åªä¼šæ‰§è¡Œä¸€æ¬¡ã€‚ç”±äºJVMåœ¨åŠ è½½ç±»æ—¶ä¼šæ‰§è¡Œé™æ€ä»£ç å—ï¼Œæ‰€ä»¥é™æ€ä»£ç å—å…ˆäºä¸»æ–¹æ³•æ‰§è¡Œã€‚
+    //1 é™æ€ä»£ç å—ä¸èƒ½å­˜åœ¨äºä»»ä½•æ–¹æ³•ä½“å†…ã€‚2 é™æ€ä»£ç å—ä¸èƒ½ç›´æ¥è®¿é—®é™æ€å®ä¾‹å˜é‡å’Œå®ä¾‹æ–¹æ³•ï¼Œéœ€è¦é€šè¿‡ç±»çš„å®ä¾‹å¯¹è±¡æ¥è®¿é—®ã€‚
     static{
-        System.out.println("CodeµÄ¾²Ì¬´úÂë¿é");
+        System.out.println("Codeçš„é™æ€ä»£ç å—");
     }
     
     {
-    	System.out.println("CodeµÄ¹¹Ôì¿é");
+    	System.out.println("Codeçš„æ„é€ å—");
 	}
         
     public Code(){
-        System.out.println("CodeµÄ¹¹Ôì·½·¨");
+        System.out.println("Codeçš„æ„é€ æ–¹æ³•");
     }
 }
 
-//Í¬²½´úÂë¿é
+//åŒæ­¥ä»£ç å—
 class SyncBlock{
 	
 }

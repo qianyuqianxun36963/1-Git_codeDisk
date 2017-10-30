@@ -1,4 +1,4 @@
-package javaÓïÑÔ.e_¶Ô½Ó.½Å±¾;
+package javaè¯­è¨€.e_å¯¹æ¥.è„šæœ¬;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -6,31 +6,31 @@ import java.io.InputStreamReader;
 
 public class InterfaceToBat {
 	public static void main(String[] args) throws IOException {
-		//µ¥ÌõÖ¸ÁîµÄÖ´ĞĞ£¬Ö±½Ó¸ø³öÖ¸Áî¼´¿É¡£ÈçÏÂ¡£
-		//String batString="net user"; //cmd ÓĞĞ©ÃüÁîÊÇÃ»ÓĞ¶øpowershellÓĞµÄ£¬Èçget-command, ÕâÀïÖ»ÒªºóÕß»á±¨´í¡£
+		//å•æ¡æŒ‡ä»¤çš„æ‰§è¡Œï¼Œç›´æ¥ç»™å‡ºæŒ‡ä»¤å³å¯ã€‚å¦‚ä¸‹ã€‚
+		//String batString="net user"; //cmd æœ‰äº›å‘½ä»¤æ˜¯æ²¡æœ‰è€Œpowershellæœ‰çš„ï¼Œå¦‚get-command, è¿™é‡Œåªè¦åè€…ä¼šæŠ¥é”™ã€‚
 		
-		//¶àÌõÖ¸ÁîÒ»ÆğÖ´ĞĞ,¿ÉÒÔ¼Ócmd /c ¿ªÍ·£¬È»ºó¶àÌõÖ¸Áî,ÓÃ¡®&&¡¯·Ö¸ôÖ¸Áî¡£
-		//String batString="cmd /c net user && net user";  //¶àÌõÖ¸Áî£¬ÓÃ¡°&&¡±·Ö¸ô
+		//å¤šæ¡æŒ‡ä»¤ä¸€èµ·æ‰§è¡Œ,å¯ä»¥åŠ cmd /c å¼€å¤´ï¼Œç„¶åå¤šæ¡æŒ‡ä»¤,ç”¨â€˜&&â€™åˆ†éš”æŒ‡ä»¤ã€‚
+		//String batString="cmd /c net user && net user";  //å¤šæ¡æŒ‡ä»¤ï¼Œç”¨â€œ&&â€åˆ†éš”
 		
-		//Ö´ĞĞÎÄ¼şÀïµÄÄÚÈİ¿ÉÒÔ¶Á³ö£¬²¢±£´æÔÚString¶ÔÏóÀï£¬ÕâÑù¿ÉÒÔÊ¡È¥¶ÁĞ´ÎÄ¼şµÄ²Ù×÷£¬Ğ§ÂÊ¸ü¸ß¡£ÕâÀï£¬¿ÉÒÔ¸´ÖÆÕ³Ìù
-		//String powershellstring="&{[ÕâÀïÖ±½ÓÕ³Ìùbatfile_string.txtÎÄ¼şÀïµÄÄÚÈİ]}";
-		//String batString="cmd /c net user  &&net user  &&net user  ";  //¶àÌõÖ¸Áî£¬ÓÃ¡°&&¡±·Ö¸ô
+		//æ‰§è¡Œæ–‡ä»¶é‡Œçš„å†…å®¹å¯ä»¥è¯»å‡ºï¼Œå¹¶ä¿å­˜åœ¨Stringå¯¹è±¡é‡Œï¼Œè¿™æ ·å¯ä»¥çœå»è¯»å†™æ–‡ä»¶çš„æ“ä½œï¼Œæ•ˆç‡æ›´é«˜ã€‚è¿™é‡Œï¼Œå¯ä»¥å¤åˆ¶ç²˜è´´
+		//String powershellstring="&{[è¿™é‡Œç›´æ¥ç²˜è´´batfile_string.txtæ–‡ä»¶é‡Œçš„å†…å®¹]}";
+		//String batString="cmd /c net user  &&net user  &&net user  ";  //å¤šæ¡æŒ‡ä»¤ï¼Œç”¨â€œ&&â€åˆ†éš”
 		
-		//ÏÂÃæÕâ¾ä£¬ÊÇÓÃÁË×Ô¼ºĞ´µÄ·½·¨£¬½«.batÎÄ¼şÖĞµÄÄÚÈİ¶Á×Ö·û´®È»ºóÖ´ĞĞ¡£
-		//FileUtils.setBasepath("/src/javaÓïÑÔ");
+		//ä¸‹é¢è¿™å¥ï¼Œæ˜¯ç”¨äº†è‡ªå·±å†™çš„æ–¹æ³•ï¼Œå°†.batæ–‡ä»¶ä¸­çš„å†…å®¹è¯»å­—ç¬¦ä¸²ç„¶åæ‰§è¡Œã€‚
+		//FileUtils.setBasepath("/src/javaè¯­è¨€");
 		//String batString="cmd /c "+FileUtils.readBatFile("batfile.bat","gbk",false);
 		
-		//Ö±½ÓÖ´ĞĞ½Å±¾Óï¾äµÄ·½Ê½Ö´ĞĞ½Å±¾¡£
-		//System.out.println("Ö´ĞĞ: "+batString);
+		//ç›´æ¥æ‰§è¡Œè„šæœ¬è¯­å¥çš„æ–¹å¼æ‰§è¡Œè„šæœ¬ã€‚
+		//System.out.println("æ‰§è¡Œ: "+batString);
 		//InterfaceToBat.runbatstring(batString);
 		
-		//batfilename ÕâÀïµÄÎÄ¼şÃû×Ö¿ÉÒÔºÜËæÒâ£¬Ö»ÒªÊÇ¡®/¡¯ºÍ¡®\\¡¯µÄ×éºÏ¾ÍĞĞ¡£
-		String batfilename = FileUtils.getcurpath()+"\\src/javaÓïÑÔ\\d_¶Ô½Ó/½Å±¾\\shellsfiles\\batfile.bat";
+		//batfilename è¿™é‡Œçš„æ–‡ä»¶åå­—å¯ä»¥å¾ˆéšæ„ï¼Œåªè¦æ˜¯â€˜/â€™å’Œâ€˜\\â€™çš„ç»„åˆå°±è¡Œã€‚
+		String batfilename = FileUtils.getcurpath()+"\\src/javaè¯­è¨€\\d_å¯¹æ¥/è„šæœ¬\\shellsfiles\\batfile.bat";
 		//String batfilename ="D:\\SVN\\SVNversion\\bin\\svnSetup.bat";
-		//Ö´ĞĞÎÄ¼şµÄ·½Ê½Ö´ĞĞ½Å±¾
+		//æ‰§è¡Œæ–‡ä»¶çš„æ–¹å¼æ‰§è¡Œè„šæœ¬
         InterfaceToBat.runbatfile(batfilename);
 
-        //ÆäÊµ¶ÔÒÑbatÎÄ¼şµÄÖ´ĞĞ£¬¶¼Ò»Ñù¡£batÈ«Ãû¿ÉÒÔÔÚexec·½·¨ÖĞÖ±½Óµ±ÃüÁî.
+        //å…¶å®å¯¹å·²batæ–‡ä»¶çš„æ‰§è¡Œï¼Œéƒ½ä¸€æ ·ã€‚batå…¨åå¯ä»¥åœ¨execæ–¹æ³•ä¸­ç›´æ¥å½“å‘½ä»¤.
         //InterfaceToBat.runbat(batString);
         //InterfaceToBat.runbat(batfilename);
 	}
@@ -50,7 +50,7 @@ public class InterfaceToBat {
             ps.getOutputStream().close(); 
             //ps.getErrorStream().close(); 
             
-          //·µ»ØĞÅÏ¢µÄ»ñÈ¡ÓëÕ¹Ê¾¡£
+          //è¿”å›ä¿¡æ¯çš„è·å–ä¸å±•ç¤ºã€‚
             br = new BufferedReader(new InputStreamReader(ps.getInputStream()));
             br_error = new BufferedReader(new InputStreamReader(ps.getErrorStream()));
             String line = null;

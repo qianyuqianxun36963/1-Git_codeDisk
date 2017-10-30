@@ -1,7 +1,7 @@
 // holding/Ex2.java
 // TIJ4 Chapter Holding, Exercise 2, page 396
 // Modify SimpleCollection.java to use a Set for c.
-package javaÓïÑÔ.b_Êı¾İ.ÈİÆ÷.ÊµÓÃÈİÆ÷;
+package javaè¯­è¨€.b_æ•°æ®.å®¹å™¨.å®ç”¨å®¹å™¨;
 
 import java.util.*;
 

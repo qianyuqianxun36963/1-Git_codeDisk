@@ -1,3 +1,3 @@
-package javaÓïÑÔ.a_×éÖ¯.c_Àà.·â×°;
+package javaè¯­è¨€.a_ç»„ç»‡.c_ç±».å°è£…;
 
-public class °üÄÚ×ÓÀà  extends »ù±¾¸¸Àà{}
+public class åŒ…å†…å­ç±»  extends åŸºæœ¬çˆ¶ç±»{}

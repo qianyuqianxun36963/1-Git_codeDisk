@@ -1,6 +1,6 @@
-package java语言.d_系统.并发;
+package java璇█.d_绯荤粺.骞跺彂;
 
-public class ThinkJava代码 {
+public class ThinkJava浠ｇ爜 {
 	public static void main(String args[]){
 //		SimpleThread.test();
 //		YieldThread.test();

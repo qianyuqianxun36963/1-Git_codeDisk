@@ -1,15 +1,15 @@
-package ´´½¨ĞÍÄ£Ê½.¹¤³§Ä£Ê½;
+package åˆ›å»ºå‹æ¨¡å¼.å·¥å‚æ¨¡å¼;
 
 public class Xtd_ExtendFactoryA extends Factory_Abstract{
 
 	@Override
 	I_Moveable getMoveable() {
-		return new Impl_Plane();//·µ»Ø¾ßÌåµÄÄ³Àà²úÆ·
+		return new Impl_Plane();//è¿”å›å…·ä½“çš„æŸç±»äº§å“
 	}
 
 	@Override
 	I_Writeable getWriteable() {
-		return new Impl_Pencil();//·µ»Ø¾ßÌåµÄÄ³Àà²úÆ·
+		return new Impl_Pencil();//è¿”å›å…·ä½“çš„æŸç±»äº§å“
 	}
 
 }

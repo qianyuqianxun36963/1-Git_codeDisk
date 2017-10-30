@@ -1,6 +1,6 @@
-package javaÓïÑÔ.b_Êı¾İ.ÀàĞÍ.×Ö·û´®Àà;
+package javaè¯­è¨€.b_æ•°æ®.ç±»å‹.å­—ç¬¦ä¸²ç±»;
 
-public class ×Ö·û´®³£ÓÃ¹¤¾ß {
+public class å­—ç¬¦ä¸²å¸¸ç”¨å·¥å…· {
 	public static void main(String args[]){
 		String string = "   /#path#/ ";
 		String result1 = util.mytrim(string,"/");
@@ -9,7 +9,7 @@ public class ×Ö·û´®³£ÓÃ¹¤¾ß {
 	}
 }
 
-//È¥³ıÍ·Î²ÌØ¶¨µÄ×Ö·û
+//å»é™¤å¤´å°¾ç‰¹å®šçš„å­—ç¬¦
 class util{
 	public static String mytrim(String str,String tag){
 		str = str.trim();

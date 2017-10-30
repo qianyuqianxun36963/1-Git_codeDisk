@@ -1,14 +1,14 @@
-package javaÓïÑÔ.c_ÌØĞÔ.ĞòÁĞ»¯;
+package javaè¯­è¨€.c_ç‰¹æ€§.åºåˆ—åŒ–;
 
 import java.io.*;
 import java.util.HashMap;
 import java.util.Map;
 
-public class ĞòÁĞ»¯ {
+public class åºåˆ—åŒ– {
 	public static void main(String[] args)  
 	 {  
       String curpath  = new File("").getAbsolutePath();
-	  String filepath = curpath+"/src/javaÓïÑÔ/c_ÌØĞÔ/ĞòÁĞ»¯";
+	  String filepath = curpath+"/src/javaè¯­è¨€/c_ç‰¹æ€§/åºåˆ—åŒ–";
 		
 	  Map<String, String> map = new HashMap<String, String>();
 	  SerializableObject st = new SerializableObject(123,"123",map);  
@@ -23,7 +23,7 @@ public class ĞòÁĞ»¯ {
 	  }  
 	  try  
 	  {  
-	   //Student¶ÔÏóĞòÁĞ»¯¹ı³Ì  
+	   //Studentå¯¹è±¡åºåˆ—åŒ–è¿‡ç¨‹  
 	   FileOutputStream fos = new FileOutputStream(file);  
 	   ObjectOutputStream oos = new ObjectOutputStream(fos);  
 	   oos.writeObject(st);  
@@ -31,7 +31,7 @@ public class ĞòÁĞ»¯ {
 	   oos.close();  
 	   fos.close();  
 	  
-	   //Student¶ÔÏó·´ĞòÁĞ»¯¹ı³Ì  
+	   //Studentå¯¹è±¡ååºåˆ—åŒ–è¿‡ç¨‹  
 	   FileInputStream fis = new FileInputStream(file);  
 	   ObjectInputStream ois = new ObjectInputStream(fis);  
 	   SerializableObject st1 = (SerializableObject) ois.readObject();  

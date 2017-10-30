@@ -1,5 +1,5 @@
-package javaÓïÑÔ.a_×éÖ¯.c_Àà.·â×°.°üÍâ;
+package javaè¯­è¨€.a_ç»„ç»‡.c_ç±».å°è£….åŒ…å¤–;
 
-import javaÓïÑÔ.a_×éÖ¯.c_Àà.·â×°.*;
+import javaè¯­è¨€.a_ç»„ç»‡.c_ç±».å°è£….*;
 
-public class °üÍâ×ÓÀà  extends »ù±¾¸¸Àà{}
+public class åŒ…å¤–å­ç±»  extends åŸºæœ¬çˆ¶ç±»{}

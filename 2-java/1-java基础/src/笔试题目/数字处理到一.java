@@ -1,6 +1,6 @@
-package 笔试题目;
+package 绗旇瘯棰樼洰;
 
-public class 数字处理到一 {
+public class 鏁板瓧澶勭悊鍒颁竴 {
 	public static void main(String[] args) throws Exception {
 		int number=121;
 //		System.out.println(number);

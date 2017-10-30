@@ -1,4 +1,4 @@
-package ĞĞÎªÄ£Ê½.½âÊÍÆ÷;
+package è¡Œä¸ºæ¨¡å¼.è§£é‡Šå™¨;
 
 public abstract class Expression {
 	public abstract int interpret(Context con);

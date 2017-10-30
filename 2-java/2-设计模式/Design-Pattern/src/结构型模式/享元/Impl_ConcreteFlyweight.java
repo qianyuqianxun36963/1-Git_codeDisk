@@ -1,4 +1,4 @@
-package �ṹ��ģʽ.��Ԫ;
+package 结构型模式.享元;
 
 /**
  *  A shared ConcreteFlyweight

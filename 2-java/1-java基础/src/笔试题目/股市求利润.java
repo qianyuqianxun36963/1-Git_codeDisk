@@ -1,6 +1,6 @@
-package ±ÊÊÔÌâÄ¿;
+package ç¬”è¯•é¢˜ç›®;
 
-public class ¹ÉÊĞÇóÀûÈó {
+public class è‚¡å¸‚æ±‚åˆ©æ¶¦ {
 
 	public static void main(String[] args) throws Exception {
     int[] a={1,2,3,4,1,1,5,1,23,21,45,2,3,87,94,1,2,21,1};
@@ -10,7 +10,7 @@ public class ¹ÉÊĞÇóÀûÈó {
 
 	
 	public static int calculateMax(int[] prices) throws Exception {
-		// ÇëÔÚ´ËÌí¼Ó´úÂë
+		// è¯·åœ¨æ­¤æ·»åŠ ä»£ç 
 		int length=prices.length;
 		//System.out.println("length"+length);
 		int[] earns=new int[length-1];
@@ -28,7 +28,7 @@ public class ¹ÉÊĞÇóÀûÈó {
 			if(sum[k]<=0) {k++;sum[k]=0;max[k]=0;}
 		}
 
-		//·µ»ØMAXÊı×éÖĞ£¬×î´óµÄmaxÖµ
+		//è¿”å›MAXæ•°ç»„ä¸­ï¼Œæœ€å¤§çš„maxå€¼
 		if(k==0) return max[0];
 		else if(k==1) return max[0]+max[1];
 		else {

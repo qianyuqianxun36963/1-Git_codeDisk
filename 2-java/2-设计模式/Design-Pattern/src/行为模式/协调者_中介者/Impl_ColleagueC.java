@@ -1,4 +1,4 @@
-package ĞĞÎªÄ£Ê½.Ğ­µ÷Õß_ÖĞ½éÕß;
+package è¡Œä¸ºæ¨¡å¼.åè°ƒè€…_ä¸­ä»‹è€…;
 /**
  *  A concrete colleague 
  */

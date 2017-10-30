@@ -1,4 +1,4 @@
-package javaÓïÑÔ.e_¶Ô½Ó.Python;
+package javaè¯­è¨€.e_å¯¹æ¥.Python;
 
 public class InterfaceToPython {
 

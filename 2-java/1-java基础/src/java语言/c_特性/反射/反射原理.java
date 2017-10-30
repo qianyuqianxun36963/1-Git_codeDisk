@@ -1,56 +1,56 @@
-package javaÓïÑÔ.c_ÌØĞÔ.·´Éä;
+package javaè¯­è¨€.c_ç‰¹æ€§.åå°„;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
-public class ·´ÉäÔ­Àí {
+public class åå°„åŸç† {
 	public static void main(String[] args) throws ClassNotFoundException 
     {
         String [] names ={"tom","tim","allen","alice"};
 
-//      ¸ÅÄî1£º·´Éä»úÖÆÊÇÊ²Ã´
-//      ·´Éä»úÖÆÊÇÔÚÔËĞĞ×´Ì¬ÖĞ£¬¶ÔÓÚÈÎÒâÒ»¸öÀà£¬¶¼ÄÜ¹»ÖªµÀÕâ¸öÀàµÄËùÓĞÊôĞÔºÍ·½·¨£»
-//      ¶ÔÓÚÈÎÒâÒ»¸ö¶ÔÏó£¬¶¼ÄÜ¹»µ÷ÓÃËüµÄÈÎÒâÒ»¸ö·½·¨ºÍÊôĞÔ£»
-//      ÕâÖÖ¶¯Ì¬»ñÈ¡µÄĞÅÏ¢ÒÔ¼°¶¯Ì¬µ÷ÓÃ¶ÔÏóµÄ·½·¨µÄ¹¦ÄÜ³ÆÎªjavaÓïÑÔµÄ·´Éä»úÖÆ¡£
+//      æ¦‚å¿µ1ï¼šåå°„æœºåˆ¶æ˜¯ä»€ä¹ˆ
+//      åå°„æœºåˆ¶æ˜¯åœ¨è¿è¡ŒçŠ¶æ€ä¸­ï¼Œå¯¹äºä»»æ„ä¸€ä¸ªç±»ï¼Œéƒ½èƒ½å¤ŸçŸ¥é“è¿™ä¸ªç±»çš„æ‰€æœ‰å±æ€§å’Œæ–¹æ³•ï¼›
+//      å¯¹äºä»»æ„ä¸€ä¸ªå¯¹è±¡ï¼Œéƒ½èƒ½å¤Ÿè°ƒç”¨å®ƒçš„ä»»æ„ä¸€ä¸ªæ–¹æ³•å’Œå±æ€§ï¼›
+//      è¿™ç§åŠ¨æ€è·å–çš„ä¿¡æ¯ä»¥åŠåŠ¨æ€è°ƒç”¨å¯¹è±¡çš„æ–¹æ³•çš„åŠŸèƒ½ç§°ä¸ºjavaè¯­è¨€çš„åå°„æœºåˆ¶ã€‚
         
-//		¸ÅÄî:2£ºClass<?> class ÀàÊµÀı
+//		æ¦‚å¿µ:2ï¼šClass<?> class ç±»å®ä¾‹
         
-//      ClassÀàÓÃÀ´ÃèÊöÒ»¸öÀàµÄ½á¹¹£¬±ÈÈçÃèÊöÒ»¸öÀàÓĞÄÄĞ©³ÉÔ±£¬ÓĞÄÄĞ©·½·¨µÈ¡£
+//      Classç±»ç”¨æ¥æè¿°ä¸€ä¸ªç±»çš„ç»“æ„ï¼Œæ¯”å¦‚æè¿°ä¸€ä¸ªç±»æœ‰å“ªäº›æˆå‘˜ï¼Œæœ‰å“ªäº›æ–¹æ³•ç­‰ã€‚
         
-//      ClassÀàÊµÀı»ñÈ¡·½Ê½£º
-//      <1> Ö±½ÓÍ¨¹ıÀà»¹»ñµÃ£º
+//      Classç±»å®ä¾‹è·å–æ–¹å¼ï¼š
+//      <1> ç›´æ¥é€šè¿‡ç±»è¿˜è·å¾—ï¼š
         Class<?> c = Test.class;
         
-//      <2>Í¨¹ı¶ÔÏóÀ´»ñµÃ
+//      <2>é€šè¿‡å¯¹è±¡æ¥è·å¾—
         Test test = new Test();
         Class<?> c2 = test.getClass();
         
-//      <3>Í¨¹ıClass.forNameÀ´»ñµÃ
-        Class<?> c3 = Class.forName("javaÓïÑÔ.c_ÌØĞÔ.·´Éä.Test");
+//      <3>é€šè¿‡Class.forNameæ¥è·å¾—
+        Class<?> c3 = Class.forName("javaè¯­è¨€.c_ç‰¹æ€§.åå°„.Test");
         
         
         
-        //ÕâÀïÓÃµÄÊÇÆäËûµÄÀà£¬Èç¹ûÊÇ±¾Àà×Ô¼º£¬¿ÉÒÔ²»ÓÃÉÏÃæÄÇ¾ä£¬Ö±½ÓÓÃthis:½«ÏÂÃæµÄ¶ÔÏó±êÖ¾c»»³Éthis
+        //è¿™é‡Œç”¨çš„æ˜¯å…¶ä»–çš„ç±»ï¼Œå¦‚æœæ˜¯æœ¬ç±»è‡ªå·±ï¼Œå¯ä»¥ä¸ç”¨ä¸Šé¢é‚£å¥ï¼Œç›´æ¥ç”¨this:å°†ä¸‹é¢çš„å¯¹è±¡æ ‡å¿—cæ¢æˆthis
         try
         {
-            Method method = c.getMethod("sayrHi", String.class);//²ÎÊı±ØĞëºÍ·½·¨ÖĞÒ»Ñù¡£intºÍInteger£¬doubleºÍDouble±»ÊÓÎª²»Í¬µÄÀàĞÍ
+            Method method = c.getMethod("sayrHi", String.class);//å‚æ•°å¿…é¡»å’Œæ–¹æ³•ä¸­ä¸€æ ·ã€‚intå’ŒIntegerï¼Œdoubleå’ŒDoubleè¢«è§†ä¸ºä¸åŒçš„ç±»å‹
             for(String name:names)
-                method.invoke(c.newInstance(),name);//invoke ·½·¨£¬µ÷ÓÃÀàÀïÂğµÄ·½·¨¡£
+                method.invoke(c.newInstance(),name);//invoke æ–¹æ³•ï¼Œè°ƒç”¨ç±»é‡Œå—çš„æ–¹æ³•ã€‚
         } 
         catch (NoSuchMethodException e) {
         	e.printStackTrace();
-			throw new RuntimeException("Ã»ÓĞ´Ë·½·¨£º" + e.getMessage(), e);
+			throw new RuntimeException("æ²¡æœ‰æ­¤æ–¹æ³•ï¼š" + e.getMessage(), e);
 		}catch(InvocationTargetException e){
 			e.printStackTrace();
-			throw new RuntimeException("Ä¿±ê·½·¨Ö´ĞĞÊ§°Ü£º" + e.getMessage(), e);
+			throw new RuntimeException("ç›®æ ‡æ–¹æ³•æ‰§è¡Œå¤±è´¥ï¼š" + e.getMessage(), e);
 		}catch(IllegalAccessException e){
 			e.printStackTrace();
-			throw new RuntimeException("Äã¿ÉÄÜ·ÃÎÊÁËÒ»¸öË½ÓĞµÄ·½·¨£º" + e.getMessage(), e);
+			throw new RuntimeException("ä½ å¯èƒ½è®¿é—®äº†ä¸€ä¸ªç§æœ‰çš„æ–¹æ³•ï¼š" + e.getMessage(), e);
 		}catch(IllegalArgumentException e){
 			e.printStackTrace();
-			throw new RuntimeException("·½·¨´«µİÁËÒ»¸ö²»ºÏ·¨»ò²»ÕıÈ·µÄ²ÎÊı£º" + e.getMessage(), e);
+			throw new RuntimeException("æ–¹æ³•ä¼ é€’äº†ä¸€ä¸ªä¸åˆæ³•æˆ–ä¸æ­£ç¡®çš„å‚æ•°ï¼š" + e.getMessage(), e);
         }catch(InstantiationException e){
         	e.printStackTrace();
-        	throw new RuntimeException("ÊµÀı»¯Òì³££º" + e.getMessage(), e);
+        	throw new RuntimeException("å®ä¾‹åŒ–å¼‚å¸¸ï¼š" + e.getMessage(), e);
         }catch(Exception e){
         	e.printStackTrace();
         	throw new RuntimeException(e.getMessage(), e);

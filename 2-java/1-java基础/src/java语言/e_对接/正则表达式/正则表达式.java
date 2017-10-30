@@ -1,35 +1,35 @@
-package javaÓïÑÔ.e_¶Ô½Ó.ÕıÔò±í´ïÊ½;
+package javaè¯­è¨€.e_å¯¹æ¥.æ­£åˆ™è¡¨è¾¾å¼;
 
 import java.util.regex.*;
 
-public class ÕıÔò±í´ïÊ½ {
+public class æ­£åˆ™è¡¨è¾¾å¼ {
 
-	private static Pattern pattern; //ÕâÀïÖ»ÄÜ¶¨ÒåÎªÀà³ÉÔ±£¬ÒòÎªÖ÷º¯ÊıÎªÀàº¯Êı¡£
+	private static Pattern pattern; //è¿™é‡Œåªèƒ½å®šä¹‰ä¸ºç±»æˆå‘˜ï¼Œå› ä¸ºä¸»å‡½æ•°ä¸ºç±»å‡½æ•°ã€‚
 	private static Matcher matcher;
 	
 	public static void main(String[] args) {
-		String regexstr="(&&)+";               //×¢Òâ¡®()¡¯ºÍ¡®[]¡¯µÄÇø±ğ!!!, []ÖĞµÄÊÇ»òº¬Òå£¬Ö»È¡ËùÁĞµÄÖµµÃÒ»¸ö,¶ø(),²ÅÊÇ×Ó±í´ïÊ½.
+		String regexstr="(&&)+";               //æ³¨æ„â€˜()â€™å’Œâ€˜[]â€™çš„åŒºåˆ«!!!, []ä¸­çš„æ˜¯æˆ–å«ä¹‰ï¼Œåªå–æ‰€åˆ—çš„å€¼å¾—ä¸€ä¸ª,è€Œ(),æ‰æ˜¯å­è¡¨è¾¾å¼.
 		//String regexstr="<#[^<]*#>";
 		//String regexstr="<#[\\s\\S]*#>";
-		//String regexstr="%[^%]*%"; //Æ¥Åä%~%Ö®¼äÃ»ÓĞ¡®%¡¯µÄ×Ó¾ä¡£¡°[^%]¡± ±íÊ¾·Ç¡®%¡¯µÄ×Ö·û¡£¡°*¡±ÔÚ¡°[^%]¡±ºóÃæ£¬±íÊ¾ÕâÑùµÄ×Ö·û³öÏÖ0´Î»ò¶à´Î¡£
-		//String regexstr2="%[\\s\\S]*%"; //ÕâÖÖµÄ»°»á½«Í·Î²Á½¸ö¡®%¡¯Ö®¼äµÄÄÚÈİÈ«Ìæ»»¡£
+		//String regexstr="%[^%]*%"; //åŒ¹é…%~%ä¹‹é—´æ²¡æœ‰â€˜%â€™çš„å­å¥ã€‚â€œ[^%]â€ è¡¨ç¤ºéâ€˜%â€™çš„å­—ç¬¦ã€‚â€œ*â€åœ¨â€œ[^%]â€åé¢ï¼Œè¡¨ç¤ºè¿™æ ·çš„å­—ç¬¦å‡ºç°0æ¬¡æˆ–å¤šæ¬¡ã€‚
+		//String regexstr2="%[\\s\\S]*%"; //è¿™ç§çš„è¯ä¼šå°†å¤´å°¾ä¸¤ä¸ªâ€˜%â€™ä¹‹é—´çš„å†…å®¹å…¨æ›¿æ¢ã€‚
 		
-		//String searchstr="123<#×¢ÊÍ 1#>%note1%456<#×¢#ÊÍ2#>%note2%789";
-		//String searchstr="get-command;<#;cmd Õë¶Ôwindows;powershellÕë¶Ô.net¼Ü¹¹ ±ÈÈçÓÃC# ¿ª·¢µÄ³ÌĞò;ºÜ¶àÃüÁî£¬cmdÓĞ£¬powershellÒ²ÓĞ¡£ ÀıÈç£º'net user'£»'cd **'µÈ¡£;ÓĞĞ©ÃüÁî£¬cmdÃ»ÓĞ£¬powershellÊÇÓĞµÄ¡£ÀıÈç£ºget-command;#>";
-		String searchstr="123<#×¢ÊÍ 1#>&&&&%note1%456<#×¢ÊÍ 2#>%note2%789";
+		//String searchstr="123<#æ³¨é‡Š 1#>%note1%456<#æ³¨#é‡Š2#>%note2%789";
+		//String searchstr="get-command;<#;cmd é’ˆå¯¹windows;powershellé’ˆå¯¹.netæ¶æ„ æ¯”å¦‚ç”¨C# å¼€å‘çš„ç¨‹åº;å¾ˆå¤šå‘½ä»¤ï¼Œcmdæœ‰ï¼Œpowershellä¹Ÿæœ‰ã€‚ ä¾‹å¦‚ï¼š'net user'ï¼›'cd **'ç­‰ã€‚;æœ‰äº›å‘½ä»¤ï¼Œcmdæ²¡æœ‰ï¼Œpowershellæ˜¯æœ‰çš„ã€‚ä¾‹å¦‚ï¼šget-command;#>";
+		String searchstr="123<#æ³¨é‡Š 1#>&&&&%note1%456<#æ³¨é‡Š 2#>%note2%789";
 		
 		Matcher matcher=matchString(regexstr,searchstr);
 		
-		//½«ÓÚ Æ¥ÅäÏàÒ»ÖÂµÄ×Ö·û´®Ìæ»»ÎªËù¸øµÄ×Ö·û´®¡£
+		//å°†äº åŒ¹é…ç›¸ä¸€è‡´çš„å­—ç¬¦ä¸²æ›¿æ¢ä¸ºæ‰€ç»™çš„å­—ç¬¦ä¸²ã€‚
 		String removedstr = matcher.replaceAll(""); 
 		System.out.println(removedstr);
 		
-		//·ÃÎÊ±»Æ¥Åä³öÀ´µÄ×Ó×Ö·û´®¡£
+		//è®¿é—®è¢«åŒ¹é…å‡ºæ¥çš„å­å­—ç¬¦ä¸²ã€‚
 		try{
 			String resultstr= matcher.group();
 			System.out.println(resultstr);
 			
-			matcher.find(); //ÔÚÉÏ´Î»ù´¡ÉÏÕÒÏÂÒ»´ÎÆ¥ÅäµÄ×Ó×Ö·û´®¡£
+			matcher.find(); //åœ¨ä¸Šæ¬¡åŸºç¡€ä¸Šæ‰¾ä¸‹ä¸€æ¬¡åŒ¹é…çš„å­å­—ç¬¦ä¸²ã€‚
 			String resultstr2 = matcher.group();
 			System.out.println(resultstr2);
 		}
@@ -42,7 +42,7 @@ public class ÕıÔò±í´ïÊ½ {
     	pattern=Pattern.compile(regex,Pattern.CASE_INSENSITIVE);
         matcher=pattern.matcher(input);
         try{
-			matcher.find(); //ÕâÀïÇ§Íò²»¿ÉÒÔÉÙ¡£²»È»¸ù±¾Ã»È¥ËÑ¡£ÕâÀïËÑË÷ÁËµÚÒ»¸ö·ûºÏÌõ¼şµÄ×Ó×Ö·û´®¡£Èç¹ûÕÒÏÂÒ»¸ö£¬¼ÇµÃÓÃ·µ»ØµÄmatcher¶ÔÏóÔÙ´Î£¬matcher.find
+			matcher.find(); //è¿™é‡Œåƒä¸‡ä¸å¯ä»¥å°‘ã€‚ä¸ç„¶æ ¹æœ¬æ²¡å»æœã€‚è¿™é‡Œæœç´¢äº†ç¬¬ä¸€ä¸ªç¬¦åˆæ¡ä»¶çš„å­å­—ç¬¦ä¸²ã€‚å¦‚æœæ‰¾ä¸‹ä¸€ä¸ªï¼Œè®°å¾—ç”¨è¿”å›çš„matcherå¯¹è±¡å†æ¬¡ï¼Œmatcher.find
 			String resultstr = matcher.group();
 			System.out.println(resultstr);
         }

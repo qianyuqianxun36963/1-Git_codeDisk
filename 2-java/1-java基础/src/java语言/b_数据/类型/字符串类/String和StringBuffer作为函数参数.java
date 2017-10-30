@@ -1,51 +1,51 @@
-package javaÓïÑÔ.b_Êı¾İ.ÀàĞÍ.×Ö·û´®Àà;
+package javaè¯­è¨€.b_æ•°æ®.ç±»å‹.å­—ç¬¦ä¸²ç±»;
 
 
-public class StringºÍStringBuffer×÷Îªº¯Êı²ÎÊı {
+public class Stringå’ŒStringBufferä½œä¸ºå‡½æ•°å‚æ•° {
 	
-	private static String str; //String Ò»µ©´´½¨£¬ËüµÄÄÚ´æ¾ÍÊÇĞ´ËÀµÄÁË£¬²»ÄÜÔÙ¸Ä±ä¡£
-	//String ÀàĞÍÊÇfinalµÄ£¬µÚ1´Î¸³ÖµÖ®ºó£¬Ö®ºóµÄĞŞ¸Ä¶¼ÊÇ²úÉúĞÂµÄ¶ÔÏó£¬²¢²»ÊÇ²Ù×÷µÄÔ­Ê¼¶ÔÏó¡£
+	private static String str; //String ä¸€æ—¦åˆ›å»ºï¼Œå®ƒçš„å†…å­˜å°±æ˜¯å†™æ­»çš„äº†ï¼Œä¸èƒ½å†æ”¹å˜ã€‚
+	//String ç±»å‹æ˜¯finalçš„ï¼Œç¬¬1æ¬¡èµ‹å€¼ä¹‹åï¼Œä¹‹åçš„ä¿®æ”¹éƒ½æ˜¯äº§ç”Ÿæ–°çš„å¯¹è±¡ï¼Œå¹¶ä¸æ˜¯æ“ä½œçš„åŸå§‹å¯¹è±¡ã€‚
 	
 	public static String getStr() {
 		return str;
 	}
 
 	public void setStr(String str) {
-		StringºÍStringBuffer×÷Îªº¯Êı²ÎÊı.str = str;
+		Stringå’ŒStringBufferä½œä¸ºå‡½æ•°å‚æ•°.str = str;
 	}
 
 	public static void main(String args[]){
-		StringºÍStringBuffer×÷Îªº¯Êı²ÎÊı  strtest = new StringºÍStringBuffer×÷Îªº¯Êı²ÎÊı();
+		Stringå’ŒStringBufferä½œä¸ºå‡½æ•°å‚æ•°  strtest = new Stringå’ŒStringBufferä½œä¸ºå‡½æ•°å‚æ•°();
 		strtest.setStr("wangyajun");
 		strtest.test();		
 	}
 	
 	public void test(){
 		System.out.println(">>>>>>>>String:");
-		System.out.println("º¯ÊıÍâ±ä»¯Ö®Ç°"+str);
+		System.out.println("å‡½æ•°å¤–å˜åŒ–ä¹‹å‰"+str);
 		changeStr.changeStr_string_new(str);
-		System.out.println("º¯ÊıÍâ±ä»¯Ö®ºó"+str);
+		System.out.println("å‡½æ•°å¤–å˜åŒ–ä¹‹å"+str);
 		
-		System.out.println("º¯ÊıÍâ±ä»¯Ö®Ç°"+str);
+		System.out.println("å‡½æ•°å¤–å˜åŒ–ä¹‹å‰"+str);
 		changeStr.changeStr_string_change(str);
-		System.out.println("º¯ÊıÍâ±ä»¯Ö®ºó"+str);
+		System.out.println("å‡½æ•°å¤–å˜åŒ–ä¹‹å"+str);
 
 		System.out.println("\n>>>>>>>>StringBuffer:");
 		StringBuffer strBuf=new StringBuffer("1111");
-		System.out.println("º¯ÊıÍâ±ä»¯Ö®Ç°"+strBuf);
+		System.out.println("å‡½æ•°å¤–å˜åŒ–ä¹‹å‰"+strBuf);
 		changeStr.changeStr_buffer_new(strBuf);
-		System.out.println("º¯ÊıÍâ±ä»¯Ö®ºó"+strBuf);
+		System.out.println("å‡½æ•°å¤–å˜åŒ–ä¹‹å"+strBuf);
 		
-		System.out.println("º¯ÊıÍâ±ä»¯Ö®Ç°"+strBuf);
+		System.out.println("å‡½æ•°å¤–å˜åŒ–ä¹‹å‰"+strBuf);
 		changeStr.changeStr_buffer_change(strBuf);
-		System.out.println("º¯ÊıÍâ±ä»¯Ö®ºó"+strBuf);
+		System.out.println("å‡½æ•°å¤–å˜åŒ–ä¹‹å"+strBuf);
 		
-		//ÑéÖ¤´«µİStringÊ±ÊÇ´«Öµ»¹ÊÇ´«ÒıÓÃ¡£
-		System.out.println("\n>>>>>>>>StringÑéÖ¤:");
+		//éªŒè¯ä¼ é€’Stringæ—¶æ˜¯ä¼ å€¼è¿˜æ˜¯ä¼ å¼•ç”¨ã€‚
+		System.out.println("\n>>>>>>>>StringéªŒè¯:");
 		StringTest.test();
 		
-		System.out.println("\n>>>>>>>>StringBufferÑéÖ¤:");
-		//ÑéÖ¤´«µİStringBufferÊ±ÊÇ´«Öµ»¹ÊÇ´«ÒıÓÃ¡£
+		System.out.println("\n>>>>>>>>StringBufferéªŒè¯:");
+		//éªŒè¯ä¼ é€’StringBufferæ—¶æ˜¯ä¼ å€¼è¿˜æ˜¯ä¼ å¼•ç”¨ã€‚
 		StringBufferTest.test();
 	}
 }
@@ -59,8 +59,8 @@ class changeStr{
 	}
 	
 	public static void changeStr_string_change(String str){
-		str=str.concat("9999"); //ÕâÀïÊÇÔÚº¯ÊıÄÚ²¿½¨Á¢ÒÔÒ»¸öĞÂ¶ÔÏó¡£·µ»Ø²»»ØÈ¥µÄ¡£
-		System.out.println("º¯ÊıÄÚ²¿±ä»¯Ö®ºó"+str);
+		str=str.concat("9999"); //è¿™é‡Œæ˜¯åœ¨å‡½æ•°å†…éƒ¨å»ºç«‹ä»¥ä¸€ä¸ªæ–°å¯¹è±¡ã€‚è¿”å›ä¸å›å»çš„ã€‚
+		System.out.println("å‡½æ•°å†…éƒ¨å˜åŒ–ä¹‹å"+str);
 	}
 	
 	public static void changeStr_buffer_new(StringBuffer str){
@@ -72,7 +72,7 @@ class changeStr{
 	}
 }
 
-/*ÑéÖ¤´«µİStringÊ±ÊÇ´«Öµ»¹ÊÇ´«ÒıÓÃ¡£*/
+/*éªŒè¯ä¼ é€’Stringæ—¶æ˜¯ä¼ å€¼è¿˜æ˜¯ä¼ å¼•ç”¨ã€‚*/
 class StringTest {
 	public static void test(){
 		String str = "java";
@@ -86,13 +86,13 @@ class StringTest {
 	 
 
 	public static void change(String str1,String str2) {
-		str1 = str1 + ""; //ÕâÀïÊÇĞÂ½¨ÁËÒ»¸ö¶ÔÏó£¬²»ÊÇÔ­À´µÄ¶ÔÏóÉÏĞŞ¸Ä¶øÀ´µÄÁË¡£
+		str1 = str1 + ""; //è¿™é‡Œæ˜¯æ–°å»ºäº†ä¸€ä¸ªå¯¹è±¡ï¼Œä¸æ˜¯åŸæ¥çš„å¯¹è±¡ä¸Šä¿®æ”¹è€Œæ¥çš„äº†ã€‚
 		System.out.println("change--->>"+(str1 == str2));
 	}
 }
 
 
-/*ÑéÖ¤´«µİStringBufferÊ±ÊÇ´«Öµ»¹ÊÇ´«ÒıÓÃ¡£*/
+/*éªŒè¯ä¼ é€’StringBufferæ—¶æ˜¯ä¼ å€¼è¿˜æ˜¯ä¼ å¼•ç”¨ã€‚*/
 class StringBufferTest {
 	public static void test(){
 		StringBuffer str = new StringBuffer("java");
@@ -100,14 +100,14 @@ class StringBufferTest {
 		change(str, str);
 	}
 	
-	//¾­ÑéÖ¤£¬´«ÈëµÄ¾ÍÊÇÒıÓÃ£¡£¡
+	//ç»éªŒè¯ï¼Œä¼ å…¥çš„å°±æ˜¯å¼•ç”¨ï¼ï¼
 	public static void nochange(StringBuffer str1,StringBuffer str2) {
 		System.out.println("nochange--->>"+(str1 == str2));
 	}
 	 
-	//´«ÈëµÄÊÇÒıÓÃ£¬¶øÇÒĞŞ¸ÄÒıÓÃºó×÷ÓÃÓÚÔ­ÒıÓÃÖ¸ÏòµÄ¶ÔÏóÁË¡£
+	//ä¼ å…¥çš„æ˜¯å¼•ç”¨ï¼Œè€Œä¸”ä¿®æ”¹å¼•ç”¨åä½œç”¨äºåŸå¼•ç”¨æŒ‡å‘çš„å¯¹è±¡äº†ã€‚
 	public static void change(StringBuffer str1,StringBuffer str2) {
-		str1 = str1.append("changed");//ÕâÀïÊÇÔÚÔ­¶ÔÏóÉÏĞŞ¸Ä¶øÀ´£¬¾ÍÏñCÓïÑÔÀïµÄ´«ÒıÓÃÀàËÆÁË¡£
+		str1 = str1.append("changed");//è¿™é‡Œæ˜¯åœ¨åŸå¯¹è±¡ä¸Šä¿®æ”¹è€Œæ¥ï¼Œå°±åƒCè¯­è¨€é‡Œçš„ä¼ å¼•ç”¨ç±»ä¼¼äº†ã€‚
 		System.out.println("change--->>"+(str1 == str2));
 	}
 }

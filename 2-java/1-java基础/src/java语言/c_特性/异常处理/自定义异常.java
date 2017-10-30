@@ -1,5 +1,5 @@
-package javaÓïÑÔ.c_ÌØĞÔ.Òì³£´¦Àí;
+package javaè¯­è¨€.c_ç‰¹æ€§.å¼‚å¸¸å¤„ç†;
 
-public class ×Ô¶¨ÒåÒì³£ {
+public class è‡ªå®šä¹‰å¼‚å¸¸ {
 
 }

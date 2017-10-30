@@ -1,9 +1,9 @@
-package javaÓïÑÔ.c_ÌØĞÔ.Òì³£´¦Àí;
+package javaè¯­è¨€.c_ç‰¹æ€§.å¼‚å¸¸å¤„ç†;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
-public class ½Ó¿ÚÅ×Òì³£ {
+public class æ¥å£æŠ›å¼‚å¸¸ {
     public static void main(String args[]) throws IOException{
     	Level level = new Level(1);
 //    	Level level = new Level(11);
@@ -20,13 +20,13 @@ public class ½Ó¿ÚÅ×Òì³£ {
 class Level{int level;Level(int i){this.level = i;}}
 
 interface A{
-    void print() throws IOException;//¶¨ÒåµÄ½Ó¿ÚµÄ·½·¨,Å×³öIOÒì³£
+    void print() throws IOException;//å®šä¹‰çš„æ¥å£çš„æ–¹æ³•,æŠ›å‡ºIOå¼‚å¸¸
 }
 
 class B implements A {
 	Level n;B(Level n){this.n = n;}
 	@Override
-    public void print() throws FileNotFoundException {//ÊµÏÖ·½·¨¿ÉÒÔÅ×³öIOÒì³£µÄ×ÓÀàÒì³£
+    public void print() throws FileNotFoundException {//å®ç°æ–¹æ³•å¯ä»¥æŠ›å‡ºIOå¼‚å¸¸çš„å­ç±»å¼‚å¸¸
 		if(n.level<10){throw new FileNotFoundException("file not found!");}
 	}
 }
@@ -34,7 +34,7 @@ class B implements A {
 class C implements A{
 	Level n;C(Level n){this.n = n;}
     @Override
-    public void print() throws IOException {//¿ÉÒÔÅ×³öÒ»ÑùµÄÒì³£
+    public void print() throws IOException {//å¯ä»¥æŠ›å‡ºä¸€æ ·çš„å¼‚å¸¸
     	if(10<n.level&&n.level<20){throw new IOException("IOException!");}
     }
 }
@@ -42,7 +42,7 @@ class C implements A{
 class D implements A{
 	Level n;D(Level n){this.n = n;}
     @Override
-    public void print()  {//¿ÉÒÔ²»Å×Òì³£
+    public void print()  {//å¯ä»¥ä¸æŠ›å¼‚å¸¸
     	System.out.println("nothing here, no problem");
     }
 }

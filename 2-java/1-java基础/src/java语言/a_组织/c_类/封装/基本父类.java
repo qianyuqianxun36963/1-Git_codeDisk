@@ -1,17 +1,17 @@
-package javaÓïÑÔ.a_×éÖ¯.c_Àà.·â×°;
+package javaè¯­è¨€.a_ç»„ç»‡.c_ç±».å°è£…;
 
-public class »ù±¾¸¸Àà{
+public class åŸºæœ¬çˆ¶ç±»{
 	public void publicfunction(){System.out.println("this is public function");}
 	protected void protectedfunction(){System.out.println("this is protected function");}
-//	²»¼Ó·ÃÎÊĞŞÊÎ´ÊµÄ³ÉÔ±±äÁ¿ºÍ³ÉÔ±·½·¨³ÆÎªÓÑºÃ±äÁ¿ºÍÓÑºÃ·½·¨¡£Í¬Ò»¸ö°üÖĞµÄÀà¿ÉÒÔ·ÃÎÊÖ®£¬°üÍâµÄÀà¼´Ê¹importÁËËüËùÔÚµÄ°ü£¬Ò²²»ÄÜ·ÃÎÊÖ®¡£
+//	ä¸åŠ è®¿é—®ä¿®é¥°è¯çš„æˆå‘˜å˜é‡å’Œæˆå‘˜æ–¹æ³•ç§°ä¸ºå‹å¥½å˜é‡å’Œå‹å¥½æ–¹æ³•ã€‚åŒä¸€ä¸ªåŒ…ä¸­çš„ç±»å¯ä»¥è®¿é—®ä¹‹ï¼ŒåŒ…å¤–çš„ç±»å³ä½¿importäº†å®ƒæ‰€åœ¨çš„åŒ…ï¼Œä¹Ÿä¸èƒ½è®¿é—®ä¹‹ã€‚
 	void packagefunction(){System.out.println("this is package function");}
 	private void privatefunction(){System.out.println("this is private function");}
 
 	public static void func(){
-		»ù±¾¸¸Àà jiben = new »ù±¾¸¸Àà();
+		åŸºæœ¬çˆ¶ç±» jiben = new åŸºæœ¬çˆ¶ç±»();
 		jiben.publicfunction();
 		jiben.packagefunction();
 		jiben.protectedfunction();
-		jiben.privatefunction(); //private·½·¨½öÔÚ¶¨Òå¸Ã·½·¨µÄÀà±¾ÉíÀïÃæ½øĞĞ·ÃÎÊ¡£
+		jiben.privatefunction(); //privateæ–¹æ³•ä»…åœ¨å®šä¹‰è¯¥æ–¹æ³•çš„ç±»æœ¬èº«é‡Œé¢è¿›è¡Œè®¿é—®ã€‚
 	}
 }

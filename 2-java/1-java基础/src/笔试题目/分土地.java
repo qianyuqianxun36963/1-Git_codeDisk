@@ -1,9 +1,9 @@
-package ±ÊÊÔÌâÄ¿;
+package ç¬”è¯•é¢˜ç›®;
 
 
 import java.util.Scanner;
 
-public class ·ÖÍÁµØ {
+public class åˆ†åœŸåœ° {
 	public static void main(String[] args) {
 
 		Scanner reader = new Scanner(System.in);

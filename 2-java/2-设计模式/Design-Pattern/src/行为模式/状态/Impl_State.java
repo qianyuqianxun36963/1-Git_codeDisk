@@ -1,4 +1,4 @@
-package ��Ϊģʽ.״̬;
+package 行为模式.状态;
 
 public class Impl_State implements I_State{
 

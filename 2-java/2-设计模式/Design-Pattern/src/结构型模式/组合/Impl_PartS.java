@@ -1,4 +1,4 @@
-package ½á¹¹ĞÍÄ£Ê½.×éºÏ;
+package ç»“æ„å‹æ¨¡å¼.ç»„åˆ;
 
 class Impl_PartS extends I_Part{
 	Impl_PartS(String name) {

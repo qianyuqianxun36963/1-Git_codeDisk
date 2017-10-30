@@ -6,10 +6,10 @@
 * produce an alphabetic sort), and display the result.
 */
 
-package javaÓïÑÔ.b_Êı¾İ.ÈİÆ÷.ÊµÓÃÈİÆ÷.Ó¦ÓÃ;
+package javaè¯­è¨€.b_æ•°æ®.å®¹å™¨.å®ç”¨å®¹å™¨.åº”ç”¨;
 import java.util.*;
 
-public class µ¥´ÊÍ³¼Æ_list·½Ê½ {
+public class å•è¯ç»Ÿè®¡_listæ–¹å¼ {
 	@SuppressWarnings("rawtypes")
 	public static void main(String[] args) {
 		List<String> words = new ArrayList<String>();
@@ -23,9 +23,9 @@ public class µ¥´ÊÍ³¼Æ_list·½Ê½ {
 		int totalWords = 0;
 		while(it.hasNext()) {
 			String s = (String)it.next();
-			if(words.contains(s)) {  //ÓÃlistµÄcontains·½·¨¡£
-				Integer count = wordCount.get(s);				//»ñÈ¡keyËù¶ÔÓ¦µÄµ¥´Ê³öÏÖµÄ¸öÊı¡£
-				wordCount.put(s,count == null ? 1 : count + 1);	//key¶ÔÓ¦µÄµ¥´ÊÊıÎŞÔğÖÃÒ»£¬ÓĞÔğ¼ÓÒ»
+			if(words.contains(s)) {  //ç”¨listçš„containsæ–¹æ³•ã€‚
+				Integer count = wordCount.get(s);				//è·å–keyæ‰€å¯¹åº”çš„å•è¯å‡ºç°çš„ä¸ªæ•°ã€‚
+				wordCount.put(s,count == null ? 1 : count + 1);	//keyå¯¹åº”çš„å•è¯æ•°æ— è´£ç½®ä¸€ï¼Œæœ‰è´£åŠ ä¸€
 				totalWords++;
 			}
 		}

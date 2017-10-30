@@ -1,7 +1,7 @@
-package javaÓïÑÔ.a_×éÖ¯.b_º¯Êý;
+package javaè¯­è¨€.a_ç»„ç»‡.b_å‡½æ•°;
 
-public class º¯Êý {
-	//javaÀïÃæ¶¨Òå·½·¨(º¯Êý)µÄÊ±ºò²»ÄÜ¶¨ÒåÄ¬ÈÏ²ÎÊý£¬Èçvoid fun(int i = 5); ÕâÑùµÄÉùÃ÷¿ÉÒÔÔÚC++ÀïÃæÓÃ¡£
+public class å‡½æ•° {
+	//javaé‡Œé¢å®šä¹‰æ–¹æ³•(å‡½æ•°)çš„æ—¶å€™ä¸èƒ½å®šä¹‰é»˜è®¤å‚æ•°ï¼Œå¦‚void fun(int i = 5); è¿™æ ·çš„å£°æ˜Žå¯ä»¥åœ¨C++é‡Œé¢ç”¨ã€‚
 	public static void main(String args[]){
 		System.out.println(getString());
 		int j = getInt();
@@ -11,9 +11,9 @@ public class º¯Êý {
 		System.out.println(k);
 	}
 	
-	//CÓïÑÔÖÐÃ¿´ÎÐ´º¯ÊýÊÇ¶¼»á¸æËß×Ô¼º²»Òª·µ»Ø¾Ö²¿±äÁ¿,CÃ»ÓÐÒýÓÃ£¬·µ»ØµÄÊÇÖ¸Õë£¬¾Ö²¿±äÁ¿µ÷ÓÃ½áÊø¾ÍÏú»Ù(¿ÉÄÜ²»ÊÇÂíÉÏ)£¬ËùÒÔ·µ»ØµÄÄÇ¸öÖ¸Õë¾Í ²»¶ÔÁË¡£
-	//ÔÚC++ÖÐ£¬¼ÈÓÐÖ¸ÕëÒ²ÓÐÒýÓÃ£¬javaÖÐµÄ´«Öµ¸üÏñC++µÄÒýÓÃ£¬¶ø²»ÊÇCµÄÖ¸Õë¡£
-	//ÔÚ java Àï,ÓÉÓÚÊÇ½øÐÐÒýÓÃ´«µÝ,Ëû»áÔÚÃ¿Ò»´Î¶ÔÏó¸³ÖµµÄÊ±ºò½øÐÐÒýÓÃ¼ÆÊý,Èç¹û¼ÆÊý²»Îª0,¾Í²»»á»ØÊÕ¾Ö²¿±äÁ¿,ÄÇÃ´Ò²¾Í²»»áÔì³ÉÏûÊ§µÄÎÊÌâ
+	//Cè¯­è¨€ä¸­æ¯æ¬¡å†™å‡½æ•°æ˜¯éƒ½ä¼šå‘Šè¯‰è‡ªå·±ä¸è¦è¿”å›žå±€éƒ¨å˜é‡,Cæ²¡æœ‰å¼•ç”¨ï¼Œè¿”å›žçš„æ˜¯æŒ‡é’ˆï¼Œå±€éƒ¨å˜é‡è°ƒç”¨ç»“æŸå°±é”€æ¯(å¯èƒ½ä¸æ˜¯é©¬ä¸Š)ï¼Œæ‰€ä»¥è¿”å›žçš„é‚£ä¸ªæŒ‡é’ˆå°± ä¸å¯¹äº†ã€‚
+	//åœ¨C++ä¸­ï¼Œæ—¢æœ‰æŒ‡é’ˆä¹Ÿæœ‰å¼•ç”¨ï¼Œjavaä¸­çš„ä¼ å€¼æ›´åƒC++çš„å¼•ç”¨ï¼Œè€Œä¸æ˜¯Cçš„æŒ‡é’ˆã€‚
+	//åœ¨ java é‡Œ,ç”±äºŽæ˜¯è¿›è¡Œå¼•ç”¨ä¼ é€’,ä»–ä¼šåœ¨æ¯ä¸€æ¬¡å¯¹è±¡èµ‹å€¼çš„æ—¶å€™è¿›è¡Œå¼•ç”¨è®¡æ•°,å¦‚æžœè®¡æ•°ä¸ä¸º0,å°±ä¸ä¼šå›žæ”¶å±€éƒ¨å˜é‡,é‚£ä¹ˆä¹Ÿå°±ä¸ä¼šé€ æˆæ¶ˆå¤±çš„é—®é¢˜
 	
 	public static String getString(){
 		String s = "this is string";

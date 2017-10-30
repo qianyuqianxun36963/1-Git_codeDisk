@@ -1,6 +1,6 @@
-package javaÓïÑÔ.e_¶Ô½Ó.½Å±¾;
+package javaè¯­è¨€.e_å¯¹æ¥.è„šæœ¬;
 
-//Ö´ĞĞpowershell²¢»ñµÃÖ´ĞĞ½á¹û¡£
+//æ‰§è¡Œpowershellå¹¶è·å¾—æ‰§è¡Œç»“æœã€‚
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -9,32 +9,32 @@ import java.io.InputStreamReader;
 public class InterfaceToShell_win {
 	public static void main(String[] args) throws IOException {
 		
-		//½Å±¾Óï¾ä£º
+		//è„šæœ¬è¯­å¥ï¼š
 		//String powershellstring="net user";
 		//String powershellstring="get-command";
 		
-		//Ö´ĞĞÅúÁ¿shellÓï¾ä£¬¼È½Å±¾¿é£º
-		//½Å±¾¿é¶¨Òå:shellÓï¾ä¡¢{shellÓï¾ä}Ç°ÕßÊÇÖ±½ÓÖ´ĞĞµÄ£¬ºóÕßÔòÊÇ¶¨ÒåÁËÒ»¸ö½Å±¾¿é¶ÔÏó¡£&{shellÓï¾ä}¼Ó¡°&¡±·ûºÅ£¬¿ÉÒÔÖ´ĞĞ¸Ã½Å±¾¿é¡£
-		//½Å±¾¿é¿ÉÒÔ¶àÌõÓï¾äÒ»ÆğÖ´ĞĞ:{shellÓï¾ä ;shellÓï¾ä;shellÓï¾ä}
+		//æ‰§è¡Œæ‰¹é‡shellè¯­å¥ï¼Œæ—¢è„šæœ¬å—ï¼š
+		//è„šæœ¬å—å®šä¹‰:shellè¯­å¥ã€{shellè¯­å¥}å‰è€…æ˜¯ç›´æ¥æ‰§è¡Œçš„ï¼Œåè€…åˆ™æ˜¯å®šä¹‰äº†ä¸€ä¸ªè„šæœ¬å—å¯¹è±¡ã€‚&{shellè¯­å¥}åŠ â€œ&â€ç¬¦å·ï¼Œå¯ä»¥æ‰§è¡Œè¯¥è„šæœ¬å—ã€‚
+		//è„šæœ¬å—å¯ä»¥å¤šæ¡è¯­å¥ä¸€èµ·æ‰§è¡Œ:{shellè¯­å¥ ;shellè¯­å¥;shellè¯­å¥}
 		String powershellstring="&{$n=123+12; $n; Write-Host 'this is block'}";
-		//String powershellstring="&{$n=123+12; $n; <# ÕĞÈËÁË; ÕâÀïÊÇ×¢ÊÍ *** ;#> ;Write-Host 'this is block';}";
+		//String powershellstring="&{$n=123+12; $n; <# æ‹›äººäº†; è¿™é‡Œæ˜¯æ³¨é‡Š *** ;#> ;Write-Host 'this is block';}";
 		
-		//Ö´ĞĞÎÄ¼şÀïµÄÄÚÈİ¿ÉÒÔ¶Á³ö£¬²¢±£´æÔÚString¶ÔÏóÀï£¬ÕâÑù¿ÉÒÔÊ¡È¥¶ÁĞ´ÎÄ¼şµÄ²Ù×÷£¬Ğ§ÂÊ¸ü¸ß¡£ÕâÀï£¬¿ÉÒÔ¸´ÖÆÕ³Ìù
-		//String powershellstring="&{[ÕâÀïÖ±½ÓÕ³Ìùpowershell_string.txtÎÄ¼şÀïµÄÄÚÈİ]}";
+		//æ‰§è¡Œæ–‡ä»¶é‡Œçš„å†…å®¹å¯ä»¥è¯»å‡ºï¼Œå¹¶ä¿å­˜åœ¨Stringå¯¹è±¡é‡Œï¼Œè¿™æ ·å¯ä»¥çœå»è¯»å†™æ–‡ä»¶çš„æ“ä½œï¼Œæ•ˆç‡æ›´é«˜ã€‚è¿™é‡Œï¼Œå¯ä»¥å¤åˆ¶ç²˜è´´
+		//String powershellstring="&{[è¿™é‡Œç›´æ¥ç²˜è´´powershell_string.txtæ–‡ä»¶é‡Œçš„å†…å®¹]}";
 		//String powershellstring="&{New-Item  -Path hkcu:/Software/Microsoft/Office/15.0/Excel;New-Item  -Path hkcu:/Software/Microsoft/Office/15.0/Excel/Security;New-ItemProperty hkcu:/Software/Microsoft/Office/15.0/Excel/Security -name 'ExtensionHardening' -value '0' -propertyType dword}";
 		
-		//ÏÂÃæÕâ¾ä£¬ÊÇÓÃÁË×Ô¼ºĞ´µÄ·½·¨£¬½«.ps1ÎÄ¼şÖĞµÄÄÚÈİ¶Á×Ö·û´®È»ºóÖ´ĞĞ¡£
+		//ä¸‹é¢è¿™å¥ï¼Œæ˜¯ç”¨äº†è‡ªå·±å†™çš„æ–¹æ³•ï¼Œå°†.ps1æ–‡ä»¶ä¸­çš„å†…å®¹è¯»å­—ç¬¦ä¸²ç„¶åæ‰§è¡Œã€‚
 		//String powershellstring="&{"+FileUtils.readPsFile("powershell.ps1","UTF-8",false)+"}";
 		//String powershellstring="&{"+FileUtils.readPsFile("powershell2.ps1","UTF-8",false)+"}";
 		
 		
-		//Ö±½ÓÖ´ĞĞ½Å±¾Óï¾äµÄ·½Ê½Ö´ĞĞ½Å±¾¡£
+		//ç›´æ¥æ‰§è¡Œè„šæœ¬è¯­å¥çš„æ–¹å¼æ‰§è¡Œè„šæœ¬ã€‚
 		System.out.println(powershellstring);
 		InterfaceToShell_win.runshellstring(powershellstring);
 		
-		//powershellÎÄ¼şÎ»ÖÃ£º
-        //String shellfilename = FileUtils.getcurpath()+"\\src/javaÓïÑÔ\\¶Ô½Ó/½Å±¾\\shellsfiles\\powershell.ps1";
-        //Ö´ĞĞÎÄ¼şµÄ·½Ê½Ö´ĞĞ½Å±¾
+		//powershellæ–‡ä»¶ä½ç½®ï¼š
+        //String shellfilename = FileUtils.getcurpath()+"\\src/javaè¯­è¨€\\å¯¹æ¥/è„šæœ¬\\shellsfiles\\powershell.ps1";
+        //æ‰§è¡Œæ–‡ä»¶çš„æ–¹å¼æ‰§è¡Œè„šæœ¬
         //InterfaceToShell_win.runshellfile(shellfilename);
 	}
 	
@@ -50,7 +50,7 @@ public class InterfaceToShell_win {
 		runshell(cmds);
     }
 	
-	//ÖØÃûº¯Êırunshell,ËûÃÇµÄÈë²Î
+	//é‡åå‡½æ•°runshell,ä»–ä»¬çš„å…¥å‚
 	public static void runshell(String str) {
 		String[] strs={str};
 		runshell(strs);
@@ -68,7 +68,7 @@ public class InterfaceToShell_win {
             ps.getOutputStream().close(); 
             //ps.getErrorStream().close(); 
             
-            //·µ»ØĞÅÏ¢µÄ»ñÈ¡ÓëÕ¹Ê¾¡£
+            //è¿”å›ä¿¡æ¯çš„è·å–ä¸å±•ç¤ºã€‚
             br = new BufferedReader(new InputStreamReader(ps.getInputStream()));
             br_error = new BufferedReader(new InputStreamReader(ps.getErrorStream()));
             String line = null;

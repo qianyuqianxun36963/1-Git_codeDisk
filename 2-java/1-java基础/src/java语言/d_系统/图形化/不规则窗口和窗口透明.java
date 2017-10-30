@@ -1,4 +1,4 @@
-package javaÓïÑÔ.d_ÏµÍ³.Í¼ĞÎ»¯;
+package javaè¯­è¨€.d_ç³»ç»Ÿ.å›¾å½¢åŒ–;
 
 import java.awt.BorderLayout;  
 import java.awt.Color;  
@@ -20,7 +20,7 @@ import javax.swing.event.ChangeListener;
 import com.sun.jna.examples.WindowUtils;  
 
 
-public class ²»¹æÔò´°¿ÚºÍ´°¿ÚÍ¸Ã÷ {
+public class ä¸è§„åˆ™çª—å£å’Œçª—å£é€æ˜ {
 	private JFrame frame;  
     private JPanel container;  
     private JSlider slider;  
@@ -29,7 +29,7 @@ public class ²»¹æÔò´°¿ÚºÍ´°¿ÚÍ¸Ã÷ {
     private JButton closeButton;  
   
     public static void main(String[] args) {  
-        new ²»¹æÔò´°¿ÚºÍ´°¿ÚÍ¸Ã÷().launch();  
+        new ä¸è§„åˆ™çª—å£å’Œçª—å£é€æ˜().launch();  
     }  
   
     private void launch() {  

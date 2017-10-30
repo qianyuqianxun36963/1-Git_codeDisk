@@ -1,4 +1,4 @@
-package ´´½¨ĞÍÄ£Ê½.Éú³ÉÆ÷;
+package åˆ›å»ºå‹æ¨¡å¼.ç”Ÿæˆå™¨;
 
 class Impl_ThinkpadP50Builder extends I_Builder{
 	Impl_ThinkpadP50 thinkpadP50;
@@ -9,7 +9,7 @@ class Impl_ThinkpadP50Builder extends I_Builder{
 		thinkpadP50 = new Impl_ThinkpadP50();
 	}
 	public void addItem() {
-		memory = new Impl_Memory("16GÄÚ´æ");
+		memory = new Impl_Memory("16Gå†…å­˜");
 		cpu = new Impl_CPU("AMD CPU");
 		thinkpadP50.add(memory);
 		thinkpadP50.add(cpu);
@@ -28,8 +28,8 @@ class Impl_ThinkpadW541Builder extends I_Builder{
 		thinkpadW541 = new Impl_ThinkpadW541();
 	}
 	public void addItem() {
-		memory = new Impl_Memory("8GÄÚ´æ");
-		cpu = new Impl_CPU("Ó¢ÌØ¶ûCPU");
+		memory = new Impl_Memory("8Gå†…å­˜");
+		cpu = new Impl_CPU("è‹±ç‰¹å°”CPU");
 		thinkpadW541.add(memory);
 		thinkpadW541.add(cpu);
 	}

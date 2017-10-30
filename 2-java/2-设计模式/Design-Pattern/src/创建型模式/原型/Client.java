@@ -1,5 +1,5 @@
-package ´´½¨ĞÍÄ£Ê½.Ô­ĞÍ;
-//Ö»¼Ç×¡Ò»µã£º¿ËÂ¡£¡£¡clone
+package åˆ›å»ºå‹æ¨¡å¼.åŸå‹;
+//åªè®°ä½ä¸€ç‚¹ï¼šå…‹éš†ï¼ï¼clone
 import java.util.ArrayList;
 
 public class Client {
@@ -12,8 +12,8 @@ public class Client {
         cp.list2=alist;
         
         ConcretePrototype clonecp = (ConcretePrototype)cp.clone(); 
-        cp.list1.clear(); //clonecpÇ³¿½±´µÄlist1 µÄÔ­ĞÍcp±»Çå¿Õ¡£
-        cp.list2.clear(); //clonecpÉî¿½±´µÄlist2 µÄÔ­ĞÍcpÃ»±»Çå¿Õ
+        cp.list1.clear(); //clonecpæµ…æ‹·è´çš„list1 çš„åŸå‹cpè¢«æ¸…ç©ºã€‚
+        cp.list2.clear(); //clonecpæ·±æ‹·è´çš„list2 çš„åŸå‹cpæ²¡è¢«æ¸…ç©º
         for(int i=0; i< 1; i++){  
             clonecp.show();  
             cp.show();
@@ -22,12 +22,12 @@ public class Client {
 }
 
 /*
-³õÊ¼:
-  Ô­ĞÍ    : cp         list1:[1,2]        list2:[1,2]
-  ¿ËÂ¡Ìå: clonecp:   list1:[1,2](Ç³¿½±´)  list2:[1,2](Éî¿½±´)
+åˆå§‹:
+  åŸå‹    : cp         list1:[1,2]        list2:[1,2]
+  å…‹éš†ä½“: clonecp:   list1:[1,2](æµ…æ‹·è´)  list2:[1,2](æ·±æ‹·è´)
 
-Çå¿ÕÔ­ĞÍºó:  ×¢Òâ£¬¿ËÂ¡ÌåÖĞ£¬Ç³¿½±´µÄlist1ËæÔ­ĞÍÒ»ÆğÇå¿Õ£¬Éî¿½±´µÄlist2Ã»ÓĞ±»Çå¿Õ¡£
-  Ô­ĞÍ    : cp         list1:[]        list2:[]
-  ¿ËÂ¡Ìå: clonecp:   list1:[](Ç³¿½±´)  list2:[1,2](Éî¿½±´)
+æ¸…ç©ºåŸå‹å:  æ³¨æ„ï¼Œå…‹éš†ä½“ä¸­ï¼Œæµ…æ‹·è´çš„list1éšåŸå‹ä¸€èµ·æ¸…ç©ºï¼Œæ·±æ‹·è´çš„list2æ²¡æœ‰è¢«æ¸…ç©ºã€‚
+  åŸå‹    : cp         list1:[]        list2:[]
+  å…‹éš†ä½“: clonecp:   list1:[](æµ…æ‹·è´)  list2:[1,2](æ·±æ‹·è´)
 
  */

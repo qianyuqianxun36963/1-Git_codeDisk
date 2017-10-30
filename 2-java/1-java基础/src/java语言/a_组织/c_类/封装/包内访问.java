@@ -1,33 +1,33 @@
-package javaÓïÑÔ.a_×éÖ¯.c_Àà.·â×°;
+package javaè¯­è¨€.a_ç»„ç»‡.c_ç±».å°è£…;
 
-import javaÓïÑÔ.a_×éÖ¯.c_Àà.·â×°.°üÍâ.°üÍâ×ÓÀà;
+import javaè¯­è¨€.a_ç»„ç»‡.c_ç±».å°è£….åŒ…å¤–.åŒ…å¤–å­ç±»;
 
-public class °üÄÚ·ÃÎÊ {
+public class åŒ…å†…è®¿é—® {
 	public static void main(String args[]){
-		System.out.println("°üÄÚ·ÃÎÊ:");
-		System.out.println("\n»ù±¾¸¸Àà±¾ÉíÄÚ²¿·ÃÎÊ:");
-		»ù±¾¸¸Àà.func();
+		System.out.println("åŒ…å†…è®¿é—®:");
+		System.out.println("\nåŸºæœ¬çˆ¶ç±»æœ¬èº«å†…éƒ¨è®¿é—®:");
+		åŸºæœ¬çˆ¶ç±».func();
 		
-		System.out.println("\n¸¸ÀàÊµÀı·ÃÎÊ:");
-		»ù±¾¸¸Àà jiben = new »ù±¾¸¸Àà();
+		System.out.println("\nçˆ¶ç±»å®ä¾‹è®¿é—®:");
+		åŸºæœ¬çˆ¶ç±» jiben = new åŸºæœ¬çˆ¶ç±»();
 		jiben.publicfunction();
 		jiben.packagefunction();
 		jiben.protectedfunction();
-//		jiben.privatefunction();  //Í¬Ò»¸ö°üÄÚµÄÀà,²»¿ÉÒÔ·ÃÎÊprivate ³ÉÔ±º¯Êı¡£½öÔÚÔ­Ê¼ÀàÄÚ¿ÉÒÔ·ÃÎÊ¡£
+//		jiben.privatefunction();  //åŒä¸€ä¸ªåŒ…å†…çš„ç±»,ä¸å¯ä»¥è®¿é—®private æˆå‘˜å‡½æ•°ã€‚ä»…åœ¨åŸå§‹ç±»å†…å¯ä»¥è®¿é—®ã€‚
 		
-		System.out.println("\n×ÓÀàÊµÀı(°üÄÚ)·ÃÎÊ:");
-		°üÄÚ×ÓÀà nchild = new °üÄÚ×ÓÀà();
+		System.out.println("\nå­ç±»å®ä¾‹(åŒ…å†…)è®¿é—®:");
+		åŒ…å†…å­ç±» nchild = new åŒ…å†…å­ç±»();
 		nchild.publicfunction();
 		nchild.protectedfunction();
-		nchild.packagefunction(); //°üÄÚ×ÓÀà£¬¼Ì³ĞÁË¸¸ÀàµÄÓÑºÃ³ÉÔ±±äÁ¿ºÍÓÑºÃ³ÉÔ±º¯Êı¡£
-//		nchild.privatefunction();  //Í¬Ò»¸ö°üÄÚµÄÀà,²»¿ÉÒÔ·ÃÎÊprivate ³ÉÔ±º¯Êı¡£½öÔÚÔ­Ê¼ÀàÄÚ¿ÉÒÔ·ÃÎÊ¡£
+		nchild.packagefunction(); //åŒ…å†…å­ç±»ï¼Œç»§æ‰¿äº†çˆ¶ç±»çš„å‹å¥½æˆå‘˜å˜é‡å’Œå‹å¥½æˆå‘˜å‡½æ•°ã€‚
+//		nchild.privatefunction();  //åŒä¸€ä¸ªåŒ…å†…çš„ç±»,ä¸å¯ä»¥è®¿é—®private æˆå‘˜å‡½æ•°ã€‚ä»…åœ¨åŸå§‹ç±»å†…å¯ä»¥è®¿é—®ã€‚
 		
-		System.out.println("\n×ÓÀàÊµÀı(°üÍâ)·ÃÎÊ:");
-		°üÍâ×ÓÀà  wchild = new °üÍâ×ÓÀà();
+		System.out.println("\nå­ç±»å®ä¾‹(åŒ…å¤–)è®¿é—®:");
+		åŒ…å¤–å­ç±»  wchild = new åŒ…å¤–å­ç±»();
 		wchild.publicfunction();
 		wchild.protectedfunction();
-//		wchild.packagefunction(); //°üÍâ×ÓÀà£¬Ã»ÓĞ¼Ì³Ğ¸¸ÀàµÄÓÑºÃ³ÉÔ±±äÁ¿ºÍÓÑºÃ³ÉÔ±º¯Êı¡£
-//		wchild.privatefunction();  //Í¬Ò»¸ö°üÄÚµÄÀà,²»¿ÉÒÔ·ÃÎÊprivate ³ÉÔ±º¯Êı¡£½öÔÚÔ­Ê¼ÀàÄÚ¿ÉÒÔ·ÃÎÊ¡£
+//		wchild.packagefunction(); //åŒ…å¤–å­ç±»ï¼Œæ²¡æœ‰ç»§æ‰¿çˆ¶ç±»çš„å‹å¥½æˆå‘˜å˜é‡å’Œå‹å¥½æˆå‘˜å‡½æ•°ã€‚
+//		wchild.privatefunction();  //åŒä¸€ä¸ªåŒ…å†…çš„ç±»,ä¸å¯ä»¥è®¿é—®private æˆå‘˜å‡½æ•°ã€‚ä»…åœ¨åŸå§‹ç±»å†…å¯ä»¥è®¿é—®ã€‚
 	}
 }
 

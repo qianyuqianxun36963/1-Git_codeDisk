@@ -1,6 +1,6 @@
-package ½á¹¹ĞÍÄ£Ê½.ÊÊÅäÆ÷;
+package ç»“æ„å‹æ¨¡å¼.é€‚é…å™¨;
 
-//Õâ¸öÊÇ±»ÊÊÅäµÄ¶ÔÏó¡£
+//è¿™ä¸ªæ˜¯è¢«é€‚é…çš„å¯¹è±¡ã€‚
 public class TextView {
 	public void draw(){System.out.println("This is textview drawing");}
 }

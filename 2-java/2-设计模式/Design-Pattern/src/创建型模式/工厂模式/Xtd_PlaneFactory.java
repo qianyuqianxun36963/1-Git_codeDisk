@@ -1,8 +1,8 @@
-package ´´½¨ĞÍÄ£Ê½.¹¤³§Ä£Ê½;
+package åˆ›å»ºå‹æ¨¡å¼.å·¥å‚æ¨¡å¼;
 
 public class Xtd_PlaneFactory extends Factory_Vehicle{
 	@Override
 	public I_Moveable create() {
-		return new Impl_Plane();//·µ»Ø¾ßÌåµÄÄ³Àà²úÆ·
+		return new Impl_Plane();//è¿”å›å…·ä½“çš„æŸç±»äº§å“
 	}
 }

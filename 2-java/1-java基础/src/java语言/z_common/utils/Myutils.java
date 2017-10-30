@@ -1,4 +1,4 @@
-package javaÓïÑÔ.z_common.utils;
+package javaè¯­è¨€.z_common.utils;
 
 public class Myutils {
 	public static void print(Object obj){

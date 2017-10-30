@@ -3,8 +3,8 @@
 /* Modify listFeatures.java so that it uses String instead of Pets, 
 * and explain any difference in results.
 */
-package javaÓïÑÔ.b_Êı¾İ.ÈİÆ÷.ÊµÓÃÈİÆ÷;
-import static javaÓïÑÔ.z_common.utils.Myutils.*;
+package javaè¯­è¨€.b_æ•°æ®.å®¹å™¨.å®ç”¨å®¹å™¨;
+import static javaè¯­è¨€.z_common.utils.Myutils.*;
 import java.util.*;
 
 public class Ex6 {

@@ -1,6 +1,6 @@
-package javaÓïÑÔ.a_×éÖ¯.c_Àà.³õÊ¼ÓëÇå³ı;
+package javaè¯­è¨€.a_ç»„ç»‡.c_ç±».åˆå§‹ä¸æ¸…é™¤;
 
-public class ÊµÀı»¯¹ı³Ì {
+public class å®ä¾‹åŒ–è¿‡ç¨‹ {
 	public static void main(String[] args) {
 		testLoad.test();
     }
@@ -10,39 +10,39 @@ public class ÊµÀı»¯¹ı³Ì {
 
 class testLoad{
 	public static void test(){
-		ClassLoadProcess classload = new ClassLoadProcess();//ÕâÀïÖ´ĞĞÁËclassµÄÀà¼ÓÔØÊ±ºòµÄ³õÊ¼»¯¡£
+		ClassLoadProcess classload = new ClassLoadProcess();//è¿™é‡Œæ‰§è¡Œäº†classçš„ç±»åŠ è½½æ—¶å€™çš„åˆå§‹åŒ–ã€‚
         System.out.println(classload.counter1);
         System.out.println(classload.counter2);
         
-        ClassLoadProcess classload2 = new ClassLoadProcess();//ÕâÀï²»ÔÙÖ´ĞĞclassÀà¼ÓÔØÏà¹ØµÄ³õÊ¼»¯¡£
+        ClassLoadProcess classload2 = new ClassLoadProcess();//è¿™é‡Œä¸å†æ‰§è¡Œclassç±»åŠ è½½ç›¸å…³çš„åˆå§‹åŒ–ã€‚
         System.out.println(classload2.counter1);
         System.out.println(classload2.counter2);
         
-        ClassInstenceProcess classinstance = new ClassInstenceProcess();//ÕâÀïÖ´ĞĞÁËclassµÄÀà¼ÓÔØÊ±ºòµÄ³õÊ¼»¯¡£
+        ClassInstenceProcess classinstance = new ClassInstenceProcess();//è¿™é‡Œæ‰§è¡Œäº†classçš„ç±»åŠ è½½æ—¶å€™çš„åˆå§‹åŒ–ã€‚
         System.out.println(classinstance.counter1);
         System.out.println(classinstance.counter2);
         
-        ClassInstenceProcess classinstance2 = new ClassInstenceProcess();//ÕâÀï²»ÔÙÖ´ĞĞclassÀà¼ÓÔØÏà¹ØµÄ³õÊ¼»¯¡£
+        ClassInstenceProcess classinstance2 = new ClassInstenceProcess();//è¿™é‡Œä¸å†æ‰§è¡Œclassç±»åŠ è½½ç›¸å…³çš„åˆå§‹åŒ–ã€‚
         System.out.println(classinstance2.counter1);
         System.out.println(classinstance2.counter2);
 	}
 }
 
-//ÀàµÄ¼ÓÔØ¹ı³Ì¡£
-//ÀàµÄ¾²Ì¬³ÉÔ±³õÊ¼»¯Ö»ÔÚÀà¼ÓÔØµÄÊ±ºòÖ´ĞĞÒ»´Î£¬ºóÃæ²»ÔÙÖ´ĞĞ¡£
+//ç±»çš„åŠ è½½è¿‡ç¨‹ã€‚
+//ç±»çš„é™æ€æˆå‘˜åˆå§‹åŒ–åªåœ¨ç±»åŠ è½½çš„æ—¶å€™æ‰§è¡Œä¸€æ¬¡ï¼Œåé¢ä¸å†æ‰§è¡Œã€‚
 class ClassLoadProcess {
-//  1¡¢³õÊ¼»¯¾²Ì¬Êı¾İ¡£
-    static int counter1; //javaÄ¬ÈÏ»áÎªËü¸³ÖµÎª 0.
+//  1ã€åˆå§‹åŒ–é™æ€æ•°æ®ã€‚
+    static int counter1; //javaé»˜è®¤ä¼šä¸ºå®ƒèµ‹å€¼ä¸º 0.
     static int counter2 = 0;
     
-//  ÏÂÃæÈı¾ä·Ö±ğÍ¨¹ı¾²Ì¬´úÂë¿é¡¢¹¹Ôì·½·¨¡¢¾²Ì¬·½·¨ÈıÖÖ·½Ê½ÊµÏÖ¾²Ì¬Êı¾İµÄ³õÊ¼»¯¡£
-//  ÕâÀï¾²Ì¬Êı¾İµÄ³õÊ¼»¯ÊÇ¸²¸Ç¸üĞÂµÄ¡£ÏÂÃæÕâ¾ä·Åµ½ºóÃæ£¬»áÓĞ²»Í¬Ğ§¹û¡£
+//  ä¸‹é¢ä¸‰å¥åˆ†åˆ«é€šè¿‡é™æ€ä»£ç å—ã€æ„é€ æ–¹æ³•ã€é™æ€æ–¹æ³•ä¸‰ç§æ–¹å¼å®ç°é™æ€æ•°æ®çš„åˆå§‹åŒ–ã€‚
+//  è¿™é‡Œé™æ€æ•°æ®çš„åˆå§‹åŒ–æ˜¯è¦†ç›–æ›´æ–°çš„ã€‚ä¸‹é¢è¿™å¥æ”¾åˆ°åé¢ï¼Œä¼šæœ‰ä¸åŒæ•ˆæœã€‚
     static {counter1 = 5;}
     static ClassLoadProcess sin = new ClassLoadProcess();
     static int counter3 = initcounter(counter1);
 
     public ClassLoadProcess() {
-    	System.out.println("¹¹Ôì·½·¨:"+"counter1="+counter1+" ;counter2="+counter2);
+    	System.out.println("æ„é€ æ–¹æ³•:"+"counter1="+counter1+" ;counter2="+counter2);
         counter1++;
         counter2++;
     }
@@ -51,20 +51,20 @@ class ClassLoadProcess {
 
 }
 
-//ÀàµÄÊµÀı»¯¹ı³Ì¡£
+//ç±»çš„å®ä¾‹åŒ–è¿‡ç¨‹ã€‚
 class ClassInstenceProcess {
-//  1¡¢³õÊ¼»¯Êı¾İ¡£
-    int counter1; //javaÄ¬ÈÏ»áÎªËü¸³ÖµÎª 0.
+//  1ã€åˆå§‹åŒ–æ•°æ®ã€‚
+    int counter1; //javaé»˜è®¤ä¼šä¸ºå®ƒèµ‹å€¼ä¸º 0.
     int counter2 = 0;
     
-//  ÏÂÃæÈı¾ä·Ö±ğÍ¨¹ı´úÂë¿é¡¢ÊµÀı·½·¨¡¢¡¾¹¹Ôì·½·¨ ²»ĞĞ£¡¡¿ÈıÖÖ·½Ê½ÊµÏÖ¾²Ì¬Êı¾İµÄ³õÊ¼»¯¡£
-//  ÕâÀï¾²Ì¬Êı¾İµÄ³õÊ¼»¯ÊÇ¸²¸Ç¸üĞÂµÄ¡£ÏÂÃæÕâ¾ä·Åµ½ºóÃæ£¬»áÓĞ²»Í¬Ğ§¹û¡£
+//  ä¸‹é¢ä¸‰å¥åˆ†åˆ«é€šè¿‡ä»£ç å—ã€å®ä¾‹æ–¹æ³•ã€ã€æ„é€ æ–¹æ³• ä¸è¡Œï¼ã€‘ä¸‰ç§æ–¹å¼å®ç°é™æ€æ•°æ®çš„åˆå§‹åŒ–ã€‚
+//  è¿™é‡Œé™æ€æ•°æ®çš„åˆå§‹åŒ–æ˜¯è¦†ç›–æ›´æ–°çš„ã€‚ä¸‹é¢è¿™å¥æ”¾åˆ°åé¢ï¼Œä¼šæœ‰ä¸åŒæ•ˆæœã€‚
     {counter1 = 5;}
-//  ClassInstenceProcess sin = new ClassInstenceProcess(); //ÕâÀïµ÷ÓÃ¹¹Ôì·½·¨³õÊ¼»¯ÊôĞÔ»áÎŞÏŞÑ­»·£¬·¢ÉúÕ»Òç³öÒì³££¡
+//  ClassInstenceProcess sin = new ClassInstenceProcess(); //è¿™é‡Œè°ƒç”¨æ„é€ æ–¹æ³•åˆå§‹åŒ–å±æ€§ä¼šæ— é™å¾ªç¯ï¼Œå‘ç”Ÿæ ˆæº¢å‡ºå¼‚å¸¸ï¼
     int counter3 = initcounter(counter1);
 
     public ClassInstenceProcess() {
-    	System.out.println("¹¹Ôì·½·¨:"+"counter1="+counter1+" ;counter2="+counter2);
+    	System.out.println("æ„é€ æ–¹æ³•:"+"counter1="+counter1+" ;counter2="+counter2);
         counter1++;
         counter2++;
     }

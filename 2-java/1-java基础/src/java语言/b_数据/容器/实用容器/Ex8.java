@@ -2,7 +2,7 @@
 // TIJ4 Chapter Holding, Exercise 8, page 409
 // Modify Exercise 1 so it uses an Iterator to move through the List while 
 // calling hop().
-package javaÓïÑÔ.b_Êı¾İ.ÈİÆ÷.ÊµÓÃÈİÆ÷;
+package javaè¯­è¨€.b_æ•°æ®.å®¹å™¨.å®ç”¨å®¹å™¨;
 
 import java.util.*;
 

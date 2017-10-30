@@ -1,5 +1,4 @@
-
-package �ṹ��ģʽ.�Ž�;
+package 结构型模式.桥接;
 
 /**
  *  The RefinedAbstraction

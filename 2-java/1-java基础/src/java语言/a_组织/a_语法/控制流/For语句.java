@@ -1,8 +1,8 @@
-package javaÓïÑÔ.a_×éÖ¯.a_Óï·¨.¿ØÖÆÁ÷;
+package javaè¯­è¨€.a_ç»„ç»‡.a_è¯­æ³•.æ§åˆ¶æµ;
 
 import java.util.*;
 
-public class ForÓï¾ä {
+public class Forè¯­å¥ {
 	public static void main(String args[]){
 		forTestA();
 		forTestB();

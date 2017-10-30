@@ -1,4 +1,4 @@
-package ½á¹¹ĞÍÄ£Ê½.´úÀí;
+package ç»“æ„å‹æ¨¡å¼.ä»£ç†;
 
 public class Impl_Proxy implements I_Subject {
 	
@@ -8,14 +8,14 @@ public class Impl_Proxy implements I_Subject {
 		this.subject = subject;
 	}
 	
-	//¸Ğ¾õÊÇ²»ÊÇÓĞµãÏñspring¿ò¼ÜµÄAOP¡£
+	//æ„Ÿè§‰æ˜¯ä¸æ˜¯æœ‰ç‚¹åƒspringæ¡†æ¶çš„AOPã€‚
 	@Override
 	public void operate() {
-		System.out.println("´úÀíÔÚ¹¤×÷Ç°×öÒ»Ğ©¶¯×÷¡£");
+		System.out.println("ä»£ç†åœ¨å·¥ä½œå‰åšä¸€äº›åŠ¨ä½œã€‚");
 		subject.operate();
 		Impl_RealSubject realsubject = (Impl_RealSubject) subject;
 		realsubject.fun();
-		System.out.println("´úÀíÔÚ¹¤×÷ºó×öÒ»Ğ©¶¯×÷¡£");
+		System.out.println("ä»£ç†åœ¨å·¥ä½œååšä¸€äº›åŠ¨ä½œã€‚");
 	}
 
 }

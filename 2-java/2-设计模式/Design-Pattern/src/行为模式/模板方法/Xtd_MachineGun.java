@@ -1,4 +1,4 @@
-package 行为模式.模板方法;
+package 琛屼负妯″紡.妯℃澘鏂规硶;
 
 public class Xtd_MachineGun extends A_Gun{
 	Xtd_MachineGun(int num){

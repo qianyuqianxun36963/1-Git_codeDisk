@@ -1,4 +1,4 @@
-package ½á¹¹ĞÍÄ£Ê½.×éºÏ;
+package ç»“æ„å‹æ¨¡å¼.ç»„åˆ;
 
 public class Impl_Box extends I_Whole{
 	public Impl_Box(String name) {

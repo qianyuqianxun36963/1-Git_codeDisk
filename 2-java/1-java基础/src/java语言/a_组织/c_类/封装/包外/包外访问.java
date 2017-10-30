@@ -1,17 +1,17 @@
-package javaÓïÑÔ.a_×éÖ¯.c_Àà.·â×°.°üÍâ;
+package javaè¯­è¨€.a_ç»„ç»‡.c_ç±».å°è£….åŒ…å¤–;
 
-import javaÓïÑÔ.a_×éÖ¯.c_Àà.·â×°.»ù±¾¸¸Àà;
+import javaè¯­è¨€.a_ç»„ç»‡.c_ç±».å°è£….åŸºæœ¬çˆ¶ç±»;
 
-public class °üÍâ·ÃÎÊ {
+public class åŒ…å¤–è®¿é—® {
 	public static void main(String args[]){
-		System.out.println("°üÍâ·ÃÎÊ:");
+		System.out.println("åŒ…å¤–è®¿é—®:");
 		
-		System.out.println("From ¸¸Àà");
-		»ù±¾¸¸Àà jiben = new »ù±¾¸¸Àà();
+		System.out.println("From çˆ¶ç±»");
+		åŸºæœ¬çˆ¶ç±» jiben = new åŸºæœ¬çˆ¶ç±»();
 		jiben.publicfunction();
 		
-		System.out.println("\nFrom ×ÓÀà");
-		°üÍâ×ÓÀà child = new °üÍâ×ÓÀà();
+		System.out.println("\nFrom å­ç±»");
+		åŒ…å¤–å­ç±» child = new åŒ…å¤–å­ç±»();
 		child.publicfunction();
 	}
 }

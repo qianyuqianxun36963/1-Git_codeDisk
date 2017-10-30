@@ -1,21 +1,21 @@
-package javaÓïÑÔ.b_Êı¾İ.ÀàĞÍ.×Ö·û´®Àà;
+package javaè¯­è¨€.b_æ•°æ®.ç±»å‹.å­—ç¬¦ä¸²ç±»;
 
-//¹Ø¼üµã£º
+//å…³é”®ç‚¹ï¼š
 //string.getBytes();
 //bytes[i]<0;
 
-public class ´øºº×ÖµÄ×Ö·û´®½ØÈ¡ {
+public class å¸¦æ±‰å­—çš„å­—ç¬¦ä¸²æˆªå– {
 	public static void main(String args[]){
-		String str = "a°¡b°É";
-		int num = trimGBK(str.getBytes(),2);     //String.getBytes() ,°´ÕÕ×Ö½Ú½øĞĞ²Ù×÷£¬»ñÈ¡×Ö½ÚÊı×é¡£
-		System.out.println(str.substring(0,num));//String.substring(),°´ÕÕ×Ö·û½øĞĞ²Ù×÷£¬½ØÈ¡×Ö·û×Ó´®¡£
+		String str = "aå•Šbå§";
+		int num = trimGBK(str.getBytes(),2);     //String.getBytes() ,æŒ‰ç…§å­—èŠ‚è¿›è¡Œæ“ä½œï¼Œè·å–å­—èŠ‚æ•°ç»„ã€‚
+		System.out.println(str.substring(0,num));//String.substring(),æŒ‰ç…§å­—ç¬¦è¿›è¡Œæ“ä½œï¼Œæˆªå–å­—ç¬¦å­ä¸²ã€‚
 	}
 	
 	public static int trimGBK(byte[] bytes,int n){
 		int num = 0;
 		boolean isChinese = false;
 		for(int i = 0;i < n;i++){
-			if(bytes[i]<0&&!isChinese){ //ÕâÀïÒª×¢Òâ£¬ºº×ÖµÄ»°£¬Í·Ò»¸ö×Ö½ÚÈ¡ÖµÊÇ¸ºÖµ¡£
+			if(bytes[i]<0&&!isChinese){ //è¿™é‡Œè¦æ³¨æ„ï¼Œæ±‰å­—çš„è¯ï¼Œå¤´ä¸€ä¸ªå­—èŠ‚å–å€¼æ˜¯è´Ÿå€¼ã€‚
 				isChinese = true;
 			}else{
 				num ++;

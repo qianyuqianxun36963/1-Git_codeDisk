@@ -3,14 +3,14 @@
 /* Create an empty LlinkedList<Integer>. Using a ListIterator, add Integers
 * to the list by always inserting them in the middle of the list.
 */
-package javaÓïÑÔ.b_Êı¾İ.ÈİÆ÷.ÊµÓÃÈİÆ÷.Ó¦ÓÃ;
+package javaè¯­è¨€.b_æ•°æ®.å®¹å™¨.å®ç”¨å®¹å™¨.åº”ç”¨;
 import java.util.*;
 
-public class ListÌØĞÔ {
+public class Listç‰¹æ€§ {
 	static void addMiddle_Linked(LinkedList<Integer> l, Integer[] ia) {
 		for(Integer i : ia) {
-			ListIterator<Integer> it =  //ListIterator Ã»ÓĞµ±Ç°ÔªËØ£»ËüµÄ¹â±êÎ»ÖÃ Ê¼ÖÕÎ»ÓÚµ÷ÓÃ previous() Ëù·µ»ØµÄÔªËØºÍµ÷ÓÃ next() Ëù·µ»ØµÄÔªËØÖ®¼ä¡£
-				l.listIterator((l.size())/2); //¿ÉÒÔÓÃĞòºÅµÄ·½Ê½·ÃÎÊ¾ßÌåÄ³Ò»¸öÔªËØ¡£
+			ListIterator<Integer> it =  //ListIterator æ²¡æœ‰å½“å‰å…ƒç´ ï¼›å®ƒçš„å…‰æ ‡ä½ç½® å§‹ç»ˆä½äºè°ƒç”¨ previous() æ‰€è¿”å›çš„å…ƒç´ å’Œè°ƒç”¨ next() æ‰€è¿”å›çš„å…ƒç´ ä¹‹é—´ã€‚
+				l.listIterator((l.size())/2); //å¯ä»¥ç”¨åºå·çš„æ–¹å¼è®¿é—®å…·ä½“æŸä¸€ä¸ªå…ƒç´ ã€‚
 			it.add(i);
 			System.out.println(l);
 		}
@@ -19,7 +19,7 @@ public class ListÌØĞÔ {
 	static void addMiddle_Array(ArrayList<Integer> l, Integer[] ia) {
 		for(Integer i : ia) {
 			ListIterator<Integer> it = 
-				l.listIterator((l.size())/2); //¿ÉÒÔÓÃĞòºÅµÄ·½Ê½·ÃÎÊ¾ßÌåÄ³Ò»¸öÔªËØ¡£
+				l.listIterator((l.size())/2); //å¯ä»¥ç”¨åºå·çš„æ–¹å¼è®¿é—®å…·ä½“æŸä¸€ä¸ªå…ƒç´ ã€‚
 			it.add(i);
 			System.out.println(l);
 		}
@@ -28,7 +28,7 @@ public class ListÌØĞÔ {
 	static void addMiddle_Vector(Vector<Integer> l, Integer[] ia) {
 		for(Integer i : ia) {
 			ListIterator<Integer> it = 
-				l.listIterator((l.size())/2); //¿ÉÒÔÓÃĞòºÅµÄ·½Ê½·ÃÎÊ¾ßÌåÄ³Ò»¸öÔªËØ¡£
+				l.listIterator((l.size())/2); //å¯ä»¥ç”¨åºå·çš„æ–¹å¼è®¿é—®å…·ä½“æŸä¸€ä¸ªå…ƒç´ ã€‚
 			it.add(i);
 			System.out.println(l);
 		}
@@ -39,8 +39,8 @@ public class ListÌØĞÔ {
 		ArrayList<Integer> ali = new ArrayList<Integer>();
 		Vector<Integer> ve = new Vector<Integer>();
 		Integer[] x = {0, 1, 2, 3, 4, 5, 6, 7};
-		ListÌØĞÔ.addMiddle_Linked(li, x);
-		ListÌØĞÔ.addMiddle_Array(ali, x);
-		ListÌØĞÔ.addMiddle_Vector(ve, x);
+		Listç‰¹æ€§.addMiddle_Linked(li, x);
+		Listç‰¹æ€§.addMiddle_Array(ali, x);
+		Listç‰¹æ€§.addMiddle_Vector(ve, x);
 	}	
 }

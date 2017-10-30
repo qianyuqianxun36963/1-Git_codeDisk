@@ -1,6 +1,6 @@
-package javaÓïÑÔ.c_ÌØĞÔ.Òì³£´¦Àí;
+package javaè¯­è¨€.c_ç‰¹æ€§.å¼‚å¸¸å¤„ç†;
 
-public class Òì³£µÄ×¢Òâµã {
+public class å¼‚å¸¸çš„æ³¨æ„ç‚¹ {
 	public static void main(String args[]){
 		int x = executeOrder();
 		System.out.println(x);

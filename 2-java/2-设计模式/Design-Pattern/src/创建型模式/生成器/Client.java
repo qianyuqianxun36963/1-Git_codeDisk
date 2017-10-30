@@ -1,7 +1,7 @@
-package ´´½¨ÐÍÄ£Ê½.Éú³ÉÆ÷;
+package åˆ›å»ºåž‹æ¨¡å¼.ç”Ÿæˆå™¨;
 
 /*
- * ÁªÏëÒ»ÏÂ×é×°µçÄÔ£¬ÎÒÃÇ²»¹ÜCPU,Ö÷°åµÈ¾ßÌåÐÍºÅ£¬ÊÇÄÄÒ»¼ÒÉú²ú¡£ÔÚÐèÒªÒ»¸öµçÄÔ¶ÔÏóµÄÊ±ºò£¬ÈÃbuilderÉú³ÉÒÔ¼°¼ÈÊÇ¡£
+ * è”æƒ³ä¸€ä¸‹ç»„è£…ç”µè„‘ï¼Œæˆ‘ä»¬ä¸ç®¡CPU,ä¸»æ¿ç­‰å…·ä½“åž‹å·ï¼Œæ˜¯å“ªä¸€å®¶ç”Ÿäº§ã€‚åœ¨éœ€è¦ä¸€ä¸ªç”µè„‘å¯¹è±¡çš„æ—¶å€™ï¼Œè®©builderç”Ÿæˆä»¥åŠæ—¢æ˜¯ã€‚
  * */
 
 public class Client {

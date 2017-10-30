@@ -1,4 +1,4 @@
-package ½á¹¹ĞÍÄ£Ê½.ÊÊÅäÆ÷;
+package ç»“æ„å‹æ¨¡å¼.é€‚é…å™¨;
 
 public class Xtd_LineShape extends Shape {
 	public void draw() {System.out.println("this is Line drawing");};

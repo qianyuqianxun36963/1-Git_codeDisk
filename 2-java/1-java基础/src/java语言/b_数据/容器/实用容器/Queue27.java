@@ -5,7 +5,7 @@
 * with Command objects and returns it. Pass the filled Queue to a method in a third
 * class that consumes the objects in the Queue and calls their operation() methods.
 */
-package javaÓïÑÔ.b_Êı¾İ.ÈİÆ÷.ÊµÓÃÈİÆ÷;
+package javaè¯­è¨€.b_æ•°æ®.å®¹å™¨.å®ç”¨å®¹å™¨;
 
 import java.util.*;
 

@@ -1,12 +1,12 @@
-package javaÓïÑÔ.b_Êı¾İ.ÀàĞÍ.×Ö·û´®Àà;
+package javaè¯­è¨€.b_æ•°æ®.ç±»å‹.å­—ç¬¦ä¸²ç±»;
 
 import java.util.Scanner;
 
-public class ¹ıÂË³öÌØÓĞ×Ö·û {
+public class è¿‡æ»¤å‡ºç‰¹æœ‰å­—ç¬¦ {
 
 	private static String next;
 
-	//¿ÉÒÔÊäÈë This Is TEST È»ºó»Ø³µ¿´Ğ§¹û¡£
+	//å¯ä»¥è¾“å…¥ This Is TEST ç„¶åå›è½¦çœ‹æ•ˆæœã€‚
 	public static void main(String[] args) {
 		Scanner reader = new Scanner(System.in);
 		StringBuffer result = new StringBuffer();
@@ -20,7 +20,7 @@ public class ¹ıÂË³öÌØÓĞ×Ö·û {
 		System.out.println(result);
 	}
 
-	//¹ıÂË³öÆäÖĞµÄ´óĞ´×ÖÄ¸¡£ 
+	//è¿‡æ»¤å‡ºå…¶ä¸­çš„å¤§å†™å­—æ¯ã€‚ 
 	public static String filter(String S){
 		char arr[] = S.toCharArray();
 		StringBuffer sb = new StringBuffer();

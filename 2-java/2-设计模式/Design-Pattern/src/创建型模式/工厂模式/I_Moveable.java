@@ -1,6 +1,6 @@
-package ´´½¨ĞÍÄ£Ê½.¹¤³§Ä£Ê½;
+package åˆ›å»ºå‹æ¨¡å¼.å·¥å‚æ¨¡å¼;
 
-//³éÏó²úÆ·½ÇÉ«
+//æŠ½è±¡äº§å“è§’è‰²
 public interface I_Moveable {
 	public void run();
 }

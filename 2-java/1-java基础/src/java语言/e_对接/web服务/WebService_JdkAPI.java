@@ -1,46 +1,46 @@
-package javaÓïÑÔ.e_¶Ô½Ó.web·þÎñ;
+package javaè¯­è¨€.e_å¯¹æŽ¥.webæœåŠ¡;
 
 import javax.jws.WebMethod;
 import javax.jws.WebService;
 import javax.xml.ws.Endpoint;
 /** 
- *  @WebService £­ ËüÊÇÒ»¸ö×¢½â£¬ÓÃÔÚÀàÉÏÖ¸¶¨½«´ËÀà·¢²¼³ÉÒ»¸öws. 
-    Endpoint ¨C ´ËÀàÎª¶Ëµã·þÎñÀà£¬ËüµÄ·½·¨publishÓÃÓÚ½«Ò»¸öÒÑ¾­Ìí¼ÓÁË@WebService×¢½â¶ÔÏó°ó¶¨µ½Ò»¸öµØÖ·µÄ¶Ë¿ÚÉÏ¡£ 
+ *  @WebService ï¼ å®ƒæ˜¯ä¸€ä¸ªæ³¨è§£ï¼Œç”¨åœ¨ç±»ä¸ŠæŒ‡å®šå°†æ­¤ç±»å‘å¸ƒæˆä¸€ä¸ªws. 
+    Endpoint â€“ æ­¤ç±»ä¸ºç«¯ç‚¹æœåŠ¡ç±»ï¼Œå®ƒçš„æ–¹æ³•publishç”¨äºŽå°†ä¸€ä¸ªå·²ç»æ·»åŠ äº†@WebServiceæ³¨è§£å¯¹è±¡ç»‘å®šåˆ°ä¸€ä¸ªåœ°å€çš„ç«¯å£ä¸Šã€‚ 
  * @author wangyajun
  * 
  */  
 
 @WebService  
 public class WebService_JdkAPI {  
-	/** ÀàÉÏÌí¼Ó×¢½â@WebService£¬ÀàÖÐËùÓÐ·Ç¾²Ì¬·½·¨¶¼»á±»·¢²¼ */     
+	/** ç±»ä¸Šæ·»åŠ æ³¨è§£@WebServiceï¼Œç±»ä¸­æ‰€æœ‰éžé™æ€æ–¹æ³•éƒ½ä¼šè¢«å‘å¸ƒ */     
 	public String HelloWord(String name){  
 		return"Hello: "+name;  
 	}  
 	   
-	/** *Ìí¼Óexclude=trueºó£¬HelloWord2()·½·¨²»»á±»·¢²¼* @param name* @return */  
+	/** *æ·»åŠ exclude=trueåŽï¼ŒHelloWord2()æ–¹æ³•ä¸ä¼šè¢«å‘å¸ƒ* @param name* @return */  
 	@WebMethod(exclude=true)  
 	public String HelloWord2(String name){  
 		return"Hello: "+name;  
 	}  
 	
-	//µ÷ÓÃAPI·½·¨·¢²¼·þÎñµ½µØÖ·¶Ë¿Ú¡£
+	//è°ƒç”¨APIæ–¹æ³•å‘å¸ƒæœåŠ¡åˆ°åœ°å€ç«¯å£ã€‚
 	public static void main(String[] args) {  
-	/***²ÎÊý1£º·þÎñµÄ·¢²¼µØÖ·	 *²ÎÊý2£º·þÎñµÄÊµÏÖÕß*/  
+	/***å‚æ•°1ï¼šæœåŠ¡çš„å‘å¸ƒåœ°å€	 *å‚æ•°2ï¼šæœåŠ¡çš„å®žçŽ°è€…*/  
 	Endpoint.publish("http://127.0.0.1:8029/helloWord",new WebService_JdkAPI());  
 	   
 	}  
 }
 
-//¸ù¾ÝWSDLÎÄµµÀ´ÔÚ¿Í»§¶Ë±àÐ´´úÂë£¬·ÃÎÊ·¢²¼µÄ·þÎñ£»
-//µ«ÊÇ£¬WSDLÎÄµµ¿´²»¶®ÔõÃ´°ì£¿´úÂë¸ÃÈçºÎ±àÐ´£¿
-//¡ª¡ªÄã¿´²»¶®£¬JDK¿´µÃ¶®£¬wsimportÊÇJDK×Ô´øµÄ£¬¿ÉÒÔ¸ù¾ÝWSDLÎÄµµÉú³É¿Í»§¶Ëµ÷ÓÃ´úÂëµÄ¹¤¾ß¡£ÎÞÂÛ·þÎñÆ÷¶ËWebServiceÊ¹ÓÃÊ²Ã´ÓïÑÔ±àÐ´µÄ£¬¶¹½¬ÔÚ¿Í»§¶ËÉú³ÉJava´úÂë¡£ËùÒÔ·þÎñÆ÷ÓÃÊ²Ã´ÓïÑÔ±àÐ´µÄ²¢²»ÖØÒª¡£
-//wsimport.exeÃüÁî²ÎÊýÊìÖª£º
-//    -d:Éú³ÉclassÎÄ¼þ¡£Ä¬ÈÏ²ÎÊý¡£
-//    -s£ºÉú³ÉJavaÎÄ¼þ
-//    -p£º×Ô¶¨Òå°ü½á¹¹
-//ÀýÈç:E:> wsimport -s . http://127.0.0.1:8018/helloWord?wsdl
-//Ö´ÐÐÒÔÉÏÃüÁîºó£¬¼´¿ÉÔÚEÅÌÏÂÉú³ÉÈçÏÂ°ü¼°Àà 
-//Ö´ÐÐÊ±£¬Èç¹ûÕÒ²»µ½ÃüÁî£¬¿ÉÒÔµ½jdkµÄbinÄ¿Â¼ÏÂÖ´ÐÐ¡£»òÊÇ½«binÄ¿Â¼Ìí¼Óµ½»·¾³±äÁ¿¡£
+//æ ¹æ®WSDLæ–‡æ¡£æ¥åœ¨å®¢æˆ·ç«¯ç¼–å†™ä»£ç ï¼Œè®¿é—®å‘å¸ƒçš„æœåŠ¡ï¼›
+//ä½†æ˜¯ï¼ŒWSDLæ–‡æ¡£çœ‹ä¸æ‡‚æ€Žä¹ˆåŠžï¼Ÿä»£ç è¯¥å¦‚ä½•ç¼–å†™ï¼Ÿ
+//â€”â€”ä½ çœ‹ä¸æ‡‚ï¼ŒJDKçœ‹å¾—æ‡‚ï¼Œwsimportæ˜¯JDKè‡ªå¸¦çš„ï¼Œå¯ä»¥æ ¹æ®WSDLæ–‡æ¡£ç”Ÿæˆå®¢æˆ·ç«¯è°ƒç”¨ä»£ç çš„å·¥å…·ã€‚æ— è®ºæœåŠ¡å™¨ç«¯WebServiceä½¿ç”¨ä»€ä¹ˆè¯­è¨€ç¼–å†™çš„ï¼Œè±†æµ†åœ¨å®¢æˆ·ç«¯ç”ŸæˆJavaä»£ç ã€‚æ‰€ä»¥æœåŠ¡å™¨ç”¨ä»€ä¹ˆè¯­è¨€ç¼–å†™çš„å¹¶ä¸é‡è¦ã€‚
+//wsimport.exeå‘½ä»¤å‚æ•°ç†ŸçŸ¥ï¼š
+//    -d:ç”Ÿæˆclassæ–‡ä»¶ã€‚é»˜è®¤å‚æ•°ã€‚
+//    -sï¼šç”ŸæˆJavaæ–‡ä»¶
+//    -pï¼šè‡ªå®šä¹‰åŒ…ç»“æž„
+//ä¾‹å¦‚:E:> wsimport -s . http://127.0.0.1:8018/helloWord?wsdl
+//æ‰§è¡Œä»¥ä¸Šå‘½ä»¤åŽï¼Œå³å¯åœ¨Eç›˜ä¸‹ç”Ÿæˆå¦‚ä¸‹åŒ…åŠç±» 
+//æ‰§è¡Œæ—¶ï¼Œå¦‚æžœæ‰¾ä¸åˆ°å‘½ä»¤ï¼Œå¯ä»¥åˆ°jdkçš„binç›®å½•ä¸‹æ‰§è¡Œã€‚æˆ–æ˜¯å°†binç›®å½•æ·»åŠ åˆ°çŽ¯å¢ƒå˜é‡ã€‚
 
 
 

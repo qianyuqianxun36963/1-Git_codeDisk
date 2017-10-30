@@ -1,19 +1,19 @@
-package ĞĞÎªÄ£Ê½.½âÊÍÆ÷;
+package è¡Œä¸ºæ¨¡å¼.è§£é‡Šå™¨;
 
 public class Client {
 	private static Expression ex ;
 	private static Context con ;
 	public static void main(String[] args){
 	con = new Context();
-	//ÉèÖÃ±äÁ¿¡¢³£Á¿
+	//è®¾ç½®å˜é‡ã€å¸¸é‡
 	Variable a = new Variable();
 	Variable b = new Variable();
 	Constant c = new Constant(2);
-	//Îª±äÁ¿¸³Öµ
+	//ä¸ºå˜é‡èµ‹å€¼
 	con.addValue(a , 5);
 	con.addValue(b , 7);
-	//ÔËËã£¬¶Ô¾ä×ÓµÄ½á¹¹ÓÉÎÒÃÇ×Ô¼ºÀ´·ÖÎö£¬¹¹Ôì
+	//è¿ç®—ï¼Œå¯¹å¥å­çš„ç»“æ„ç”±æˆ‘ä»¬è‡ªå·±æ¥åˆ†æï¼Œæ„é€ 
 	ex = new Division(new Multiply(a , b), new Add(new Subtract(a , b) , c));
-	System.out.println("ÔËËã½á¹ûÎª£º "+ex.interpret(con));
+	System.out.println("è¿ç®—ç»“æœä¸ºï¼š "+ex.interpret(con));
 	}
 }

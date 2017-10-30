@@ -1,4 +1,4 @@
-package ĞĞÎªÄ£Ê½.½âÊÍÆ÷;
+package è¡Œä¸ºæ¨¡å¼.è§£é‡Šå™¨;
 
 public class Add extends Expression {
 	private Expression left, right;
@@ -50,7 +50,7 @@ class Division extends Expression {
 		try{
 			return(left.interpret( con ) / right.interpret( con ) );
 		}catch ( ArithmeticException ae ) {
-			System.out.println( "±»³ıÊıÎª 0£¡ " );
+			System.out.println( "è¢«é™¤æ•°ä¸º 0ï¼ " );
 			return(-11111);
 		}
 	}
@@ -71,7 +71,7 @@ class Constant extends Expression {
 class Variable extends Expression {
 	public int interpret( Context con )
 	{
-		/* this Îªµ÷ÓÃ interpret ·½·¨µÄ Variable ¶ÔÏó */
+		/* this ä¸ºè°ƒç”¨ interpret æ–¹æ³•çš„ Variable å¯¹è±¡ */
 		return(con.LookupValue( this ) );
 	}
 }

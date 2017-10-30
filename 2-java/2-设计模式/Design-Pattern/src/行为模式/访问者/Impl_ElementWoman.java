@@ -1,4 +1,4 @@
-package ĞĞÎªÄ£Ê½.·ÃÎÊÕß;
+package è¡Œä¸ºæ¨¡å¼.è®¿é—®è€…;
 
 public class Impl_ElementWoman implements I_Element{
 	String name;

@@ -1,4 +1,4 @@
-package javaÓïÑÔ.d_ÏµÍ³.Ê±¼äÏà¹Ø;
+package javaè¯­è¨€.d_ç³»ç»Ÿ.æ—¶é—´ç›¸å…³;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -20,8 +20,8 @@ public static int[] getCounts(){
 				m=String.valueOf(calendar.get(Calendar.MONTH)+1),
 				d=String.valueOf(calendar.get(Calendar.DAY_OF_MONTH));
 		
-		//Í¨¹ıµ±ÔÂ'm'£¬¼ÆËãÉÏÔÂ'l_m'(last_month)£¬ÏÂÔÂ'n_m'(next_month)¡£
-		//Í¨¹ıµ±Äê'y'£¬¼ÆËãÉÏÔÂ'l_y'(last_month)£¬ÏÂÔÂ'n_y'(next_month)¡£
+		//é€šè¿‡å½“æœˆ'm'ï¼Œè®¡ç®—ä¸Šæœˆ'l_m'(last_month)ï¼Œä¸‹æœˆ'n_m'(next_month)ã€‚
+		//é€šè¿‡å½“å¹´'y'ï¼Œè®¡ç®—ä¸Šæœˆ'l_y'(last_month)ï¼Œä¸‹æœˆ'n_y'(next_month)ã€‚
 		int int_month=Integer.parseInt(m);
 		int int_year=Integer.parseInt(y);
 		String l_m=String.valueOf(int_month-1); 
@@ -31,12 +31,12 @@ public static int[] getCounts(){
 		if (int_month==1) {l_m=String.valueOf(12); l_y=String.valueOf(int_year-1);}
 		if (int_month==12){n_m=String.valueOf(1); n_y=String.valueOf(int_year+1);}
 		
-		//µ¥×Ö·ûµÄÔÂ·İÔÚÇ°Ãæ²¹'0'¡£
+		//å•å­—ç¬¦çš„æœˆä»½åœ¨å‰é¢è¡¥'0'ã€‚
 		if(m.length()==1) m="0"+m;
 		if(l_m.length()==1) l_m="0"+l_m;
 		if(n_m.length()==1) n_m="0"+n_m;
 		
-		//¼ÆËã×òÌìÈÕÆÚ,ÀıÈç£ºlast_day_year.¼òĞ´l_d_y;
+		//è®¡ç®—æ˜¨å¤©æ—¥æœŸ,ä¾‹å¦‚ï¼šlast_day_year.ç®€å†™l_d_y;
 		Calendar   cal   =   Calendar.getInstance();
 		cal.add(Calendar.DATE,   -1);
 		String l_d_y = new SimpleDateFormat( "yyyy").format(cal.getTime());

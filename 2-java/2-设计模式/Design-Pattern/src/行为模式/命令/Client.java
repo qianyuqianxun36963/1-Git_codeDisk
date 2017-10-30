@@ -1,10 +1,10 @@
-package ĞĞÎªÄ£Ê½.ÃüÁî;
+package è¡Œä¸ºæ¨¡å¼.å‘½ä»¤;
 
 public class Client {
 	public Client() {
     }
     public static void main(String[] args) {
-    	   //µÆÕÖ£¬ÒÔ¼°µÆµÄ¿ª¹Ø
+    	   //ç¯ç½©ï¼Œä»¥åŠç¯çš„å¼€å…³
            Light testLight = new Light();
            LightOnCommand testLOC = new LightOnCommand(testLight);
            LightOffCommand testLFC = new LightOffCommand(testLight);
@@ -13,7 +13,7 @@ public class Client {
            lightSwitch.flipUp( );
            lightSwitch.flipDown( );
            
-           //·çÉÈ£¬ÒÔ¼°·çÉÈµÄ¿ª¹Ø
+           //é£æ‰‡ï¼Œä»¥åŠé£æ‰‡çš„å¼€å…³
            Fan testFan = new Fan( );
            FanOnCommand foc = new FanOnCommand(testFan);
            FanOffCommand ffc = new FanOffCommand(testFan);

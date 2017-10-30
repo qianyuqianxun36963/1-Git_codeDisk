@@ -1,6 +1,6 @@
-package java语言.b_数据.类型.字符串类;
+package java璇█.b_鏁版嵁.绫诲瀷.瀛楃涓茬被;
 
-public class 水务局脚本工具 {
+public class 姘村姟灞�鑴氭湰宸ュ叿 {
 
 	public static void main(String[] args) {
 		System.out.println(getShellstr());

@@ -1,6 +1,6 @@
-package javaÓïÑÔ.c_ÌØĞÔ.·´Éä;
+package javaè¯­è¨€.c_ç‰¹æ€§.åå°„;
 
-public class ÀàµÄ¶¯Ì¬×°ÔØ {
+public class ç±»çš„åŠ¨æ€è£…è½½ {
 	public static Object create(Class<?> clazz) {
         if (clazz.getName().equals(ClassKindA.class.getName())) {
         	return new ClassKindA();
@@ -12,7 +12,7 @@ public class ÀàµÄ¶¯Ì¬×°ÔØ {
     }
 	
 	public static void main(String args[]){
-		ClassKindA classA = (ClassKindA)ÀàµÄ¶¯Ì¬×°ÔØ.create(ClassKindA.class);
+		ClassKindA classA = (ClassKindA)ç±»çš„åŠ¨æ€è£…è½½.create(ClassKindA.class);
 		classA.say();
 	}
 }

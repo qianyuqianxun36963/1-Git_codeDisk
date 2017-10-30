@@ -1,15 +1,15 @@
-package ½á¹¹ĞÍÄ£Ê½.ÊÊÅäÆ÷;
+package ç»“æ„å‹æ¨¡å¼.é€‚é…å™¨;
 
 public class Client {	
 	public static void main(String args[]){
 		Shape shape;
 		
-		//ÏßĞÎÄ£ĞÍ
+		//çº¿å½¢æ¨¡å‹
 		shape = new Xtd_LineShape();
 		shape.draw();
 	    System.out.println(shape.getText());
 	    
-	    //ÎÄ×ÖÄ£ĞÍ
+	    //æ–‡å­—æ¨¡å‹
 	    shape = new Xtd_TextShape();
 		shape.draw();
 	    System.out.println(shape.getText());

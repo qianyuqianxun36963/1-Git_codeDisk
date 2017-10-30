@@ -1,4 +1,4 @@
-package javaÓïÑÔ.a_×éÖ¯.c_Àà.½Ó¿ÚÀà;
+package javaè¯­è¨€.a_ç»„ç»‡.c_ç±».æ¥å£ç±»;
 
 public class Impl_Interface implements I_interFace {
 

@@ -1,12 +1,12 @@
-package javaÓïÑÔ.b_Êı¾İ.ÈİÆ÷.ÊµÓÃÈİÆ÷.»ù´¡;
+package javaè¯­è¨€.b_æ•°æ®.å®¹å™¨.å®ç”¨å®¹å™¨.åŸºç¡€;
 
 import java.util.*;
 
 import org.junit.Test;
 
-import javaÓïÑÔ.b_Êı¾İ.ÈİÆ÷.ÊµÓÃÈİÆ÷.Mydata;
+import javaè¯­è¨€.b_æ•°æ®.å®¹å™¨.å®ç”¨å®¹å™¨.Mydata;
 
-//ÔÚÊµ¼ÊÊ¹ÓÃÖĞ³£³£Òª³õÊ¼»¯Ò»¸ölistµÈ£¬ÕâÀïÊ¹ÓÃCollections.addAll()ºÜ·½±ã¡£ÀıÈç£º
+//åœ¨å®é™…ä½¿ç”¨ä¸­å¸¸å¸¸è¦åˆå§‹åŒ–ä¸€ä¸ªlistç­‰ï¼Œè¿™é‡Œä½¿ç”¨Collections.addAll()å¾ˆæ–¹ä¾¿ã€‚ä¾‹å¦‚ï¼š
 //sk = new Stack<String>();
 //Collections.addAll(sk, "one","two","three","four","five","six");
 
@@ -42,7 +42,7 @@ public class MyList {
 class MyList_Arraylist {
 	public ArrayList<Object> arraylist = new ArrayList<Object>();
 	void initlist(){
-		arraylist.add("×Ö·û´®");
+		arraylist.add("å­—ç¬¦ä¸²");
 		arraylist.add(520);
 	    Mydata mydate=new Mydata(100,"wang");
 	    arraylist.add(mydate);
@@ -53,14 +53,14 @@ class MyList_Linkedlist {
 	public LinkedList<Object> linklist = new LinkedList<Object>();
 	
 	void initlist(){
-		linklist.add("×Ö·û´®");
+		linklist.add("å­—ç¬¦ä¸²");
 		linklist.add(520);
 	    Mydata mydate=new Mydata(100,"wang");
 	    linklist.add(mydate);
 	}	
 	
 	void printself(){
-		System.out.println("×Ö·ûÊÇ"+(String)linklist.get(0)+"£»Êı×ÖÊÇ"+(int)linklist.get(1)+"£»¶ÔÏóÊÇ"+((Mydata)linklist.get(2)).toString());
+		System.out.println("å­—ç¬¦æ˜¯"+(String)linklist.get(0)+"ï¼›æ•°å­—æ˜¯"+(int)linklist.get(1)+"ï¼›å¯¹è±¡æ˜¯"+((Mydata)linklist.get(2)).toString());
 	}
 }
 
@@ -103,21 +103,21 @@ class Mylist_Stack{
 }
 
 class ListUtil{
-	//±éÀúÒ»¸ölist¶ÔÏó¡£
+	//éå†ä¸€ä¸ªlistå¯¹è±¡ã€‚
 	public static void visitList_for(List<?> list){
 		for(int i = 0 ; i < list.size() ; i++){  
 	        System.out.println(list.get(i));
 	    }  
 	}
 	
-	//±éÀúÒ»¸ölist¶ÔÏó¡£
+	//éå†ä¸€ä¸ªlistå¯¹è±¡ã€‚
 	public static void visitList_every(List<?> list){
 		for(Object value:list){  
 	        System.out.println(value);
 	    }  
 	}
 	
-	//±éÀúÒ»¸ölist¶ÔÏó¡£
+	//éå†ä¸€ä¸ªlistå¯¹è±¡ã€‚
 	public static void visitList_iterator(List<?> list){
 		Iterator<?> it = list.iterator();  
 		while(it.hasNext()){  
@@ -125,7 +125,7 @@ class ListUtil{
 		}
 	}
 	
-	//±éÀúÒ»¸ölist¶ÔÏó¡£	EnumerationÑ­»· ÕâÀïÖ»ÔÚvectorÀïÃæ±éÀúÊÇ³É¹¦µÄ¡£±ğµÄ¶¼Ã»³É¹¦¡£
+	//éå†ä¸€ä¸ªlistå¯¹è±¡ã€‚	Enumerationå¾ªç¯ è¿™é‡Œåªåœ¨vectoré‡Œé¢éå†æ˜¯æˆåŠŸçš„ã€‚åˆ«çš„éƒ½æ²¡æˆåŠŸã€‚
 	public static void visitList_Enumeration(List<?> list){
 		@SuppressWarnings("unchecked")
 		Enumeration<?> enu = ((Vector<Object>) list).elements();  

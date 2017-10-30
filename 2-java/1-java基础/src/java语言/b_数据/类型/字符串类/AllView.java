@@ -1,4 +1,4 @@
-package javaÓïÑÔ.b_Êı¾İ.ÀàĞÍ.×Ö·û´®Àà;
+package javaè¯­è¨€.b_æ•°æ®.ç±»å‹.å­—ç¬¦ä¸²ç±»;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -6,8 +6,8 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class AllView {
 	public static void main(String args[]){
 		 @SuppressWarnings("resource")
-		 ApplicationContext ctx = new ClassPathXmlApplicationContext("javaÓïÑÔ/b_Êı¾İ/ÀàĞÍ/×Ö·û´®Àà/beans.xml");//¶ÁÈ¡bean.xmlÖĞµÄÄÚÈİ
-		 StringºÍStringBuffer×÷Îªº¯Êı²ÎÊı  strtest = ctx.getBean("strtest",StringºÍStringBuffer×÷Îªº¯Êı²ÎÊı.class);//´´½¨beanµÄÒıÓÃ¶ÔÏó
+		 ApplicationContext ctx = new ClassPathXmlApplicationContext("javaè¯­è¨€/b_æ•°æ®/ç±»å‹/å­—ç¬¦ä¸²ç±»/beans.xml");//è¯»å–bean.xmlä¸­çš„å†…å®¹
+		 Stringå’ŒStringBufferä½œä¸ºå‡½æ•°å‚æ•°  strtest = ctx.getBean("strtest",Stringå’ŒStringBufferä½œä¸ºå‡½æ•°å‚æ•°.class);//åˆ›å»ºbeançš„å¼•ç”¨å¯¹è±¡
 		 strtest.test();		
 	}
 }

@@ -6,7 +6,7 @@
 * stack," and '-' means "pop the top of the stack and print it":
 * "+U+n+c---+e+r+t---+a+i+n+t+y---+ -+r+u--+l+e+s---"
 */
-package javaÓïÑÔ.b_Êı¾İ.ÈİÆ÷.ÊµÓÃÈİÆ÷;
+package javaè¯­è¨€.b_æ•°æ®.å®¹å™¨.å®ç”¨å®¹å™¨;
 
 import java.util.Stack;
 

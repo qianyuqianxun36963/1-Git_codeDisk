@@ -1,11 +1,11 @@
-package javaÓïÑÔ.b_Êı¾İ.ÀàĞÍ.×Ö·û´®Àà;
+package javaè¯­è¨€.b_æ•°æ®.ç±»å‹.å­—ç¬¦ä¸²ç±»;
 
 import java.io.File;
 
-public class ×Ö·û´®¹ØÓÚµØÖ·µÄ³£ÓÃ¹¤¾ß {
+public class å­—ç¬¦ä¸²å…³äºåœ°å€çš„å¸¸ç”¨å·¥å…· {
 	public static void main(String[] args) throws Exception { 
-		String badpath="E:/1-java\\webApps/webÏîÄ¿¿ò¼Ü/1-Ä£°åÒıÇæ/freemark\\src\\freemark\\fileModel\\ExportFile\\outFile.doc";
-    	String filepath="E:\\1-java\\webApps\\webÏîÄ¿¿ò¼Ü\\1-Ä£°åÒıÇæ\\freemark\\src\\freemark\\fileModel\\ExportFile\\outFile.doc";
+		String badpath="E:/1-java\\webApps/webé¡¹ç›®æ¡†æ¶/1-æ¨¡æ¿å¼•æ“/freemark\\src\\freemark\\fileModel\\ExportFile\\outFile.doc";
+    	String filepath="E:\\1-java\\webApps\\webé¡¹ç›®æ¡†æ¶\\1-æ¨¡æ¿å¼•æ“\\freemark\\src\\freemark\\fileModel\\ExportFile\\outFile.doc";
     	System.out.println(getfileDir(badpath));
     	System.out.println(getfileDir(filepath));
     	System.out.println(getfilename(badpath));
@@ -28,7 +28,7 @@ public class ×Ö·û´®¹ØÓÚµØÖ·µÄ³£ÓÃ¹¤¾ß {
 		return fileName;
 	};
 	
-	//³£³£ÔÚÊä³öµÄÊ±ºòÎÄ¼ş¼Ğ¿ÉÄÜ²»´æÔÚ£¬ÕâÊ±£¬ĞèÒª´´½¨ÎÄ¼ş¼Ğ¡£
+	//å¸¸å¸¸åœ¨è¾“å‡ºçš„æ—¶å€™æ–‡ä»¶å¤¹å¯èƒ½ä¸å­˜åœ¨ï¼Œè¿™æ—¶ï¼Œéœ€è¦åˆ›å»ºæ–‡ä»¶å¤¹ã€‚
 	private static void mikdir(String filePath){
 		try{
 			filePath = filePath.replaceAll("\\\\","/");
@@ -43,29 +43,29 @@ public class ×Ö·û´®¹ØÓÚµØÖ·µÄ³£ÓÃ¹¤¾ß {
 	
 }
 
-/*ÀıÈç£º»ñÈ¡µ½µÄÎÄ¼şÂ·¾¶ÎªC:\Documents and Settings\Leeo\My Documents\logo.gif
+/*ä¾‹å¦‚ï¼šè·å–åˆ°çš„æ–‡ä»¶è·¯å¾„ä¸ºC:\Documents and Settings\Leeo\My Documents\logo.gif
 
-ÏÖÔÚÏëÒªÈ¡µÃÍ¼Æ¬µÄÃû³Ælogo.gif£¬ÎÒÃÇÖªµÀ·´Ğ±¸Ü¡°\¡±ÊÇ×ªÒå×Ö·û£¬ËùÒÔ²»ÄÜÖ±½Ó
+ç°åœ¨æƒ³è¦å–å¾—å›¾ç‰‡çš„åç§°logo.gifï¼Œæˆ‘ä»¬çŸ¥é“åæ–œæ â€œ\â€æ˜¯è½¬ä¹‰å­—ç¬¦ï¼Œæ‰€ä»¥ä¸èƒ½ç›´æ¥
 
-String temp[] = filePath.split("\");//filePathµÄÖµ¾ÍÊÇÉÏÃæµÄÎÄ¼şÂ·¾¶
+String temp[] = filePath.split("\");//filePathçš„å€¼å°±æ˜¯ä¸Šé¢çš„æ–‡ä»¶è·¯å¾„
 
-À´·Ö¸îÎÄ¼şÂ·¾¶£¬¶øÓ¦¸ÃÕâÑùĞ´
+æ¥åˆ†å‰²æ–‡ä»¶è·¯å¾„ï¼Œè€Œåº”è¯¥è¿™æ ·å†™
 
 
-*javaÖĞ\\±íÊ¾Ò»¸ö\£¬¶øregexÖĞ\\Ò²±íÊ¾\£¬
-*ËùÒÔµ±\\\\½âÎö³ÉregexµÄÊ±ºòÎª\\
+*javaä¸­\\è¡¨ç¤ºä¸€ä¸ª\ï¼Œè€Œregexä¸­\\ä¹Ÿè¡¨ç¤º\ï¼Œ
+*æ‰€ä»¥å½“\\\\è§£ææˆregexçš„æ—¶å€™ä¸º\\
 *
 String temp[] = filePath.split("\\\\");
 
-ÔÚLinuxÏµÍ³ÖĞ
+åœ¨Linuxç³»ç»Ÿä¸­
 
 System.getProperty("file.separator", "\\")
 
-Êä³öÎª¡°/¡±£¬¶øÔÚWindowsÏµÍ³ÖĞÊä³öÎª¡°\¡±£¬ËùÒÔÒª¼æÈİÁ½Õß¿ÉÒÔÕâÃ´Ğ´
+è¾“å‡ºä¸ºâ€œ/â€ï¼Œè€Œåœ¨Windowsç³»ç»Ÿä¸­è¾“å‡ºä¸ºâ€œ\â€ï¼Œæ‰€ä»¥è¦å…¼å®¹ä¸¤è€…å¯ä»¥è¿™ä¹ˆå†™
 
 String temp[] = filePath.replaceAll("\\\\","/").split("/");
 
-»ñÈ¡ÎÄ¼şÃû³ÆµÄÍêÕû´úÂëÈçÏÂ£º
+è·å–æ–‡ä»¶åç§°çš„å®Œæ•´ä»£ç å¦‚ä¸‹ï¼š
 
 String temp[] = filePath.replaceAll("\\\\","/").split("/");
 String fileName = ""

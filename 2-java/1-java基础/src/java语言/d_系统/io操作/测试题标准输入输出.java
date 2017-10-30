@@ -1,8 +1,8 @@
-package javaÓïÑÔ.d_ÏµÍ³.io²Ù×÷;
+package javaè¯­è¨€.d_ç³»ç»Ÿ.ioæ“ä½œ;
 import java.util.Scanner;
 
 
-public class ²âÊÔÌâ±ê×¼ÊäÈëÊä³ö {
+public class æµ‹è¯•é¢˜æ ‡å‡†è¾“å…¥è¾“å‡º {
 	public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         
@@ -10,7 +10,7 @@ public class ²âÊÔÌâ±ê×¼ÊäÈëÊä³ö {
         char chr = in.next().charAt(0);
         System.out.println(str + chr);
         
-        while (in.hasNextInt()) {//×¢Òâwhile´¦Àí¶à¸öcase
+        while (in.hasNextInt()) {//æ³¨æ„whileå¤„ç†å¤šä¸ªcase
             int a = in.nextInt();
             int b = in.nextInt();
             System.out.println(a + b);

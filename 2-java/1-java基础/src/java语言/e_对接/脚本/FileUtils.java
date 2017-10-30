@@ -1,4 +1,4 @@
-package javaÓïÑÔ.e_¶Ô½Ó.½Å±¾;
+package javaè¯­è¨€.e_å¯¹æ¥.è„šæœ¬;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -22,9 +22,9 @@ public class FileUtils {
 		
 	}
 	
-	//ÕâÀï¸ø³öµÄÊÇÄ¬ÈÏµÄ½Å²½´æ´¢Â·¾¶£¬Êµ¼ÊÊ¹ÓÃÊ±£¬¿ÉÒÔĞŞ¸Ä£¬Èç£ºFileUtils.setBasepath("/src/javaÓïÑÔ");
-	private static String basepath=getcurpath()+"/src/javaÓïÑÔ/¶Ô½Ó/½Å±¾\\shellsfiles/";
-	private static Pattern pattern; //ÕâÀïÖ»ÄÜ¶¨ÒåÎªÀà³ÉÔ±£¬ÒòÎªÖ÷º¯ÊıÎªÀàº¯Êı¡£
+	//è¿™é‡Œç»™å‡ºçš„æ˜¯é»˜è®¤çš„è„šæ­¥å­˜å‚¨è·¯å¾„ï¼Œå®é™…ä½¿ç”¨æ—¶ï¼Œå¯ä»¥ä¿®æ”¹ï¼Œå¦‚ï¼šFileUtils.setBasepath("/src/javaè¯­è¨€");
+	private static String basepath=getcurpath()+"/src/javaè¯­è¨€/å¯¹æ¥/è„šæœ¬\\shellsfiles/";
+	private static Pattern pattern; //è¿™é‡Œåªèƒ½å®šä¹‰ä¸ºç±»æˆå‘˜ï¼Œå› ä¸ºä¸»å‡½æ•°ä¸ºç±»å‡½æ•°ã€‚
 	private static Matcher matcher;
 	
 	public static String getBasepath() {
@@ -78,9 +78,9 @@ public class FileUtils {
 	}
 	
 	@SuppressWarnings({ "resource"})
-	//²ÎÊı£ºÎÄ¼şÃû£¬·Ö¸ô·û£¬±àÂë·½Ê½£¬
+	//å‚æ•°ï¼šæ–‡ä»¶åï¼Œåˆ†éš”ç¬¦ï¼Œç¼–ç æ–¹å¼ï¼Œ
 	private static String readfiletostring(String filename,String segment,String codetype,String note,Boolean hasnote) throws IOException{
-		String filepath = basepath+filename;//Â·¾¶Ğ´·¨ºÜËæÒâ
+		String filepath = basepath+filename;//è·¯å¾„å†™æ³•å¾ˆéšæ„
 		BufferedReader br=new BufferedReader(new InputStreamReader(new FileInputStream(filepath),codetype));
 		String s=null; 
 		StringBuffer sb=new StringBuffer();
@@ -91,9 +91,9 @@ public class FileUtils {
 		String tempresult=removeLastSeg(sb,segment);
 		//System.out.println(tempresult);
 		
-		//È¥µô×¢ÊÍ²¿·Ö:
+		//å»æ‰æ³¨é‡Šéƒ¨åˆ†:
 		String removedstr = "";
-		if(hasnote)	removedstr = tempresult; //Èç¹ûhasnote==true±íÊ¾±£Áô×¢ÊÍ£¬ÕâÀï²»×öÈ¥×¢ÊÍ´¦Àí.
+		if(hasnote)	removedstr = tempresult; //å¦‚æœhasnote==trueè¡¨ç¤ºä¿ç•™æ³¨é‡Šï¼Œè¿™é‡Œä¸åšå»æ³¨é‡Šå¤„ç†.
 		else removedstr = removenote(tempresult,note);
 		
 		String result=removedstr;
@@ -105,13 +105,13 @@ public class FileUtils {
 	}
 	
 	private static String removenote(String tempresult,String note){
-		//È¥µô×¢ÊÍ²¿·Ö
+		//å»æ‰æ³¨é‡Šéƒ¨åˆ†
 		String regexstr="";
-		if (note=="%") regexstr="%[^%]*%";		//Õâ¸öÕıÔò£¬Æ¥ÅäÁË.bat ÎÄ¼şÀïµÄ×¢ÊÍ²¿·Ö¡£
-		if (note=="#") regexstr="<#[^<]*#>";	//Õâ¸öÕıÔò£¬Æ¥ÅäÁË.ps1    ÎÄ¼şÀïµÄ×¢ÊÍ²¿·Ö,×¢ÊÍÖĞ²»ÄÜº¬ÓĞ¡®<¡¯·ûºÅ
+		if (note=="%") regexstr="%[^%]*%";		//è¿™ä¸ªæ­£åˆ™ï¼ŒåŒ¹é…äº†.bat æ–‡ä»¶é‡Œçš„æ³¨é‡Šéƒ¨åˆ†ã€‚
+		if (note=="#") regexstr="<#[^<]*#>";	//è¿™ä¸ªæ­£åˆ™ï¼ŒåŒ¹é…äº†.ps1    æ–‡ä»¶é‡Œçš„æ³¨é‡Šéƒ¨åˆ†,æ³¨é‡Šä¸­ä¸èƒ½å«æœ‰â€˜<â€™ç¬¦å·
 		Matcher matcher = matchString(regexstr,tempresult);
 		//System.out.println(tempresult);
-		//½«ÓÚ Æ¥ÅäÏàÒ»ÖÂµÄ×Ö·û´®Ìæ»»ÎªËù¸øµÄ×Ö·û´®¡£
+		//å°†äº åŒ¹é…ç›¸ä¸€è‡´çš„å­—ç¬¦ä¸²æ›¿æ¢ä¸ºæ‰€ç»™çš„å­—ç¬¦ä¸²ã€‚
 		String removedstr = matcher.replaceAll(""); 
 		//System.out.println(removedstr);
 		return(removedstr);
@@ -146,13 +146,13 @@ public class FileUtils {
     	pattern=Pattern.compile(regex,Pattern.CASE_INSENSITIVE);
         matcher=pattern.matcher(input);
         try{
-			matcher.find(); //ÕâÀïÇ§Íò²»¿ÉÒÔÉÙ¡£²»È»¸ù±¾Ã»È¥ËÑ¡£ÕâÀïËÑË÷ÁËµÚÒ»¸ö·ûºÏÌõ¼şµÄ×Ó×Ö·û´®¡£Èç¹ûÕÒÏÂÒ»¸ö£¬¼ÇµÃÓÃ·µ»ØµÄmatcher¶ÔÏóÔÙ´Î£¬matcher.find
+			matcher.find(); //è¿™é‡Œåƒä¸‡ä¸å¯ä»¥å°‘ã€‚ä¸ç„¶æ ¹æœ¬æ²¡å»æœã€‚è¿™é‡Œæœç´¢äº†ç¬¬ä¸€ä¸ªç¬¦åˆæ¡ä»¶çš„å­å­—ç¬¦ä¸²ã€‚å¦‚æœæ‰¾ä¸‹ä¸€ä¸ªï¼Œè®°å¾—ç”¨è¿”å›çš„matcherå¯¹è±¡å†æ¬¡ï¼Œmatcher.find
         }
 		catch (IllegalStateException e){}
     	return matcher;
 	}
 	
-	// Êı¾İ´æÎÄ¼şµÄÒ»°ã·½·¨¡£
+	// æ•°æ®å­˜æ–‡ä»¶çš„ä¸€èˆ¬æ–¹æ³•ã€‚
 	public static void writetofile(String infotoWrite, String filePath) {
 		String newStr=changestr(infotoWrite);
 		try {
@@ -166,7 +166,7 @@ public class FileUtils {
 		}
 	}
 	
-	//´øË«ÒıºÅºÍ'\'µÄ×Ö·û´®ÊÇ²»ÄÜÖ±½Ó·ÅÔÚString¶¨ÒåÓï¾äÀïµÄ£¬ÕâÀï×öÁËÒ»ÏÂ¼òµ¥±ä»»£¬ÈÃÊä³öÎÄ¼şÀïµÄÄÚÈİ¿ÉÒÔÖ±½Ó¸´ÖÆÕ³Ìùµ½String¶¨ÒåÓï¾äÀï¡£
+	//å¸¦åŒå¼•å·å’Œ'\'çš„å­—ç¬¦ä¸²æ˜¯ä¸èƒ½ç›´æ¥æ”¾åœ¨Stringå®šä¹‰è¯­å¥é‡Œçš„ï¼Œè¿™é‡Œåšäº†ä¸€ä¸‹ç®€å•å˜æ¢ï¼Œè®©è¾“å‡ºæ–‡ä»¶é‡Œçš„å†…å®¹å¯ä»¥ç›´æ¥å¤åˆ¶ç²˜è´´åˆ°Stringå®šä¹‰è¯­å¥é‡Œã€‚
 	public static String changestr(String strToChange){
 		String s = strToChange.replaceAll("\"", "\'");
 		String s2 = s.replaceAll("\\\\", "/");

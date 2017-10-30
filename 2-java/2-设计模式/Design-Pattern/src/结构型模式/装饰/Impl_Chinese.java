@@ -1,4 +1,4 @@
-package �ṹ��ģʽ.װ��;
+package 结构型模式.装饰;
 
 public class Impl_Chinese implements I_Human {
 	String chineseName;

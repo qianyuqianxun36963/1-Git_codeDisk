@@ -1,4 +1,4 @@
-package javaÓïÑÔ.e_¶Ô½Ó.Cµ×²ã;
+package javaè¯­è¨€.e_å¯¹æ¥.Cåº•å±‚;
 
 public class InterfaceToDLL {
 

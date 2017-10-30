@@ -1,9 +1,9 @@
-package java语言.b_数据.容器.实用容器.应用;
+package java璇█.b_鏁版嵁.瀹瑰櫒.瀹炵敤瀹瑰櫒.搴旂敤;
 
 import java.util.Scanner;
 import java.util.Stack;
 
-public class 栈_括号校验 {
+public class 鏍坃鎷彿鏍￠獙 {
 	public static void main(String[] args) {  
         Scanner scan = new Scanner(System.in);  
         String s;  

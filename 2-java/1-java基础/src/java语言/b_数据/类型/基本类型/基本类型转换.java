@@ -1,37 +1,37 @@
-package javaÓïÑÔ.b_Êı¾İ.ÀàĞÍ.»ù±¾ÀàĞÍ;
+package javaè¯­è¨€.b_æ•°æ®.ç±»å‹.åŸºæœ¬ç±»å‹;
 
-public class »ù±¾ÀàĞÍ×ª»» {
+public class åŸºæœ¬ç±»å‹è½¬æ¢ {
 	public static void main(String args[]){
 		changeStrToNum();
 		changeNumToStr();
 	}
 	
 	public static void changeNumToStr(){
-//	¸÷ÖÖÊı×ÖÀàĞÍ×ª»»³É×Ö·û´®ĞÍ£º 
+//	å„ç§æ•°å­—ç±»å‹è½¬æ¢æˆå­—ç¬¦ä¸²å‹ï¼š 
 	    int value =123;
-		String str = String.valueOf(value); // ÆäÖĞ value ÎªÈÎÒâÒ»ÖÖÊı×ÖÀàĞÍ¡£ 
+		String str = String.valueOf(value); // å…¶ä¸­ value ä¸ºä»»æ„ä¸€ç§æ•°å­—ç±»å‹ã€‚ 
 		System.out.println(str);
 	}
 	
 	
-//	×Ö·û´®ĞÍ×ª»»³É¸÷ÖÖÊı×ÖÀàĞÍ£º 
+//	å­—ç¬¦ä¸²å‹è½¬æ¢æˆå„ç§æ•°å­—ç±»å‹ï¼š 
 	public static void changeStrToNum(){
 		String s = "127"; 
-		byte b = Byte.parseByte( s ); //ÕâÀïs×î´óÒ²Ö»ÄÜÈ¡127   
-//		byteÊÇÒ»¸ö×Ö½Ú±£´æµÄ£¬ÓĞ8¸öÎ»£¬¼´8¸ö0¡¢1¡£
-//		8Î»µÄµÚÒ»¸öÎ»ÊÇ·ûºÅÎ»£¬
-//		Ò²¾ÍÊÇËµ0000 0001´ú±íµÄÊÇÊı×Ö1		1000 0000´ú±íµÄ¾ÍÊÇ-1
-//		ËùÒÔÕıÊı×î´óÎ»0111 1111£¬Ò²¾ÍÊÇÊı×Ö127,  ¸ºÊı×î´óÎª1111 1111£¬Ò²¾ÍÊÇÊı×Ö-128
+		byte b = Byte.parseByte( s ); //è¿™é‡Œsæœ€å¤§ä¹Ÿåªèƒ½å–127   
+//		byteæ˜¯ä¸€ä¸ªå­—èŠ‚ä¿å­˜çš„ï¼Œæœ‰8ä¸ªä½ï¼Œå³8ä¸ª0ã€1ã€‚
+//		8ä½çš„ç¬¬ä¸€ä¸ªä½æ˜¯ç¬¦å·ä½ï¼Œ
+//		ä¹Ÿå°±æ˜¯è¯´0000 0001ä»£è¡¨çš„æ˜¯æ•°å­—1		1000 0000ä»£è¡¨çš„å°±æ˜¯-1
+//		æ‰€ä»¥æ­£æ•°æœ€å¤§ä½0111 1111ï¼Œä¹Ÿå°±æ˜¯æ•°å­—127,  è´Ÿæ•°æœ€å¤§ä¸º1111 1111ï¼Œä¹Ÿå°±æ˜¯æ•°å­—-128
 		short t = Short.parseShort( s ); 
 		int i = Integer.parseInt( s ); 
 		long l = Long.parseLong( s ); 
 		Float f = Float.parseFloat( s ); 
 		Double d = Double.parseDouble( s );
 	
-	    System.out.println("String×ªbyte×î´óÒ²¾Í127: byte:"+b+"\n"+t+" "+i+" "+l+" "+f+" "+d);
+	    System.out.println("Stringè½¬byteæœ€å¤§ä¹Ÿå°±127: byte:"+b+"\n"+t+" "+i+" "+l+" "+f+" "+d);
 	}
 	
-//	Êı×ÖÀàĞÍÓëÊı×ÖÀà¶ÔÏóÖ®¼äµÄ×ª»»£º 
+//	æ•°å­—ç±»å‹ä¸æ•°å­—ç±»å¯¹è±¡ä¹‹é—´çš„è½¬æ¢ï¼š 
 
 	public void changeBaseType(){
 		byte b = (byte) 169; 

@@ -1,7 +1,7 @@
 // holding/Ex19.java
 // TIJ4 Chapter Holding, Exercise 19, page 422
 // Repeat the previous exercise with a HashSet and a LinkedHashSet.
-package javaÓïÑÔ.b_Êı¾İ.ÈİÆ÷.ÊµÓÃÈİÆ÷;
+package javaè¯­è¨€.b_æ•°æ®.å®¹å™¨.å®ç”¨å®¹å™¨;
 import java.util.*;
 
 public class Ex19 {

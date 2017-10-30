@@ -1,6 +1,6 @@
-package javaÓïÑÔ.a_×éÖ¯.a_Óï·¨.²Ù×÷·û;
+package javaè¯­è¨€.a_ç»„ç»‡.a_è¯­æ³•.æ“ä½œç¬¦;
 
-public class ²Ù×÷·û {
+public class æ“ä½œç¬¦ {
 	public static void main(String args[]){
 		testAddAndSub();
 	}

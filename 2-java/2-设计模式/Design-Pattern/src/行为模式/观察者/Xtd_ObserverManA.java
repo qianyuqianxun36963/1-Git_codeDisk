@@ -1,6 +1,5 @@
-package ĞĞÎªÄ£Ê½.¹Û²ìÕß;
+package è¡Œä¸ºæ¨¡å¼.è§‚å¯Ÿè€…;
 
-//ÕâÊÇ¸ö¿´ÃÅµÄ£¬ÄĞĞÔ¹Û²ìÕß
 public class Xtd_ObserverManA extends A_Observer{
 
 	Xtd_ObserverManA(A_Subject subject){

@@ -1,24 +1,24 @@
-package javaÓïÑÔ.d_ÏµÍ³.²¢·¢;
+package javaè¯­è¨€.d_ç³»ç»Ÿ.å¹¶å‘;
 
-public class Ïß³Ì»úÖÆ {
+public class çº¿ç¨‹æœºåˆ¶ {
 	public static void main(String args[]) throws InterruptedException{
-//		//Ê¹ÓÃ×ÓÀà·½Ê½´´½¨Ïß³Ì¡£
+//		//ä½¿ç”¨å­ç±»æ–¹å¼åˆ›å»ºçº¿ç¨‹ã€‚
 		new MyThread().text();
         
-//		//Ê¹ÓÃ½Ó¿ÚÀà´´½¨Ïß³Ì¡£
+//		//ä½¿ç”¨æ¥å£ç±»åˆ›å»ºçº¿ç¨‹ã€‚
 		new MyRunClass().text();
 		
-//		//Ïß³ÌÁªºÏ
+//		//çº¿ç¨‹è”åˆ
 		new join_main().text();
 		
 	}
 }
 
-//¼Ì³ĞThreadÀà·½Ê½¡£ ¿ÉÒÔÔÚ×ÓÀàÖĞÌí¼Ó³ÉÔ±ÊôĞÔºÍº¯Êı£¬·á¸»Ïß³ÌÀà¹¦ÄÜ¡£
+//ç»§æ‰¿Threadç±»æ–¹å¼ã€‚ å¯ä»¥åœ¨å­ç±»ä¸­æ·»åŠ æˆå‘˜å±æ€§å’Œå‡½æ•°ï¼Œä¸°å¯Œçº¿ç¨‹ç±»åŠŸèƒ½ã€‚
 class MyThread extends Thread{ 
 	public void text(){
-		Thread t1 = new MyThread("°¢Èı");
-		Thread t2 = new MyThread("ÀîËÄ");
+		Thread t1 = new MyThread("é˜¿ä¸‰");
+		Thread t2 = new MyThread("æå››");
 		t1.start(); 
 		t2.start(); 
 	}
@@ -38,7 +38,7 @@ class MyThread extends Thread{
     } 
 }
 
-//ÊµÏÖRunnable½Ó¿Ú·½Ê½¡£ÕâÑùÊµÏÖÀàµÄ³ÉÔ±ÊôĞÔ×ÔÈ»¾ÍÊÇ¹«ÓÃµÄÊôĞÔÁË¡£ÔÚÓÉËû´´½¨µÄÏß³ÌÄÚ£¬¿ÉÒÔ¹«ÓÃÕâĞ©³ÉÔ±ÊôĞÔ¡£
+//å®ç°Runnableæ¥å£æ–¹å¼ã€‚è¿™æ ·å®ç°ç±»çš„æˆå‘˜å±æ€§è‡ªç„¶å°±æ˜¯å…¬ç”¨çš„å±æ€§äº†ã€‚åœ¨ç”±ä»–åˆ›å»ºçš„çº¿ç¨‹å†…ï¼Œå¯ä»¥å…¬ç”¨è¿™äº›æˆå‘˜å±æ€§ã€‚
 class MyRunClass implements Runnable{
 	public void text() throws InterruptedException{
 		MyRunClass myrunclass = new MyRunClass();
@@ -52,11 +52,11 @@ class MyRunClass implements Runnable{
 	public int myage=1;
 	public void run(){
 		myage=myage+1;
-		System.out.println("ÕâÊÇÎÒµÄÏß³Ì¡£ mynumber is :"+myage);
+		System.out.println("è¿™æ˜¯æˆ‘çš„çº¿ç¨‹ã€‚ mynumber is :"+myage);
 	}
 }
 
-//Ïß³ÌÁªºÏ join²Ù×÷¡£
+//çº¿ç¨‹è”åˆ joinæ“ä½œã€‚
 class join_main extends Thread{
 	public void text(){
 		join_main main=new join_main();
@@ -66,8 +66,8 @@ class join_main extends Thread{
 		join_slave slave=new join_slave();
 		System.out.println("before join");
 		try {
-			slave.start(); //joinÖ®Ç°°ÑĞèÒªjoinµÄÏß³ÌÆğÆğÀ´¡£
-			slave.join();  //join½øÈ¥¡£
+			slave.start(); //joinä¹‹å‰æŠŠéœ€è¦joinçš„çº¿ç¨‹èµ·èµ·æ¥ã€‚
+			slave.join();  //joinè¿›å»ã€‚
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
@@ -81,7 +81,7 @@ class join_slave extends Thread{
 	}
 }
 
-//Í¬²½Ïß³Ì¡£
+//åŒæ­¥çº¿ç¨‹ã€‚
 class SynThread	extends Thread{
 	
 }

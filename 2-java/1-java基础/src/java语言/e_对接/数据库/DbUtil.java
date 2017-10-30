@@ -1,4 +1,4 @@
-package javaÓïÑÔ.e_¶Ô½Ó.Êı¾İ¿â;
+package javaè¯­è¨€.e_å¯¹æ¥.æ•°æ®åº“;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -70,8 +70,8 @@ public class DbUtil {
 			
 			String username;
 			int  userid;
-			while (resultSet.next()){ //Ñ­»·±éÀú²éÑ¯½á¹û¡£
-				username=resultSet.getString(2); //´Ó½á¹û¼¯ÖĞÈ¡ÖµµÄ·½Ê½¡£
+			while (resultSet.next()){ //å¾ªç¯éå†æŸ¥è¯¢ç»“æœã€‚
+				username=resultSet.getString(2); //ä»ç»“æœé›†ä¸­å–å€¼çš„æ–¹å¼ã€‚
 				userid=resultSet.getInt("EMPID");
 				System.out.println("user's username and userid is "+username+";"+userid);
 			}
@@ -79,7 +79,7 @@ public class DbUtil {
 			return true;
 			}
 		catch (Exception e) {
-			// TODO ×Ô¶¯Éú³ÉµÄ catch ¿é
+			// TODO è‡ªåŠ¨ç”Ÿæˆçš„ catch å—
 			e.printStackTrace();
 			return false;
 		} finally {
@@ -112,7 +112,7 @@ public class DbUtil {
 			return true;
 			}
 		catch (Exception e) {
-			// TODO ×Ô¶¯Éú³ÉµÄ catch ¿é
+			// TODO è‡ªåŠ¨ç”Ÿæˆçš„ catch å—
 			e.printStackTrace();
 			return false;
 		} finally {

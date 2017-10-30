@@ -1,6 +1,6 @@
-package ´´½¨ĞÍÄ£Ê½.¹¤³§Ä£Ê½;
+package åˆ›å»ºå‹æ¨¡å¼.å·¥å‚æ¨¡å¼;
 
-//¾ßÌå²úÆ·½ÇÉ«
+//å…·ä½“äº§å“è§’è‰²
 public class Impl_Plane implements I_Moveable {
 
  @Override

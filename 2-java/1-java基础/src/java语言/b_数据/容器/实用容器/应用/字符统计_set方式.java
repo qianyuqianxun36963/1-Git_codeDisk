@@ -4,10 +4,10 @@
 * display the number of vowels in each input word, and also display the total
 * number of vowels in the input file.
 */
-package javaÓïÑÔ.b_Êı¾İ.ÈİÆ÷.ÊµÓÃÈİÆ÷.Ó¦ÓÃ;
+package javaè¯­è¨€.b_æ•°æ®.å®¹å™¨.å®ç”¨å®¹å™¨.åº”ç”¨;
 import java.util.*;
 
-public class ×Ö·ûÍ³¼Æ_set·½Ê½ {
+public class å­—ç¬¦ç»Ÿè®¡_setæ–¹å¼ {
 	public static void main(String[] args) {
 		Set<String> words = new TreeSet<String>();
 		Collections.addAll(words,"123","awew","AEASD","aAer");
@@ -15,8 +15,8 @@ public class ×Ö·ûÍ³¼Æ_set·½Ê½ {
 		Collections.addAll(vowels, 
 			'A', 'E', 'I', 'O', 'U', 'a', 'e', 'i', 'o', 'u');
 		
-		System.out.println("±»Í³¼ÆµÄ×Ö·û´®:"+words);
-		System.out.println("ÓÃÀ´Í³¼ÆµÄ×Ö·û:"+vowels);
+		System.out.println("è¢«ç»Ÿè®¡çš„å­—ç¬¦ä¸²:"+words);
+		System.out.println("ç”¨æ¥ç»Ÿè®¡çš„å­—ç¬¦:"+vowels);
 		vowelCounter(words,vowels);		
 		vowelCounter20(words,vowels);
 	}		
@@ -35,17 +35,17 @@ public class ×Ö·ûÍ³¼Æ_set·½Ê½ {
 				}
 			}
 		}
-		System.out.println("·Ö×Ö·ûÍ³¼Æ:  " + vowelMap);	
+		System.out.println("åˆ†å­—ç¬¦ç»Ÿè®¡:  " + vowelMap);	
 		System.out.println("Total vowels: " + allVowels);
 	}
 	
 	static void vowelCounter(Set<String> st,Set<Character> vowels) {
 		int allVowels = 0;
-		System.out.print("·Öµ¥´ÊÍ³¼Æ:  ");	
-		for(String s : st) { //±éÀúÕâ¸öset¼¯ºÏ¡£
+		System.out.print("åˆ†å•è¯ç»Ÿè®¡:  ");	
+		for(String s : st) { //éå†è¿™ä¸ªseté›†åˆã€‚
 			int count = 0;
 			for(Character v : s.toCharArray()) {		
-				if(vowels.contains(v)) { //ÀûÓÃµÄsetµÄcontains·½·¨£¬ÅĞ¶ÏÒ»¸ö×Ö·ûÊÇ·ñÔÚÆäÖĞ¡£
+				if(vowels.contains(v)) { //åˆ©ç”¨çš„setçš„containsæ–¹æ³•ï¼Œåˆ¤æ–­ä¸€ä¸ªå­—ç¬¦æ˜¯å¦åœ¨å…¶ä¸­ã€‚
 					count++;
 					allVowels++; 
 				}

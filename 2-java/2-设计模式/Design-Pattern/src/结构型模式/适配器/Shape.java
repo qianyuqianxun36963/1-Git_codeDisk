@@ -1,4 +1,4 @@
-package ½á¹¹ĞÍÄ£Ê½.ÊÊÅäÆ÷;
+package ç»“æ„å‹æ¨¡å¼.é€‚é…å™¨;
 
 public abstract class Shape {
 	public void draw() {};

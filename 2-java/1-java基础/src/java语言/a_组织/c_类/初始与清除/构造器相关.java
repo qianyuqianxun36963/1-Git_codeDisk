@@ -1,6 +1,6 @@
-package javaÓïÑÔ.a_×éÖ¯.c_Àà.³õÊ¼ÓëÇå³ı;
+package javaè¯­è¨€.a_ç»„ç»‡.c_ç±».åˆå§‹ä¸æ¸…é™¤;
 
-public class ¹¹ÔìÆ÷Ïà¹Ø {
+public class æ„é€ å™¨ç›¸å…³ {
 	public static void main(String args[]){
 		Animal animal = new Animal();
 		animal.run();
@@ -19,10 +19,10 @@ class Animal{
 
 class Human extends Animal{
 
-//	Animal(){legnum = 2;}         //	¹¹Ôì·½·¨²»¿ÉÒÔÖØĞ´ (Override)¡£
-//	Animal(int num){legnum = num;}//	¹¹Ôì·½·¨²»¿ÉÒÔÖØÔØ (Overload)¡£
+//	Animal(){legnum = 2;}         //	æ„é€ æ–¹æ³•ä¸å¯ä»¥é‡å†™ (Override)ã€‚
+//	Animal(int num){legnum = num;}//	æ„é€ æ–¹æ³•ä¸å¯ä»¥é‡è½½ (Overload)ã€‚
 	
-//ÆÕÍ¨·½·¨¿ÉÒÔÖØĞ´ Override
+//æ™®é€šæ–¹æ³•å¯ä»¥é‡å†™ Override
 	void run(){	System.out.println("Human run");}
 	
 	Human(){legnum = 2;}

@@ -4,8 +4,8 @@
 * hold the Rodents and an Iterator to move through the sequence of 
 * Rodents.
 */
-package javaÓïÑÔ.b_Êı¾İ.ÈİÆ÷.ÊµÓÃÈİÆ÷;
-import static javaÓïÑÔ.z_common.utils.Myutils.*;
+package javaè¯­è¨€.b_æ•°æ®.å®¹å™¨.å®ç”¨å®¹å™¨;
+import static javaè¯­è¨€.z_common.utils.Myutils.*;
 import java.util.*;
 
 class RandomRodentGenerator {

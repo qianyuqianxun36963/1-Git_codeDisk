@@ -1,4 +1,4 @@
-package 行为模式.策略;
+package 琛屼负妯″紡.绛栫暐;
 
 /**
  *  A concrete strategy to draw a text by the width of line

@@ -1,10 +1,10 @@
-package javaÓïÑÔ.d_ÏµÍ³.²¢·¢;
+package javaè¯­è¨€.d_ç³»ç»Ÿ.å¹¶å‘;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
-public class ²¢·¢¹¤¾ß°ü {
+public class å¹¶å‘å·¥å…·åŒ… {
 	public static void main(String[] args) {
         ExecutorService executor = Executors.newFixedThreadPool(5);
   

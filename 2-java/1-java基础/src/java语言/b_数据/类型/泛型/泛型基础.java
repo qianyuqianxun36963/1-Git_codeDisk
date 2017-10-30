@@ -1,38 +1,38 @@
-package javaÓïÑÔ.b_Êı¾İ.ÀàĞÍ.·ºĞÍ;
+package javaè¯­è¨€.b_æ•°æ®.ç±»å‹.æ³›å‹;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class ·ºĞÍ»ù´¡ {
+public class æ³›å‹åŸºç¡€ {
 	 @SuppressWarnings({ })
 	 public static void main(String[] args) throws InstantiationException, IllegalAccessException, ClassNotFoundException {
-		 ·ºĞÍÀà.test();
-		 ·ºĞÍ·½·¨.test();
-		 ·ºĞÍ½Ó¿Ú.test();
+		 æ³›å‹ç±».test();
+		 æ³›å‹æ–¹æ³•.test();
+		 æ³›å‹æ¥å£.test();
 	 }
 }
 
-/****** ·ºĞÍÀà ******/
+/****** æ³›å‹ç±» ******/
 
-	//·ºĞÍÀà£¬ÊÇÔÚÊµÀı»¯ÀàµÄÊ±ºòÖ¸Ã÷·ºĞÍµÄ¾ßÌåÀàĞÍ;·ºĞÍ·½·¨£¬ÊÇÔÚµ÷ÓÃ·½·¨µÄÊ±ºòÖ¸Ã÷·ºĞÍµÄ¾ßÌåÀàĞÍ¡£
-	//·ºĞÍÀàµÄÉùÃ÷£º
-	//class A<D>  AÊÇ·ºĞÍÀàµÄÃû³Æ£¬DÊÇÆäÖĞµÄ·ºĞÍ¡£ÎÒÃÇÃ»ÓĞÖ¸¶¨EÊÇºÎÖÖÀàĞÍ£¬¾ÍÊÇËµ£¬Ëü¿ÉÒÔÊÇÈÎºÎ¶ÔÏó»ò½Ó¿Ú£¬µ«²»ÄÜÊÇ»ù±¾ÀàĞÍ¡£
-	class ·ºĞÍÀà<T> {
+	//æ³›å‹ç±»ï¼Œæ˜¯åœ¨å®ä¾‹åŒ–ç±»çš„æ—¶å€™æŒ‡æ˜æ³›å‹çš„å…·ä½“ç±»å‹;æ³›å‹æ–¹æ³•ï¼Œæ˜¯åœ¨è°ƒç”¨æ–¹æ³•çš„æ—¶å€™æŒ‡æ˜æ³›å‹çš„å…·ä½“ç±»å‹ã€‚
+	//æ³›å‹ç±»çš„å£°æ˜ï¼š
+	//class A<D>  Aæ˜¯æ³›å‹ç±»çš„åç§°ï¼ŒDæ˜¯å…¶ä¸­çš„æ³›å‹ã€‚æˆ‘ä»¬æ²¡æœ‰æŒ‡å®šEæ˜¯ä½•ç§ç±»å‹ï¼Œå°±æ˜¯è¯´ï¼Œå®ƒå¯ä»¥æ˜¯ä»»ä½•å¯¹è±¡æˆ–æ¥å£ï¼Œä½†ä¸èƒ½æ˜¯åŸºæœ¬ç±»å‹ã€‚
+	class æ³›å‹ç±»<T> {
 		
 	    private T data;
 
 	    public static void test(){
-	    	·ºĞÍÀà.textself();
-	    	ÒıÀı.test();
-			 ·ºĞÍºÍ×ÓÀàĞÍ.test();
-			 Í¨Åä·û.test();
+	    	æ³›å‹ç±».textself();
+	    	å¼•ä¾‹.test();
+			 æ³›å‹å’Œå­ç±»å‹.test();
+			 é€šé…ç¬¦.test();
 	    }
 	    
-	    public ·ºĞÍÀà() {
+	    public æ³›å‹ç±»() {
 
 	    }
 
-	    public ·ºĞÍÀà(T data) {
+	    public æ³›å‹ç±»(T data) {
 	        setData(data);
 	    }
 
@@ -45,18 +45,18 @@ public class ·ºĞÍ»ù´¡ {
 	    }
 	    
 	    public static void textself(){
-			 ·ºĞÍÀà<String> x = new ·ºĞÍÀà<String>();
-			 x.setData("ÕâÀïÊÇ·ºĞÍÀà×Ô²âÊÔ¡£");
+			 æ³›å‹ç±»<String> x = new æ³›å‹ç±»<String>();
+			 x.setData("è¿™é‡Œæ˜¯æ³›å‹ç±»è‡ªæµ‹è¯•ã€‚");
 			 System.out.println(x.getData());
 	    }
 
 	}
 
-	class ÒıÀı{
+	class å¼•ä¾‹{
 		@SuppressWarnings({ "rawtypes", "unchecked" })
 		public static void test(){
 			//List<Object> list = new ArrayList();
-	        List list = new ArrayList(); //Õâ¾ä¸úÉÏÃæÄÇ¾äÊÇÒ»ÑùµÄ¡£listÄ¬ÈÏµÄÀàĞÍÎªObjectÀàĞÍ¡£
+	        List list = new ArrayList(); //è¿™å¥è·Ÿä¸Šé¢é‚£å¥æ˜¯ä¸€æ ·çš„ã€‚listé»˜è®¤çš„ç±»å‹ä¸ºObjectç±»å‹ã€‚
 	        list.add(123.123);
 	        list.add("234");
 	        list.add(100);
@@ -67,29 +67,29 @@ public class ·ºĞÍ»ù´¡ {
 		}
 	}
 
-	class ·ºĞÍºÍ×ÓÀàĞÍ{
+	class æ³›å‹å’Œå­ç±»å‹{
 		public static void test(){
-			/**ÑéÖ¤¼Ì³Ğ¹ØÏµ¡£·ºĞÍÀà<Integer> ²»ÄÜ¸³Öµ¸ø  ·ºĞÍÀà<Number> *********************/
-	        /**NumberÊÇIntegerµÄ¸¸Àà£¬µ«·ºĞÍÀà<Number>²»ÊÇ·ºĞÍÀà<Integer>µÄ¸¸Àà ************/
-			/**·ºĞÍÀà<?>ÔÚÂß¼­ÉÏÊÇ·ºĞÍÀà<Integer>¡¢·ºĞÍÀà<Number>...µÈËùÓĞ·ºĞÍÀà<¾ßÌåÀàĞÍÊµ²Î>µÄ¸¸Àà**/
-	                            ·ºĞÍÀà<Number> name = new ·ºĞÍÀà<Number>(99);
+			/**éªŒè¯ç»§æ‰¿å…³ç³»ã€‚æ³›å‹ç±»<Integer> ä¸èƒ½èµ‹å€¼ç»™  æ³›å‹ç±»<Number> *********************/
+	        /**Numberæ˜¯Integerçš„çˆ¶ç±»ï¼Œä½†æ³›å‹ç±»<Number>ä¸æ˜¯æ³›å‹ç±»<Integer>çš„çˆ¶ç±» ************/
+			/**æ³›å‹ç±»<?>åœ¨é€»è¾‘ä¸Šæ˜¯æ³›å‹ç±»<Integer>ã€æ³›å‹ç±»<Number>...ç­‰æ‰€æœ‰æ³›å‹ç±»<å…·ä½“ç±»å‹å®å‚>çš„çˆ¶ç±»**/
+	                            æ³›å‹ç±»<Number> name = new æ³›å‹ç±»<Number>(99);
 	        @SuppressWarnings("unused")
-			·ºĞÍÀà<Integer> age = new ·ºĞÍÀà<Integer>(712);
+			æ³›å‹ç±»<Integer> age = new æ³›å‹ç±»<Integer>(712);
 
 //	        getData(name);
-	        getData(age);  //Õâ¸öÊÇ±¨´íµÄ:"The method getData(·ºĞÍÀà<Number>) in the type ·ºĞÍ»ù´¡ is not applicable for the arguments (·ºĞÍÀà<Integer>)";
+	        getData(age);  //è¿™ä¸ªæ˜¯æŠ¥é”™çš„:"The method getData(æ³›å‹ç±»<Number>) in the type æ³›å‹åŸºç¡€ is not applicable for the arguments (æ³›å‹ç±»<Integer>)";
 		}
 		
-		public static void getData(·ºĞÍÀà<Integer> data){
+		public static void getData(æ³›å‹ç±»<Integer> data){
 			 System.out.println("data :" + data.getData());
 	    }
 	}
 
-	class Í¨Åä·û{
+	class é€šé…ç¬¦{
 		public static void test(){
-			·ºĞÍÀà<String> name = new ·ºĞÍÀà<String>("corn");
-			·ºĞÍÀà<Integer> age = new ·ºĞÍÀà<Integer>(712);
-	       	·ºĞÍÀà<Number> number = new ·ºĞÍÀà<Number>(314);
+			æ³›å‹ç±»<String> name = new æ³›å‹ç±»<String>("corn");
+			æ³›å‹ç±»<Integer> age = new æ³›å‹ç±»<Integer>(712);
+	       	æ³›å‹ç±»<Number> number = new æ³›å‹ç±»<Number>(314);
 
 	        getData(name);
 	        getData(age);
@@ -104,38 +104,38 @@ public class ·ºĞÍ»ù´¡ {
 	        getDownNumberData(number); // 3
 		}
 		
-		//·ºĞÍÀà<?>ÔÚÂß¼­ÉÏÊÇ·ºĞÍÀà<Integer>¡¢·ºĞÍÀà<Number>...µÈËùÓĞ·ºĞÍÀà<¾ßÌåÀàĞÍÊµ²Î>µÄ¸¸Àà¡£
-		public static void getData(·ºĞÍÀà<?> data) {
+		//æ³›å‹ç±»<?>åœ¨é€»è¾‘ä¸Šæ˜¯æ³›å‹ç±»<Integer>ã€æ³›å‹ç±»<Number>...ç­‰æ‰€æœ‰æ³›å‹ç±»<å…·ä½“ç±»å‹å®å‚>çš„çˆ¶ç±»ã€‚
+		public static void getData(æ³›å‹ç±»<?> data) {
 	        System.out.println("data :" + data.getData());
 	    }
 	    
-		//¶ÔÀàĞÍÊµ²ÎÓÖÓĞ½øÒ»²½µÄÏŞÖÆ£ºÖ»ÄÜÊÇNumberÀà¼°Æä×ÓÀà¡£´ËÊ±£¬ĞèÒªÓÃµ½ÀàĞÍÍ¨Åä·ûÉÏÏŞ¡£
-	    public static void getUpperNumberData(·ºĞÍÀà<? extends Number> data){
+		//å¯¹ç±»å‹å®å‚åˆæœ‰è¿›ä¸€æ­¥çš„é™åˆ¶ï¼šåªèƒ½æ˜¯Numberç±»åŠå…¶å­ç±»ã€‚æ­¤æ—¶ï¼Œéœ€è¦ç”¨åˆ°ç±»å‹é€šé…ç¬¦ä¸Šé™ã€‚
+	    public static void getUpperNumberData(æ³›å‹ç±»<? extends Number> data){
 	        System.out.println("data :" + data.getData());
 	    }
 	    
-	    //¶ÔÀàĞÍÊµ²ÎÓÖÓĞ½øÒ»²½µÄÏŞÖÆ£ºÖ»ÄÜÊÇNumberÀà¼°Æä¸¸Àà¡£´ËÊ±£¬ĞèÒªÓÃµ½ÀàĞÍÍ¨Åä·ûÏÂÏŞ¡£
-	    public static void getDownNumberData(·ºĞÍÀà<? super Number> data){
+	    //å¯¹ç±»å‹å®å‚åˆæœ‰è¿›ä¸€æ­¥çš„é™åˆ¶ï¼šåªèƒ½æ˜¯Numberç±»åŠå…¶çˆ¶ç±»ã€‚æ­¤æ—¶ï¼Œéœ€è¦ç”¨åˆ°ç±»å‹é€šé…ç¬¦ä¸‹é™ã€‚
+	    public static void getDownNumberData(æ³›å‹ç±»<? super Number> data){
 	        System.out.println("data :" + data.getData());
 	    }
 	    
 	}
 
-/****** ·ºĞÍ·½·¨ ******/
+/****** æ³›å‹æ–¹æ³• ******/
 
-	//·ºĞÍÀà£¬ÊÇÔÚÊµÀı»¯ÀàµÄÊ±ºòÖ¸Ã÷·ºĞÍµÄ¾ßÌåÀàĞÍ;·ºĞÍ·½·¨£¬ÊÇÔÚµ÷ÓÃ·½·¨µÄÊ±ºòÖ¸Ã÷·ºĞÍµÄ¾ßÌåÀàĞÍ¡£
-	//·ºĞÍ·½·¨µÄ¶¨Òå·¶Î§[public¡¢private...µÈ] ·½·¨·ºĞÍÉêÃ÷[<T>¡¢<E¡¢F>...Ö®ÀàÔÊĞí¶àÓà] ·µ»ØÀàĞÍ[T¡¢int¡¢void..¡£µÈ] º¯ÊıÃû[get¡¢set...] [(²ÎÊıÁĞ±í,ÀàĞÍ¿ÉÒÔÊÇT¡¢int¡¢String...µÈ)] 
-	class ·ºĞÍ·½·¨{
+	//æ³›å‹ç±»ï¼Œæ˜¯åœ¨å®ä¾‹åŒ–ç±»çš„æ—¶å€™æŒ‡æ˜æ³›å‹çš„å…·ä½“ç±»å‹;æ³›å‹æ–¹æ³•ï¼Œæ˜¯åœ¨è°ƒç”¨æ–¹æ³•çš„æ—¶å€™æŒ‡æ˜æ³›å‹çš„å…·ä½“ç±»å‹ã€‚
+	//æ³›å‹æ–¹æ³•çš„å®šä¹‰èŒƒå›´[publicã€private...ç­‰] æ–¹æ³•æ³›å‹ç”³æ˜[<T>ã€<Eã€F>...ä¹‹ç±»å…è®¸å¤šä½™] è¿”å›ç±»å‹[Tã€intã€void..ã€‚ç­‰] å‡½æ•°å[getã€set...] [(å‚æ•°åˆ—è¡¨,ç±»å‹å¯ä»¥æ˜¯Tã€intã€String...ç­‰)] 
+	class æ³›å‹æ–¹æ³•{
 		public int number=123;
 		private String num="234";
 		
 		@SuppressWarnings("unchecked")
 		public static void test() throws InstantiationException, IllegalAccessException, ClassNotFoundException{
-			·ºĞÍ·½·¨   test=new ·ºĞÍ·½·¨();
-			Object obj= test.getobject(Class.forName("javaÓïÑÔ.b_Êı¾İ.ÀàĞÍ.·ºĞÍ.·ºĞÍ·½·¨"));
+			æ³›å‹æ–¹æ³•   test=new æ³›å‹æ–¹æ³•();
+			Object obj= test.getobject(Class.forName("javaè¯­è¨€.b_æ•°æ®.ç±»å‹.æ³›å‹.æ³›å‹æ–¹æ³•"));
 			System.out.println(obj.getClass());
 			
-			·ºĞÍ·½·¨  testobj=(·ºĞÍ·½·¨) test.getobject(Class.forName("javaÓïÑÔ.b_Êı¾İ.ÀàĞÍ.·ºĞÍ.·ºĞÍ·½·¨"));
+			æ³›å‹æ–¹æ³•  testobj=(æ³›å‹æ–¹æ³•) test.getobject(Class.forName("javaè¯­è¨€.b_æ•°æ®.ç±»å‹.æ³›å‹.æ³›å‹æ–¹æ³•"));
 			System.out.println(testobj.number);
 			System.out.println(testobj.num);
 			
@@ -153,19 +153,19 @@ public class ·ºĞÍ»ù´¡ {
 	        display(123f);
 		}
 		
-		//·ºĞÍ·½·¨µÄ¶¨Òå£º ·¶Î§[public¡¢private...µÈ] ·½·¨·ºĞÍÉêÃ÷[<T>¡¢<E¡¢F>...Ö®ÀàÔÊĞí¶àÓà] ·µ»ØÀàĞÍ[T¡¢int¡¢void..¡£µÈ] º¯ÊıÃû[get¡¢set...] [(²ÎÊıÁĞ±í,ÀàĞÍ¿ÉÒÔÊÇT¡¢int¡¢String...µÈ)] 
+		//æ³›å‹æ–¹æ³•çš„å®šä¹‰ï¼š èŒƒå›´[publicã€private...ç­‰] æ–¹æ³•æ³›å‹ç”³æ˜[<T>ã€<Eã€F>...ä¹‹ç±»å…è®¸å¤šä½™] è¿”å›ç±»å‹[Tã€intã€void..ã€‚ç­‰] å‡½æ•°å[getã€set...] [(å‚æ•°åˆ—è¡¨,ç±»å‹å¯ä»¥æ˜¯Tã€intã€String...ç­‰)] 
 		public <T> T getobject(Class<T> c) throws InstantiationException,IllegalAccessException{
-			//´´½¨·ºĞÍ¶ÔÏó
+			//åˆ›å»ºæ³›å‹å¯¹è±¡
 			T t =c.newInstance();
 			return t;
 		}
 		
-		//ÎŞÂÛºÎÊ±£¬Ö»ÒªÄãÄÜ×öµ½£¬Äã¾ÍÓ¦¸Ã¾¡Á¿Ê¹ÓÃ·ºĞÍ·½·¨¡£¿ÉÒÔ¿´µ½·½·¨µÄ²ÎÊı³¹µ×·º»¯ÁË£¬Õâ¸ö¹ı³ÌÉæ¼°µ½±àÒëÆ÷µÄÀàĞÍÍÆµ¼ºÍ×Ô¶¯´ò°ü£¬Ò²¾ÍËµÔ­À´ĞèÒªÎÒÃÇ×Ô¼º¶ÔÀàĞÍ½øĞĞµÄÅĞ¶ÏºÍ´¦Àí£¬ÏÖÔÚ±àÒëÆ÷°ïÎÒÃÇ×öÁË¡£ÕâÑùÔÚ¶¨Òå·½·¨µÄÊ±ºò²»±Ø¿¼ÂÇÒÔºóµ½µ×ĞèÒª´¦ÀíÄÄĞ©ÀàĞÍµÄ²ÎÊı£¬´ó´óÔö¼ÓÁË±à³ÌµÄÁé»îĞÔ¡£
+		//æ— è®ºä½•æ—¶ï¼Œåªè¦ä½ èƒ½åšåˆ°ï¼Œä½ å°±åº”è¯¥å°½é‡ä½¿ç”¨æ³›å‹æ–¹æ³•ã€‚å¯ä»¥çœ‹åˆ°æ–¹æ³•çš„å‚æ•°å½»åº•æ³›åŒ–äº†ï¼Œè¿™ä¸ªè¿‡ç¨‹æ¶‰åŠåˆ°ç¼–è¯‘å™¨çš„ç±»å‹æ¨å¯¼å’Œè‡ªåŠ¨æ‰“åŒ…ï¼Œä¹Ÿå°±è¯´åŸæ¥éœ€è¦æˆ‘ä»¬è‡ªå·±å¯¹ç±»å‹è¿›è¡Œçš„åˆ¤æ–­å’Œå¤„ç†ï¼Œç°åœ¨ç¼–è¯‘å™¨å¸®æˆ‘ä»¬åšäº†ã€‚è¿™æ ·åœ¨å®šä¹‰æ–¹æ³•çš„æ—¶å€™ä¸å¿…è€ƒè™‘ä»¥ååˆ°åº•éœ€è¦å¤„ç†å“ªäº›ç±»å‹çš„å‚æ•°ï¼Œå¤§å¤§å¢åŠ äº†ç¼–ç¨‹çš„çµæ´»æ€§ã€‚
 		public static <T> void out(T t) {
 	        System.out.println(t+"; ");
 	    }
 		
-		//'·½·¨·ºĞÍÉêÃ÷'ºÍ'²ÎÊıÁĞ±í'ÔÊĞíÈßÓà¡£
+		//'æ–¹æ³•æ³›å‹ç”³æ˜'å’Œ'å‚æ•°åˆ—è¡¨'å…è®¸å†—ä½™ã€‚
 		public static <T,E> void out(T t,int i,String s) {
 			System.out.println(t+" "+i);
 		}
@@ -184,10 +184,10 @@ public class ·ºĞÍ»ù´¡ {
 	}
 
 
-//·ºĞÍ½Ó¿Ú
-	class ·ºĞÍ½Ó¿Ú{
+//æ³›å‹æ¥å£
+	class æ³›å‹æ¥å£{
 		public static void test(){
-			Inter<String> in = new InterImpl<String>(); //ÊµÀı»¯
+			Inter<String> in = new InterImpl<String>(); //å®ä¾‹åŒ–
 			in.show("hahah");
 		}
 	}
@@ -195,11 +195,11 @@ public class ·ºĞÍ»ù´¡ {
 	interface Inter<T> {
 		abstract void show(T t);
 	}
-	//ÊµÏÖ½Ó¿Ú
+	//å®ç°æ¥å£
 	class InterImpl<T> implements Inter<T> {
 		@Override
 		public void show(T t) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		System.out.println(t);
 		}
 	}

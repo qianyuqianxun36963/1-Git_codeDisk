@@ -4,7 +4,7 @@
 * a count field to store each different word, and a Set of these objects to 
 * maintain the list of words.
 */
-package java语言.b_数据.容器.实用容器.应用;
+package java璇█.b_鏁版嵁.瀹瑰櫒.瀹炵敤瀹瑰櫒.搴旂敤;
 
 import java.util.*;
 
@@ -20,7 +20,7 @@ class Word {
 	public String toString() { return s + ": " + count; }
 }
 
-public class 单词统计_set方式 {
+public class 鍗曡瘝缁熻_set鏂瑰紡 {
 	@SuppressWarnings("rawtypes")
 	public static void main(String[] args) {
 		List<String> words = new ArrayList<String>();

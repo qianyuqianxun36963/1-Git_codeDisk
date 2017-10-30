@@ -1,10 +1,10 @@
-package ĞĞÎªÄ£Ê½.µü´úÆ÷;
+package è¡Œä¸ºæ¨¡å¼.è¿­ä»£å™¨;
 
 import java.io.File;
 
 public class Client  {
     public static void main(String[] args) {
-        String fileName = new File("").getAbsolutePath().replaceAll("\\\\","/")+"/src/ĞĞÎªÄ£Ê½/µü´úÆ÷/data.txt";
+        String fileName = new File("").getAbsolutePath().replaceAll("\\\\","/")+"/src/è¡Œä¸ºæ¨¡å¼/è¿­ä»£å™¨/data.txt";
         
         Impl_DataList datalist = new Impl_DataList(fileName);
         I_Iterator iVector = datalist.CreateIterator();

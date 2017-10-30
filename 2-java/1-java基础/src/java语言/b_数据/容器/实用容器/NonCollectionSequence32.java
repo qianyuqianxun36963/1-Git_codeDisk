@@ -1,12 +1,12 @@
-package javaÓïÑÔ.b_Êı¾İ.ÈİÆ÷.ÊµÓÃÈİÆ÷;
+package javaè¯­è¨€.b_æ•°æ®.å®¹å™¨.å®ç”¨å®¹å™¨;
 //// holding/NonCollectionSequence32.java
 //// TIJ4 Chapter Holding, Exercise 32, page 437
 ///* Following the example of MultiIterableClass, add reversed() and randomized() 
 //* methods to NonCollectionSequence.java, as well as making  NonCollectionSequence.java
 //* implement Iterable and show that all the approaches * work in foreach statements.
 //*/
-//package javaÓïÑÔ.Êı¾İ.ÈİÆ÷.ÊµÓÃÈİÆ÷;
-//import static javaÓïÑÔ.common.utils.Myutils.*;
+//package javaè¯­è¨€.æ•°æ®.å®¹å™¨.å®ç”¨å®¹å™¨;
+//import static javaè¯­è¨€.common.utils.Myutils.*;
 //
 //import java.util.*;
 //

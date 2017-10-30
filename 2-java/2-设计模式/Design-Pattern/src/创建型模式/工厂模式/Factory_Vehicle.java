@@ -1,6 +1,6 @@
-package ´´½¨ĞÍÄ£Ê½.¹¤³§Ä£Ê½;
+package åˆ›å»ºå‹æ¨¡å¼.å·¥å‚æ¨¡å¼;
 
-//³éÏó¹¤³§
+//æŠ½è±¡å·¥å‚
 public abstract class Factory_Vehicle {
 	
 	public abstract I_Moveable create();

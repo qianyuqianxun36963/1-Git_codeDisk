@@ -1,10 +1,10 @@
-package javaÓïÑÔ.a_×éÖ¯.a_Óï·¨.¿ØÖÆÁ÷;
+package javaè¯­è¨€.a_ç»„ç»‡.a_è¯­æ³•.æ§åˆ¶æµ;
 
 enum myenum { I, Love, You };
 
-public class SwitchÓï¾ä {
+public class Switchè¯­å¥ {
 	public static void main(String[] args) {
-		SwitchÓï¾ä test = new SwitchÓï¾ä();
+		Switchè¯­å¥ test = new Switchè¯­å¥();
 		test.testChar();
 		test.testString();
 		test.testEnum();
@@ -13,7 +13,7 @@ public class SwitchÓï¾ä {
 //		test.testLong();
 	}
 	
-	//ÔÚ Java 7Ö®Ç°£¬switch Ö»ÄÜÖ§³Ö byte¡¢short¡¢char¡¢int»òÕßÆä¶ÔÓ¦µÄ·â×°ÀàÒÔ¼° Enum ÀàĞÍ¡£ÔÚ Java 7ÖĞ£¬StringÖ§³Ö±»¼ÓÉÏÁË¡£
+	//åœ¨ Java 7ä¹‹å‰ï¼Œswitch åªèƒ½æ”¯æŒ byteã€shortã€charã€intæˆ–è€…å…¶å¯¹åº”çš„å°è£…ç±»ä»¥åŠ Enum ç±»å‹ã€‚åœ¨ Java 7ä¸­ï¼ŒStringæ”¯æŒè¢«åŠ ä¸Šäº†ã€‚
 	public void testString(){
 		String[] s = {"he","she","it"};
 		for(int i = 0; i < s.length; i++) {
@@ -30,7 +30,7 @@ public class SwitchÓï¾ä {
 		}
 	}
 	
-	//Ö§³Ö byte¡¢short¡¢char¡¢int»òÕßÆä¶ÔÓ¦µÄ·â×°ÀàÒÔ¼° Enum ÀàĞÍ¡£
+	//æ”¯æŒ byteã€shortã€charã€intæˆ–è€…å…¶å¯¹åº”çš„å°è£…ç±»ä»¥åŠ Enum ç±»å‹ã€‚
 	public void testChar(){
 		for(int i = 0; i < 10; i++) {
 			char c = (char)(Math.random() * 26 + 'a');
@@ -59,7 +59,7 @@ public class SwitchÓï¾ä {
 			}
 		}
 	}
-//	//long ÀàĞÍ²»Ö§³Ö¡£
+//	//long ç±»å‹ä¸æ”¯æŒã€‚
 //	public void testLong(){
 //		long[] num = {1,2,3};
 //		for(long l:num){

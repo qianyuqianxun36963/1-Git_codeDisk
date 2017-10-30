@@ -1,4 +1,4 @@
-package ´´½¨ĞÍÄ£Ê½.Ô­ĞÍ;
+package åˆ›å»ºå‹æ¨¡å¼.åŸå‹;
 
 import java.util.ArrayList;
 
@@ -10,8 +10,8 @@ public class Prototype implements Cloneable{
 		Prototype prototype = null;
 		try{  
             prototype = (Prototype)super.clone();  
-//          prototype.list1 = (ArrayList<?>) this.list1.clone(); //ÕâÀïÃ»¶¯×÷£¬Ä¬ÈÏÖ»½øĞĞÁËÇ³¿½±´¡£
-            prototype.list2 = (ArrayList<?>) this.list2.clone(); //ÕâÀïÓĞ²Ù×÷£¬ÊÖ¶¯½øĞĞÁËÉî¿½±´¡£
+//          prototype.list1 = (ArrayList<?>) this.list1.clone(); //è¿™é‡Œæ²¡åŠ¨ä½œï¼Œé»˜è®¤åªè¿›è¡Œäº†æµ…æ‹·è´ã€‚
+            prototype.list2 = (ArrayList<?>) this.list2.clone(); //è¿™é‡Œæœ‰æ“ä½œï¼Œæ‰‹åŠ¨è¿›è¡Œäº†æ·±æ‹·è´ã€‚
         }catch(CloneNotSupportedException e){  
             e.printStackTrace();  
         }  

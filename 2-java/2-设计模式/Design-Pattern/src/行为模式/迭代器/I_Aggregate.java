@@ -1,4 +1,4 @@
-package ĞĞÎªÄ£Ê½.µü´úÆ÷;
+package è¡Œä¸ºæ¨¡å¼.è¿­ä»£å™¨;
 
 
 /**
@@ -6,7 +6,7 @@ package ĞĞÎªÄ£Ê½.µü´úÆ÷;
  *  When create iterator, we can use Factory Method pattern
  */
 
-//aggregate ¼¯ºÏ¡£ ÀıÈçlist¡¢set Ö®ÀàµÄ¡£
+//aggregate é›†åˆã€‚ ä¾‹å¦‚listã€set ä¹‹ç±»çš„ã€‚
 public interface I_Aggregate  {
     public I_Iterator CreateIterator();
 }

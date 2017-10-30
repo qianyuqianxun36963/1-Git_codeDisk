@@ -1,6 +1,6 @@
-package java语言.b_数据.容器.数组容器;
+package java璇█.b_鏁版嵁.瀹瑰櫒.鏁扮粍瀹瑰櫒;
 
-public class 变长数组 {
+public class 鍙橀暱鏁扮粍 {
 	
 	public static void main(String args[]){
 		

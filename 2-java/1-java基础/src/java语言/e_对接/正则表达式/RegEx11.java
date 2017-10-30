@@ -7,7 +7,7 @@
 */
 // (alternate solution) Note double \\ required for \\s+, \\w+ and \\b in compile(): 
 
-package javaÓïÑÔ.e_¶Ô½Ó.ÕıÔò±í´ïÊ½;
+package javaè¯­è¨€.e_å¯¹æ¥.æ­£åˆ™è¡¨è¾¾å¼;
 
 import java.util.regex.*;
 
@@ -18,7 +18,7 @@ public class RegEx11 {
 		
 		while(m.find())	System.out.println("Match \"" + m.group() + "\" at " + m.start());
 		
-//		ÏÂÃæÕâÖÖĞ´·¨ÓëµÚÒ»ÖÖÀàËÆ£¬µ«ÊÇÓĞÒ»¸öÎÊÌâ£¬¾ÍÊÇ¶ªÊ§µÚÒ»¸öÆ¥ÅäÖµ¡£ÓëÊı¾İ¿â½á¹û±éÀúÀàËÆ¡£
+//		ä¸‹é¢è¿™ç§å†™æ³•ä¸ç¬¬ä¸€ç§ç±»ä¼¼ï¼Œä½†æ˜¯æœ‰ä¸€ä¸ªé—®é¢˜ï¼Œå°±æ˜¯ä¸¢å¤±ç¬¬ä¸€ä¸ªåŒ¹é…å€¼ã€‚ä¸æ•°æ®åº“ç»“æœéå†ç±»ä¼¼ã€‚
 //		if(m.find()){
 //			while(m.find())	System.out.println("Match \"" + m.group() + "\" at " + m.start());
 //		}

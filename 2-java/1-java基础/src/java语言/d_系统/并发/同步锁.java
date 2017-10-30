@@ -1,4 +1,4 @@
-package javaÓïÑÔ.d_ÏµÍ³.²¢·¢;
+package javaè¯­è¨€.d_ç³»ç»Ÿ.å¹¶å‘;
 
 import static java.lang.System.out;     
 
@@ -11,7 +11,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicLong;     
 import java.util.concurrent.locks.ReentrantLock;    
 
-public class Í¬²½Ëø {
+public class åŒæ­¥é” {
 	public static void test(int round,int threadNum,CyclicBarrier cyclicBarrier){     
         new SyncTest("Sync",round,threadNum,cyclicBarrier).testTime();     
         new LockTest("Lock",round,threadNum,cyclicBarrier).testTime();     
@@ -39,7 +39,7 @@ class SyncTest extends TestTemplate{
    }     
    @Override    
    /**   
-    * synchronized¹Ø¼ü×Ö²»ÔÚ·½·¨Ç©ÃûÀïÃæ£¬ËùÒÔ²»Éæ¼°ÖØÔØÎÊÌâ   
+    * synchronizedå…³é”®å­—ä¸åœ¨æ–¹æ³•ç­¾åé‡Œé¢ï¼Œæ‰€ä»¥ä¸æ¶‰åŠé‡è½½é—®é¢˜   
     */    
    synchronized long  getValue() {     
        return super.countValue;     
@@ -57,7 +57,7 @@ class LockTest extends TestTemplate{
        super( _id, _round, _threadNum, _cb);     
    }     
    /**   
-    * synchronized¹Ø¼ü×Ö²»ÔÚ·½·¨Ç©ÃûÀïÃæ£¬ËùÒÔ²»Éæ¼°ÖØÔØÎÊÌâ   
+    * synchronizedå…³é”®å­—ä¸åœ¨æ–¹æ³•ç­¾åé‡Œé¢ï¼Œæ‰€ä»¥ä¸æ¶‰åŠé‡è½½é—®é¢˜   
     */    
    @Override    
    long getValue() {     
@@ -86,7 +86,7 @@ class AtomicTest extends TestTemplate{
    }     
    @Override    
    /**   
-    * synchronized¹Ø¼ü×Ö²»ÔÚ·½·¨Ç©ÃûÀïÃæ£¬ËùÒÔ²»Éæ¼°ÖØÔØÎÊÌâ   
+    * synchronizedå…³é”®å­—ä¸åœ¨æ–¹æ³•ç­¾åé‡Œé¢ï¼Œæ‰€ä»¥ä¸æ¶‰åŠé‡è½½é—®é¢˜   
     */    
    long  getValue() {     
        return super.countValueAtmoic.get();     
@@ -107,7 +107,7 @@ abstract class TestTemplate{
    protected int index;     
    protected AtomicInteger indexAtomic=new AtomicInteger(0);     
    Random r=new Random(47);     
-   //ÈÎÎñÕ¤À¸£¬Í¬ÅúÈÎÎñ£¬ÏÈµ½´ïwaitµÄÈÎÎñ¹ÒÆğ£¬Ò»Ö±µÈµ½È«²¿ÈÎÎñµ½´ïÖÆ¶¨µÄwaitµØµãºó£¬²ÅÄÜÈ«²¿»½ĞÑ£¬¼ÌĞøÖ´ĞĞ     
+   //ä»»åŠ¡æ …æ ï¼ŒåŒæ‰¹ä»»åŠ¡ï¼Œå…ˆåˆ°è¾¾waitçš„ä»»åŠ¡æŒ‚èµ·ï¼Œä¸€ç›´ç­‰åˆ°å…¨éƒ¨ä»»åŠ¡åˆ°è¾¾åˆ¶å®šçš„waitåœ°ç‚¹åï¼Œæ‰èƒ½å…¨éƒ¨å”¤é†’ï¼Œç»§ç»­æ‰§è¡Œ     
    private CyclicBarrier cb;     
    public TestTemplate(String _id,int _round,int _threadNum,CyclicBarrier _cb){     
        this.id=_id;     
@@ -122,15 +122,15 @@ abstract class TestTemplate{
         
    abstract void sumValue();     
    /*   
-    * ¶ÔlongµÄ²Ù×÷ÊÇ·ÇÔ­×ÓµÄ£¬Ô­×Ó²Ù×÷Ö»Õë¶Ô32Î»   
-    * longÊÇ64Î»£¬µ×²ã²Ù×÷µÄÊ±ºò·Ö2¸ö32Î»¶ÁĞ´£¬Òò´Ë²»ÊÇÏß³Ì°²È«   
+    * å¯¹longçš„æ“ä½œæ˜¯éåŸå­çš„ï¼ŒåŸå­æ“ä½œåªé’ˆå¯¹32ä½   
+    * longæ˜¯64ä½ï¼Œåº•å±‚æ“ä½œçš„æ—¶å€™åˆ†2ä¸ª32ä½è¯»å†™ï¼Œå› æ­¤ä¸æ˜¯çº¿ç¨‹å®‰å…¨   
     */    
    abstract long getValue();     
    
    public void testTime(){     
        ExecutorService se=Executors.newCachedThreadPool();     
        long start=System.nanoTime();     
-       //Í¬Ê±¿ªÆô2*ThreadNum¸öÊıµÄ¶ÁĞ´Ïß³Ì     
+       //åŒæ—¶å¼€å¯2*ThreadNumä¸ªæ•°çš„è¯»å†™çº¿ç¨‹     
        for(int i=0;i<threadNum;i++){     
            se.execute(new Runnable(){     
                public void run() {     
@@ -138,7 +138,7 @@ abstract class TestTemplate{
                        sumValue();     
                    }     
    
-                   //Ã¿¸öÏß³ÌÖ´ĞĞÍêÍ¬²½·½·¨ºó¾ÍµÈ´ı     
+                   //æ¯ä¸ªçº¿ç¨‹æ‰§è¡Œå®ŒåŒæ­¥æ–¹æ³•åå°±ç­‰å¾…     
                    try {     
                        cb.await();     
                    } catch (InterruptedException e) {     
@@ -157,7 +157,7 @@ abstract class TestTemplate{
    
                    getValue();     
                    try {     
-                       //Ã¿¸öÏß³ÌÖ´ĞĞÍêÍ¬²½·½·¨ºó¾ÍµÈ´ı     
+                       //æ¯ä¸ªçº¿ç¨‹æ‰§è¡Œå®ŒåŒæ­¥æ–¹æ³•åå°±ç­‰å¾…     
                        cb.await();     
                    } catch (InterruptedException e) {     
                        // TODO Auto-generated catch block     
@@ -172,7 +172,7 @@ abstract class TestTemplate{
        }     
             
        try {     
-           //µ±Ç°Í³¼ÆÏß³ÌÒ²wait,ËùÒÔCyclicBarrierµÄ³õÊ¼ÖµÊÇthreadNum*2+1     
+           //å½“å‰ç»Ÿè®¡çº¿ç¨‹ä¹Ÿwait,æ‰€ä»¥CyclicBarrierçš„åˆå§‹å€¼æ˜¯threadNum*2+1     
            cb.await();     
        } catch (InterruptedException e) {     
            // TODO Auto-generated catch block     
@@ -181,7 +181,7 @@ abstract class TestTemplate{
            // TODO Auto-generated catch block     
            e.printStackTrace();     
        }     
-       //ËùÓĞÏß³ÌÖ´ĞĞÍê³ÉÖ®ºó£¬²Å»áÅÜµ½ÕâÒ»²½     
+       //æ‰€æœ‰çº¿ç¨‹æ‰§è¡Œå®Œæˆä¹‹åï¼Œæ‰ä¼šè·‘åˆ°è¿™ä¸€æ­¥     
        long duration=System.nanoTime()-start;     
        out.println(id+" = "+duration);     
             

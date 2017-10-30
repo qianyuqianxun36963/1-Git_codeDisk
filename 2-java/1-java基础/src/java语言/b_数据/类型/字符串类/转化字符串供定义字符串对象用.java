@@ -1,6 +1,6 @@
-package java语言.b_数据.类型.字符串类;
+package java璇█.b_鏁版嵁.绫诲瀷.瀛楃涓茬被;
 
-public class 转化字符串供定义字符串对象用 {
+public class 杞寲瀛楃涓蹭緵瀹氫箟瀛楃涓插璞＄敤 {
 	@SuppressWarnings("unused")
 	public static void main(String args[]){
 		String s="this is String \"where\" to change path:  C:\\wang\\ya\\test.txt";

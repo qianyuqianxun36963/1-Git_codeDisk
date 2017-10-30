@@ -1,4 +1,4 @@
-package javaÓïÑÔ.f_ÎÄµµ.html¸ñÊ½;
+package javaè¯­è¨€.f_æ–‡æ¡£.htmlæ ¼å¼;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -22,18 +22,18 @@ public class HtmlUtils {
     public static void main(String[] args) throws ParserException {
 	    File directory = new File("");
 		String curPath=directory.getAbsolutePath(); 
-        String szContent = Utils.openFile(curPath+"\\src\\javaÓïÑÔ\\e_ÎÄµµ\\html¸ñÊ½\\test.html");
+        String szContent = Utils.openFile(curPath+"\\src\\javaè¯­è¨€\\e_æ–‡æ¡£\\htmlæ ¼å¼\\test.html");
         
-//        	//*****************ParserÀà********************// 
-//        	¹¹Ôì·½·¨:
-//          Õâ¸öÀàÓĞÏÂÃæ¼¸¸ö¹¹Ôìº¯Êı£º
+//        	//*****************Parserç±»********************// 
+//        	æ„é€ æ–¹æ³•:
+//          è¿™ä¸ªç±»æœ‰ä¸‹é¢å‡ ä¸ªæ„é€ å‡½æ•°ï¼š
 //          public Parser (String resource) throws ParserException;
 //          public Parser (URLConnection connection) throws ParserException;
-//          public Parser (Lexer lexer); //½ÏÎª¸ß¼¶
-//          ºÍÒ»¸ö¾²Ì¬Àà
+//          public Parser (Lexer lexer); //è¾ƒä¸ºé«˜çº§
+//          å’Œä¸€ä¸ªé™æ€ç±»
 //          public static Parser createParser (String html, String charset);
         	
-            Parser parser = new Parser( szContent ); //ÕâÀïÊ¹ÓÃµÄ¾ÍÊÇµÚÒ»ÖÖ¹¹Ôì·½·¨¡£
+            Parser parser = new Parser( szContent ); //è¿™é‡Œä½¿ç”¨çš„å°±æ˜¯ç¬¬ä¸€ç§æ„é€ æ–¹æ³•ã€‚
 //          Parser parser = new Parser( (HttpURLConnection) (new URL("http://127.0.0.1:8080/test.html")).openConnection() );
 //          Parser parser = new Parser();   // parser.setURL  
 //          parser.setInputHTML(sText);  
@@ -42,14 +42,14 @@ public class HtmlUtils {
 
             ReadHtml.readHtml(parser);
             
-//          //changeHtml·½·¨»ù±¾Ã»Ê²Ã´ÓÃ¡£
+//          //changeHtmlæ–¹æ³•åŸºæœ¬æ²¡ä»€ä¹ˆç”¨ã€‚
 //          ReadHtml.readHtml(parser);
 //          ChangeHtml.changeText(parser,"textcell1","wangyaju");
 //          
     }
 }
 
-//ĞŞ¸ÄhtmlÖ®ºó»¹Òª ÔÚtohtml·½·¨»ñÈ¡ĞŞ¸ÄºóÀàÈİ£¬È»ºó½øĞĞ±£´æ£¬»ñÈ¡¹ı³ÌÖĞ¿ÉÄÜÒ²»á´æÔÚ½âÎöÎÊÌâ£¬ËùÒÔ»ù±¾Ã»Ê²Ã´ÓÃ£¬³ı·ÇÊÇÒ»´ÎĞÔĞŞ¸Ä¿ÉÒÔ¿¼ÂÇ×ÅÓÃÒ»ÏÂ£¬»ù±¾Ã»ÓÃ¡£
+//ä¿®æ”¹htmlä¹‹åè¿˜è¦ åœ¨tohtmlæ–¹æ³•è·å–ä¿®æ”¹åç±»å®¹ï¼Œç„¶åè¿›è¡Œä¿å­˜ï¼Œè·å–è¿‡ç¨‹ä¸­å¯èƒ½ä¹Ÿä¼šå­˜åœ¨è§£æé—®é¢˜ï¼Œæ‰€ä»¥åŸºæœ¬æ²¡ä»€ä¹ˆç”¨ï¼Œé™¤éæ˜¯ä¸€æ¬¡æ€§ä¿®æ”¹å¯ä»¥è€ƒè™‘ç€ç”¨ä¸€ä¸‹ï¼ŒåŸºæœ¬æ²¡ç”¨ã€‚
 class ChangeHtml{
 	
     public static void changeText(Parser parser,String id,String text) throws ParserException{
@@ -66,7 +66,7 @@ class ChangeHtml{
         
         if(nodes!=null) {
             for (int i = 0; i < nodes.size(); i++) {
-            	Span spanTag = (Span) nodes.elementAt(i); //»ñÈ¡½Úµã¼¯ÖĞµÄÄ³Ò»¸ö½Úµã¡£
+            	Span spanTag = (Span) nodes.elementAt(i); //è·å–èŠ‚ç‚¹é›†ä¸­çš„æŸä¸€ä¸ªèŠ‚ç‚¹ã€‚
             	if(spanTag.getAttribute(flag).equals(flagvalue)){  
                    spanTag.setAttribute(attribute,attrvalue);  
                    Utils.message("========================");
@@ -76,12 +76,12 @@ class ChangeHtml{
     }
 }
 
-//½âÎöhtml Ö÷ÒªÓÃÍ¾£¬µ«ÊÇĞŞ¸ÄÊ±»ù±¾Ã»ÓÃ¡£
+//è§£æhtml ä¸»è¦ç”¨é€”ï¼Œä½†æ˜¯ä¿®æ”¹æ—¶åŸºæœ¬æ²¡ç”¨ã€‚
 class ReadHtml{
 	
       public static void readHtml(Parser parser) throws ParserException{
 
-	  //NodeIterator Àà  ±éÀúÔªËØ¡£
+	  //NodeIterator ç±»  éå†å…ƒç´ ã€‚
 //	  for (NodeIterator i = parser.elements (); i.hasMoreNodes(); ) {
 //	      Node node = i.nextNode();
 //	      Utils.message("toString:"+node.toString());
@@ -95,9 +95,9 @@ class ReadHtml{
 //      }  
 	
 	  
-//		//*****************VisitorÀà********************// 
+//		//*****************Visitorç±»********************// 
 //	    TextExtractingVisitor visitor = new TextExtractingVisitor();
-//	    parser.visitAllNodesWith(visitor); //Õâ¾äÊÇ±ØĞëµÄ £¬ºÃÏñÊÇ»áÍù    visitor ¶ÔÏóÖĞ»ØÌîÊı¾İ¡£
+//	    parser.visitAllNodesWith(visitor); //è¿™å¥æ˜¯å¿…é¡»çš„ ï¼Œå¥½åƒæ˜¯ä¼šå¾€    visitor å¯¹è±¡ä¸­å›å¡«æ•°æ®ã€‚
 //	    String textInPage = visitor.getExtractedText(); 
 //	  	message(textInPage);
 	  
@@ -124,13 +124,13 @@ class ReadHtml{
 //	  parser.visitAllNodesWith(visitor);
 
 	  
-		//*****************FilterÀà********************// 
+		//*****************Filterç±»********************// 
 		NodeFilter filter = new TagNameFilter ("Span");
 		NodeList nodes = parser.extractAllNodesThatMatch(filter); 
 	    Utils.message(nodes.toHtml());
 	    
 //		NodeFilter innerFilter = new TagNameFilter ("a");
-//		NodeFilter filter = new HasChildFilter(innerFilter); //public HasChildFilter (NodeFilter filter, boolean recursive) Èç¹ûrecursiveÊÇfalse£¬ÔòÖ»¶ÔµÚÒ»¼¶×Ó½Úµã½øĞĞ¹ıÂË¡£
+//		NodeFilter filter = new HasChildFilter(innerFilter); //public HasChildFilter (NodeFilter filter, boolean recursive) å¦‚æœrecursiveæ˜¯falseï¼Œåˆ™åªå¯¹ç¬¬ä¸€çº§å­èŠ‚ç‚¹è¿›è¡Œè¿‡æ»¤ã€‚
 //		NodeList nodes = parser.extractAllNodesThatMatch(filter);
 		
 		
@@ -140,7 +140,7 @@ class ReadHtml{
 
 class Utils{
     private static String ENCODE = "UTF-8";
-   //¹¤¾ßÀà
+   //å·¥å…·ç±»
    public static String openFile( String szFileName ) {
        try {
            BufferedReader bis = new BufferedReader(new InputStreamReader(new FileInputStream( new File(szFileName)), ENCODE) );

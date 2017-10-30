@@ -1,8 +1,8 @@
-package javaÓïÑÔ.a_×éÖ¯.c_Àà.½Ó¿ÚÀà;
+package javaè¯­è¨€.a_ç»„ç»‡.c_ç±».æ¥å£ç±»;
 
 public interface I_interFace {
 	int age = 100;
-//	int sex; //ÕâÀïÊÇ²»ĞĞµÄ¡£
+//	int sex; //è¿™é‡Œæ˜¯ä¸è¡Œçš„ã€‚
 	public void setData(Object o);
 	public Object getData();
 	

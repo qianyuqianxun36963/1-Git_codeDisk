@@ -1,4 +1,4 @@
-package ĞĞÎªÄ£Ê½.·ÃÎÊÕß;
+package è¡Œä¸ºæ¨¡å¼.è®¿é—®è€…;
 
 public interface I_Visitor {
 	void getResponse_from_Man(Impl_ElementMan a);

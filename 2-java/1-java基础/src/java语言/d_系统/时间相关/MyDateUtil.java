@@ -1,4 +1,4 @@
-package javaÓïÑÔ.d_ÏµÍ³.Ê±¼äÏà¹Ø;
+package javaè¯­è¨€.d_ç³»ç»Ÿ.æ—¶é—´ç›¸å…³;
 
 import java.text.DateFormat;
 import java.text.ParseException;
@@ -37,14 +37,14 @@ public static void getDatestrWithFormat(){
 				strymdhms=ymdhms.format(date);
 		System.out.println(y+m+d+","+strymd+","+strymdhms);	
 		
-		//³£ÓÃµÄÈ¡Ê±¼ä×Ö·û´®¡£
+		//å¸¸ç”¨çš„å–æ—¶é—´å­—ç¬¦ä¸²ã€‚
 		DateFormat format=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 		String time2=format.format(new Date());
 		
 		SimpleDateFormat sformat=new SimpleDateFormat("yyyyMMddHHmmss");
 		String stime2=sformat.format(new Date());
 		
-		SimpleDateFormat sformat3=new SimpleDateFormat("yyyyÄêMMÔÂddÈÕ");
+		SimpleDateFormat sformat3=new SimpleDateFormat("yyyyå¹´MMæœˆddæ—¥");
 		String stime3=sformat3.format(new Date());
 		
 		System.out.println(time2+"\n" +stime2+"\n" +stime3);
@@ -53,7 +53,7 @@ public static void getDatestrWithFormat(){
 }
 
 public static java.util.Date getDateWithFormat(){
-	//´¦Àí²¢·µ»ØÒ»¸ö¸ñÊ½»¯µÄÊ±¼äÀàĞÍ¶ÔÏó¡£
+	//å¤„ç†å¹¶è¿”å›ä¸€ä¸ªæ ¼å¼åŒ–çš„æ—¶é—´ç±»å‹å¯¹è±¡ã€‚
 	SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd");
 	String strtime=sdf.format(new Date());
 	java.util.Date time=null;
@@ -71,50 +71,50 @@ public static void getDatestrByCalendar(){
 	
 	Calendar calendar =Calendar.getInstance();
 	calendar.setTime(new Date());
-	String  Äê=String.valueOf(calendar.get(Calendar.YEAR)),
-			ÔÂ=String.valueOf(calendar.get(Calendar.MONTH)+1),
-			ÈÕ=String.valueOf(calendar.get(Calendar.DAY_OF_MONTH)),
-			Ê±=String.valueOf(calendar.get(Calendar.HOUR_OF_DAY)),
-			·Ö=String.valueOf(calendar.get(Calendar.MINUTE)),
-			Ãë=String.valueOf(calendar.get(Calendar.SECOND));
-	System.out.println(Äê+ÔÂ+ÈÕ+Ê±+·Ö+Ãë);
+	String  å¹´=String.valueOf(calendar.get(Calendar.YEAR)),
+			æœˆ=String.valueOf(calendar.get(Calendar.MONTH)+1),
+			æ—¥=String.valueOf(calendar.get(Calendar.DAY_OF_MONTH)),
+			æ—¶=String.valueOf(calendar.get(Calendar.HOUR_OF_DAY)),
+			åˆ†=String.valueOf(calendar.get(Calendar.MINUTE)),
+			ç§’=String.valueOf(calendar.get(Calendar.SECOND));
+	System.out.println(å¹´+æœˆ+æ—¥+æ—¶+åˆ†+ç§’);
 }
 
 @SuppressWarnings("unused")
 public static void getLastDate(){
-	//¼ÆËã×òÌìÈÕÆÚ,ÀıÈç£ºlast_day_year.¼òĞ´l_d_y;
+	//è®¡ç®—æ˜¨å¤©æ—¥æœŸ,ä¾‹å¦‚ï¼šlast_day_year.ç®€å†™l_d_y;
 		Calendar   cal   =   Calendar.getInstance();
 		cal.add(Calendar.DATE,   -1);
 		String l_d_y = new SimpleDateFormat( "yyyy").format(cal.getTime());
 		String l_d_m = new SimpleDateFormat( "MM").format(cal.getTime());
 		String l_d_d = new SimpleDateFormat( "dd").format(cal.getTime());
 		String l_d = new SimpleDateFormat( "yyyy-MM-dd").format(cal.getTime());
-        System.out.println("×òÌì£º "+l_d);
+        System.out.println("æ˜¨å¤©ï¼š "+l_d);
 	
 }
 
 @SuppressWarnings("unused")
 public static void getNextDate(){
-	//¼ÆËã×òÌìÈÕÆÚ,ÀıÈç£ºlast_day_year.¼òĞ´l_d_y;
+	//è®¡ç®—æ˜¨å¤©æ—¥æœŸ,ä¾‹å¦‚ï¼šlast_day_year.ç®€å†™l_d_y;
 		Calendar   cal   =   Calendar.getInstance();
         cal.add(Calendar.DATE,   +1);
         String n_d_y = new SimpleDateFormat( "yyyy").format(cal.getTime());
         String n_d_m = new SimpleDateFormat( "MM").format(cal.getTime());
         String n_d_d = new SimpleDateFormat( "dd").format(cal.getTime());
         String n_d = new SimpleDateFormat( "yyyy-MM-dd").format(cal.getTime());
-        System.out.println("Ã÷Ìì£º "+n_d);
+        System.out.println("æ˜å¤©ï¼š "+n_d);
 }
 
 @SuppressWarnings("unused")
 public static void getAroundDate(int rel){
-	//¼ÆËã×òÌìÈÕÆÚ,ÀıÈç£ºlast_day_year.¼òĞ´l_d_y;
+	//è®¡ç®—æ˜¨å¤©æ—¥æœŸ,ä¾‹å¦‚ï¼šlast_day_year.ç®€å†™l_d_y;
 		Calendar   cal   =   Calendar.getInstance();
         cal.add(Calendar.DATE,   rel);
         String a_d_y = new SimpleDateFormat( "yyyy").format(cal.getTime());
         String a_d_m = new SimpleDateFormat( "MM").format(cal.getTime());
         String a_d_d = new SimpleDateFormat( "dd").format(cal.getTime());
         String a_d = new SimpleDateFormat( "yyyy-MM-dd").format(cal.getTime());
-        System.out.println("¸½½ü¼¸Ìì£º "+a_d);
+        System.out.println("é™„è¿‘å‡ å¤©ï¼š "+a_d);
 }
 
 public static void getLastMonth(){
@@ -123,16 +123,16 @@ public static void getLastMonth(){
 	calendar.setTime(new Date());
 	String  y=String.valueOf(calendar.get(Calendar.YEAR)),
 			m=String.valueOf(calendar.get(Calendar.MONTH)+1);
-	//Í¨¹ıµ±ÔÂ'm'£¬¼ÆËãÉÏÔÂ'l_m'(last_month)£¬ÏÂÔÂ'n_m'(next_month)¡£
-	//Í¨¹ıµ±Äê'y'£¬¼ÆËãÉÏÔÂ'l_y'(last_month)£¬ÏÂÔÂ'n_y'(next_month)¡£
+	//é€šè¿‡å½“æœˆ'm'ï¼Œè®¡ç®—ä¸Šæœˆ'l_m'(last_month)ï¼Œä¸‹æœˆ'n_m'(next_month)ã€‚
+	//é€šè¿‡å½“å¹´'y'ï¼Œè®¡ç®—ä¸Šæœˆ'l_y'(last_month)ï¼Œä¸‹æœˆ'n_y'(next_month)ã€‚
 	int int_month=Integer.parseInt(m);
 	int int_year=Integer.parseInt(y);
 	String l_m=String.valueOf(int_month-1); 
 	String l_y=String.valueOf(int_year);
 	if (int_month==1) {l_m=String.valueOf(12); l_y=String.valueOf(int_year-1);}
-	//µ¥×Ö·ûµÄÔÂ·İÔÚÇ°Ãæ²¹'0'¡£
+	//å•å­—ç¬¦çš„æœˆä»½åœ¨å‰é¢è¡¥'0'ã€‚
 	if(l_m.length()==1) l_m="0"+l_m;
-	System.out.println("ÉÏ¸öÔÂ£º"+l_y+"-"+l_m);
+	System.out.println("ä¸Šä¸ªæœˆï¼š"+l_y+"-"+l_m);
 }
 
 public static void getNextMonth(){
@@ -141,16 +141,16 @@ public static void getNextMonth(){
 	calendar.setTime(new Date());
 	String  y=String.valueOf(calendar.get(Calendar.YEAR)),
 			m=String.valueOf(calendar.get(Calendar.MONTH)+1);
-	//Í¨¹ıµ±ÔÂ'm'£¬¼ÆËãÉÏÔÂ'l_m'(last_month)£¬ÏÂÔÂ'n_m'(next_month)¡£
-	//Í¨¹ıµ±Äê'y'£¬¼ÆËãÉÏÔÂ'l_y'(last_month)£¬ÏÂÔÂ'n_y'(next_month)¡£
+	//é€šè¿‡å½“æœˆ'm'ï¼Œè®¡ç®—ä¸Šæœˆ'l_m'(last_month)ï¼Œä¸‹æœˆ'n_m'(next_month)ã€‚
+	//é€šè¿‡å½“å¹´'y'ï¼Œè®¡ç®—ä¸Šæœˆ'l_y'(last_month)ï¼Œä¸‹æœˆ'n_y'(next_month)ã€‚
 	int int_month=Integer.parseInt(m);
 	int int_year=Integer.parseInt(y);
 	String n_m=String.valueOf(int_month+1); 
 	String n_y=String.valueOf(int_year);
 	if (int_month==12){n_m=String.valueOf(1); n_y=String.valueOf(int_year+1);}
-	//µ¥×Ö·ûµÄÔÂ·İÔÚÇ°Ãæ²¹'0'¡£
+	//å•å­—ç¬¦çš„æœˆä»½åœ¨å‰é¢è¡¥'0'ã€‚
 	if(n_m.length()==1) n_m="0"+n_m;
-	System.out.println("ÏÂ¸öÔÂ£º"+n_y+"-"+n_m);
+	System.out.println("ä¸‹ä¸ªæœˆï¼š"+n_y+"-"+n_m);
 }
 
 public static void getAroundMonth(int rel){
@@ -158,8 +158,8 @@ public static void getAroundMonth(int rel){
 	calendar.setTime(new Date());
 	String  y=String.valueOf(calendar.get(Calendar.YEAR)),
 			m=String.valueOf(calendar.get(Calendar.MONTH)+1);
-	//Í¨¹ıµ±ÔÂ'm'£¬¼ÆËãÉÏÔÂ'l_m'(last_month)£¬ÏÂÔÂ'n_m'(next_month)¡£
-	//Í¨¹ıµ±Äê'y'£¬¼ÆËãÉÏÔÂ'l_y'(last_month)£¬ÏÂÔÂ'n_y'(next_month)¡£
+	//é€šè¿‡å½“æœˆ'm'ï¼Œè®¡ç®—ä¸Šæœˆ'l_m'(last_month)ï¼Œä¸‹æœˆ'n_m'(next_month)ã€‚
+	//é€šè¿‡å½“å¹´'y'ï¼Œè®¡ç®—ä¸Šæœˆ'l_y'(last_month)ï¼Œä¸‹æœˆ'n_y'(next_month)ã€‚
 	int int_month=Integer.parseInt(m);
 	int int_year=Integer.parseInt(y);
 	
@@ -170,9 +170,9 @@ public static void getAroundMonth(int rel){
 	if((int_month+rel)%12==0&&int_month+rel>0) rel_y--;
 	String a_y=String.valueOf(int_year+rel_y);
 	
-	//µ¥×Ö·ûµÄÔÂ·İÔÚÇ°Ãæ²¹'0'¡£
+	//å•å­—ç¬¦çš„æœˆä»½åœ¨å‰é¢è¡¥'0'ã€‚
 	if(a_m.length()==1) a_m="0"+a_m;
-	System.out.println("Ïà¶Ô"+rel+"¸öÔÂ£º"+a_y+"-"+a_m);
+	System.out.println("ç›¸å¯¹"+rel+"ä¸ªæœˆï¼š"+a_y+"-"+a_m);
 }
 
 public static void getLastAndNextMonth(){
@@ -183,8 +183,8 @@ public static void getLastAndNextMonth(){
 			m=String.valueOf(calendar.get(Calendar.MONTH)+1),
 			d=String.valueOf(calendar.get(Calendar.DAY_OF_MONTH));
 	
-	//Í¨¹ıµ±ÔÂ'm'£¬¼ÆËãÉÏÔÂ'l_m'(last_month)£¬ÏÂÔÂ'n_m'(next_month)¡£
-	//Í¨¹ıµ±Äê'y'£¬¼ÆËãÉÏÔÂ'l_y'(last_month)£¬ÏÂÔÂ'n_y'(next_month)¡£
+	//é€šè¿‡å½“æœˆ'm'ï¼Œè®¡ç®—ä¸Šæœˆ'l_m'(last_month)ï¼Œä¸‹æœˆ'n_m'(next_month)ã€‚
+	//é€šè¿‡å½“å¹´'y'ï¼Œè®¡ç®—ä¸Šæœˆ'l_y'(last_month)ï¼Œä¸‹æœˆ'n_y'(next_month)ã€‚
 	int int_month=Integer.parseInt(m);
 	int int_year=Integer.parseInt(y);
 	String l_m=String.valueOf(int_month-1); 
@@ -194,11 +194,11 @@ public static void getLastAndNextMonth(){
 	if (int_month==1) {l_m=String.valueOf(12); l_y=String.valueOf(int_year-1);}
 	if (int_month==12){n_m=String.valueOf(1); n_y=String.valueOf(int_year+1);}
 	
-	//µ¥×Ö·ûµÄÔÂ·İÔÚÇ°Ãæ²¹'0'¡£
+	//å•å­—ç¬¦çš„æœˆä»½åœ¨å‰é¢è¡¥'0'ã€‚
 	if(l_m.length()==1) l_m="0"+l_m;
 	if(n_m.length()==1) n_m="0"+n_m;
 	
-	System.out.println("Ïà¶Ôµ±ÌìµÄÇ°ºóÁ½¸öÔÂ£º"+y+m+d+"  "+l_y+l_m+"  "+n_y+n_m);
+	System.out.println("ç›¸å¯¹å½“å¤©çš„å‰åä¸¤ä¸ªæœˆï¼š"+y+m+d+"  "+l_y+l_m+"  "+n_y+n_m);
 }
 
 }

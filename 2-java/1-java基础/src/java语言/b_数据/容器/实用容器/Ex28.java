@@ -3,7 +3,7 @@
 /* Fill a PriorityQueue (using offer()) with Double values created using 
 * java.util.Random, then remove the elements using poll() and display them.
 */
-package javaÓïÑÔ.b_Êı¾İ.ÈİÆ÷.ÊµÓÃÈİÆ÷;
+package javaè¯­è¨€.b_æ•°æ®.å®¹å™¨.å®ç”¨å®¹å™¨;
 
 import java.util.*;
 

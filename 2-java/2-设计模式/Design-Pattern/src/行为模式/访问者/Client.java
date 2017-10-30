@@ -1,15 +1,15 @@
-package ĞĞÎªÄ£Ê½.·ÃÎÊÕß;
+package è¡Œä¸ºæ¨¡å¼.è®¿é—®è€…;
 
 public class Client {
 	public static void main(String args[]){
 		ObjectStructure o = new ObjectStructure();
-		Impl_ElementMan man = new Impl_ElementMan("Ğ¡ºì");
-		Impl_ElementWoman woman = new Impl_ElementWoman("Íõ·¼");
+		Impl_ElementMan man = new Impl_ElementMan("å°çº¢");
+		Impl_ElementWoman woman = new Impl_ElementWoman("ç‹èŠ³");
 		o.attach(man);
 		o.attach(woman);
 		
 		Impl_VisitorA va = new Impl_VisitorA();
-		man.accpet(va); //ÄĞÈË½Ó´ı·ÃÎÊÕß¡£
+		man.accpet(va); //ç”·äººæ¥å¾…è®¿é—®è€…ã€‚
 		o.display(va);
 		
 		Impl_VisitorB vb = new Impl_VisitorB();
@@ -19,9 +19,9 @@ public class Client {
 		o.display(vc);
 		
 		ObjectStructure objectstructure = new ObjectStructure();
-		Impl_ElementMan a1 = new Impl_ElementMan("ÕÅÈı");
-		Impl_ElementMan a2 = new Impl_ElementMan("ÀîËÄ");
-		Impl_ElementMan a3 = new Impl_ElementMan("ÍõÎå");
+		Impl_ElementMan a1 = new Impl_ElementMan("å¼ ä¸‰");
+		Impl_ElementMan a2 = new Impl_ElementMan("æå››");
+		Impl_ElementMan a3 = new Impl_ElementMan("ç‹äº”");
 		objectstructure.attach(a1);
 		objectstructure.attach(a2);
 		objectstructure.attach(a3);

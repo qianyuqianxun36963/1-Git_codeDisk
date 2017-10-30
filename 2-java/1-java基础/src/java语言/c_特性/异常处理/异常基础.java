@@ -1,7 +1,7 @@
-package javaÓïÑÔ.c_ÌØĞÔ.Òì³£´¦Àí;
+package javaè¯­è¨€.c_ç‰¹æ€§.å¼‚å¸¸å¤„ç†;
 
-public class Òì³£»ù´¡  {
-	public Òì³£»ù´¡() {  
+public class å¼‚å¸¸åŸºç¡€  {
+	public å¼‚å¸¸åŸºç¡€() {  
     }  
   
     @SuppressWarnings("finally")
@@ -61,7 +61,7 @@ public class Òì³£»ù´¡  {
     }  
   
     public static void main(String[] args) {  
-    	Òì³£»ù´¡ testException1 = new Òì³£»ù´¡();  
+    	å¼‚å¸¸åŸºç¡€ testException1 = new å¼‚å¸¸åŸºç¡€();  
         try {  
             testException1.testEx();  
         } catch (Exception e) {  

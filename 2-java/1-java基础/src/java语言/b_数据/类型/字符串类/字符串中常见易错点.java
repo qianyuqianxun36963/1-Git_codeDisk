@@ -1,6 +1,6 @@
-package javaÓïÑÔ.b_Êý¾Ý.ÀàÐÍ.×Ö·û´®Àà;
+package javaè¯­è¨€.b_æ•°æ®.ç±»åž‹.å­—ç¬¦ä¸²ç±»;
 
-public class ×Ö·û´®ÖÐ³£¼ûÒ×´íµã {
+public class å­—ç¬¦ä¸²ä¸­å¸¸è§æ˜“é”™ç‚¹ {
 	public static void main(String args[]){
 		stringInit();
 		stringLengthParameter();
@@ -25,6 +25,6 @@ public class ×Ö·û´®ÖÐ³£¼ûÒ×´íµã {
 	}
 }
 
-//µÚÒ»ÌõÓï¾ä´òÓ¡µÄ½á¹ûÎª false£¬µÚ¶þÌõÓï¾ä´òÓ¡µÄ½á¹ûÎª true£¬ÕâËµÃ÷ javac ±àÒë¿ÉÒÔ¶Ô
-//×Ö·û´®³£Á¿Ö±½ÓÏà¼ÓµÄ±í´ïÊ½½øÐÐÓÅ»¯£¬²»±ØÒªµÈµ½ÔËÐÐÆÚÈ¥½øÐÐ¼Ó·¨ÔËËã´¦Àí£¬¶øÊÇÔÚ±à
-//ÒëÊ±È¥µôÆäÖÐµÄ¼ÓºÅ£¬Ö±½Ó½«Æä±àÒë³ÉÒ»¸öÕâÐ©³£Á¿ÏàÁ¬µÄ½á¹û¡£
+//ç¬¬ä¸€æ¡è¯­å¥æ‰“å°çš„ç»“æžœä¸º falseï¼Œç¬¬äºŒæ¡è¯­å¥æ‰“å°çš„ç»“æžœä¸º trueï¼Œè¿™è¯´æ˜Ž javac ç¼–è¯‘å¯ä»¥å¯¹
+//å­—ç¬¦ä¸²å¸¸é‡ç›´æŽ¥ç›¸åŠ çš„è¡¨è¾¾å¼è¿›è¡Œä¼˜åŒ–ï¼Œä¸å¿…è¦ç­‰åˆ°è¿è¡ŒæœŸåŽ»è¿›è¡ŒåŠ æ³•è¿ç®—å¤„ç†ï¼Œè€Œæ˜¯åœ¨ç¼–
+//è¯‘æ—¶åŽ»æŽ‰å…¶ä¸­çš„åŠ å·ï¼Œç›´æŽ¥å°†å…¶ç¼–è¯‘æˆä¸€ä¸ªè¿™äº›å¸¸é‡ç›¸è¿žçš„ç»“æžœã€‚
