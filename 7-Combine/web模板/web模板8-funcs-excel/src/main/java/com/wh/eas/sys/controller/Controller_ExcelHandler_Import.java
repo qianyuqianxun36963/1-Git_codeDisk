@@ -12,7 +12,6 @@ import net.sf.json.JSONObject;
 import org.apache.log4j.Logger;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.CollectionUtils;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -121,7 +120,7 @@ public class Controller_ExcelHandler_Import extends Controller_Base
 		    	tempInvoiceInfo.put("invoiceTime", invoiceTime);
 		    	tempInvoiceInfo.put("operatorId", "0-1");
 		    	
-                if(excelService.updateInvoiceInfoByImport(tempInvoiceInfo)) {
+                if(excelService.updateExcelInfoByImport(tempInvoiceInfo)) {
                 	successCount++;
                 }else{
                 	failCount++;

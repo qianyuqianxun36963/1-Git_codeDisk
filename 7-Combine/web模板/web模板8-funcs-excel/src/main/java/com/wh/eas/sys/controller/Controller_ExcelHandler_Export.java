@@ -1,18 +1,6 @@
 package com.wh.eas.sys.controller;
 
-import java.io.BufferedInputStream;
-import java.io.BufferedOutputStream;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.PrintWriter;
-import java.io.RandomAccessFile;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
@@ -22,16 +10,13 @@ import net.sf.json.JSONObject;
 
 import org.apache.log4j.Logger;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.wh.eas.sys.service.IExcelService;
 import com.wh.eas.sys.utils.DateUtils;
 import com.wh.eas.sys.utils.ExcelView;
-import com.wh.eas.sys.utils.FileUtils;
 import com.wh.eas.sys.utils.PropertiesUtil;
-import com.wh.eas.sys.utils.UUIDTool;
 
 @Controller
 @RequestMapping("/excel")
@@ -79,7 +64,7 @@ public class Controller_ExcelHandler_Export extends Controller_Base
 						invoiceInfoTemp.put("exportBatch",exportBatch);
 						invoiceInfoTemp.put("hasExport",1);
 						invoiceInfoTemp.put("operatorId", "0-1");
-						if(!excelService.updateInvoiceExportStatus(invoiceInfoTemp)){
+						if(!excelService.updateExportInfoStatus(invoiceInfoTemp)){
 							continue;
 						}
 					}
