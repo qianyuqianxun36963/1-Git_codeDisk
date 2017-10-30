@@ -52,6 +52,16 @@ public class Controller_ExcelHandler_Import extends Controller_Base
          return;
 	}
 	
+	/**
+	 * 下载发票导入模板
+	 * @param request
+	 * @param response
+	 */
+	@RequestMapping(value = "/downloadImportTemplate",method = RequestMethod.GET)
+	public void downloadImportInvoiceTemplateGET(HttpServletRequest request,HttpServletResponse response) throws Exception{
+         downloadImportTemplate(request,response);
+         return;
+	}
 	
 	/**
 	 * 导入发票信息
@@ -60,7 +70,7 @@ public class Controller_ExcelHandler_Import extends Controller_Base
 	 * @param response
 	 * @return
 	 */
-	@RequestMapping(value="/importInvoiceListExcel",method = RequestMethod.POST)
+	@RequestMapping(value="/import/importListExcel",method = RequestMethod.POST)
 	@ResponseBody
 	public Object importInvoiceList(HttpServletRequest request,@RequestParam(value = "file",required = false) MultipartFile file,
 			HttpServletResponse response) {
@@ -92,6 +102,7 @@ public class Controller_ExcelHandler_Import extends Controller_Base
 		    	String realAmount = tempMap.get("content6");//实开金额
 		    	String exportBatch = tempMap.get("content7");//导出批次号
 		    	String invoiceTime = tempMap.get("content8");//开票时间
+		    	
 		    	if(StringUtils.isEmpty(invoiceId)){
 		    		failCount++;
 		    		rows += "第"+i+2+"行，开票编号不能为空\n";
