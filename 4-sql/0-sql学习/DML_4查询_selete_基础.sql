@@ -49,3 +49,14 @@ userid						pay_type							sum(account)
 	
         MAX(case T.typecode when '001' then T.account else 0 end) 'scoreFee',
         MAX(case T.typecode when '002' then T.account else 0 end) 'examFee',
+
+
+查询的时候指定返回类型
+
+userid本来是int(11)类型的，查询返回，要求指定格式。
+
+select cast(userid as char(15)) from base_goods;
+
+/*select cast(userid as varchar(15)) from base_goods; 这种写法有错，不能给个变长类型来接长11的数据。*/
+
+select cast(userid as decimal(10,2)) from base_goods;
