@@ -25,16 +25,16 @@ create table fileinfo
 ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 SELECT
-	 *
-	FROM
-	 fileinfo
-	WHERE
-	 1=1
-	 AND file_org_name = '166.jpg'
-	 AND file_create_time = '2017-09-20 09:14:13'
-	 AND file_origin_type = 0
-	 AND file_size = 40503
-	 AND create_user_id= -1
-	 AND is_del = 0
+     *
+    FROM
+     fileinfo
+    WHERE
+     1=1
+     AND file_org_name = '166.jpg'
+     AND file_create_time = '2017-09-20 09:14:13'
+     AND file_origin_type = 0
+     AND file_size = 40503
+     AND create_user_id= -1
+     AND is_del = 0
 
 insert into fileinfo(id,file_org_name,file_create_time,file_origin_type,file_size,create_user_id,is_del) values ('001','166.jpg','2017-09-20 09:14:13',0,40503,-1,0);

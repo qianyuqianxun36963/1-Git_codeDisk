@@ -21,7 +21,7 @@ import com.sun.jna.examples.WindowUtils;
 
 
 public class 不规则窗口和窗口透明 {
-	private JFrame frame;  
+    private JFrame frame;  
     private JPanel container;  
     private JSlider slider;  
     private JPanel titleBar;  

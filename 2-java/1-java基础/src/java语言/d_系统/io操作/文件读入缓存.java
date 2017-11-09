@@ -10,16 +10,16 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;  
 
 public class 文件读入缓存 {
-	public static void main(String args[]){
-		CacheTest.test();
-	}
+    public static void main(String args[]){
+        CacheTest.test();
+    }
 }
 
 class Cache {  
     @SuppressWarnings("rawtypes")
-	private ArrayList list = new ArrayList();  //保存从文件中读取的内容  
+    private ArrayList list = new ArrayList();  //保存从文件中读取的内容  
     @SuppressWarnings("unchecked")
-	public Cache(File file){  
+    public Cache(File file){  
         try {  
             FileReader fr = new FileReader(file);  
             BufferedReader br = new BufferedReader(fr);  
@@ -43,14 +43,14 @@ class Cache {
 } 
 
 class CacheTest{
-	private Cache cache;  
+    private Cache cache;  
     public static void test() {  
   
-    	File directory = new File("");
-    	String curPath=directory.getAbsolutePath();
-    	File file = new File(curPath+"/src/java语言/d_系统/io操作/files/BufferTest.txt");
+        File directory = new File("");
+        String curPath=directory.getAbsolutePath();
+        File file = new File(curPath+"/src/java语言/d_系统/io操作/files/BufferTest.txt");
 
-    	CacheTest t = new CacheTest();  
+        CacheTest t = new CacheTest();  
           
         long start = System.currentTimeMillis();  
         for(int i=0;i<1000;i++)
@@ -101,5 +101,5 @@ class CacheTest{
             }  
             System.out.print(" "+lines);  
     }  
-	
+    
 }

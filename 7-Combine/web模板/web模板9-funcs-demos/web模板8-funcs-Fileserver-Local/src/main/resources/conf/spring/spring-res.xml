@@ -17,23 +17,23 @@
         >
         
 <!-- 定义据源  入库配置 -->
-<!-- 	<jee:jndi-lookup id="dataSource" jndi-name="jdbc/DATA_DS" -->
-<!-- 		proxy-interface="javax.sql.DataSource" lookup-on-startup="false" /> -->
+<!--     <jee:jndi-lookup id="dataSource" jndi-name="jdbc/DATA_DS" -->
+<!--         proxy-interface="javax.sql.DataSource" lookup-on-startup="false" /> -->
 
- 	<!-- 数据库连接池-->
-	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
-		<property name="driverClassName">
-			<value>${db.driverClass}</value>
-		</property>
-		<property name="url">
-			<value>${db.url}</value>
-		</property>
-		<property name="username">
-			<value>${db.username}</value>
-		</property>
-		<property name="password">
-			<value>${db.password}</value>
-		</property>
-	</bean>  
+     <!-- 数据库连接池-->
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName">
+            <value>${db.driverClass}</value>
+        </property>
+        <property name="url">
+            <value>${db.url}</value>
+        </property>
+        <property name="username">
+            <value>${db.username}</value>
+        </property>
+        <property name="password">
+            <value>${db.password}</value>
+        </property>
+    </bean>  
     
 </beans>

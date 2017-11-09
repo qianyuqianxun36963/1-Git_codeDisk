@@ -45,13 +45,13 @@ Installation
 + Include `css/bootstrap-modal.css` after the main bootstrap css files.
 + Include `js/bootstrap-modalmanager.js` and `js/bootstrap-modal.js` after the main bootstrap js files.
 
-	<link href="css/bootstrap.css" rel="stylesheet" />
-	<link href="css/bootstrap-responsive.css" rel="stylesheet" />
- 	<link href="css/bootstrap-modal.css" rel="stylesheet" />
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/bootstrap-responsive.css" rel="stylesheet" />
+     <link href="css/bootstrap-modal.css" rel="stylesheet" />
 
- 	<script src="js/bootstrap.js"></script>
- 	<script src="js/bootstrap-modalmanager.js"></script>
- 	<script src="js/bootstrap-modal.js"></script>
+     <script src="js/bootstrap.js"></script>
+     <script src="js/bootstrap-modalmanager.js"></script>
+     <script src="js/bootstrap-modal.js"></script>
 
 Options
 -----------
@@ -115,27 +115,27 @@ Disable Background Scrolling
 
 If you want to prevent the background page from scrolling (see [demo](http://jschr.github.com/bootstrap-modal/) for example) you must wrap the page contents in a `<div class="page-container">`. For example:
 
-	<body>
-		<div class="page-container">
-			<div class="navbar navbar-fixed-top">...</div>
-			<div class="container">...</div>
-		</div>
-	</body>
+    <body>
+        <div class="page-container">
+            <div class="navbar navbar-fixed-top">...</div>
+            <div class="container">...</div>
+        </div>
+    </body>
 
 The reason for doing this instead of just simply setting `overflow: hidden` when a modal is open is to avoid having the page shift as a result of the scrollbar appearing/disappearing. This also allows the document to be scrollable when there is a tall modal but only to the height of the modal, not the entire page.
 
 Constrain Modal to Window Size
 -----------
-	
+    
 You can bind the the height of the modal body to the window with something like this:
-	
+    
     $.fn.modal.defaults.maxHeight = function(){
         // subtract the height of the modal header and footer
         return $(window).height() - 165; 
     }
-	
+    
 **Note:** This will be overwritten by the responsiveness and is only set when the modal is displayed, not when the window is resized.
-	
+    
 Tab Index for Modal Forms
 -----------
 You can use `data-tabindex` instead of the default `tabindex` to specify the tabindex within a modal.
@@ -146,7 +146,7 @@ You can use `data-tabindex` instead of the default `tabindex` to specify the tab
 See the stackable example on the [demo](http://jschr.github.com/bootstrap-modal/) page for an example.
 
 
-	
+    
 
 
 

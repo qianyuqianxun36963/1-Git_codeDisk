@@ -11,20 +11,20 @@ package java语言.b_数据.容器.实用容器;
 import java.util.*;
 
 public class Gerbils17 {
-	public static void main(String[] args) {
-		Map<String, Gerbil> gerbils = new HashMap<String, Gerbil>();
-		gerbils.put("Fuzzy", new Gerbil(0));
-		gerbils.put("Spot", new Gerbil(1));
-		gerbils.put("Speedy", new Gerbil(2));
-		gerbils.put("Dopey", new Gerbil(3));
-		gerbils.put("Sleepy", new Gerbil(4));
-		gerbils.put("Happy", new Gerbil(5));
-		Iterator<String> it = gerbils.keySet().iterator();
-		while(it.hasNext()) {
-			String s = it.next();
-			System.out.print(s + ": ");
-			gerbils.get(s).hop();
-		}	
-	}
+    public static void main(String[] args) {
+        Map<String, Gerbil> gerbils = new HashMap<String, Gerbil>();
+        gerbils.put("Fuzzy", new Gerbil(0));
+        gerbils.put("Spot", new Gerbil(1));
+        gerbils.put("Speedy", new Gerbil(2));
+        gerbils.put("Dopey", new Gerbil(3));
+        gerbils.put("Sleepy", new Gerbil(4));
+        gerbils.put("Happy", new Gerbil(5));
+        Iterator<String> it = gerbils.keySet().iterator();
+        while(it.hasNext()) {
+            String s = it.next();
+            System.out.print(s + ": ");
+            gerbils.get(s).hop();
+        }    
+    }
 }
 

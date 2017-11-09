@@ -5,7 +5,7 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
 public class 并发工具包 {
-	public static void main(String[] args) {
+    public static void main(String[] args) {
         ExecutorService executor = Executors.newFixedThreadPool(5);
   
         for (int i = 0; i<100; i++){

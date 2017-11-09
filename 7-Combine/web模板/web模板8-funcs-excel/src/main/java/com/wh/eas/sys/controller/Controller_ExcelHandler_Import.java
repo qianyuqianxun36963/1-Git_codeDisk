@@ -42,28 +42,6 @@ public class Controller_ExcelHandler_Import extends Controller_Base
         return new ModelAndView();
     }
     /**
-     * 下载发票导入模板
-     * @param request
-     * @param response
-     */
-    @RequestMapping(value = "/downloadImportTemplate",method = RequestMethod.POST)
-    public void downloadImportInvoiceTemplate(HttpServletRequest request,HttpServletResponse response) throws Exception{
-         downloadImportTemplate(request,response);
-         return;
-    }
-    
-    /**
-     * 下载发票导入模板
-     * @param request
-     * @param response
-     */
-    @RequestMapping(value = "/downloadImportTemplate",method = RequestMethod.GET)
-    public void downloadImportInvoiceTemplateGET(HttpServletRequest request,HttpServletResponse response) throws Exception{
-         downloadImportTemplate(request,response);
-         return;
-    }
-    
-    /**
      * 导入发票信息
      * @param request
      * @param file
@@ -109,22 +87,22 @@ public class Controller_ExcelHandler_Import extends Controller_Base
                 
                 String[] neadCheckEmptyFields = {"name"};
                 for(String s : neadCheckEmptyFields){
-                	if(!(boolean)(excelService.checkEmpty(s,tempMap.get(s)).get("result"))){errorRow.append("第"+i+baseRow+"行" + "第"+titlesOrder.get(s)+"列" + (excelService.checkEmpty(s,tempMap.get(s)).get("reason")));}
+                    if(!(boolean)(excelService.checkEmpty(s,tempMap.get(s)).get("result"))){errorRow.append("第"+i+baseRow+"行" + "第"+titlesOrder.get(s)+"列" + (excelService.checkEmpty(s,tempMap.get(s)).get("reason")));}
                 }
                 
                 String[] neadCheckExistFields = {"name"};
                 for(String s : neadCheckExistFields){
-                	if(!(boolean)(excelService.checkEmpty(s,tempMap.get(s)).get("result"))){errorRow.append("第"+i+baseRow+"行" + "第"+titlesOrder.get(s)+"列" + (excelService.checkEmpty(s,tempMap.get(s)).get("reason")));}
+                    if(!(boolean)(excelService.checkEmpty(s,tempMap.get(s)).get("result"))){errorRow.append("第"+i+baseRow+"行" + "第"+titlesOrder.get(s)+"列" + (excelService.checkEmpty(s,tempMap.get(s)).get("reason")));}
                 }
                 
                 String[] neadCheckNotExistFields = {"name"};
                 for(String s : neadCheckNotExistFields){
-                	if(!(boolean)(excelService.checkEmpty(s,tempMap.get(s)).get("result"))){errorRow.append("第"+i+baseRow+"行" + "第"+titlesOrder.get(s)+"列" + (excelService.checkEmpty(s,tempMap.get(s)).get("reason")));}
+                    if(!(boolean)(excelService.checkEmpty(s,tempMap.get(s)).get("result"))){errorRow.append("第"+i+baseRow+"行" + "第"+titlesOrder.get(s)+"列" + (excelService.checkEmpty(s,tempMap.get(s)).get("reason")));}
                 }
                 
                 String[] neadCheckRegFields = {"name"};
                 for(String s : neadCheckRegFields){
-                	if(!(boolean)(excelService.checkEmpty(s,tempMap.get(s)).get("result"))){errorRow.append("第"+i+baseRow+"行" + "第"+titlesOrder.get(s)+"列" + (excelService.checkEmpty(s,tempMap.get(s)).get("reason")));}
+                    if(!(boolean)(excelService.checkEmpty(s,tempMap.get(s)).get("result"))){errorRow.append("第"+i+baseRow+"行" + "第"+titlesOrder.get(s)+"列" + (excelService.checkEmpty(s,tempMap.get(s)).get("reason")));}
                 }
                 
                 errorRows.add(errorRow.toString());

@@ -94,11 +94,11 @@ public class Java处理json {
     }
     
 public static void testArrayListMaptoJsonString(){
-	ArrayList<Map<Object, Object>> res = new ArrayList<Map<Object, Object>>();
-	Map<Object, Object> resmap = new HashMap<Object, Object>();resmap.put("id","id");
-	res.add(resmap);
-	JSONArray json = JSONArray.fromObject(res);
-	System.out.println(json.toString());
+    ArrayList<Map<Object, Object>> res = new ArrayList<Map<Object, Object>>();
+    Map<Object, Object> resmap = new HashMap<Object, Object>();resmap.put("id","id");
+    res.add(resmap);
+    JSONArray json = JSONArray.fromObject(res);
+    System.out.println(json.toString());
 }
 
     /**
@@ -106,7 +106,7 @@ public static void testArrayListMaptoJsonString(){
      */
     public static void main(String[] args) {
         // TODO Auto-generated method stub
-    	testArrayListMaptoJsonString();
+        testArrayListMaptoJsonString();
 //        ParseJson(BuildJson());
     }
 }

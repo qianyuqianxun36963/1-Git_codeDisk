@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.util.Stack;
 
 public class 栈_括号校验 {
-	public static void main(String[] args) {  
+    public static void main(String[] args) {  
         Scanner scan = new Scanner(System.in);  
         String s;  
         while (scan.hasNext()) {  

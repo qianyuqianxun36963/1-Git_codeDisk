@@ -12,23 +12,23 @@ import javax.xml.ws.Endpoint;
 
 @WebService  
 public class WebService_JdkAPI {  
-	/** 类上添加注解@WebService，类中所有非静态方法都会被发布 */     
-	public String HelloWord(String name){  
-		return"Hello: "+name;  
-	}  
-	   
-	/** *添加exclude=true后，HelloWord2()方法不会被发布* @param name* @return */  
-	@WebMethod(exclude=true)  
-	public String HelloWord2(String name){  
-		return"Hello: "+name;  
-	}  
-	
-	//调用API方法发布服务到地址端口。
-	public static void main(String[] args) {  
-	/***参数1：服务的发布地址	 *参数2：服务的实现者*/  
-	Endpoint.publish("http://127.0.0.1:8029/helloWord",new WebService_JdkAPI());  
-	   
-	}  
+    /** 类上添加注解@WebService，类中所有非静态方法都会被发布 */     
+    public String HelloWord(String name){  
+        return"Hello: "+name;  
+    }  
+       
+    /** *添加exclude=true后，HelloWord2()方法不会被发布* @param name* @return */  
+    @WebMethod(exclude=true)  
+    public String HelloWord2(String name){  
+        return"Hello: "+name;  
+    }  
+    
+    //调用API方法发布服务到地址端口。
+    public static void main(String[] args) {  
+    /***参数1：服务的发布地址     *参数2：服务的实现者*/  
+    Endpoint.publish("http://127.0.0.1:8029/helloWord",new WebService_JdkAPI());  
+       
+    }  
 }
 
 //根据WSDL文档来在客户端编写代码，访问发布的服务；

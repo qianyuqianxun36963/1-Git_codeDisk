@@ -29,35 +29,35 @@ import com.wh.eas.sys.utils.UUIDTool;
 @RequestMapping("/file")
 public class Controller_FileProcess extends Controller_Base
 {
-	public static Logger logger = Logger.getLogger(Controller_FileProcess.class);
-	
-	/**默认上传用户的ID*/
-	private static String uploadUserId = "-1";
-	/**
-	 * 
-	 * 功能描述：获取已上传的文件大小
-	 *
-	 *
-	 * @param [javax.servlet.http.HttpServletRequest] request <请求参数>
-	 *
-	 * @return [javax.servlet.http.HttpServletResponse] response <返回参数>
-	 * 
-	 * @author chenjunjin
-	 *
-	 * @date 2017年3月21日上午10:03:59
-	 */
-	@RequestMapping("/getChunkedFileInfo")
+    public static Logger logger = Logger.getLogger(Controller_FileProcess.class);
+    
+    /**默认上传用户的ID*/
+    private static String uploadUserId = "-1";
+    /**
+     * 
+     * 功能描述：获取已上传的文件大小
+     *
+     *
+     * @param [javax.servlet.http.HttpServletRequest] request <请求参数>
+     *
+     * @return [javax.servlet.http.HttpServletResponse] response <返回参数>
+     * 
+     * @author chenjunjin
+     *
+     * @date 2017年3月21日上午10:03:59
+     */
+    @RequestMapping("/getChunkedFileInfo")
     public void getChunkedFileInfo(HttpServletRequest request,HttpServletResponse response) throws IOException
-    {	
+    {    
 
-		/**
-		 * 后期可能不同的来源文件，存储路径不同
-		 * 存储文件的路径，根据自己实际确定
-		 * 暂时所有的文件存储在固定目录下
-		 */
+        /**
+         * 后期可能不同的来源文件，存储路径不同
+         * 存储文件的路径，根据自己实际确定
+         * 暂时所有的文件存储在固定目录下
+         */
         String currentFilePath = propertiesUtil.get("uploadFilePath");
         RandomAccessFile randomAccessfile = null;
-	    JSONObject json = new JSONObject();
+        JSONObject json = new JSONObject();
         PrintWriter print = null;
         try 
         {
@@ -81,64 +81,64 @@ public class Controller_FileProcess extends Controller_Base
             
             if(SaveFile!=null)
             {
-            	 //数据库存在文件
-            	 File file = new File(uploadFilePath+"/"+SaveFile.get("file_new_name"));
-            	 /**
-            	  * 此处资源库验证文件是否存在
-            	  * 防止资源文件被删
-            	  */
-            	 if(file.exists())//资源库确实存在
-            	 {
-            		 json.put("status", "success");
-            		 json.put("size", file.length());
-                 	 json.put("name", SaveFile.get("file_new_name")); 
-                 	 json.put("id", SaveFile.get("id"));
-  	   	             json.put("downLoadPath", propertiesUtil.get("downLoadPath") + "/"+ propertiesUtil.get(saveFilePathKey) +"/"+ SaveFile.get("id") +"");
-  	   	             json.put("resourcePath", propertiesUtil.get("resourcePath") + "/"+ propertiesUtil.get(fileUploadType) +"/" + propertiesUtil.get(saveFilePathKey) +"/"+ SaveFile.get("file_new_name")); 
+                 //数据库存在文件
+                 File file = new File(uploadFilePath+"/"+SaveFile.get("file_new_name"));
+                 /**
+                  * 此处资源库验证文件是否存在
+                  * 防止资源文件被删
+                  */
+                 if(file.exists())//资源库确实存在
+                 {
+                     json.put("status", "success");
+                     json.put("size", file.length());
+                      json.put("name", SaveFile.get("file_new_name")); 
+                      json.put("id", SaveFile.get("id"));
+                          json.put("downLoadPath", propertiesUtil.get("downLoadPath") + "/"+ propertiesUtil.get(saveFilePathKey) +"/"+ SaveFile.get("id") +"");
+                          json.put("resourcePath", propertiesUtil.get("resourcePath") + "/"+ propertiesUtil.get(fileUploadType) +"/" + propertiesUtil.get(saveFilePathKey) +"/"+ SaveFile.get("file_new_name")); 
                  }
-            	 else
-            	 {
-            		 //资源库文件并不存在 删除数据库信息
-            		 if(fileProcessService.deleteFileByInfo(fileName, fileSize, lastModifyTime, fileUploadType,"-1"))
-            		 {//重新新增并上传
-            			  String uuid = UUIDTool.randomUUID();//随机生成文件uuid  
-            			  String Id = UUIDTool.randomUUID();//随机生成主键uuid  
-	   	               	  File files = new File(uploadFilePath + "/" + uuid+ "." + fileType);  
-	   	               	  randomAccessfile = new RandomAccessFile(files, "rw");
-	   	               	  //insert 文件信息
-	   	               	  this.fileProcessService.addFileByInfo(fileName, fileSize, lastModifyTime, fileUploadType,uploadUserId,uuid+"."+fileType,Id);
-	   	               	  json.put("status", "success");
-	            		  json.put("size", Integer.valueOf(propertiesUtil.get("uploadTypeFileSize").trim()));
-	   	   	              json.put("name", uuid + "." + fileType);
-	   	   	              json.put("id", Id);
-	   	   	              json.put("downLoadPath", propertiesUtil.get("downLoadPath") + "/"+ propertiesUtil.get(saveFilePathKey) +"/"+ Id +"");
-	   	   	              json.put("resourcePath", propertiesUtil.get("resourcePath") + "/"+ propertiesUtil.get(fileUploadType) +"/" + propertiesUtil.get(saveFilePathKey) +"/"+ uuid + "." + fileType);
-	   	   	              randomAccessfile.close(); 
-            		 }
-            		 else
-            		 {
-            			  json.put("status", "fail");
-            			  json.put("msg", "删除资源库文件异常");
-            		 }
-            		 
+                 else
+                 {
+                     //资源库文件并不存在 删除数据库信息
+                     if(fileProcessService.deleteFileByInfo(fileName, fileSize, lastModifyTime, fileUploadType,"-1"))
+                     {//重新新增并上传
+                          String uuid = UUIDTool.randomUUID();//随机生成文件uuid  
+                          String Id = UUIDTool.randomUUID();//随机生成主键uuid  
+                                File files = new File(uploadFilePath + "/" + uuid+ "." + fileType);  
+                                randomAccessfile = new RandomAccessFile(files, "rw");
+                                //insert 文件信息
+                                this.fileProcessService.addFileByInfo(fileName, fileSize, lastModifyTime, fileUploadType,uploadUserId,uuid+"."+fileType,Id);
+                                json.put("status", "success");
+                          json.put("size", Integer.valueOf(propertiesUtil.get("uploadTypeFileSize").trim()));
+                                json.put("name", uuid + "." + fileType);
+                                json.put("id", Id);
+                                json.put("downLoadPath", propertiesUtil.get("downLoadPath") + "/"+ propertiesUtil.get(saveFilePathKey) +"/"+ Id +"");
+                                json.put("resourcePath", propertiesUtil.get("resourcePath") + "/"+ propertiesUtil.get(fileUploadType) +"/" + propertiesUtil.get(saveFilePathKey) +"/"+ uuid + "." + fileType);
+                                randomAccessfile.close(); 
+                     }
+                     else
+                     {
+                          json.put("status", "fail");
+                          json.put("msg", "删除资源库文件异常");
+                     }
+                     
                  }
             }
             else
             {
-            	  //数据库不存在文件
-            	  String uuid = UUIDTool.randomUUID();//随机生成uuid   
-            	  String Id = UUIDTool.randomUUID();//随机生成主键uuid  
-            	  File file = new File(uploadFilePath + "/" + uuid + "." + fileType);  
-            	  randomAccessfile = new RandomAccessFile(file, "rw");
-            	  //insert 文件信息
-            	  this.fileProcessService.addFileByInfo(fileName, fileSize, lastModifyTime, fileUploadType, uploadUserId,uuid+"."+fileType,Id);
-            	  json.put("status", "success");
-        		  json.put("size", Integer.valueOf(propertiesUtil.get("uploadTypeFileSize").trim()));
-	   	          json.put("name", uuid + "." + fileType);
-	   	          json.put("id", Id);
-	   	          json.put("downLoadPath", propertiesUtil.get("downLoadPath") + "/" + propertiesUtil.get(saveFilePathKey) +"/"+ Id +"");
-	   	          json.put("resourcePath", propertiesUtil.get("resourcePath") + "/" + propertiesUtil.get(fileUploadType) +"/" + propertiesUtil.get(saveFilePathKey) +"/"+ uuid + "." + fileType);
-	              randomAccessfile.close();
+                  //数据库不存在文件
+                  String uuid = UUIDTool.randomUUID();//随机生成uuid   
+                  String Id = UUIDTool.randomUUID();//随机生成主键uuid  
+                  File file = new File(uploadFilePath + "/" + uuid + "." + fileType);  
+                  randomAccessfile = new RandomAccessFile(file, "rw");
+                  //insert 文件信息
+                  this.fileProcessService.addFileByInfo(fileName, fileSize, lastModifyTime, fileUploadType, uploadUserId,uuid+"."+fileType,Id);
+                  json.put("status", "success");
+                  json.put("size", Integer.valueOf(propertiesUtil.get("uploadTypeFileSize").trim()));
+                     json.put("name", uuid + "." + fileType);
+                     json.put("id", Id);
+                     json.put("downLoadPath", propertiesUtil.get("downLoadPath") + "/" + propertiesUtil.get(saveFilePathKey) +"/"+ Id +"");
+                     json.put("resourcePath", propertiesUtil.get("resourcePath") + "/" + propertiesUtil.get(fileUploadType) +"/" + propertiesUtil.get(saveFilePathKey) +"/"+ uuid + "." + fileType);
+                  randomAccessfile.close();
             }
             //设置可以访问的域区间，可以是多个地址。
             setAllowedDomain(request,response);
@@ -146,35 +146,35 @@ public class Controller_FileProcess extends Controller_Base
             print.write(json.toString());          
         } 
         catch (Exception e) 
-        {	System.out.println(e.getStackTrace());
+        {    System.out.println(e.getStackTrace());
             logger.error("[获得文件名称和文件大小异常-ErrorMsg:]", e);
             json.put("status", "error");
-			json.put("msg", "资源验证出错");
+            json.put("msg", "资源验证出错");
         }
         finally
         {
-        	print.close();//关闭流
+            print.close();//关闭流
         }
         
     }
-	
-	
-	/**
-	 * 
-	 * 功能描述： 断点文件上传 
-	 *
-	 *
-	 * @param [javax.servlet.http.HttpServletRequest] request <请求参数>
-	 *
-	 * @return [javax.servlet.http.HttpServletResponse] response <返回参数>
-	 * 
-	 * @author chenjunjin
-	 *
-	 * @date 2017年3月21日上午10:17:08
-	 */
-	@RequestMapping("/appendUploadServer")
+    
+    
+    /**
+     * 
+     * 功能描述： 断点文件上传 
+     *
+     *
+     * @param [javax.servlet.http.HttpServletRequest] request <请求参数>
+     *
+     * @return [javax.servlet.http.HttpServletResponse] response <返回参数>
+     * 
+     * @author chenjunjin
+     *
+     * @date 2017年3月21日上午10:17:08
+     */
+    @RequestMapping("/appendUploadServer")
     public  void appendUploadServer(HttpServletRequest request,HttpServletResponse response) 
-	{
+    {
         PrintWriter print = null;
         try 
         {
@@ -218,7 +218,7 @@ public class Controller_FileProcess extends Controller_Base
             // 整个文件上传完成
             if (currentFileLength == totalSize) 
             {            
-            	
+                
             }
             print.print(currentFileLength);
             
@@ -227,24 +227,24 @@ public class Controller_FileProcess extends Controller_Base
         } 
         catch (Exception e) 
         {
-        	 logger.error("[上传文件异常-ErrorMsg:]", e);
+             logger.error("[上传文件异常-ErrorMsg:]", e);
         }
        
     }
-	/**
-	 * 
-	 * 功能描述：文件下载
-	 *
-	 *
-	 * @param  [javax.servlet.http.HttpServletRequest] request <请求参数>
-	 *
-	 * @return [javax.servlet.http.HttpServletResponse] response <返回参数>
-	 * 
-	 * @author chenjunjin
-	 *
-	 * @date   2017年4月20日上午9:10:00
-	 */
-	@RequestMapping("/download/{filePathKey}/{fileID}")  
+    /**
+     * 
+     * 功能描述：文件下载
+     *
+     *
+     * @param  [javax.servlet.http.HttpServletRequest] request <请求参数>
+     *
+     * @return [javax.servlet.http.HttpServletResponse] response <返回参数>
+     * 
+     * @author chenjunjin
+     *
+     * @date   2017年4月20日上午9:10:00
+     */
+    @RequestMapping("/download/{filePathKey}/{fileID}")  
     public  void  download(HttpServletRequest request, HttpServletResponse response,@PathVariable("fileID") String fileID,@PathVariable("filePathKey") String filePathKey) 
     {  
         response.setContentType("text/html;charset=UTF-8");  
@@ -252,72 +252,72 @@ public class Controller_FileProcess extends Controller_Base
         BufferedOutputStream bos = null;  
         try
         {
-        	request.setCharacterEncoding("UTF-8");  
+            request.setCharacterEncoding("UTF-8");  
       
-	        //根据fileID查找文件
-	        Map<String, Object> fileType = this.fileProcessService.getFileInfoById(fileID);
-	        String Filename = (String)fileType.get("file_new_name");
-	        //获得文件存储地址
-	        String uploadFilePath = FileUtils.getSavaFilePathByType(propertiesUtil.get("uploadFilePath"),fileType.get("file_origin_type").toString(),filePathKey);
-	        //文件下载名称
-	        String downLoadName = (String)fileType.get("file_org_name");
-	        long fileLength = new File(uploadFilePath+"/"+Filename).length();   
-	        response.setHeader("Content-disposition", "attachment; filename="+ new String(downLoadName.getBytes("utf-8"), "ISO8859-1"));  
-	        response.setHeader("Content-Length", String.valueOf(fileLength));  
-	        bis = new BufferedInputStream(new FileInputStream(uploadFilePath+"/"+Filename));  
-	        bos = new BufferedOutputStream(response.getOutputStream());  
-	        //文件缓存
-	        byte[] buff = new byte[2048];  
-	        int bytesRead;  
-	        while (-1 != (bytesRead = bis.read(buff, 0, buff.length))) 
-	        {  
-	            bos.write(buff, 0, bytesRead);  
-	        }  
+            //根据fileID查找文件
+            Map<String, Object> fileType = this.fileProcessService.getFileInfoById(fileID);
+            String Filename = (String)fileType.get("file_new_name");
+            //获得文件存储地址
+            String uploadFilePath = FileUtils.getSavaFilePathByType(propertiesUtil.get("uploadFilePath"),fileType.get("file_origin_type").toString(),filePathKey);
+            //文件下载名称
+            String downLoadName = (String)fileType.get("file_org_name");
+            long fileLength = new File(uploadFilePath+"/"+Filename).length();   
+            response.setHeader("Content-disposition", "attachment; filename="+ new String(downLoadName.getBytes("utf-8"), "ISO8859-1"));  
+            response.setHeader("Content-Length", String.valueOf(fileLength));  
+            bis = new BufferedInputStream(new FileInputStream(uploadFilePath+"/"+Filename));  
+            bos = new BufferedOutputStream(response.getOutputStream());  
+            //文件缓存
+            byte[] buff = new byte[2048];  
+            int bytesRead;  
+            while (-1 != (bytesRead = bis.read(buff, 0, buff.length))) 
+            {  
+                bos.write(buff, 0, bytesRead);  
+            }  
         }
         catch(Exception e)
         {
-        	logger.error("[文件下载异常]", e);
+            logger.error("[文件下载异常]", e);
         }
         finally
         {
-        	try
-			{
-        		if(bis!=null)
-        		{
-        			bis.close();
-        		}
-			}
-			catch (IOException e)
-			{
-				logger.error("[文件下载出入流关闭异常]", e);
-			}  
-        	  
             try
-			{
-            	if(bos!=null)
-            	{
-            		bos.close();
-            	}
-				
-			}
-			catch (IOException e)
-			{
-				logger.error("[文件下载输出流关闭异常]", e);
-			}
+            {
+                if(bis!=null)
+                {
+                    bis.close();
+                }
+            }
+            catch (IOException e)
+            {
+                logger.error("[文件下载出入流关闭异常]", e);
+            }  
+              
+            try
+            {
+                if(bos!=null)
+                {
+                    bos.close();
+                }
+                
+            }
+            catch (IOException e)
+            {
+                logger.error("[文件下载输出流关闭异常]", e);
+            }
         }
     } 
-	/**
-	 * 
-	 * 功能描述：关闭随机访问文件
-	 *
-	 *
-	 * @param [RandomAccessFile] rfile <需要关闭随机访问文件>
-	 *
-	 * 
-	 * @author chenjunjin
-	 *
-	 * @date 2017年3月21日上午10:16:08
-	 */
+    /**
+     * 
+     * 功能描述：关闭随机访问文件
+     *
+     *
+     * @param [RandomAccessFile] rfile <需要关闭随机访问文件>
+     *
+     * 
+     * @author chenjunjin
+     *
+     * @date 2017年3月21日上午10:16:08
+     */
     public static void closeRandomAccessFile(RandomAccessFile rfile) 
     {
         if (null != rfile) 
@@ -328,32 +328,32 @@ public class Controller_FileProcess extends Controller_Base
             } 
             catch (Exception e) 
             {
-            	logger.error("[关闭流异常-ErrorMsg:]", e);
+                logger.error("[关闭流异常-ErrorMsg:]", e);
             }
         }
     }
     
     private void setAllowedDomain(HttpServletRequest request,HttpServletResponse response){
-    	//设置可以访问的域区间，可以是多个地址。
+        //设置可以访问的域区间，可以是多个地址。
         String[] allowed_domains = propertiesUtil.get("allowed_domain").split(";");
         if(allowed_domains.length>0){
             for(String allowed_domain:allowed_domains){
-            	if(allowed_domain.equals(request.getHeader("Origin"))||"*".equals(allowed_domain)){
-            		response.addHeader("Access-Control-Allow-Origin", allowed_domain);
-            		break;
-            	}
+                if(allowed_domain.equals(request.getHeader("Origin"))||"*".equals(allowed_domain)){
+                    response.addHeader("Access-Control-Allow-Origin", allowed_domain);
+                    break;
+                }
             }
         }
     }
-	
+    
     
     /**业务层注入*/
     @Resource
-	private FileProcessService fileProcessService;
+    private FileProcessService fileProcessService;
     
     /**业务层注入*/
     @Resource
-	private PropertiesUtil propertiesUtil;
+    private PropertiesUtil propertiesUtil;
     
     
     

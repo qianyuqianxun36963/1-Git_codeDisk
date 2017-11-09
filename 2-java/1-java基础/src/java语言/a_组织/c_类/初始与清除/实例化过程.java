@@ -1,16 +1,16 @@
 package java语言.a_组织.c_类.初始与清除;
 
 public class 实例化过程 {
-	public static void main(String[] args) {
-		testLoad.test();
+    public static void main(String[] args) {
+        testLoad.test();
     }
 }
 
 
 
 class testLoad{
-	public static void test(){
-		ClassLoadProcess classload = new ClassLoadProcess();//这里执行了class的类加载时候的初始化。
+    public static void test(){
+        ClassLoadProcess classload = new ClassLoadProcess();//这里执行了class的类加载时候的初始化。
         System.out.println(classload.counter1);
         System.out.println(classload.counter2);
         
@@ -25,7 +25,7 @@ class testLoad{
         ClassInstenceProcess classinstance2 = new ClassInstenceProcess();//这里不再执行class类加载相关的初始化。
         System.out.println(classinstance2.counter1);
         System.out.println(classinstance2.counter2);
-	}
+    }
 }
 
 //类的加载过程。
@@ -42,7 +42,7 @@ class ClassLoadProcess {
     static int counter3 = initcounter(counter1);
 
     public ClassLoadProcess() {
-    	System.out.println("构造方法:"+"counter1="+counter1+" ;counter2="+counter2);
+        System.out.println("构造方法:"+"counter1="+counter1+" ;counter2="+counter2);
         counter1++;
         counter2++;
     }
@@ -64,7 +64,7 @@ class ClassInstenceProcess {
     int counter3 = initcounter(counter1);
 
     public ClassInstenceProcess() {
-    	System.out.println("构造方法:"+"counter1="+counter1+" ;counter2="+counter2);
+        System.out.println("构造方法:"+"counter1="+counter1+" ;counter2="+counter2);
         counter1++;
         counter2++;
     }

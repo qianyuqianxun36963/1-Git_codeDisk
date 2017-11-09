@@ -3,7 +3,7 @@ package 创建型模式.原型;
 import java.util.ArrayList;
 
 public class Client {
-	public static void main(String[] args){  
+    public static void main(String[] args){  
         ConcretePrototype cp = new ConcretePrototype();  
         ArrayList<Integer> alist= new ArrayList<Integer>();
         alist.add(1);

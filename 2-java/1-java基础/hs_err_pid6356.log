@@ -154,60 +154,60 @@ Event: 2615.215 Executing VM operation: RedefineClasses done
 
 
 Dynamic libraries:
-0x00007ff6ec9c0000 - 0x00007ff6ec9f3000 	D:\MyEclipse Professional 2014\binary\com.sun.java.jdk7.win32.x86_64_1.7.0.u45\bin\javaw.exe
-0x00007ffa511b0000 - 0x00007ffa5135c000 	C:\windows\SYSTEM32\ntdll.dll
-0x00007ffa50ed0000 - 0x00007ffa5100e000 	C:\windows\system32\KERNEL32.DLL
-0x00007ffa4e230000 - 0x00007ffa4e345000 	C:\windows\system32\KERNELBASE.dll
-0x00007ffa4cb30000 - 0x00007ffa4cbbe000 	C:\windows\system32\apphelp.dll
-0x00007ffa38b20000 - 0x00007ffa38b73000 	C:\windows\AppPatch\AppPatch64\AcGenral.DLL
-0x00007ffa4e550000 - 0x00007ffa4e5fa000 	C:\windows\system32\msvcrt.dll
-0x00007ffa4ddb0000 - 0x00007ffa4ddde000 	C:\windows\SYSTEM32\SspiCli.dll
-0x00007ffa51150000 - 0x00007ffa511a4000 	C:\windows\system32\SHLWAPI.dll
-0x00007ffa50310000 - 0x00007ffa50487000 	C:\windows\system32\USER32.dll
-0x00007ffa50a20000 - 0x00007ffa50bb4000 	C:\windows\system32\ole32.dll
-0x00007ffa4ea70000 - 0x00007ffa4ff9b000 	C:\windows\system32\SHELL32.dll
-0x00007ffa4d580000 - 0x00007ffa4d5a1000 	C:\windows\SYSTEM32\USERENV.dll
-0x00007ffa501f0000 - 0x00007ffa5029a000 	C:\windows\system32\ADVAPI32.dll
-0x00007ffa410e0000 - 0x00007ffa410fe000 	C:\windows\SYSTEM32\MPR.dll
-0x00007ffa50830000 - 0x00007ffa50971000 	C:\windows\system32\RPCRT4.dll
-0x00007ffa509c0000 - 0x00007ffa50a19000 	C:\windows\SYSTEM32\sechost.dll
-0x00007ffa4e850000 - 0x00007ffa4ea61000 	C:\windows\SYSTEM32\combase.dll
-0x00007ffa4e600000 - 0x00007ffa4e750000 	C:\windows\system32\GDI32.dll
-0x00007ffa4df10000 - 0x00007ffa4df25000 	C:\windows\SYSTEM32\profapi.dll
-0x00007ffa4c350000 - 0x00007ffa4c402000 	C:\windows\SYSTEM32\SHCORE.dll
-0x00007ffa50980000 - 0x00007ffa509b6000 	C:\windows\system32\IMM32.DLL
-0x00007ffa50bc0000 - 0x00007ffa50d12000 	C:\windows\system32\MSCTF.dll
-0x00007ffa4aea0000 - 0x00007ffa4b11b000 	C:\windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.9600.18006_none_623f33d3ecbe86e8\COMCTL32.dll
-0x00000000722b0000 - 0x0000000072382000 	D:\MyEclipse Professional 2014\binary\com.sun.java.jdk7.win32.x86_64_1.7.0.u45\jre\bin\msvcr100.dll
-0x00000000716c0000 - 0x0000000071e89000 	D:\MyEclipse Professional 2014\binary\com.sun.java.jdk7.win32.x86_64_1.7.0.u45\jre\bin\server\jvm.dll
-0x00007ffa48f30000 - 0x00007ffa48f39000 	C:\windows\SYSTEM32\WSOCK32.dll
-0x00007ffa4e1b0000 - 0x00007ffa4e1d2000 	C:\windows\system32\WINMM.dll
-0x00007ffa4e530000 - 0x00007ffa4e537000 	C:\windows\system32\PSAPI.DLL
-0x00007ffa502b0000 - 0x00007ffa5030a000 	C:\windows\system32\WS2_32.dll
-0x00007ffa4e010000 - 0x00007ffa4e03a000 	C:\windows\system32\WINMMBASE.dll
-0x00007ffa50550000 - 0x00007ffa50559000 	C:\windows\system32\NSI.dll
-0x00007ffa4e1e0000 - 0x00007ffa4e22f000 	C:\windows\SYSTEM32\cfgmgr32.dll
-0x00007ffa4dfc0000 - 0x00007ffa4dfe8000 	C:\windows\system32\DEVOBJ.dll
-0x00000000722a0000 - 0x00000000722af000 	D:\MyEclipse Professional 2014\binary\com.sun.java.jdk7.win32.x86_64_1.7.0.u45\jre\bin\verify.dll
-0x0000000072270000 - 0x0000000072298000 	D:\MyEclipse Professional 2014\binary\com.sun.java.jdk7.win32.x86_64_1.7.0.u45\jre\bin\java.dll
-0x0000000072400000 - 0x0000000072435000 	D:\MyEclipse Professional 2014\binary\com.sun.java.jdk7.win32.x86_64_1.7.0.u45\jre\bin\jdwp.dll
-0x00000000723f0000 - 0x00000000723f8000 	D:\MyEclipse Professional 2014\binary\com.sun.java.jdk7.win32.x86_64_1.7.0.u45\jre\bin\npt.dll
-0x0000000072250000 - 0x0000000072265000 	D:\MyEclipse Professional 2014\binary\com.sun.java.jdk7.win32.x86_64_1.7.0.u45\jre\bin\zip.dll
-0x00000000723e0000 - 0x00000000723e9000 	D:\MyEclipse Professional 2014\binary\com.sun.java.jdk7.win32.x86_64_1.7.0.u45\jre\bin\dt_socket.dll
-0x00007ffa3ae20000 - 0x00007ffa3ae35000 	C:\windows\system32\napinsp.dll
-0x00007ffa3adb0000 - 0x00007ffa3adca000 	C:\windows\system32\pnrpnsp.dll
-0x00007ffa49c50000 - 0x00007ffa49c6b000 	C:\windows\system32\NLAapi.dll
-0x00007ffa4d7f0000 - 0x00007ffa4d849000 	C:\windows\System32\mswsock.dll
-0x00007ffa4d5f0000 - 0x00007ffa4d694000 	C:\windows\SYSTEM32\DNSAPI.dll
-0x00007ffa3ada0000 - 0x00007ffa3adad000 	C:\windows\System32\winrnr.dll
-0x00007ffa3ad80000 - 0x00007ffa3ad94000 	C:\windows\system32\wshbth.dll
-0x00007ffa48300000 - 0x00007ffa4836b000 	C:\windows\System32\fwpuclnt.dll
-0x00007ffa48450000 - 0x00007ffa4845a000 	C:\Windows\System32\rasadhlp.dll
-0x00007ffa48f40000 - 0x00007ffa490c9000 	C:\windows\SYSTEM32\dbghelp.dll
+0x00007ff6ec9c0000 - 0x00007ff6ec9f3000     D:\MyEclipse Professional 2014\binary\com.sun.java.jdk7.win32.x86_64_1.7.0.u45\bin\javaw.exe
+0x00007ffa511b0000 - 0x00007ffa5135c000     C:\windows\SYSTEM32\ntdll.dll
+0x00007ffa50ed0000 - 0x00007ffa5100e000     C:\windows\system32\KERNEL32.DLL
+0x00007ffa4e230000 - 0x00007ffa4e345000     C:\windows\system32\KERNELBASE.dll
+0x00007ffa4cb30000 - 0x00007ffa4cbbe000     C:\windows\system32\apphelp.dll
+0x00007ffa38b20000 - 0x00007ffa38b73000     C:\windows\AppPatch\AppPatch64\AcGenral.DLL
+0x00007ffa4e550000 - 0x00007ffa4e5fa000     C:\windows\system32\msvcrt.dll
+0x00007ffa4ddb0000 - 0x00007ffa4ddde000     C:\windows\SYSTEM32\SspiCli.dll
+0x00007ffa51150000 - 0x00007ffa511a4000     C:\windows\system32\SHLWAPI.dll
+0x00007ffa50310000 - 0x00007ffa50487000     C:\windows\system32\USER32.dll
+0x00007ffa50a20000 - 0x00007ffa50bb4000     C:\windows\system32\ole32.dll
+0x00007ffa4ea70000 - 0x00007ffa4ff9b000     C:\windows\system32\SHELL32.dll
+0x00007ffa4d580000 - 0x00007ffa4d5a1000     C:\windows\SYSTEM32\USERENV.dll
+0x00007ffa501f0000 - 0x00007ffa5029a000     C:\windows\system32\ADVAPI32.dll
+0x00007ffa410e0000 - 0x00007ffa410fe000     C:\windows\SYSTEM32\MPR.dll
+0x00007ffa50830000 - 0x00007ffa50971000     C:\windows\system32\RPCRT4.dll
+0x00007ffa509c0000 - 0x00007ffa50a19000     C:\windows\SYSTEM32\sechost.dll
+0x00007ffa4e850000 - 0x00007ffa4ea61000     C:\windows\SYSTEM32\combase.dll
+0x00007ffa4e600000 - 0x00007ffa4e750000     C:\windows\system32\GDI32.dll
+0x00007ffa4df10000 - 0x00007ffa4df25000     C:\windows\SYSTEM32\profapi.dll
+0x00007ffa4c350000 - 0x00007ffa4c402000     C:\windows\SYSTEM32\SHCORE.dll
+0x00007ffa50980000 - 0x00007ffa509b6000     C:\windows\system32\IMM32.DLL
+0x00007ffa50bc0000 - 0x00007ffa50d12000     C:\windows\system32\MSCTF.dll
+0x00007ffa4aea0000 - 0x00007ffa4b11b000     C:\windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.9600.18006_none_623f33d3ecbe86e8\COMCTL32.dll
+0x00000000722b0000 - 0x0000000072382000     D:\MyEclipse Professional 2014\binary\com.sun.java.jdk7.win32.x86_64_1.7.0.u45\jre\bin\msvcr100.dll
+0x00000000716c0000 - 0x0000000071e89000     D:\MyEclipse Professional 2014\binary\com.sun.java.jdk7.win32.x86_64_1.7.0.u45\jre\bin\server\jvm.dll
+0x00007ffa48f30000 - 0x00007ffa48f39000     C:\windows\SYSTEM32\WSOCK32.dll
+0x00007ffa4e1b0000 - 0x00007ffa4e1d2000     C:\windows\system32\WINMM.dll
+0x00007ffa4e530000 - 0x00007ffa4e537000     C:\windows\system32\PSAPI.DLL
+0x00007ffa502b0000 - 0x00007ffa5030a000     C:\windows\system32\WS2_32.dll
+0x00007ffa4e010000 - 0x00007ffa4e03a000     C:\windows\system32\WINMMBASE.dll
+0x00007ffa50550000 - 0x00007ffa50559000     C:\windows\system32\NSI.dll
+0x00007ffa4e1e0000 - 0x00007ffa4e22f000     C:\windows\SYSTEM32\cfgmgr32.dll
+0x00007ffa4dfc0000 - 0x00007ffa4dfe8000     C:\windows\system32\DEVOBJ.dll
+0x00000000722a0000 - 0x00000000722af000     D:\MyEclipse Professional 2014\binary\com.sun.java.jdk7.win32.x86_64_1.7.0.u45\jre\bin\verify.dll
+0x0000000072270000 - 0x0000000072298000     D:\MyEclipse Professional 2014\binary\com.sun.java.jdk7.win32.x86_64_1.7.0.u45\jre\bin\java.dll
+0x0000000072400000 - 0x0000000072435000     D:\MyEclipse Professional 2014\binary\com.sun.java.jdk7.win32.x86_64_1.7.0.u45\jre\bin\jdwp.dll
+0x00000000723f0000 - 0x00000000723f8000     D:\MyEclipse Professional 2014\binary\com.sun.java.jdk7.win32.x86_64_1.7.0.u45\jre\bin\npt.dll
+0x0000000072250000 - 0x0000000072265000     D:\MyEclipse Professional 2014\binary\com.sun.java.jdk7.win32.x86_64_1.7.0.u45\jre\bin\zip.dll
+0x00000000723e0000 - 0x00000000723e9000     D:\MyEclipse Professional 2014\binary\com.sun.java.jdk7.win32.x86_64_1.7.0.u45\jre\bin\dt_socket.dll
+0x00007ffa3ae20000 - 0x00007ffa3ae35000     C:\windows\system32\napinsp.dll
+0x00007ffa3adb0000 - 0x00007ffa3adca000     C:\windows\system32\pnrpnsp.dll
+0x00007ffa49c50000 - 0x00007ffa49c6b000     C:\windows\system32\NLAapi.dll
+0x00007ffa4d7f0000 - 0x00007ffa4d849000     C:\windows\System32\mswsock.dll
+0x00007ffa4d5f0000 - 0x00007ffa4d694000     C:\windows\SYSTEM32\DNSAPI.dll
+0x00007ffa3ada0000 - 0x00007ffa3adad000     C:\windows\System32\winrnr.dll
+0x00007ffa3ad80000 - 0x00007ffa3ad94000     C:\windows\system32\wshbth.dll
+0x00007ffa48300000 - 0x00007ffa4836b000     C:\windows\System32\fwpuclnt.dll
+0x00007ffa48450000 - 0x00007ffa4845a000     C:\Windows\System32\rasadhlp.dll
+0x00007ffa48f40000 - 0x00007ffa490c9000     C:\windows\SYSTEM32\dbghelp.dll
 
 VM Arguments:
 jvm_args: -agentlib:jdwp=transport=dt_socket,suspend=y,address=localhost:59421 -Dfile.encoding=GBK 
-java_command: javaÓïÑÔ.¶Ô½Ó.½Å±¾.FileUtils
+java_command: javaï¿½ï¿½ï¿½ï¿½.ï¿½Ô½ï¿½.ï¿½Å±ï¿½.FileUtils
 Launcher Type: SUN_STANDARD
 
 Environment Variables:

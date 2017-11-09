@@ -31,74 +31,74 @@ import com.wh.eas.sys.dao.FileProcessMapper;
 public class FileProcessServiceImpl implements FileProcessService
 {
 
-	@Override
-	public Map<String, Object> getFileNameByInfo(String fileName, String fileSize, String lastModifyTime, String fileUploadType, String uploadUserId)
-	{
-		Map<String,Object> paramMap = new HashMap<String,Object>();
-		
-		paramMap.put("fileName", fileName);
-		
-		paramMap.put("fileSize", fileSize);
-		
-		paramMap.put("lastModifyTime", lastModifyTime);
-		
-		paramMap.put("fileUploadType", fileUploadType);
-		
-		paramMap.put("uploadUserId", uploadUserId);
-		
-		return this.fileprocessMapper.getFileInfoByContidions(paramMap);
-	}
+    @Override
+    public Map<String, Object> getFileNameByInfo(String fileName, String fileSize, String lastModifyTime, String fileUploadType, String uploadUserId)
+    {
+        Map<String,Object> paramMap = new HashMap<String,Object>();
+        
+        paramMap.put("fileName", fileName);
+        
+        paramMap.put("fileSize", fileSize);
+        
+        paramMap.put("lastModifyTime", lastModifyTime);
+        
+        paramMap.put("fileUploadType", fileUploadType);
+        
+        paramMap.put("uploadUserId", uploadUserId);
+        
+        return this.fileprocessMapper.getFileInfoByContidions(paramMap);
+    }
 
-	@Override
-	public Boolean deleteFileByInfo(String fileName, String fileSize, String lastModifyTime, String fileUploadType, String uploadUserId)
-	{
-		Map<String,Object> paramMap = new HashMap<String,Object>();
-		
-		paramMap.put("fileName", fileName);
-		
-		paramMap.put("fileSize", fileSize);
-		
-		paramMap.put("lastModifyTime", lastModifyTime);
-		
-		paramMap.put("fileUploadType", fileUploadType);
-		
-		paramMap.put("uploadUserId", uploadUserId);
-		
-		return this.fileprocessMapper.deleteFileByInfo(paramMap)>0?Boolean.TRUE:Boolean.FALSE;
-	}
-	
+    @Override
+    public Boolean deleteFileByInfo(String fileName, String fileSize, String lastModifyTime, String fileUploadType, String uploadUserId)
+    {
+        Map<String,Object> paramMap = new HashMap<String,Object>();
+        
+        paramMap.put("fileName", fileName);
+        
+        paramMap.put("fileSize", fileSize);
+        
+        paramMap.put("lastModifyTime", lastModifyTime);
+        
+        paramMap.put("fileUploadType", fileUploadType);
+        
+        paramMap.put("uploadUserId", uploadUserId);
+        
+        return this.fileprocessMapper.deleteFileByInfo(paramMap)>0?Boolean.TRUE:Boolean.FALSE;
+    }
+    
 
-	@Override
-	public Boolean addFileByInfo(String fileName, String fileSize, String lastModifyTime, String fileUploadType, String uploadUserId, String newUniqueFileName,String Id)
-	{
-		Map<String,Object> paramMap = new HashMap<String,Object>();
-		
-		paramMap.put("fileName", fileName);
-		
-		paramMap.put("fileSize", fileSize);
-		
-		paramMap.put("lastModifyTime", lastModifyTime);
-		
-		paramMap.put("fileUploadType", fileUploadType);
-		
-		paramMap.put("uploadUserId", uploadUserId);
-		
-		paramMap.put("newUniqueFileName", newUniqueFileName);
-		
-		paramMap.put("Id", Id);
-		
-		return this.fileprocessMapper.addFileByInfo(paramMap)>0?Boolean.TRUE:Boolean.FALSE;
-	}
-	
-	
-	@Override
-	public Map<String, Object> getFileInfoById(String fileId)
-	{
-		return this.fileprocessMapper.getFinInfobyId(fileId);
-	}
-	
-	/**DAO层注入*/
-	@Resource
-	private FileProcessMapper fileprocessMapper;
+    @Override
+    public Boolean addFileByInfo(String fileName, String fileSize, String lastModifyTime, String fileUploadType, String uploadUserId, String newUniqueFileName,String Id)
+    {
+        Map<String,Object> paramMap = new HashMap<String,Object>();
+        
+        paramMap.put("fileName", fileName);
+        
+        paramMap.put("fileSize", fileSize);
+        
+        paramMap.put("lastModifyTime", lastModifyTime);
+        
+        paramMap.put("fileUploadType", fileUploadType);
+        
+        paramMap.put("uploadUserId", uploadUserId);
+        
+        paramMap.put("newUniqueFileName", newUniqueFileName);
+        
+        paramMap.put("Id", Id);
+        
+        return this.fileprocessMapper.addFileByInfo(paramMap)>0?Boolean.TRUE:Boolean.FALSE;
+    }
+    
+    
+    @Override
+    public Map<String, Object> getFileInfoById(String fileId)
+    {
+        return this.fileprocessMapper.getFinInfobyId(fileId);
+    }
+    
+    /**DAO层注入*/
+    @Resource
+    private FileProcessMapper fileprocessMapper;
 
 }

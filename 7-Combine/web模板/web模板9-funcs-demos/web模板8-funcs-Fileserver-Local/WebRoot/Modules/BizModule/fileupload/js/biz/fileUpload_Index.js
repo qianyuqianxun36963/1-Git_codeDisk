@@ -6,17 +6,17 @@ var uploadState = 0;
 
 function initPage() 
 {
-	//重置上传图片的状态
-	uploadState = 0;
-	
-	//重置图片路径
-	oppositePath = "";
-	
-	//初始化文件上传
-	$('.fileinput').fileinput('clearImg');
-	
-	//隐藏进度条
-	$("#fileprogress").hide();
+    //重置上传图片的状态
+    uploadState = 0;
+    
+    //重置图片路径
+    oppositePath = "";
+    
+    //初始化文件上传
+    $('.fileinput').fileinput('clearImg');
+    
+    //隐藏进度条
+    $("#fileprogress").hide();
 }
 
 *//**
@@ -36,8 +36,8 @@ function initPage()
  *//*
 function uploadLOGO(id,param1,param2,param3)
 {
-	 $("#"+param1).show();
-	 var name = getFileNameAndSize(id,"0","file");//0代表测试
-	 oppositePath = name[0].resourcePath;
-	 uploadFiles(id,param1,param2,param3,name);
+     $("#"+param1).show();
+     var name = getFileNameAndSize(id,"0","file");//0代表测试
+     oppositePath = name[0].resourcePath;
+     uploadFiles(id,param1,param2,param3,name);
 }*/

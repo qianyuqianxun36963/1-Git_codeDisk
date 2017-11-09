@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 
 public class 测试题标准输入输出 {
-	public static void main(String[] args) {
+    public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         
         String str = in.nextLine();

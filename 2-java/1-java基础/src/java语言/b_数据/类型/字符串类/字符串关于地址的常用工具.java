@@ -3,44 +3,44 @@ package java语言.b_数据.类型.字符串类;
 import java.io.File;
 
 public class 字符串关于地址的常用工具 {
-	public static void main(String[] args) throws Exception { 
-		String badpath="E:/1-java\\webApps/web项目框架/1-模板引擎/freemark\\src\\freemark\\fileModel\\ExportFile\\outFile.doc";
-    	String filepath="E:\\1-java\\webApps\\web项目框架\\1-模板引擎\\freemark\\src\\freemark\\fileModel\\ExportFile\\outFile.doc";
-    	System.out.println(getfileDir(badpath));
-    	System.out.println(getfileDir(filepath));
-    	System.out.println(getfilename(badpath));
-    	System.out.println(getfilename(filepath));
-    	mikdir(filepath);
+    public static void main(String[] args) throws Exception { 
+        String badpath="E:/1-java\\webApps/web项目框架/1-模板引擎/freemark\\src\\freemark\\fileModel\\ExportFile\\outFile.doc";
+        String filepath="E:\\1-java\\webApps\\web项目框架\\1-模板引擎\\freemark\\src\\freemark\\fileModel\\ExportFile\\outFile.doc";
+        System.out.println(getfileDir(badpath));
+        System.out.println(getfileDir(filepath));
+        System.out.println(getfilename(badpath));
+        System.out.println(getfilename(filepath));
+        mikdir(filepath);
     } 
-	
-	
-	public static String getfileDir(String filePath){
-		filePath=filePath.replaceAll("\\\\","/");
-		return filePath.substring(0, filePath.lastIndexOf("/"));
-	}
-	
-	public static String getfilename(String filePath){
-		String temp[] = filePath.replaceAll("\\\\","/").split("/");
-		String fileName = "";
-		if(temp.length > 1){
-		fileName = temp[temp.length - 1];
-		}
-		return fileName;
-	};
-	
-	//常常在输出的时候文件夹可能不存在，这时，需要创建文件夹。
-	private static void mikdir(String filePath){
-		try{
-			filePath = filePath.replaceAll("\\\\","/");
-			String folderPath = filePath.substring(0,filePath.lastIndexOf("/"));
-			File file = new File(folderPath);
-			if(!file.isDirectory()){
-				file.mkdirs();
-			}
-		}catch(Exception e){
-		}
-	}
-	
+    
+    
+    public static String getfileDir(String filePath){
+        filePath=filePath.replaceAll("\\\\","/");
+        return filePath.substring(0, filePath.lastIndexOf("/"));
+    }
+    
+    public static String getfilename(String filePath){
+        String temp[] = filePath.replaceAll("\\\\","/").split("/");
+        String fileName = "";
+        if(temp.length > 1){
+        fileName = temp[temp.length - 1];
+        }
+        return fileName;
+    };
+    
+    //常常在输出的时候文件夹可能不存在，这时，需要创建文件夹。
+    private static void mikdir(String filePath){
+        try{
+            filePath = filePath.replaceAll("\\\\","/");
+            String folderPath = filePath.substring(0,filePath.lastIndexOf("/"));
+            File file = new File(folderPath);
+            if(!file.isDirectory()){
+                file.mkdirs();
+            }
+        }catch(Exception e){
+        }
+    }
+    
 }
 
 /*例如：获取到的文件路径为C:\Documents and Settings\Leeo\My Documents\logo.gif

@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>export_Excel.html</title>
-	
+    
     <meta name="keywords" content="keyword1,keyword2,keyword3">
     <meta name="description" content="this is my page">
     <meta name="content-type" content="text/html; charset=UTF-8"><!-- 仅仅是标示信息 -->
@@ -10,16 +10,16 @@
     
     <link href="../Modules/Library/metronic-4.7/assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="../Modules/Library/metronic-4.7/assets/global/plugins/bootstrap-fileinput/bootstrap-fileinput.css" rel="stylesheet" type="text/css" />
-	<!-- 弹出框 -->
-	<link href="../Modules/Library/sweetalert/css/sweetalert.css" rel="stylesheet" type="text/css" />
+    <!-- 弹出框 -->
+    <link href="../Modules/Library/sweetalert/css/sweetalert.css" rel="stylesheet" type="text/css" />
 
-	<script src="../Modules/Library/metronic-4.7/assets/global/plugins/jquery.min.js" type="text/javascript"></script>
-	<script src="../Modules/Library/metronic-4.7/assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-	<script src="../Modules/Library/metronic-4.7/assets/global/plugins/bootstrap-fileinput/bootstrap-fileinput.js" type="text/javascript"></script>
-	<!-- 弹出框 -->
-	<script src="../Modules/Library/sweetalert/js/sweetalert.min.js" type="text/javascript"></script>
-	<script src="../Modules/Library/sweetalert/js/showAlert.js" type="text/javascript"></script>
-		
+    <script src="../Modules/Library/metronic-4.7/assets/global/plugins/jquery.min.js" type="text/javascript"></script>
+    <script src="../Modules/Library/metronic-4.7/assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="../Modules/Library/metronic-4.7/assets/global/plugins/bootstrap-fileinput/bootstrap-fileinput.js" type="text/javascript"></script>
+    <!-- 弹出框 -->
+    <script src="../Modules/Library/sweetalert/js/sweetalert.min.js" type="text/javascript"></script>
+    <script src="../Modules/Library/sweetalert/js/showAlert.js" type="text/javascript"></script>
+        
   </head>
   
   <body>
@@ -29,27 +29,27 @@
     <button class='btn green' type="button" style='float:left;margin-left:15px;'  data-toggle="modal" onclick ="exportInvoicExcel();">导出excel</button>
   
     <!-- 导出excel form 隐藏的form，用来传参 -->
-	<form id="exportInvoiceExcelForm" method="POST" style="display:none">
-	  <input type="hidden" id="pointId_export" name="pointId" value=""/>
-	  <input type="hidden" id="stuName_export" name="stuName" value=""/>
-	</form>
+    <form id="exportInvoiceExcelForm" method="POST" style="display:none">
+      <input type="hidden" id="pointId_export" name="pointId" value=""/>
+      <input type="hidden" id="stuName_export" name="stuName" value=""/>
+    </form>
   
   </body>
   
   <script type="text/javascript">
 //开票信息导出，根据查询条件 excel
   function exportInvoicExcel(){
-  	showConfirmModal("是否导出开票信息？",function(){
-  		debugger;
-  		$("#pointId_export").val($("#pointId_search").val());
-  		$("#stuName_export").val($("#stuName_search").val());
-  		
-  		var url = "excel/export/modelAndView?"+$("#exportInvoiceExcelForm").serialize();	
-  		$("#exportInvoiceExcelForm").attr('action',url);
-  		$("#exportInvoiceExcelForm").attr('target','');
-  		$("#exportInvoiceExcelForm").submit();
-  		swal.close();
-  	});
+      showConfirmModal("是否导出开票信息？",function(){
+          debugger;
+          $("#pointId_export").val($("#pointId_search").val());
+          $("#stuName_export").val($("#stuName_search").val());
+          
+          var url = "excel/export/modelAndView?"+$("#exportInvoiceExcelForm").serialize();    
+          $("#exportInvoiceExcelForm").attr('action',url);
+          $("#exportInvoiceExcelForm").attr('target','');
+          $("#exportInvoiceExcelForm").submit();
+          swal.close();
+      });
   }
 
   </script>

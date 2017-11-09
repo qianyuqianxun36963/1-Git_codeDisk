@@ -4,10 +4,10 @@
         "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 
 <hibernate-mapping>
-<!-- 	<class name="entitys.User" table="user"> -->
+<!--     <class name="entitys.User" table="user"> -->
     <class name="m.entity.po.User" table="user">
-		<id name="userid" column="userid"/> <!--由于字段名与属性名相同， 这里culumn=“id”可以省略 下面属性也是-->
-		<property name="name" />
+        <id name="userid" column="userid"/> <!--由于字段名与属性名相同， 这里culumn=“id”可以省略 下面属性也是-->
+        <property name="name" />
     </class>
     
     <class name="m.entity.po.Org" table="org" catalog="my_web" optimistic-lock="version">
@@ -99,5 +99,5 @@
             <column name="orgid" />
         </property>
     </class>
-	
+    
 </hibernate-mapping>

@@ -19,27 +19,27 @@ package java语言.a_组织.c_类.初始与清除;
 //注意： 1 静态代码块不能存在于任何方法体内。
 //      2 静态代码块不能直接访问静态实例变量和实例方法，需要通过类的实例对象来访问。
 public class 几种代码块 {
-	public static void main(String[] args){
-		普通代码块.test();
-		构造代码块.test();
-	}
+    public static void main(String[] args){
+        普通代码块.test();
+        构造代码块.test();
+    }
 }
 
 class 普通代码块{
-	public static void test(){
-		{
-		    int x=3;
-		    System.out.println("1,普通代码块内的变量x="+x);    
-		}
-	
-		int x=1;
-		System.out.println("主方法内的变量x="+x);
-	
-		{
-		    int y=7;
-		    System.out.println("2,普通代码块内的变量y="+y);    
-		}
-	}
+    public static void test(){
+        {
+            int x=3;
+            System.out.println("1,普通代码块内的变量x="+x);    
+        }
+    
+        int x=1;
+        System.out.println("主方法内的变量x="+x);
+    
+        {
+            int y=7;
+            System.out.println("2,普通代码块内的变量y="+y);    
+        }
+    }
 }
 
 class 构造代码块{
@@ -56,7 +56,7 @@ class 构造代码块{
         }
         
       public static void test(){
-    	  System.out.println("main 方法内1"); 
+          System.out.println("main 方法内1"); 
           new 构造代码块();
           new 构造代码块();
           new 构造代码块();

@@ -12,28 +12,28 @@ package java语言.b_数据.容器.实用容器;
 import java.util.*;
 
 public class Ex25 {
-	public static void main(String[] args) {
-		Map<String,ArrayList<Integer>> m = 
-			new LinkedHashMap<String,ArrayList<Integer>>();
-		List<String> words = new LinkedList<String>();
-		System.out.println("Words in file: " + words);
-		@SuppressWarnings("rawtypes")
-		Iterator itWords = words.iterator();
-		int count = 0;
-		while(itWords.hasNext()) {
-			String s = (String)itWords.next();
-			count++;			
-			if(!m.keySet().contains(s)) {	
-				ArrayList<Integer> ai = 
-					new ArrayList<Integer>();		
-				ai.add(0, count);
-				m.put(s, ai);
-			}
-			else {
-				m.get(s).add(count);
-				m.put(s, m.get(s));  	
-			}
-		}
-		System.out.println("Map of word locations: " + m);			
-	}	
+    public static void main(String[] args) {
+        Map<String,ArrayList<Integer>> m = 
+            new LinkedHashMap<String,ArrayList<Integer>>();
+        List<String> words = new LinkedList<String>();
+        System.out.println("Words in file: " + words);
+        @SuppressWarnings("rawtypes")
+        Iterator itWords = words.iterator();
+        int count = 0;
+        while(itWords.hasNext()) {
+            String s = (String)itWords.next();
+            count++;            
+            if(!m.keySet().contains(s)) {    
+                ArrayList<Integer> ai = 
+                    new ArrayList<Integer>();        
+                ai.add(0, count);
+                m.put(s, ai);
+            }
+            else {
+                m.get(s).add(count);
+                m.put(s, m.get(s));      
+            }
+        }
+        System.out.println("Map of word locations: " + m);            
+    }    
 }

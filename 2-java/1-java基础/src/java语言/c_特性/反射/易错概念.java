@@ -5,18 +5,18 @@ package java语言.c_特性.反射;
 import java.util.Date;
 
 public class 易错概念  extends Date{
-	public static void main(String args[]){
-		new Son().test3();
-	}
+    public static void main(String args[]){
+        new Son().test3();
+    }
 }
 
 class Father{}
 
 class Son extends Father{
-//	private static final long serialVersionUID = 2L;
-	void test1(){System.out.println(super.getClass().getName());}
-	void test2(){System.out.println(this.getClass().getName());}
-	void test3(){System.out.println(super.getClass().getSuperclass().getName());}
+//    private static final long serialVersionUID = 2L;
+    void test1(){System.out.println(super.getClass().getName());}
+    void test2(){System.out.println(this.getClass().getName());}
+    void test3(){System.out.println(super.getClass().getSuperclass().getName());}
 }
 
 /*

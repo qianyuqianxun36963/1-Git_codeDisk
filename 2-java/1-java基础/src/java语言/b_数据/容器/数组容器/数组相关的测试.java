@@ -12,42 +12,42 @@ package java语言.b_数据.容器.数组容器;
 
 
 public class 数组相关的测试 {
-	public static void main(String[] args) {
-		int array[][] = {{1,2,8,9},{2,4,9,12},{4,7,10,13},{6,8,11,15}};
-		int target = 7;
-		boolean x = Solution.Find2(array, target);
-		System.out.println(x);
-	}
+    public static void main(String[] args) {
+        int array[][] = {{1,2,8,9},{2,4,9,12},{4,7,10,13},{6,8,11,15}};
+        int target = 7;
+        boolean x = Solution.Find2(array, target);
+        System.out.println(x);
+    }
 }
 
 
 class Solution {
-	//方法一：暴力遍历方法。不好。
+    //方法一：暴力遍历方法。不好。
     public static boolean Find1(int [][] array,int target) {
         for(int i = 0;i<array.length;i++)
         {
-        	for(int j = 0;j<array[0].length;j++)
-        	{
-        		if (array[i][j] == target) {return true;}
-        	}
+            for(int j = 0;j<array[0].length;j++)
+            {
+                if (array[i][j] == target) {return true;}
+            }
         }
         return false;
     }
     
     //方法二：使用从左下或者右上搜索的方法。
     public static boolean Find2(int [][] array,int target) {
-    	int x = array.length;
-    	int y = array[0].length;
-    	int i = 0;
-    	int j = y-1;
-    	while(i<x&&j>=0){
+        int x = array.length;
+        int y = array[0].length;
+        int i = 0;
+        int j = y-1;
+        while(i<x&&j>=0){
         if(array[i][j]==target) {return true;}
         else 
             {
-        	    if (array[i][j]<target) i++;
-        	    else j--;
+                if (array[i][j]<target) i++;
+                else j--;
             }
-    	}
+        }
         return false;
     }
        

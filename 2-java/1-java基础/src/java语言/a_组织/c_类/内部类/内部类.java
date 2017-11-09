@@ -6,27 +6,27 @@ package java语言.a_组织.c_类.内部类;
 
 public class 内部类 {
 
-	public static void main(String[] args) {
-		OutClass outclass = new OutClass();
-		outclass.outPrint();
-	}
+    public static void main(String[] args) {
+        OutClass outclass = new OutClass();
+        outclass.outPrint();
+    }
 }
 
 class OutClass{
-	
-	private String outClassProperty = "this is OutClass's property";
-//	内部类对包围它的外部类可见
-//	在外部类的作用范围内可以任意创建内部类对象，即使内部类是私有的(私有内部类)。
-	public void outPrint(){
-		InnerClass inner = new InnerClass();
-		inner.innerPrint();
-	}
-	
-	class InnerClass{
-//		外部类对内部类可见
-//		在内部类中可以访问其外部类的所有域，即使是私有域。
-		void innerPrint(){System.out.println("this is from OutClass:" + outClassProperty);}
-	}
+    
+    private String outClassProperty = "this is OutClass's property";
+//    内部类对包围它的外部类可见
+//    在外部类的作用范围内可以任意创建内部类对象，即使内部类是私有的(私有内部类)。
+    public void outPrint(){
+        InnerClass inner = new InnerClass();
+        inner.innerPrint();
+    }
+    
+    class InnerClass{
+//        外部类对内部类可见
+//        在内部类中可以访问其外部类的所有域，即使是私有域。
+        void innerPrint(){System.out.println("this is from OutClass:" + outClassProperty);}
+    }
 }
 
 

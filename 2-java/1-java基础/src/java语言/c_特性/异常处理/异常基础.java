@@ -1,11 +1,11 @@
 package java语言.c_特性.异常处理;
 
 public class 异常基础  {
-	public 异常基础() {  
+    public 异常基础() {  
     }  
   
     @SuppressWarnings("finally")
-	boolean testEx() throws Exception {  
+    boolean testEx() throws Exception {  
         boolean ret = true;  
         try {  
             ret = testEx1();  
@@ -20,7 +20,7 @@ public class 异常基础  {
     }  
   
     @SuppressWarnings("finally")
-	boolean testEx1() throws Exception {  
+    boolean testEx1() throws Exception {  
         boolean ret = true;  
         try {  
             ret = testEx2();  
@@ -40,7 +40,7 @@ public class 异常基础  {
     }  
   
     @SuppressWarnings("finally")
-	boolean testEx2() throws Exception {  
+    boolean testEx2() throws Exception {  
         boolean ret = true;  
         try {  
             int b = 12;  
@@ -61,7 +61,7 @@ public class 异常基础  {
     }  
   
     public static void main(String[] args) {  
-    	异常基础 testException1 = new 异常基础();  
+        异常基础 testException1 = new 异常基础();  
         try {  
             testException1.testEx();  
         } catch (Exception e) {  

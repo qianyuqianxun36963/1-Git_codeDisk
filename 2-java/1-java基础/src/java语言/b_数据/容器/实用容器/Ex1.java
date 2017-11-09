@@ -11,14 +11,14 @@ package java语言.b_数据.容器.实用容器;
 import java.util.*;
 
 public class Ex1 {
-	public static void main(String[] args) {
-		ArrayList<Gerbil> gerbils = new ArrayList<Gerbil>();
-		for(int i = 0; i < 10; i++)
-			gerbils.add(new Gerbil(i));
-		for(int i = 0; i < 10; i++) 
-			gerbils.get(i).hop();
-		// or, alternatively, using foreach syntax:
-		for(Gerbil g : gerbils)
-			g.hop();
-	}
+    public static void main(String[] args) {
+        ArrayList<Gerbil> gerbils = new ArrayList<Gerbil>();
+        for(int i = 0; i < 10; i++)
+            gerbils.add(new Gerbil(i));
+        for(int i = 0; i < 10; i++) 
+            gerbils.get(i).hop();
+        // or, alternatively, using foreach syntax:
+        for(Gerbil g : gerbils)
+            g.hop();
+    }
 }

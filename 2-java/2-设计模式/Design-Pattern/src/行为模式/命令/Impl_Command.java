@@ -1,6 +1,6 @@
 package 行为模式.命令;
 
-	//风扇
+    //风扇
     //----------  Class Fan  ------------------------------
     class Fan {
           public void startRotate() {

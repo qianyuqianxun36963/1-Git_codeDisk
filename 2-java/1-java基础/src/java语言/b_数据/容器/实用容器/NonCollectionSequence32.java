@@ -11,64 +11,64 @@ package java语言.b_数据.容器.实用容器;
 //import java.util.*;
 //
 //class PetSequence {
-//	protected Pet[] pets = Pets.createArray(8);
+//    protected Pet[] pets = Pets.createArray(8);
 //}
 //
 //public class NonCollectionSequence32 
-//	extends PetSequence implements Iterable {
-//	public Iterator<Pet> iterator() {
-//		return new Iterator<Pet>() {
-//			private int index = 0;
-//			public boolean hasNext() {
-//				return index < pets.length;
-//			}	
-//			public Pet next() { return pets[index++]; }
-//			public void remove() {
-//				throw new UnsupportedOperationException();
-//			}
-//		};
-//	}
-//	public Iterable<Pet> reversed() {
-//		return new Iterable<Pet>() {
-//			public Iterator<Pet> iterator() {
-//				return new Iterator<Pet>() {
-//					int current = pets.length - 1;
-//					public boolean hasNext() {
-//						return current > -1;
-//					}
-//					public Pet next() {
-//						return pets[current--];
-//					}
-//					public void remove() {
-//						throw new
-//						UnsupportedOperationException();
-//					}
-//				};
-//			}
-//		};
-//	}
-//	public Iterable<Pet> randomized() {
-//		return new Iterable<Pet>() {
-//			public Iterator<Pet> iterator() {
-//				List<Pet> shuffled = new
-//				  	ArrayList<Pet>(Arrays.asList(pets));
-//				Collections.shuffle(shuffled, new Random());
-//				return shuffled.iterator();
-//			}
-//		};
-//	}
-//	public static void main(String[] args) {
-//		NonCollectionSequence32 nc = new NonCollectionSequence32();
-//		print("pets: ");
-//		for(Pet p : nc.pets)
-//			print(p + " ");
-//		println();
-//		print("reversed: ");
-//		for(Pet p : nc.reversed())
-//			print(p + " ");
-//		println();
-//		print("randomized: ");
-//		for(Pet p : nc.randomized())
-//			print(p + " ");
-//	}
+//    extends PetSequence implements Iterable {
+//    public Iterator<Pet> iterator() {
+//        return new Iterator<Pet>() {
+//            private int index = 0;
+//            public boolean hasNext() {
+//                return index < pets.length;
+//            }    
+//            public Pet next() { return pets[index++]; }
+//            public void remove() {
+//                throw new UnsupportedOperationException();
+//            }
+//        };
+//    }
+//    public Iterable<Pet> reversed() {
+//        return new Iterable<Pet>() {
+//            public Iterator<Pet> iterator() {
+//                return new Iterator<Pet>() {
+//                    int current = pets.length - 1;
+//                    public boolean hasNext() {
+//                        return current > -1;
+//                    }
+//                    public Pet next() {
+//                        return pets[current--];
+//                    }
+//                    public void remove() {
+//                        throw new
+//                        UnsupportedOperationException();
+//                    }
+//                };
+//            }
+//        };
+//    }
+//    public Iterable<Pet> randomized() {
+//        return new Iterable<Pet>() {
+//            public Iterator<Pet> iterator() {
+//                List<Pet> shuffled = new
+//                      ArrayList<Pet>(Arrays.asList(pets));
+//                Collections.shuffle(shuffled, new Random());
+//                return shuffled.iterator();
+//            }
+//        };
+//    }
+//    public static void main(String[] args) {
+//        NonCollectionSequence32 nc = new NonCollectionSequence32();
+//        print("pets: ");
+//        for(Pet p : nc.pets)
+//            print(p + " ");
+//        println();
+//        print("reversed: ");
+//        for(Pet p : nc.reversed())
+//            print(p + " ");
+//        println();
+//        print("randomized: ");
+//        for(Pet p : nc.randomized())
+//            print(p + " ");
+//    }
 //}

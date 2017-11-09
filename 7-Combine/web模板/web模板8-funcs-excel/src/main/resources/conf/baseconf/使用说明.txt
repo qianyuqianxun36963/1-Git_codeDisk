@@ -5,7 +5,7 @@
 一、可以将“它所在的目录”加入classpath，然后在代码中：
 
 Configuration configuration = new Configuration().configure();
-			sessionFactory = configuration.buildSessionFactory();
+            sessionFactory = configuration.buildSessionFactory();
 
 可以直接使用。位置有点死。
 

@@ -12,7 +12,7 @@ import java.util.concurrent.atomic.AtomicLong;
 import java.util.concurrent.locks.ReentrantLock;    
 
 public class 同步锁 {
-	public static void test(int round,int threadNum,CyclicBarrier cyclicBarrier){     
+    public static void test(int round,int threadNum,CyclicBarrier cyclicBarrier){     
         new SyncTest("Sync",round,threadNum,cyclicBarrier).testTime();     
         new LockTest("Lock",round,threadNum,cyclicBarrier).testTime();     
         new AtomicTest("Atom",round,threadNum,cyclicBarrier).testTime();     

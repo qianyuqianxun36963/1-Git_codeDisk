@@ -60,7 +60,7 @@ TreeGrid = function (_config) {
                 if (j == folderColumnIndex) {
                     if (row.children) { //有下级数据
                         s += "<img data-folder='Y' data-trid='TR" + id + "' src='" + folderOpenIcon + "' class='image_hand'>";
-						//alert(folderOpenIcon);
+                        //alert(folderOpenIcon);
                     } else {
                         s += "<img src='" + defaultLeafIcon + "' class='image_nohand'>";
                     }
@@ -102,14 +102,14 @@ TreeGrid = function (_config) {
         //以新背景色标识鼠标所指行
         if ((_config.hoverRowBackground || "false") == "true") {
             __root.find("tr").hover(
-				function () {
-				    if (jQuery(this).attr("class") && jQuery(this).attr("class") == "header") return;
-				    jQuery(this).addClass("row_hover");
-				},
-				function () {
-				    jQuery(this).removeClass("row_hover");
-				}
-			);
+                function () {
+                    if (jQuery(this).attr("class") && jQuery(this).attr("class") == "header") return;
+                    jQuery(this).addClass("row_hover");
+                },
+                function () {
+                    jQuery(this).removeClass("row_hover");
+                }
+            );
         }
 
         //将单击事件绑定到tr标签
@@ -187,68 +187,68 @@ TreeGrid.COUNT = 1;
 
 //将json对象转换成字符串
 TreeGrid.json2str = function(obj){
-	var arr = [];
+    var arr = [];
 
-	var fmt = function(s){
-		if(typeof s == 'object' && s != null){
-			if(s.length){
-				var _substr = "";
-				for(var x=0;x<s.length;x++){
-					if(x>0) _substr += ", ";
-					_substr += TreeGrid.json2str(s[x]);
-				}
-				return "[" + _substr + "]";
-			}else{
-				return TreeGrid.json2str(s);
-			}
-		}
-		return /^(string|number)$/.test(typeof s) ? "'" + s + "'" : s;
-	}
+    var fmt = function(s){
+        if(typeof s == 'object' && s != null){
+            if(s.length){
+                var _substr = "";
+                for(var x=0;x<s.length;x++){
+                    if(x>0) _substr += ", ";
+                    _substr += TreeGrid.json2str(s[x]);
+                }
+                return "[" + _substr + "]";
+            }else{
+                return TreeGrid.json2str(s);
+            }
+        }
+        return /^(string|number)$/.test(typeof s) ? "'" + s + "'" : s;
+    }
 
-	for(var i in obj){
-		if(typeof obj[i] != 'object'){ //暂时不包括子数据
-			arr.push(i + ":" + fmt(obj[i]));
-		}
-	}
+    for(var i in obj){
+        if(typeof obj[i] != 'object'){ //暂时不包括子数据
+            arr.push(i + ":" + fmt(obj[i]));
+        }
+    }
 
-	return '{' + arr.join(', ') + '}';
+    return '{' + arr.join(', ') + '}';
 }
 
 TreeGrid.str2json = function(s){
-	var json = null;
-	if(jQuery.browser.msie){
-		json = eval("(" + s + ")");
-	}else{
-		json = new Function("return " + s)();
-	}
-	return json;
+    var json = null;
+    if(jQuery.browser.msie){
+        json = eval("(" + s + ")");
+    }else{
+        json = new Function("return " + s)();
+    }
+    return json;
 }
 
 //数据行对象
 function TreeGridItem (_root, _rowId, _rowIndex, _rowData){
-	var __root = _root;
-	
-	this.id = _rowId;
-	this.index = _rowIndex;
-	this.data = _rowData;
-	
-	this.getParent = function(){
-		var pid = jQuery("#" + this.id).attr("data-pid");
-		if(pid!=""){
-			var rowIndex = jQuery("#" + pid).attr("data-rowIndex");
-			var data = jQuery("#" + pid).attr("data-row");
-			return new TreeGridItem(_root, pid, rowIndex, TreeGrid.str2json(data));
-		}
-		return null;
-	}
-	
-	this.getChildren = function(){
-		var arr = [];
-		var trs = jQuery(__root).find("tr[data-pid='" + this.id + "']");
-		for(var i=0;i<trs.length;i++){
-			var tr = trs[i];
-			arr.push(new TreeGridItem(__root, tr.id, tr.rowIndex, TreeGrid.str2json(tr.data)));
-		}
-		return arr;
-	}
+    var __root = _root;
+    
+    this.id = _rowId;
+    this.index = _rowIndex;
+    this.data = _rowData;
+    
+    this.getParent = function(){
+        var pid = jQuery("#" + this.id).attr("data-pid");
+        if(pid!=""){
+            var rowIndex = jQuery("#" + pid).attr("data-rowIndex");
+            var data = jQuery("#" + pid).attr("data-row");
+            return new TreeGridItem(_root, pid, rowIndex, TreeGrid.str2json(data));
+        }
+        return null;
+    }
+    
+    this.getChildren = function(){
+        var arr = [];
+        var trs = jQuery(__root).find("tr[data-pid='" + this.id + "']");
+        for(var i=0;i<trs.length;i++){
+            var tr = trs[i];
+            arr.push(new TreeGridItem(__root, tr.id, tr.rowIndex, TreeGrid.str2json(tr.data)));
+        }
+        return arr;
+    }
 };

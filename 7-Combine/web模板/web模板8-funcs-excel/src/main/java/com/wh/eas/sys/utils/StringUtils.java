@@ -51,20 +51,20 @@ public class StringUtils extends org.springframework.util.StringUtils {
         return StringUtils.hasText(cs);
     }
 
-	/**
-	 * Check whether the given {@code String} is empty.
-	 * <p>This method accepts any Object as an argument, comparing it to
-	 * {@code null} and the empty String. As a consequence, this method
-	 * will never return {@code true} for a non-null non-String object.
-	 * <p>The Object signature is useful for general attribute handling code
-	 * that commonly deals with Strings but generally has to iterate over
-	 * Objects since attributes may e.g. be primitive value objects as well.
-	 * @param str the candidate String
-	 * @since 3.2.1
-	 */
-	public static boolean isEmpty(Object str) {
-		return (str == null || "".equals(str));
-	}
+    /**
+     * Check whether the given {@code String} is empty.
+     * <p>This method accepts any Object as an argument, comparing it to
+     * {@code null} and the empty String. As a consequence, this method
+     * will never return {@code true} for a non-null non-String object.
+     * <p>The Object signature is useful for general attribute handling code
+     * that commonly deals with Strings but generally has to iterate over
+     * Objects since attributes may e.g. be primitive value objects as well.
+     * @param str the candidate String
+     * @since 3.2.1
+     */
+    public static boolean isEmpty(Object str) {
+        return (str == null || "".equals(str));
+    }
 
 
     // Equals
@@ -89,24 +89,24 @@ public class StringUtils extends org.springframework.util.StringUtils {
      * @return <code>true</code> if the Strings are equal, case sensitive, or
      *  both <code>null</code>
      */
-	public static boolean equals(String str1, String str2) {
+    public static boolean equals(String str1, String str2) {
         return str1 == null ? str2 == null : str1.equals(str2);
-	}
+    }
 
-	/**
-	 * Check whether the given {@code String} is not empty.
-	 * <p>This method accepts any Object as an argument, comparing it to
-	 * {@code null} and the empty String. As a consequence, this method
-	 * will never return {@code true} for a non-null non-String object.
-	 * <p>The Object signature is useful for general attribute handling code
-	 * that commonly deals with Strings but generally has to iterate over
-	 * Objects since attributes may e.g. be primitive value objects as well.
-	 * @param str the candidate String
-	 * @since 3.2.1
-	 */
-	public static boolean isNotEmpty(Object str) {
-		return (str != null && !"".equals(str));
-	}
+    /**
+     * Check whether the given {@code String} is not empty.
+     * <p>This method accepts any Object as an argument, comparing it to
+     * {@code null} and the empty String. As a consequence, this method
+     * will never return {@code true} for a non-null non-String object.
+     * <p>The Object signature is useful for general attribute handling code
+     * that commonly deals with Strings but generally has to iterate over
+     * Objects since attributes may e.g. be primitive value objects as well.
+     * @param str the candidate String
+     * @since 3.2.1
+     */
+    public static boolean isNotEmpty(Object str) {
+        return (str != null && !"".equals(str));
+    }
     
     /**
      * Convert a {@code Collection} into a delimited {@code String} (e.g. CSV).
@@ -130,35 +130,35 @@ public class StringUtils extends org.springframework.util.StringUtils {
         return StringUtils.arrayToDelimitedString(arr, delim);
     }
 
-	
-	/**
-	 * @Discription 获取时间戳
-	 * @author ChenYi       
-	 * @created 2017年9月19日 下午3:26:18     
-	 * @return
-	 * @see com.wh.eas.manage.service.sys.IDictionaryService#getTimeStamp()
-	 */
+    
+    /**
+     * @Discription 获取时间戳
+     * @author ChenYi       
+     * @created 2017年9月19日 下午3:26:18     
+     * @return
+     * @see com.wh.eas.manage.service.sys.IDictionaryService#getTimeStamp()
+     */
     public static String getTimeStamp() {
-		Date date = new Date();
-		SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMddHHmmss");
-		return sdf.format(date);
-	}
-	
+        Date date = new Date();
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMddHHmmss");
+        return sdf.format(date);
+    }
+    
     /**
      * 生成uuid
      * @return UUID
      */
     public static String getUUId() {
-    	String uuid = UUID.randomUUID().toString();
-    	uuid = uuid.replace("-", "");
+        String uuid = UUID.randomUUID().toString();
+        uuid = uuid.replace("-", "");
         return uuid;
     }
     
     public static void main(String args[]){
-    	String uuid = getUUId();
-    	System.out.println(uuid);
-    	for(int i=0;i<5;i++){
-    		System.out.println(getUUId());
-    	}
+        String uuid = getUUId();
+        System.out.println(uuid);
+        for(int i=0;i<5;i++){
+            System.out.println(getUUId());
+        }
     }
 }

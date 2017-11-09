@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>index.html</title>
-	
+    
     <meta name="keywords" content="keyword1,keyword2,keyword3">
     <meta name="description" content="this is my page">
     <meta name="content-type" content="text/html; charset=UTF-8">
@@ -15,16 +15,16 @@
     This is my HTML page. <br/>
     
     <h1>button</h1> <br/>
-      	
-     	<button onclick="Normal_Ajax()">ajax:normal</button><br/><br/>
-     	
-     	<button onclick="Annotation_JsonUtil()">ajax:Annotation_JsonUtil </button><br/><br/>
-     	
-     	<button onclick="Annotation_Responsebody()">ajax:Annotation_ResponseBody</button><br/>
+          
+         <button onclick="Normal_Ajax()">ajax:normal</button><br/><br/>
+         
+         <button onclick="Annotation_JsonUtil()">ajax:Annotation_JsonUtil </button><br/><br/>
+         
+         <button onclick="Annotation_Responsebody()">ajax:Annotation_ResponseBody</button><br/>
       
-      	<div id="info"></div> 
-      	
-      	<div id="content"></div> 
+          <div id="info"></div> 
+          
+          <div id="content"></div> 
 
      <h1>link</h1> <br/>
      
@@ -60,7 +60,7 @@
     }
     
     function Annotation_JsonUtil() {  
-		$.ajax({
+        $.ajax({
             url:"/SpringMvc/testAjax.do",
             type:'post',
             data:'name=admin&password=123456',
@@ -81,7 +81,7 @@
     }
     
     function Annotation_Responsebody() {
-		$.ajax({
+        $.ajax({
             url:"/SpringMvc/testAjax.do",
             type:'post',
             data:'name=admin&password=123456',

@@ -1,7 +1,7 @@
 package 行为模式.命令;
 
 public class Switch {
-	private Command UpCommand, DownCommand;
+    private Command UpCommand, DownCommand;
     public Switch (Command Up, Command Down) {
            UpCommand = Up;
            DownCommand = Down;
