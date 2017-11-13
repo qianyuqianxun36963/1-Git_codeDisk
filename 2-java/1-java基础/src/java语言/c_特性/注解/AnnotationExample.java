@@ -1,13 +1,22 @@
-package java����.c_����.ע��;
+package java语言.c_特性.注解;
 
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
 
+/*
+ 注解的使用
+ * 
+*/
+
+@SimpleAnnotation (id = "type annotation") //类成员注解
 public class AnnotationExample {
-    public static void main(String args[]){
-        
-    }
+    @SimpleAnnotation(id = "firstone")  //类方法注解
+    public void printFirst(){System.out.println("print first!");}
+    
+    @SimpleAnnotation(id = "secondone")
+    public void printSecond(){System.out.println("print second!");}
+    
     @Override
     @MethodInfo(author = "wangyajun",comments = "main method",date = "nov 17 2017",version =1)
     public String toString(){

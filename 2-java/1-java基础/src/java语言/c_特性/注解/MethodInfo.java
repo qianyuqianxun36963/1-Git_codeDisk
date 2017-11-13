@@ -1,4 +1,4 @@
-package javaÓïÑÔ.c_ÌØÐÔ.×¢½â;
+package javaè¯­è¨€.c_ç‰¹æ€§.æ³¨è§£;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;
@@ -17,17 +17,3 @@ public @interface MethodInfo {
     int version() default 1;
     String comments();
 }
-/*
-×¢½â·½·¨²»ÄÜÓÐ²ÎÊý¡£
-×¢½â·½·¨µÄ·µ»ØÀàÐÍ¾ÖÏÞÓÚÔ­Ê¼ÀàÐÍ£¬×Ö·û´®£¬Ã¶¾Ù£¬×¢½â£¬»òÒÔÉÏÀàÐÍ¹¹³ÉµÄÊý×é¡£
-×¢½â·½·¨¿ÉÒÔ°üº¬Ä¬ÈÏÖµ¡£
-×¢½â¿ÉÒÔ°üº¬ÓëÆä°ó¶¨µÄÔª×¢½â£¬Ôª×¢½âÎª×¢½âÌá¹©ÐÅÏ¢£¬ÓÐËÄÖÖÔª×¢½âÀàÐÍ£º
-
-1. @Documented ¨C ±íÊ¾Ê¹ÓÃ¸Ã×¢½âµÄÔªËØÓ¦±»javadoc»òÀàËÆ¹¤¾ßÎÄµµ»¯£¬ËüÓ¦ÓÃÓÚÀàÐÍÉùÃ÷£¬ÀàÐÍÉùÃ÷µÄ×¢½â»áÓ°Ïì¿Í»§¶Ë¶Ô×¢½âÔªËØµÄÊ¹ÓÃ¡£Èç¹ûÒ»¸öÀàÐÍÉùÃ÷Ìí¼ÓÁËDocumented×¢½â£¬ÄÇÃ´ËüµÄ×¢½â»á³ÉÎª±»×¢½âÔªËØµÄ¹«¹²APIµÄÒ»²¿·Ö¡£
-
-2. @Target ¨C ±íÊ¾Ö§³Ö×¢½âµÄ³ÌÐòÔªËØµÄÖÖÀà£¬Ò»Ð©¿ÉÄÜµÄÖµÓÐTYPE, METHOD, CONSTRUCTOR, FIELDµÈµÈ¡£Èç¹ûTargetÔª×¢½â²»´æÔÚ£¬ÄÇÃ´¸Ã×¢½â¾Í¿ÉÒÔÊ¹ÓÃÔÚÈÎºÎ³ÌÐòÔªËØÖ®ÉÏ¡£
-
-3. @Inherited ¨C ±íÊ¾Ò»¸ö×¢½âÀàÐÍ»á±»×Ô¶¯¼Ì³Ð£¬Èç¹ûÓÃ»§ÔÚÀàÉùÃ÷µÄÊ±ºò²éÑ¯×¢½âÀàÐÍ£¬Í¬Ê±ÀàÉùÃ÷ÖÐÒ²Ã»ÓÐÕâ¸öÀàÐÍµÄ×¢½â£¬ÄÇÃ´×¢½âÀàÐÍ»á×Ô¶¯²éÑ¯¸ÃÀàµÄ¸¸Àà£¬Õâ¸ö¹ý³Ì½«»á²»Í£µØÖØ¸´£¬Ö±µ½¸ÃÀàÐÍµÄ×¢½â±»ÕÒµ½ÎªÖ¹£¬»òÊÇµ½´ïÀà½á¹¹µÄ¶¥²ã£¨Object£©¡£
-
-4. @Retention ¨C ±íÊ¾×¢½âÀàÐÍ±£ÁôÊ±¼äµÄ³¤¶Ì£¬Ëü½ÓÊÕRetentionPolicy²ÎÊý£¬¿ÉÄÜµÄÖµÓÐSOURCE, CLASS, ÒÔ¼°RUNTIME¡£
-*/
