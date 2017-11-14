@@ -39,27 +39,27 @@
 		    <!-- 开发地址 -->
 		    <!--  192.168.1.120 -->
 		        <bean class="org.springframework.data.redis.connection.RedisNode">
-		            <constructor-arg name="host" value=${redis.host}></constructor-arg>
+		            <constructor-arg name="host" value=${redis.devhost}></constructor-arg>
 		            <constructor-arg name="port" value=${redis.port0}></constructor-arg>
 		        </bean>
 		       <!--  <bean class="org.springframework.data.redis.connection.RedisNode">
-		            <constructor-arg name="host" value=${redis.host}></constructor-arg>
+		            <constructor-arg name="host" value=${redis.devhost}></constructor-arg>
 		            <constructor-arg name="port" value=${redis.port1}></constructor-arg>
 		        </bean>
 		        <bean class="org.springframework.data.redis.connection.RedisNode">
-		            <constructor-arg name="host" value=${redis.host}></constructor-arg>
+		            <constructor-arg name="host" value=${redis.devhost}></constructor-arg>
 		            <constructor-arg name="port" value=${redis.port2}></constructor-arg>
 		        </bean>
 		        <bean class="org.springframework.data.redis.connection.RedisNode">
-		            <constructor-arg name="host" value=${redis.host}></constructor-arg>
+		            <constructor-arg name="host" value=${redis.devhost}></constructor-arg>
 		            <constructor-arg name="port" value=${redis.port3}></constructor-arg>
 		        </bean>
 		        <bean class="org.springframework.data.redis.connection.RedisNode">
-		            <constructor-arg name="host" value=${redis.host}></constructor-arg>
+		            <constructor-arg name="host" value=${redis.devhost}></constructor-arg>
 		            <constructor-arg name="port" value=${redis.port4}></constructor-arg>
 		        </bean>
 		        <bean class="org.springframework.data.redis.connection.RedisNode">
-		            <constructor-arg name="host" value=${redis.host}></constructor-arg>
+		            <constructor-arg name="host" value=${redis.devhost}></constructor-arg>
 		            <constructor-arg name="port" value=${redis.port5}></constructor-arg>
 		        </bean> -->
 		    </set>
@@ -90,3 +90,76 @@
     </bean>
     
 </beans>
+
+<!-- 
+
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:cache="http://www.springframework.org/schema/cache"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:redis="http://www.springframework.org/schema/redis"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans 
+		http://www.springframework.org/schema/beans/spring-beans.xsd 
+		http://www.springframework.org/schema/tx 
+		http://www.springframework.org/schema/tx/spring-tx.xsd 
+		http://www.springframework.org/schema/context 
+		http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/cache 
+        http://www.springframework.org/schema/cache/spring-cache.xsd
+		http://www.springframework.org/schema/aop
+		http://www.springframework.org/schema/aop/spring-aop.xsd
+		http://www.springframework.org/schema/redis
+		http://www.springframework.org/schema/redis/spring-redis.xsd"
+	default-lazy-init="false">
+
+    cache注解
+    <cache:annotation-driven cache-manager="cacheManager" proxy-target-class="true"/>
+    
+    spring自带的缓存管理器,value会自动创建,不需要指定
+	<bean id="cacheManager" class="org.springframework.cache.concurrent.ConcurrentMapCacheManager" /> 
+ 
+    
+     <bean id="cacheManager" class="org.springframework.data.redis.cache.RedisCacheManager">
+      <constructor-arg ref="redisTemplate" />
+       <property name="defaultExpiration" value="1800" />
+    </bean> 
+    
+    <bean id="redisTemplate" class="org.springframework.data.redis.core.RedisTemplate">
+		<property name="connectionFactory" ref="jedisConnectionFactory" />
+ 		<property name="keySerializer">
+            <bean class="org.springframework.data.redis.serializer.JdkSerializationRedisSerializer"></bean>
+        </property>
+        <property name="valueSerializer">
+            <bean class="org.springframework.data.redis.serializer.JdkSerializationRedisSerializer"/>
+        </property>
+        <property name="hashKeySerializer">
+            <bean class="org.springframework.data.redis.serializer.JdkSerializationRedisSerializer"/>
+        </property>
+        <property name="hashValueSerializer">
+            <bean class="org.springframework.data.redis.serializer.JdkSerializationRedisSerializer"/>
+        </property> 
+	</bean> 
+
+    JedisConnectionFactory
+    <bean id="jedisConnectionFactory" class="org.springframework.data.redis.connection.jedis.JedisConnectionFactory" destroy-method="destroy">
+        <property name="hostName" value="${redis.master.ip}"/>
+        <property name="port" value="${redis.master.port}"/>
+        <property name="poolConfig" ref="jedisPoolConfig"/>
+        <property name="password" value="${redis.master.password}" />
+        <property name="usePool" value="true"/>
+    </bean> 
+
+   <bean id="jedisPoolConfig" class="redis.clients.jedis.JedisPoolConfig">
+        <property name="maxIdle" value="${redis.pool.maxIdle}"/>
+        <property name="maxTotal" value="${redis.pool.maxActive}"/>
+        <property name="maxWaitMillis" value="${redis.pool.maxWait}"/>
+        <property name="testOnBorrow" value="${redis.pool.testOnBorrow}"/>
+        <property name="testOnReturn" value="${redis.pool.testOnReturn}"/>
+    </bean>   
+
+    
+</beans> -->
