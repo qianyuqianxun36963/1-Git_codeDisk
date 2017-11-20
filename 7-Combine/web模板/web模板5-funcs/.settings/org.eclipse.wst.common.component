@@ -6,6 +6,6 @@
         <wb-resource deploy-path="/" source-path="/target/m2e-jee/web-resources"/>
         <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
         <property name="java-output-path" value="/SpringMVC_Freemarker/target/classes"/>
-        <property name="context-root" value="MyWeb"/>
+        <property name="context-root" value="/MyWeb_5_func"/>
     </wb-module>
 </project-modules>
