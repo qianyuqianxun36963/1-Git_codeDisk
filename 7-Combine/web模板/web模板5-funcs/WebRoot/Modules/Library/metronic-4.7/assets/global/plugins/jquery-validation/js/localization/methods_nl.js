@@ -1,9 +1,9 @@
 (function( factory ) {
-	if ( typeof define === "function" && define.amd ) {
-		define( ["jquery", "../jquery.validate"], factory );
-	} else {
-		factory( jQuery );
-	}
+    if ( typeof define === "function" && define.amd ) {
+        define( ["jquery", "../jquery.validate"], factory );
+    } else {
+        factory( jQuery );
+    }
 }(function( $ ) {
 
 /*
@@ -11,9 +11,9 @@
  * Locale: NL
  */
 $.extend($.validator.methods, {
-	date: function(value, element) {
-		return this.optional(element) || /^\d\d?[\.\/\-]\d\d?[\.\/\-]\d\d\d?\d?$/.test(value);
-	}
+    date: function(value, element) {
+        return this.optional(element) || /^\d\d?[\.\/\-]\d\d?[\.\/\-]\d\d\d?\d?$/.test(value);
+    }
 });
 
 }));

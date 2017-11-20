@@ -16,13 +16,13 @@
         http://www.springframework.org/schema/tx/spring-tx-4.0.xsd"
         >
     
-    	<!-- 配置信息工具，这里的是正常的配置信息，声明为bean，方便在程序里使用。 -->
-      	<bean id="propertiesUtil" class="u.utils.PropertiesUtil"> 
- 	        <property name="filePaths"> 
- 			    <list> 
- 				      <value>classpath*:conf/property/*.properties</value>
- 				</list> 
- 			</property> 
- 	    </bean>  
+        <!-- 配置信息工具，这里的是正常的配置信息，声明为bean，方便在程序里使用。 -->
+          <bean id="propertiesUtil" class="com.wh.eas.sys.utils.PropertiesUtil"> 
+             <property name="filePaths"> 
+                 <list> 
+                       <value>classpath*:conf/property/*.properties</value>
+                 </list> 
+             </property> 
+         </bean>  
    
 </beans>

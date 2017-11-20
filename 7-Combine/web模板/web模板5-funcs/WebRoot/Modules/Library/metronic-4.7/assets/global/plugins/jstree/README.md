@@ -46,7 +46,7 @@ And interact with the tree:
 ```html
 <script>
 $(function () {
-	$('#container').jstree(true).select_node('child_node');
+    $('#container').jstree(true).select_node('child_node');
 });
 </script>
 ```

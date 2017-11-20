@@ -6,29 +6,28 @@
 var BSHfileUpload = function()
 { 
   
-	/**上传访问服务地址**/
-	var common_upload_url = "http://localhost:8080/MyWeb_8_Func";
+    /**上传访问服务地址**/
+    var common_upload_url = "http://localhost:8080/FileServer_Local";
     //私有变量和函数
     var Fileurl = null;//文件名称
-	var paragraph = 1024*200;//每次分片传输文件的大小 200k
-	var blob = null;//分片数据的载体Blob对象
-	var fileList = null;//传输的文件
-	var uploadState = 0;// 0: 无上传/取消， 1： 上传中， 2： 暂停  ， 3：上传成功
-	var fr;
-	var progress;
-	var progressOne;
-	var progressTwo; 
-	/**
-	 * 仅仅获得该文件存在服务器文件大小，并获得上传的文件名称
-	 * @param data 上传的input的id
-	 * @param fileUploadType 上传的文件用途 0:测试，1:用户，2:课程，3:站点(除此之外新增，请与此开发人员联系)
-	 * @param fileSavePath 二级目录
-	 */
-	getFileInfos = function(tagid,fileUploadType,fileSavePath){
-		fileList = document.getElementById(tagid);
-		debugger;
-		var fileInfos = [];
-		var length = fileList.files.length;
+    var paragraph = 1024*200;//每次分片传输文件的大小 200k
+    var blob = null;//分片数据的载体Blob对象
+    var fileList = null;//传输的文件
+    var uploadState = 0;// 0: 无上传/取消， 1： 上传中， 2： 暂停  ， 3：上传成功
+    var fr;
+    var progress;
+    var progressOne;
+    var progressTwo; 
+    /**
+     * 仅仅获得该文件存在服务器文件大小，并获得上传的文件名称
+     * @param data 上传的input的id
+     * @param fileUploadType 上传的文件用途 0:测试，1:用户，2:课程，3:站点(除此之外新增，请与此开发人员联系)
+     * @param fileSavePath 二级目录
+     */
+    getFileInfos = function(tagid,fileUploadType,fileSavePath){
+        fileList = document.getElementById(tagid);
+        var fileInfos = [];
+        var length = fileList.files.length;
         for(var i=0; i<length; i++)
         {
             file = fileList.files[i];
@@ -38,64 +37,64 @@ var BSHfileUpload = function()
             var date = file.lastModifiedDate;
             var lastModifyTime = date.Format("yyyy-MM-dd hh:mm:ss");
             //获取当前文件已经上传大小
-			$.ajax({
-				  type: 'POST',
-				  url: common_upload_url+"/file/getChunkedFileInfo",
-				  data:  {"fileName":file.name,"fileSize":file.size,"lastModifyTime":lastModifyTime,"fileUploadType":fileUploadType,"saveFilePathKey" : fileSavePath},
-				  async: false,//同步
-				  dataType: "json",
-				  success:   function(data)
-				  {	  
-					  debugger;
-					  if(data.status == "success")
-		              {
-		                	if(data.size != -1)
-		                	{
-		                		 endSize = Number(data.size);
-		                	}
-		                	else
-		                	{
-		                		 endSize = 0;
-		                	}
-		                   
-		              }
-		              else
-		              {	
-		                	showSuccessOrErrorModal(data.msg, "error");
-		              }
-					fileInfos.push( { "name": data.name, "size": endSize, "fileUploadType": fileUploadType ,"fileSavePath": fileSavePath , "downLoadPath": data.downLoadPath, "resourcePath": data.resourcePath});
-				  }
-			 });   
+            $.ajax({
+                  type: 'POST',
+                  url: common_upload_url+"/file/getChunkedFileInfo",
+                  data:  {"fileName":file.name,"fileSize":file.size,"lastModifyTime":lastModifyTime,"fileUploadType":fileUploadType,"saveFilePathKey" : fileSavePath},
+                  async: false,//同步
+                  dataType: "json",
+                  success:   function(data)
+                  {      
+                      debugger;
+                      if(data.status == "success")
+                      {
+                            if(data.size != -1)
+                            {
+                                 endSize = Number(data.size);
+                            }
+                            else
+                            {
+                                 endSize = 0;
+                            }
+                           
+                      }
+                      else
+                      {    
+                            showSuccessOrErrorModal(data.msg, "error");
+                      }
+                    fileInfos.push( { "name": data.name, "size": endSize, "fileUploadType": fileUploadType ,"fileSavePath": fileSavePath , "downLoadPath": data.downLoadPath, "resourcePath": data.resourcePath});
+                  }
+             });   
         }
-	return fileInfos;
+    return fileInfos;
   }
  /**
  * 上传初始入口
  * @param tagid 上传的input的id
- */						
+ */                        
 uploadFiles = function (tagid,progressBarDivId,progressBarBackgroundId,progressBarNumberId,fileInfos)
 {
-	debugger;
-	fileList = document.getElementById(tagid);
-	progress = progressBarDivId;
-	progressOne = progressBarBackgroundId;
-	progressTwo = progressBarNumberId;
-	$("#"+progress).prop("hidden",true);//进度条
-	$("#"+progressOne).attr("style","width: 0%;");
-	$("#"+progressTwo).text("0%");
+    debugger;
+    fileList = document.getElementById(tagid);
+    progress = progressBarDivId;
+    progressOne = progressBarBackgroundId;
+    progressTwo = progressBarNumberId;
+    $("#"+progress).prop("hidden",true);//进度条
+    $("#"+progressOne).attr("style","width: 0%;");
+    $("#"+progressTwo).text("0%");
     if(fileList.files.length>0)
     {
         for(var i = 0; i< fileList.files.length; i++)
         {
-        	uploadState = 1;
+            uploadState = 1;
             var file = fileList.files[i];
             Fileurl = fileInfos[i].name;
-			uploadFile(file,0,fileInfos[i].size,i,fileInfos[i].fileUploadType,fileInfos[i].fileSavePath);
+            uploadFile(file,0,fileInfos[i].size,i,fileInfos[i].fileUploadType,fileInfos[i].fileSavePath);
         }
     }
     else
     {
-    	showInfoModal("请选择上传文件!");
+        showInfoModal("请选择上传文件!");
     }
 }
 
@@ -109,24 +108,23 @@ uploadFiles = function (tagid,progressBarDivId,progressBarBackgroundId,progressB
  */
 uploadFile = function (file,startSize,endSize,j,fileUploadType,fileSavePath)
 {
-		$("#"+progress).prop("hidden",false);//进度条
+        $("#"+progress).prop("hidden",false);//进度条
         var date = file.lastModifiedDate;
         var lastModifyTime =  date.Format("yyyy-MM-dd hh:mm:ss");
         var reader = new FileReader();
         reader.onload = function loaded(evt)
-		{	
-		
+        {    
             // 构造 xmlHttpRequest 对象，发送文件 Binary 数据
             var xhr = new XMLHttpRequest(); 
                 xhr.sendAsBinary = function(text)
-                {		
+                {        
                     var data = new ArrayBuffer(text.length);
                     var ui8a = new Uint8Array(data, 0);
                     for (var i = 0; i < text.length; i++) 
                     {
-						ui8a[i] = (text.charCodeAt(i) & 0xff);
-					}
-                    this.send(ui8a);				
+                        ui8a[i] = (text.charCodeAt(i) & 0xff);
+                    }
+                    this.send(ui8a);                
                 }
 
             xhr.onreadystatechange = function()
@@ -149,8 +147,8 @@ uploadFile = function (file,startSize,endSize,j,fileUploadType,fileSavePath)
             };//创建回调方法
             
             xhr.open("POST", 
-            		common_upload_url+"/file/appendUploadServer?fileName=" + encodeURIComponent(file.name)+"&fileSize="+file.size+"&lastModifyTime="+lastModifyTime+"&Fileurl="+Fileurl+"&fileUploadType="+fileUploadType+"&saveFilePathKey="+fileSavePath,
-            		true); 
+                    common_upload_url+"/file/appendUploadServer?fileName=" + encodeURIComponent(file.name)+"&fileSize="+file.size+"&lastModifyTime="+lastModifyTime+"&Fileurl="+Fileurl+"&fileUploadType="+fileUploadType+"&saveFilePathKey="+fileSavePath,
+                    true); 
             xhr.overrideMimeType("application/octet-stream;charset=utf-8"); 
             xhr.sendAsBinary(evt.target.result)
         };
@@ -179,9 +177,9 @@ uploadFile = function (file,startSize,endSize,j,fileUploadType,fileSavePath)
         }
         else//单文件上传成功
         {
-        	uploadState = 3;
-        	$("#"+progressOne).attr("style","width: 100%;");
-        	$("#"+progressTwo).text("100%"); 
+            uploadState = 3;
+            $("#"+progressOne).attr("style","width: 100%;");
+            $("#"+progressTwo).text("100%"); 
         }
 }
 
@@ -195,7 +193,7 @@ pauseUpload = function (){
 uploadProgress = function (file,startSize,uploadLen,i,fileUploadType,fileSavePath) {
     var percentComplete = Math.round(uploadLen * 100 / file.size);
     $("#"+progressOne).attr("style","width:"+ percentComplete+"%;");
-	$("#"+progressTwo).text(percentComplete+"%");
+    $("#"+progressTwo).text(percentComplete+"%");
 
     //续传
     if(uploadState == 1)
@@ -209,36 +207,36 @@ uploadProgress = function (file,startSize,uploadLen,i,fileUploadType,fileSavePat
         getFileurl : function(){ 
             return Fileurl; 
         },
-		
-		registerFileurl : function(data){      
+        
+        registerFileurl : function(data){      
                 Fileurl = data; 
         },
-			
-		getParagraph : function(){ 
+            
+        getParagraph : function(){ 
             return paragraph; 
         }, 
-		
-		getFileList : function(){ 
+        
+        getFileList : function(){ 
             return fileList; 
         }, 
 
-		registeFileList : function(data){   
+        registeFileList : function(data){   
             fileList = data; 
         },
-		
-		getUploadState : function(){ 
+        
+        getUploadState : function(){ 
             return uploadState; 
         }, 
 
-		registerUploadState : function(data){ 
+        registerUploadState : function(data){ 
             uploadState = data; 
         }, 
 
-		getProgress : function(){ 
+        getProgress : function(){ 
             return progress; 
         }, 
-		
-		registerProgress : function(data){ 
+        
+        registerProgress : function(data){ 
             progress = data; 
         } 
     }; 
@@ -262,32 +260,32 @@ uploadProgress = function (file,startSize,uploadLen,i,fileUploadType,fileSavePat
  */
 function checkFileSizeAndType(data,type,size)
 {
-	var file = document.getElementById(data); 
-	var length = file.files.length;
-	var checkType = false;
-	var checkSize = false;
-	var checkResult = [];
-	for(var i=0; i<length; i++)
+    var file = document.getElementById(data); 
+    var length = file.files.length;
+    var checkType = false;
+    var checkSize = false;
+    var checkResult = [];
+    for(var i=0; i<length; i++)
     {
-		 checkFile = file.files[i];
-		 var fileType = checkFile.name.substring(checkFile.name.lastIndexOf("."));//获得文件类型
-		 if(size >= checkFile.size)
-		 {
-			 checkSize = true;
-		 }
-		 for(var i=0; i<type.length; i++)
-		 {
-			 if(type[i]==fileType)
-			 {   
-				 checkType = true;
-				 break;//结束循环 
-			 } 
-		 
-		 }
-		 checkResult.push( { "checkSize": checkSize, "checkType": checkType });
+         checkFile = file.files[i];
+         var fileType = checkFile.name.substring(checkFile.name.lastIndexOf("."));//获得文件类型
+         if(size >= checkFile.size)
+         {
+             checkSize = true;
+         }
+         for(var i=0; i<type.length; i++)
+         {
+             if(type[i]==fileType)
+             {   
+                 checkType = true;
+                 break;//结束循环 
+             } 
+         
+         }
+         checkResult.push( { "checkSize": checkSize, "checkType": checkType });
 
-	}
-	return checkResult;
+    }
+    return checkResult;
 }
 
 

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
-    <wb-module deploy-name="MyWeb_5_Func">
+    <wb-module deploy-name="MyWeb_8_Func_excel">
         <wb-resource deploy-path="/" source-path="/target/m2e-jee/web-resources"/>
         <wb-resource deploy-path="/" source-path="/WebRoot" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources/conf/baseconf"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
-        <property name="java-output-path" value="/MyWeb_5_Func/WebRoot/WEB-INF/classes"/>
-        <property name="context-root" value="/MyWeb_5_Func"/>
+        <property name="java-output-path" value="/MyWeb_8_Func_excel/WebRoot/WEB-INF/classes"/>
+        <property name="context-root" value="/MyWeb_Func_Excel"/>
     </wb-module>
 </project-modules>
