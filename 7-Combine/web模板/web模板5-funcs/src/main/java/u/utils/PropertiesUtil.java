@@ -14,9 +14,9 @@ import org.springframework.stereotype.Service;
 @Service
 public class PropertiesUtil implements InitializingBean 
 {
-	public String get(String key){
-		return fileParams.get(key);
-	}
+	/**
+	 * 日志
+	 */
     
 	/**
 	 * 参数map

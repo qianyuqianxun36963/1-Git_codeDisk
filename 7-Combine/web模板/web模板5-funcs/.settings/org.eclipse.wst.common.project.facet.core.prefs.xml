@@ -1,10 +1,10 @@
 <root>
-  <facet id="me.spring">
+  <facet id="jst.jaxrs">
     <node name="libprov">
       <attribute name="provider-id" value="maven-lib-provider"/>
     </node>
   </facet>
-  <facet id="jst.jaxrs">
+  <facet id="me.spring">
     <node name="libprov">
       <attribute name="provider-id" value="maven-lib-provider"/>
     </node>
