@@ -39,8 +39,8 @@
 		    <!-- 开发地址 -->
 		    <!--  192.168.1.120 -->
 		        <bean class="org.springframework.data.redis.connection.RedisNode">
-		            <constructor-arg name="host" value=${redis.devhost}></constructor-arg>
-		            <constructor-arg name="port" value=${redis.port0}></constructor-arg>
+		            <constructor-arg name="host" value="${redis.devhost}"></constructor-arg>
+		            <constructor-arg name="port" value="${redis.port0}"></constructor-arg>
 		        </bean>
 		       <!--  <bean class="org.springframework.data.redis.connection.RedisNode">
 		            <constructor-arg name="host" value=${redis.devhost}></constructor-arg>
