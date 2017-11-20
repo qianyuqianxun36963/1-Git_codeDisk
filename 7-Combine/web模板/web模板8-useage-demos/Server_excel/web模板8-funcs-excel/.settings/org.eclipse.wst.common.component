@@ -6,6 +6,6 @@
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources/conf/baseconf"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
         <property name="java-output-path" value="/MyWeb_8_Func_excel/WebRoot/WEB-INF/classes"/>
-        <property name="context-root" value="MyWeb_Func_FileServer"/>
+        <property name="context-root" value="/MyWeb_Func_Excel"/>
     </wb-module>
 </project-modules>
