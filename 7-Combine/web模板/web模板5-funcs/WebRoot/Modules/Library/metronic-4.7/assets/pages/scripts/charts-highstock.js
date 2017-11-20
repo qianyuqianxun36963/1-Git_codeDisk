@@ -2,7 +2,7 @@ jQuery(document).ready(function() {
   // HIGHSTOCK DEMOS
 
   // COMPARE MULTIPLE SERIES
-      var seriesOptions = [],
+  	var seriesOptions = [],
         seriesCounter = 0,
         names = ['MSFT', 'AAPL', 'GOOG'],
         // create the chart when all data is loaded
@@ -159,8 +159,8 @@ jQuery(document).ready(function() {
         });
     });
 
-    // OHLC CHART
-     $.getJSON('http://www.highcharts.com/samples/data/jsonp.php?filename=aapl-ohlc.json&callback=?', function (data) {
+	// OHLC CHART
+	 $.getJSON('http://www.highcharts.com/samples/data/jsonp.php?filename=aapl-ohlc.json&callback=?', function (data) {
 
         // create the chart
         $('#highstock_3').highcharts('StockChart', {
@@ -195,8 +195,8 @@ jQuery(document).ready(function() {
         });
     });
 
-    // LINE CHART WITH FLAGS
-    $.getJSON('http://www.highcharts.com/samples/data/jsonp.php?filename=usdeur.json&callback=?', function (data) {
+	// LINE CHART WITH FLAGS
+	$.getJSON('http://www.highcharts.com/samples/data/jsonp.php?filename=usdeur.json&callback=?', function (data) {
 
         var year = new Date(data[data.length - 1][0]).getFullYear(); // Get year of last data point
 

@@ -16,8 +16,8 @@ jQuery(document).ready(function() {
         $('#highmaps_1').highcharts('Map', {
             chart : {
                 style: {
-                    fontFamily: 'Open Sans'
-                }
+		            fontFamily: 'Open Sans'
+		        }
             },
 
             title: {
@@ -60,8 +60,8 @@ jQuery(document).ready(function() {
 
     });
 
-    // HEAT MAP
-    $('#highmaps_2').highcharts({
+	// HEAT MAP
+	$('#highmaps_2').highcharts({
 
         data: {
             csv: document.getElementById('csv').innerHTML
@@ -72,8 +72,8 @@ jQuery(document).ready(function() {
             type: 'heatmap',
             inverted: true,
             style: {
-                fontFamily: 'Open Sans'
-            }
+	            fontFamily: 'Open Sans'
+	        }
         },
 
 
@@ -130,14 +130,14 @@ jQuery(document).ready(function() {
 
     });
 
-    // TIMEZONE MAP
-    // Instanciate the map
+	// TIMEZONE MAP
+	// Instanciate the map
     $('#highmaps_3').highcharts('Map', {
         chart: {
             spacingBottom: 20,
             style: {
-                fontFamily: 'Open Sans'
-            }
+	            fontFamily: 'Open Sans'
+	        }
         },
         title : {
             text : 'Europe time zones'

@@ -16,41 +16,42 @@
         http://www.springframework.org/schema/tx/spring-tx-4.0.xsd"
         >
         
-        <!-- 
-                           加载配置文件 
-               Spring容器仅允许最多定义一个PropertyPlaceholderConfigurer
-               (或<context:property-placeholder/>)，其余的会被Spring忽略掉
-           -->
+   		<!-- 
+   			加载配置文件 
+   			Spring容器仅允许最多定义一个PropertyPlaceholderConfigurer
+   			(或<context:property-placeholder/>)，其余的会被Spring忽略掉
+   		-->
 
-        <!--加载配置文件，这里的，可以在其他配置文件中用${key}替换指定的properties文件中的值 -->
-        <bean id="propertyConfig"
-            class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
-            <property name="locations">
-                <list>
-                     <value>classpath*:conf/property/*.properties</value>
-                </list>
-            </property>
-        </bean>
-        
-        <!-- <context:annotation-config /> -->
-        <!-- 使用<context:annotation- config/>隐式地向 Spring容器注册AutowiredAnnotationBeanPostProcessor、RequiredAnnotationBeanPostProcessor、CommonAnnotationBeanPostProcessor以及PersistenceAnnotationBeanPostProcessor这4个BeanPostProcessor。-->
-        <!-- 不过，呵呵，我们使用注解一般都会配置扫描包路径选项 <context:component-scan base-package=”XX.XX”/>  该配置项其实也包含了自动注入上述processor的功能，因此当使用 <context:component-scan/> 后，就可以将 <context:annotation-config/> 移除了。 -->
-         
-         <!-- 默认扫描的包路径 -->
-        <context:component-scan base-package="com.wh.eas.sys.service" />
-        <context:component-scan base-package="com.wh.eas.sys.utils" />
-        <!-- 下面这句不要放这里，会导致出错，即使下面include-filter里面包含了Controller。这里controller层的扫描放到springmvc-dispatch里面才可以正常使用！！ -->
-        <!-- <context:component-scan base-package="c.controller" /> -->
-    
-         <context:component-scan base-package="com.suning.bdsp" use-default-filters="false"> 
-             <context:include-filter type="annotation" expression="org.springframework.stereotype.Component"/>
-             <context:include-filter type="annotation" expression="org.springframework.stereotype.Repository"/>
-             <context:include-filter type="annotation" expression="org.springframework.stereotype.Service"/> 
-             <!-- <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/> -->
-        </context:component-scan> 
-         
-         <import resource="classpath:conf/spring/spring-res.xml"/>
-         <import resource="classpath:conf/spring/spring-mybatis.xml"/>
-         <import resource="classpath:conf/spring/spring-utils.xml"/>
+		<!--加载配置文件，这里的，可以在其他配置文件中用${key}替换指定的properties文件中的值 -->
+		<bean id="propertyConfig"
+			class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+			<property name="locations">
+			    <list>
+				     <value>classpath*:conf/property/*.properties</value>
+				</list>
+			</property>
+		</bean>
+		
+		<!-- <context:annotation-config /> -->
+		<!-- 使用<context:annotation- config/>隐式地向 Spring容器注册AutowiredAnnotationBeanPostProcessor、RequiredAnnotationBeanPostProcessor、CommonAnnotationBeanPostProcessor以及PersistenceAnnotationBeanPostProcessor这4个BeanPostProcessor。-->
+		<!-- 不过，呵呵，我们使用注解一般都会配置扫描包路径选项 <context:component-scan base-package=”XX.XX”/>  该配置项其实也包含了自动注入上述processor的功能，因此当使用 <context:component-scan/> 后，就可以将 <context:annotation-config/> 移除了。 -->
+ 	    
+ 	    <!-- 默认扫描的包路径 -->
+		<context:component-scan base-package="s.service" />
+		<context:component-scan base-package="u.utils" />
+		<!-- 下面这句不要放这里，会导致出错，即使下面include-filter里面包含了Controller。这里controller层的扫描放到springmvc-dispatch里面才可以正常使用！！ -->
+		<!-- <context:component-scan base-package="c.controller" /> -->
+	
+	 	<context:component-scan base-package="a" use-default-filters="false"> 
+	         <context:include-filter type="annotation" expression="org.springframework.stereotype.Component"/>
+	         <context:include-filter type="annotation" expression="org.springframework.stereotype.Repository"/>
+	         <context:include-filter type="annotation" expression="org.springframework.stereotype.Service"/> 
+	         <!-- <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/> -->
+	    </context:component-scan> 
+ 	    
+ 	    <import resource="classpath:conf/spring/spring-res.xml"/>
+ 	    <import resource="classpath:conf/spring/spring-mybatis.xml"/>
+ 	    <import resource="classpath:conf/spring/spring-utils.xml"/>
+ 	    <import resource="classpath:conf/spring/spring-redis.xml"/>
     
 </beans>

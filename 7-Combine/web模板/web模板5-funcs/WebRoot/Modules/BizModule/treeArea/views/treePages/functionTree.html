@@ -35,31 +35,31 @@
             columns: [
             //{ headerText: "", headerAlign: "center", dataAlign: "center", width: "20", handler: "customCheckBox" },
                 {headerText: "功能列表", dataField: "name", headerAlign: "left", dataAlign: "left", width: "60" },
-                //{ headerText: "名称", dataField: "name", headerAlign: "center", handler: "customOrgName" , width: "100" },
-                //{ headerText: "拼音码", dataField: "code", headerAlign: "center", dataAlign: "center", width: "100" },
-                //{ headerText: "负责人", dataField: "assignee", headerAlign: "center", dataAlign: "center", width: "100" }
-            ],
+				//{ headerText: "名称", dataField: "name", headerAlign: "center", handler: "customOrgName" , width: "100" },
+				//{ headerText: "拼音码", dataField: "code", headerAlign: "center", dataAlign: "center", width: "100" },
+				//{ headerText: "负责人", dataField: "assignee", headerAlign: "center", dataAlign: "center", width: "100" }
+			],
             data: [
-                { name: "组织管理", code: "ZZGL", assignee: "", children: [] },
-                { name: "功能管理", code: "GNGL", assignee: "", children: [] },
-                { name: "角色管理", code: "JSGL", assignee: "", children: [] },
-                { name: "授权管理", code: "SQGL", assignee: "", children: [] }
-            ]
+				{ name: "组织管理", code: "ZZGL", assignee: "", children: [] },
+				{ name: "功能管理", code: "GNGL", assignee: "", children: [] },
+				{ name: "角色管理", code: "JSGL", assignee: "", children: [] },
+				{ name: "授权管理", code: "SQGL", assignee: "", children: [] }
+			]
         };
 
 //下面的数据可以放在child里面。
 /*{ name: "child1" },
-                    { name: "child1", children: [
-                        { name: "chlid1" },
-                        { name: "chlid3", children: [
-                            { name: "chlid3-1" },
-                            { name: "chlid3-2" },
-                            { name: "chlid3-3" },
-                            { name: "chlid3-4" }
-                        ]
-                        }
-                    ]
-                    }
+					{ name: "child1", children: [
+						{ name: "chlid1" },
+						{ name: "chlid3", children: [
+							{ name: "chlid3-1" },
+							{ name: "chlid3-2" },
+							{ name: "chlid3-3" },
+							{ name: "chlid3-4" }
+						]
+						}
+					]
+					}
 */
 
         /*
@@ -136,8 +136,8 @@
                 //data: JSON.stringify(obj), // 以json字符串方式传递
                 data: obj,
                 success: function(data) {
-                    debugger;
-                    alert(data);
+                	debugger;
+                	alert(data);
                     console.log("success...");
                 },
                 error: function(data) {

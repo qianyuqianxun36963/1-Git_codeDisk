@@ -135,31 +135,31 @@
     }
   },
   Fileinput.prototype.clearImg = function(e) {
-        if (e) e.preventDefault()
-        /*
-        this.$hidden.val('')
-        this.$hidden.attr('name', this.name)
-        this.$input.attr('name', '')*/
+	    if (e) e.preventDefault()
+	    /*
+	    this.$hidden.val('')
+	    this.$hidden.attr('name', this.name)
+	    this.$input.attr('name', '')*/
 
-        //ie8+ doesn't support changing the value of input with type=file so clone instead
-        if (isIE) { 
-          var inputClone = this.$input.clone(true);
-          this.$input.after(inputClone);
-          this.$input.remove();
-          this.$input = inputClone;
-        } else {
-          this.$input.val('')
-        }
+	    //ie8+ doesn't support changing the value of input with type=file so clone instead
+	    if (isIE) { 
+	      var inputClone = this.$input.clone(true);
+	      this.$input.after(inputClone);
+	      this.$input.remove();
+	      this.$input = inputClone;
+	    } else {
+	      this.$input.val('')
+	    }
 
-       /* this.$preview.html('')*/
-        this.$element.find('.fileinput-filename').text('')
-        this.$element.addClass('fileinput-new').removeClass('fileinput-exists')
-        
-        if (e !== undefined) {
-          this.$input.trigger('change')
-          this.$element.trigger('clear.bs.fileinput')
-        }
-      },
+	   /* this.$preview.html('')*/
+	    this.$element.find('.fileinput-filename').text('')
+	    this.$element.addClass('fileinput-new').removeClass('fileinput-exists')
+	    
+	    if (e !== undefined) {
+	      this.$input.trigger('change')
+	      this.$element.trigger('clear.bs.fileinput')
+	    }
+	  },
 
   Fileinput.prototype.reset = function() {
     this.clear()

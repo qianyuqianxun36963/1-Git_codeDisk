@@ -4,61 +4,61 @@ var oMultiDiff={"19969":"DZ","19975":"WM","19988":"QJ","20048":"YL","20056":"SC"
 //转字符串数组程序  
 function makePy(str) 
 {
-    if(typeof(str) != "string")
-        throw new Error(-1, "不是字！");
-    var arrResult = new Array();
-    //将字符串转码后转为数组  
-    for(var i = 0, len = str.length; i < len; i++) 
-    {
-        var ch = str.charAt(i);
-        arrResult.push(checkCh(ch));
-    }
-    return mkRslt(arrResult);
+	if(typeof(str) != "string")
+		throw new Error(-1, "不是字！");
+	var arrResult = new Array();
+	//将字符串转码后转为数组  
+	for(var i = 0, len = str.length; i < len; i++) 
+	{
+		var ch = str.charAt(i);
+		arrResult.push(checkCh(ch));
+	}
+	return mkRslt(arrResult);
 }
 
 function checkCh(ch) 
 {
-    var uni = ch.charCodeAt(0);
-    //如果不在汉字处理范围之内,返回原字符,也可以调用自己的处理函数    
-    if(uni > 40869 || uni < 19968)
-        return ch; //dealWithOthers(ch);    
-    //检查是否是多音字,是按多音字处理,不是就直接在strChineseFirstPY字符串中找对应的首字母    
-    return(oMultiDiff[uni] ? oMultiDiff[uni] : (strChineseFirstPY.charAt(uni - 19968)));
+	var uni = ch.charCodeAt(0);
+	//如果不在汉字处理范围之内,返回原字符,也可以调用自己的处理函数    
+	if(uni > 40869 || uni < 19968)
+		return ch; //dealWithOthers(ch);    
+	//检查是否是多音字,是按多音字处理,不是就直接在strChineseFirstPY字符串中找对应的首字母    
+	return(oMultiDiff[uni] ? oMultiDiff[uni] : (strChineseFirstPY.charAt(uni - 19968)));
 }
 
 function mkRslt(arr) 
 {
-    var arrRslt = [""];
-    for(var i = 0, len = arr.length; i < len; i++) 
-    {
-        var str = arr[i];
-        var strlen = str.length;
-        if(strlen == 1) 
-        {
-            for(var k = 0; k < arrRslt.length; k++) 
-            {
-                arrRslt[k] += str;
-            }
-        } 
-        else 
-        {
-            var tmpArr = arrRslt.slice(0);
-            arrRslt = [];
-            for(k = 0; k < strlen; k++) 
-            {
-                //复制一个相同的arrRslt    
-                var tmp = tmpArr.slice(0);
-                //把当前字符str[k]添加到每个元素末尾    
-                for(var j = 0; j < tmp.length; j++) 
-                {
-                    tmp[j] += str.charAt(k);
-                }
-                //把复制并修改后的数组连接到arrRslt上    
-                arrRslt = arrRslt.concat(tmp);
-            }
-        }
-    }
-    return arrRslt;
+	var arrRslt = [""];
+	for(var i = 0, len = arr.length; i < len; i++) 
+	{
+		var str = arr[i];
+		var strlen = str.length;
+		if(strlen == 1) 
+		{
+			for(var k = 0; k < arrRslt.length; k++) 
+			{
+				arrRslt[k] += str;
+			}
+		} 
+		else 
+		{
+			var tmpArr = arrRslt.slice(0);
+			arrRslt = [];
+			for(k = 0; k < strlen; k++) 
+			{
+				//复制一个相同的arrRslt    
+				var tmp = tmpArr.slice(0);
+				//把当前字符str[k]添加到每个元素末尾    
+				for(var j = 0; j < tmp.length; j++) 
+				{
+					tmp[j] += str.charAt(k);
+				}
+				//把复制并修改后的数组连接到arrRslt上    
+				arrRslt = arrRslt.concat(tmp);
+			}
+		}
+	}
+	return arrRslt;
 }
 
 
