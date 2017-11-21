@@ -14,7 +14,7 @@ public class Java处理json {
      * 
      * @return
      */
-    public static String BuildJson() {
+    public static String BuildJsonStr() {
         // JSON格式数据解析对象
         JSONObject jo = new JSONObject();
 
@@ -65,7 +65,7 @@ public class Java处理json {
      * 
      * @param jsonString Json数据字符串
      */
-    public static void ParseJson(String jsonString) {
+    public static void ParseJsonStr(String jsonString) {
 
         // 以employee为例解析，map类似
         JSONObject jb = JSONObject.fromObject(jsonString);
@@ -93,20 +93,45 @@ public class Java处理json {
 
     }
     
-public static void testArrayListMaptoJsonString(){
-    ArrayList<Map<Object, Object>> res = new ArrayList<Map<Object, Object>>();
-    Map<Object, Object> resmap = new HashMap<Object, Object>();resmap.put("id","id");
-    res.add(resmap);
-    JSONArray json = JSONArray.fromObject(res);
-    System.out.println(json.toString());
-}
-
+    public static String BuildArrayStr() {
+        /*将一个json格式的数组直接转换成JSONArray*/
+        String arrayStr = "['123','123']";
+        return arrayStr;
+    }
+    
+    public static void ParseArrayStr(String ArrayString) {
+        System.out.println("change arrayStr is : " + ArrayString);
+//        直接解析是错误的，因为arrayStr格式并不正确!
+//        JSONObject jb = JSONObject.fromObject(ArrayString);
+//        JSONArray ja = jb.getJSONArray("123");
+        
+        Map map = new HashMap();
+        map.put("arrayStr", ArrayString);
+        String arrayStr2jsonStr = map.toString();
+        JSONObject jb = JSONObject.fromObject(arrayStr2jsonStr);
+        
+        JSONArray ja = jb.getJSONArray("arrayStr");
+        
+        for(int i=0;i<ja.size();i++){
+            System.out.println("ArrayStr's "+ i +" element: " + ja.get(i));
+        }
+    }
+    
+    
+    public static void testArrayListMaptoJsonString(){
+        ArrayList<Map<Object, Object>> res = new ArrayList<Map<Object, Object>>();
+        Map<Object, Object> resmap = new HashMap<Object, Object>();resmap.put("id","id");
+        res.add(resmap);
+        JSONArray json = JSONArray.fromObject(res);
+        System.out.println(json.toString());
+    }
+    
     /**
      * @param args
      */
     public static void main(String[] args) {
-        // TODO Auto-generated method stub
-        testArrayListMaptoJsonString();
-//        ParseJson(BuildJson());
+//        testArrayListMaptoJsonString();
+//        ParseJsonStr(BuildJsonStr());
+        ParseArrayStr(BuildArrayStr());
     }
 }
