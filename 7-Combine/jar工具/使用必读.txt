@@ -1,0 +1,13 @@
+在修改项目名称时，intellij生成的javaweb_maven项目，需要修改下面几个地方：
+
+	项目跟目录下的.iml文件名。
+
+	pom里面的原工程名。
+
+.idea文件夹下面的：
+
+	compiler.xml 文件
+
+	modules.xml文件
+
+	workspace.xml文件
