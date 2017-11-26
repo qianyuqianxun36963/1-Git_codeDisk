@@ -11,16 +11,18 @@
 
 ## maven2
 
-maven命令行方式新建java项目
-
-IDE(eclipse)通过maven插件新建java项目
-
-两个项目的比较和装换。
+maven命令行方式新建java(maven)项目  --> 添加ide支持 --> 添加插件的支持 ==  IDE(eclipse/IntelliJ)通过maven插件新建的java项目
 
 ## maven3
 
-IDE(eclipse)创建的普通java项目
+IDE(eclipse/IntelliJ)生成的普通Java项目   --> 添加maven支持 --> 添加IDE的maven插件支持 == IDE 插件生成的标准maven项目。
 
-将该java项目改为支持maven命令行的maven项目。
+## maven4
 
-将该java项目改为支持maven插件的eclipse项目。
+maven命令行方式新建javaWeb(maven)项目  --> 添加ide支持 --> 添加插件的支持 ==  IDE(eclipse/IntelliJ)通过maven插件新建的javaWeb项目
+
+## maven5
+
+IDE(eclipse/IntelliJ)生成的普通Javaweb项目 --> 添加maven支持 --> 添加IDE的maven插件支持 == IDE 插件生成的标准maven项目。
+
+
