@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/modulproject.iml" filepath="$PROJECT_DIR$/modulproject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pro-api/pro-api.iml" filepath="$PROJECT_DIR$/pro-api/pro-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pro-core/pro-core.iml" filepath="$PROJECT_DIR$/pro-core/pro-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pro-server/pro-server.iml" filepath="$PROJECT_DIR$/pro-server/pro-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pro-utils/pro-utils.iml" filepath="$PROJECT_DIR$/pro-utils/pro-utils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pro-web/pro-web.iml" filepath="$PROJECT_DIR$/pro-web/pro-web.iml" />
+    </modules>
+  </component>
+</project>

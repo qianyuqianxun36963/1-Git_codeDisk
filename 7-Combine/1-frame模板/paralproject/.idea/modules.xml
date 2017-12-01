@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/pro-dao/pro-dao.iml" filepath="$PROJECT_DIR$/pro-dao/pro-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pro-pom/pro-pom.iml" filepath="$PROJECT_DIR$/pro-pom/pro-pom.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pro-utils/pro-utils.iml" filepath="$PROJECT_DIR$/pro-utils/pro-utils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pro-web/pro-web.iml" filepath="$PROJECT_DIR$/pro-web/pro-web.iml" />
+    </modules>
+  </component>
+</project>
