@@ -1,4 +1,4 @@
-package www.ustc.wang.web;
+package www.ustc.wang.controller;
 
 import org.junit.Test;
 import www.ustc.wang.core.CoreTest;
