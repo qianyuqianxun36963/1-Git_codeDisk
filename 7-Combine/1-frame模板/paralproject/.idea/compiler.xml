@@ -6,15 +6,26 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="pro-api" />
+        <module name="pro-core" />
         <module name="pro-dao" />
-        <module name="pro-pom" />
-        <module name="pro-utils" />
+        <module name="pro-intf" />
+        <module name="pro-server" />
+        <module name="pro-util" />
         <module name="pro-web" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="data-mongodb" target="1.5" />
+      <module name="data-redis" target="1.5" />
+      <module name="pro-api" target="1.5" />
+      <module name="pro-core" target="1.5" />
       <module name="pro-dao" target="1.5" />
+      <module name="pro-data" target="1.5" />
+      <module name="pro-intf" target="1.5" />
       <module name="pro-pom" target="1.5" />
+      <module name="pro-server" target="1.5" />
+      <module name="pro-util" target="1.5" />
       <module name="pro-utils" target="1.5" />
       <module name="pro-web" target="1.5" />
     </bytecodeTargetLevel>

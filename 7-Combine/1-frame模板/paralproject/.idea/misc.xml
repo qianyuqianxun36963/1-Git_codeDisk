@@ -8,10 +8,21 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pro-pom/pom.xml" />
-        <option value="$PROJECT_DIR$/pro-utils/pom.xml" />
         <option value="$PROJECT_DIR$/pro-web/pom.xml" />
         <option value="$PROJECT_DIR$/pro-dao/pom.xml" />
+        <option value="$PROJECT_DIR$/pro-server/pom.xml" />
+        <option value="$PROJECT_DIR$/pro-intf/pom.xml" />
+        <option value="$PROJECT_DIR$/pro-core/pom.xml" />
+        <option value="$PROJECT_DIR$/pro-data/pom.xml" />
+        <option value="$PROJECT_DIR$/pro-util/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/pro-data/data-mongodb/pom.xml" />
+        <option value="$PROJECT_DIR$/pro-data/data-redis/pom.xml" />
+        <option value="$PROJECT_DIR$/pro-data/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager">

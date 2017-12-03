@@ -12,6 +12,9 @@
     <modules>
         <module>pro-core</module>
         <module>pro-web</module>
+        <module>pro-api</module>
+        <module>pro-server</module>
+        <module>pro-utils</module>
     </modules>
 
 
