@@ -2,248 +2,248 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4387e9b9-47d6-4f27-ae75-e7cd75689a05" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/a_组织/a_语法/代码块/Code.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/a_组织/a_语法/代码块/ConstructBlock.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/a_组织/a_语法/代码块/NormalBlock.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/a_组织/a_语法/代码块/StaticBlock.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/a_组织/a_语法/代码块/SyncBlock.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/a_组织/a_语法/代码块/代码块基础.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/a_组织/a_语法/控制流/For语句.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/a_组织/a_语法/控制流/Switch语句.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/a_组织/a_语法/控制流/myenum.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/a_组织/b_函数/函数.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/a_组织/c_类/初始与清除/Final类相关.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/a_组织/c_类/多态/Father.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/a_组织/c_类/多态/Son.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/a_组织/c_类/多态/上转型下转型.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/a_组织/c_类/封装/包内子类.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/a_组织/c_类/封装/包内访问.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/a_组织/c_类/封装/包外/包外子类.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/a_组织/c_类/封装/包外/包外访问.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/a_组织/c_类/封装/基本父类.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/a_组织/c_类/接口类/I_interFace.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/a_组织/c_类/接口类/Impl_Interface.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/a_组织/c_类/接口类/User.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/a_组织/c_类/继承/baseclass.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/a_组织/c_类/继承/subclass.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/a_组织/c_类/继承/继承.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/Build.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/Command.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/Controller13.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/Ex1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/Ex11.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/Ex12.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/Ex15.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/Ex18.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/Ex19.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/Ex2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/Ex24.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/Ex25.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/Ex26.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/Ex28.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/Ex29.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/Ex4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/Ex5.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/Ex6.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/Ex7.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/Ex8.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/Generator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/Gerbil.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/Gerbils17.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/Mouse.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/Mydata.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/Queue27.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/RandomRodentGenerator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/Rat.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/Rodent.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/Rodent10.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/Selector.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/Sequence3$Sequence3Selector.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/Sequence3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/Sequence9.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/Simple.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/Squirrel.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/Statistics23.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/Tester.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/基础/A.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/基础/B.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/基础/ListUtil.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/基础/MapUtil.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/基础/MyList.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/基础/MyList_Arraylist.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/基础/MyList_Linkedlist.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/基础/MyMap.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/基础/MyMap_EnumMap$Season.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/基础/MyMap_EnumMap.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/基础/MyMap_HashMap.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/基础/MyMap_HashTable.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/基础/MyMap_Properties.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/基础/MyMap_TreeMap.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/基础/MySet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/基础/MySet_EnumSet$Season.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/基础/MySet_EnumSet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/基础/MySet_HashSet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/基础/MySet_TreeSet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/基础/Mylist_Stack.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/基础/Mylist_Vector.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/基础/Point.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/基础/SetUtil.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/应用/List特性.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/应用/Word.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/应用/单词统计_list方式.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/应用/单词统计_set方式.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/应用/字符统计_set方式.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/应用/栈_括号校验.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/应用/网易测试素材统计.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/数组容器/Edge.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/数组容器/MyArrayList.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/数组容器/My_ArrayList.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/数组容器/Solution.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/数组容器/changAbleArray.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/数组容器/变长数组.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/数组容器/多维数组.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/数组容器/对象数组.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/数组容器/数组拼接.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/数组容器/数组相关的测试.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/类型/变量常量/变量类型.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/类型/基本类型/基本类型转换.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/类型/字符串类/AllView.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/类型/字符串类/StringBufferTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/类型/字符串类/StringTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/类型/字符串类/String和StringBuffer作为函数参数.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/类型/字符串类/changeStr.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/类型/字符串类/util.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/类型/字符串类/字符串关于地址的常用工具.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/类型/字符串类/字符串常用工具.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/类型/字符串类/字符串次序反转.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/类型/字符串类/水务局脚本工具.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/类型/字符串类/转化字符串供定义字符串对象用.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/类型/字符串类/过滤出特有字符.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/类型/枚举类/Shrubbery.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/类型/枚举类/枚举_Enum.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/类型/泛型/Inter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/类型/泛型/InterImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/类型/泛型/引例.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/类型/泛型/泛型和子类型.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/类型/泛型/泛型基础.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/类型/泛型/泛型接口.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/类型/泛型/泛型方法.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/类型/泛型/泛型类.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/类型/泛型/通配符.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/c_特性/反射/ClassKindA.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/c_特性/反射/ClassKindB.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/c_特性/反射/I_Say.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/c_特性/反射/Test.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/c_特性/反射/反射原理.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/c_特性/反射/类的动态装载.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/c_特性/序列化/SerializableObject.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/c_特性/序列化/序列化.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/c_特性/异常处理/A.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/c_特性/异常处理/B.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/c_特性/异常处理/C.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/c_特性/异常处理/D.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/c_特性/异常处理/Level.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/c_特性/异常处理/异常基础.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/c_特性/异常处理/接口抛异常.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/c_特性/异常处理/自定义异常.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/io操作/Cache.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/io操作/CacheTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/io操作/ChangeFileUtil.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/io操作/DeleteFileUtil.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/io操作/ExecuteFileUtil.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/io操作/FileNameAndPath.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/io操作/IO读写.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/io操作/InputAndOutpurStream_byteArray.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/io操作/InputAndOutputStream.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/io操作/InputAndOutputStream_data.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/io操作/InputAndOutputStream_file.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/io操作/InputAndOutputStream_object.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/io操作/MakeFileUtil.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/io操作/MyInputStreamReader.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/io操作/MyOutputStreamWriter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/io操作/ReadFileUtil.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/io操作/ReaderAndWriter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/io操作/ReaderAndWriter_buffer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/io操作/ReaderAndWriter_chararray.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/io操作/ReaderAndWriter_file.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/io操作/ReaderAndWriter_string.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/io操作/ShowFileUtil.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/io操作/Utils_Filter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/io操作/WriteFileUtil.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/io操作/cities.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/io操作/data.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/io操作/func.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/io操作/城投java执行文件$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/io操作/城投java执行文件.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/io操作/屏幕输入输出.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/io操作/文件类.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/io操作/文件读入缓存.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/io操作/测试题标准输入输出.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/io操作/车站代码表转换.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/图形化/不规则窗口和窗口透明$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/图形化/不规则窗口和窗口透明$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/图形化/不规则窗口和窗口透明.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/并发/AtomicTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/并发/BrotherThread.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/并发/ChildThread.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/并发/DataProcessor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/并发/LockTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/并发/MyRunClass.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/并发/MyThread.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/并发/SimplePriorities.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/并发/SimpleThread.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/并发/SleepThread.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/并发/SynThread.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/Gerbil.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/并发/SyncTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/并发/TestTemplate$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/并发/TestTemplate$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/并发/TestTemplate.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/并发/ThinkJava代码.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/并发/YieldThread.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/并发/join_main.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/并发/join_slave.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/并发/同步锁.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/并发/并发工具包.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/并发/线程机制.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/并发/访问受限资源.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/并发/锁机制.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/时间相关/Data.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/时间相关/MyDateUtil.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/时间相关/计时程序$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/时间相关/计时程序$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/时间相关/计时程序$3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/时间相关/计时程序$4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/时间相关/计时程序.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/网络编程/Client.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/网络编程/Server$Broadcast.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/网络编程/Server$CreateServerThread.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/网络编程/Server.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/e_对接/C底层/InterfaceToDLL.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/e_对接/Python/InterfaceToPython.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/e_对接/web服务/WebService_JdkAPI.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/e_对接/数据库/DbUtil.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/e_对接/数据库/PropertiesUtils.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/e_对接/正则表达式/RegEx11.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/e_对接/正则表达式/正则表达式.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/e_对接/脚本/FileUtils.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/e_对接/脚本/InterfaceToBat.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/e_对接/脚本/InterfaceToShell_Linux.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/e_对接/脚本/InterfaceToShell_win.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/a_组织/c_类/多态/Son.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/Rat.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/Rodent10.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/基础/A.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/数组容器/Edge.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/f_文档/html格式/ChangeHtml.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/f_文档/html格式/HtmlUtils.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/f_文档/html格式/ReadHtml.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/f_文档/html格式/Utils.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/io操作/MyOutputStreamWriter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/io操作/cities.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/e_对接/脚本/InterfaceToShell_Linux.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/并发/join_main.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/f_文档/html格式/java操作html.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/f_文档/html格式/给html标题加锚点.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/f_文档/json格式/Employee.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/a_组织/a_语法/控制流/myenum.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/基础/MyList.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/类型/枚举类/Shrubbery.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/Ex2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/Queue27.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/数组容器/changAbleArray.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/类型/字符串类/StringTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/Gerbils17.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/数组容器/MyArrayList.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/类型/变量常量/变量类型.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/类型/字符串类/字符串次序反转.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/图形化/不规则窗口和窗口透明.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/并发/TestTemplate$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/并发/MyThread.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/并发/DataProcessor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/类型/字符串类/过滤出特有字符.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/网络编程/Server.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/基础/MyList_Arraylist.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/a_组织/c_类/接口类/User.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/数组容器/对象数组.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/类型/字符串类/字符串常用工具.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/io操作/测试题标准输入输出.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/c_特性/异常处理/异常基础.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/a_组织/c_类/多态/Father.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/基础/MySet.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/并发/YieldThread.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/io操作/InputAndOutputStream_data.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/io操作/ReaderAndWriter_string.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/io操作/Cache.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/io操作/MakeFileUtil.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/Ex11.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/Ex4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/a_组织/a_语法/代码块/Code.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/c_特性/异常处理/自定义异常.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/Ex25.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/基础/ListUtil.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/时间相关/MyDateUtil.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/基础/Mylist_Vector.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/基础/MyMap_HashTable.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/数组容器/变长数组.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/a_组织/a_语法/代码块/StaticBlock.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/并发/ThinkJava代码.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/并发/并发工具包.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/io操作/车站代码表转换.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/io操作/ReaderAndWriter_buffer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/e_对接/数据库/DbUtil.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/e_对接/web服务/WebService_JdkAPI.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/网络编程/Server$Broadcast.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/e_对接/C底层/InterfaceToDLL.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/并发/join_slave.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/c_特性/异常处理/Level.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/a_组织/c_类/封装/包外/包外访问.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/时间相关/计时程序$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/Ex6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/并发/线程机制.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/c_特性/异常处理/接口抛异常.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/c_特性/反射/反射原理.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/a_组织/a_语法/控制流/For语句.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/c_特性/反射/I_Say.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/Ex19.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/Ex28.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/应用/List特性.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/基础/MySet_EnumSet.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/f_文档/json格式/Java处理json.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/f_文档/xml格式/Xml增删改查.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/z_common/utils/Gerbil.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/z_common/utils/Myutils.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/笔试题目/分土地.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/笔试题目/数字处理到一.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/Ex7.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/io操作/城投java执行文件.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/类型/基本类型/基本类型转换.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/c_特性/异常处理/B.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/c_特性/异常处理/D.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/应用/Word.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/io操作/data.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/类型/泛型/Inter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/io操作/FileNameAndPath.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/基础/Point.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/并发/SleepThread.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/基础/SetUtil.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/类型/字符串类/String和StringBuffer作为函数参数.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/io操作/ReaderAndWriter_chararray.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/Controller13.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/f_文档/html格式/Utils.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/a_组织/a_语法/代码块/代码块基础.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/a_组织/c_类/封装/包外/包外子类.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/a_组织/a_语法/代码块/NormalBlock.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/类型/枚举类/枚举_Enum.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/bin/笔试题目/股市求利润.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/应用/栈_括号校验.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/基础/MyMap_TreeMap.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/c_特性/反射/类的动态装载.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/Command.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/Ex5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/Ex15.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/图形化/不规则窗口和窗口透明$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/Tester.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/io操作/ChangeFileUtil.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/类型/泛型/泛型和子类型.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/类型/字符串类/util.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/Generator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/网络编程/Client.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/并发/AtomicTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/时间相关/计时程序$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/Statistics23.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/基础/MyList_Linkedlist.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/a_组织/c_类/封装/包内访问.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/并发/SimpleThread.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/类型/字符串类/AllView.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/e_对接/脚本/FileUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/io操作/ReaderAndWriter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/z_common/utils/Gerbil.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/基础/MySet_HashSet.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/e_对接/正则表达式/RegEx11.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/数组容器/数组相关的测试.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/io操作/Utils_Filter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/io操作/InputAndOutpurStream_byteArray.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/应用/单词统计_set方式.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/类型/泛型/InterImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/类型/泛型/泛型接口.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/io操作/InputAndOutputStream_object.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/数组容器/多维数组.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/类型/泛型/引例.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/io操作/DeleteFileUtil.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/Ex29.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/基础/Mylist_Stack.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/io操作/文件读入缓存.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/Sequence3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/并发/SimplePriorities.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/并发/TestTemplate$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/io操作/ReaderAndWriter_file.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/时间相关/Data.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/io操作/InputAndOutputStream.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/e_对接/脚本/InterfaceToShell_win.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/类型/字符串类/水务局脚本工具.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/Ex26.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/基础/B.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/a_组织/c_类/接口类/Impl_Interface.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/a_组织/c_类/继承/baseclass.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/类型/字符串类/changeStr.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/io操作/WriteFileUtil.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/io操作/MyInputStreamReader.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/c_特性/反射/Test.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/e_对接/Python/InterfaceToPython.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/类型/泛型/泛型基础.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/f_文档/json格式/Employee.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/并发/TestTemplate.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/io操作/CacheTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/f_文档/html格式/HtmlUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/基础/MySet_EnumSet$Season.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/io操作/城投java执行文件$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/a_组织/c_类/封装/包内子类.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/基础/MapUtil.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/c_特性/反射/ClassKindA.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/a_组织/c_类/继承/subclass.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/类型/泛型/通配符.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/类型/泛型/泛型类.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/c_特性/反射/ClassKindB.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/笔试题目/数字处理到一.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/网络编程/Server$CreateServerThread.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/笔试题目/分土地.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/类型/泛型/泛型方法.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/并发/访问受限资源.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/应用/网易测试素材统计.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/Ex1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/并发/同步锁.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/Simple.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/并发/ChildThread.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/时间相关/计时程序$4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/io操作/InputAndOutputStream_file.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/Mydata.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/Ex24.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/a_组织/a_语法/控制流/Switch语句.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/c_特性/异常处理/A.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/Build.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/图形化/不规则窗口和窗口透明$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/类型/字符串类/转化字符串供定义字符串对象用.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/z_common/utils/Myutils.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/Sequence9.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/Squirrel.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/并发/BrotherThread.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/c_特性/序列化/序列化.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/a_组织/b_函数/函数.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/应用/字符统计_set方式.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/f_文档/xml格式/Xml增删改查.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/c_特性/序列化/SerializableObject.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/Ex8.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/Mouse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/并发/LockTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/基础/MySet_TreeSet.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/RandomRodentGenerator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/f_文档/html格式/给html标题加锚点.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/e_对接/正则表达式/正则表达式.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/a_组织/c_类/初始与清除/Final类相关.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/基础/MyMap_Properties.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/c_特性/异常处理/C.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/Rodent.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/时间相关/计时程序.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/Ex18.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/应用/单词统计_list方式.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/基础/MyMap_EnumMap$Season.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/类型/字符串类/字符串关于地址的常用工具.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/并发/MyRunClass.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/基础/MyMap.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/Selector.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/时间相关/计时程序$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/基础/MyMap_EnumMap.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/a_组织/c_类/多态/上转型下转型.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/e_对接/脚本/InterfaceToBat.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/数组容器/数组拼接.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/a_组织/c_类/封装/基本父类.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/类型/字符串类/StringBufferTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/并发/SynThread.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/io操作/func.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/数组容器/Solution.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/数组容器/My_ArrayList.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/a_组织/a_语法/代码块/SyncBlock.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/io操作/ShowFileUtil.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/io操作/ReadFileUtil.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/基础/MyMap_HashMap.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/io操作/ExecuteFileUtil.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/a_组织/c_类/接口类/I_interFace.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/a_组织/a_语法/代码块/ConstructBlock.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/Ex12.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/a_组织/c_类/继承/继承.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/e_对接/数据库/PropertiesUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/b_数据/容器/实用容器/Sequence3$Sequence3Selector.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/java语言/d_系统/io操作/IO读写.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java语言/d_系统/io操作/测试题标准输入输出.java" afterPath="$PROJECT_DIR$/src/java语言/d_系统/io操作/测试题标准输入输出.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../1-并行编程/java-parallel/target/classes/META-INF/maven/java_parallel/java_parallel/pom.properties" afterPath="$PROJECT_DIR$/../1-并行编程/java-parallel/target/classes/META-INF/maven/java_parallel/java_parallel/pom.properties" />
     </list>
@@ -256,11 +256,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../alibaba/.idea/workspace.xml">
+    <leaf>
+      <file leaf-file-name="IO读写.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/java语言/d_系统/io操作/IO读写.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
+            <state relative-caret-position="-1083">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -293,8 +293,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="11" />
-    <option name="y" value="115" />
+    <option name="x" value="206" />
+    <option name="y" value="32" />
     <option name="width" value="1400" />
     <option name="height" value="1000" />
   </component>
@@ -314,9 +314,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
-      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -328,16 +326,19 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../1-java专题/1-Java专题" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -485,28 +486,30 @@
       <workItem from="1501118558383" duration="3395000" />
       <workItem from="1501152431576" duration="1857000" />
       <workItem from="1501209465735" duration="1269000" />
+      <workItem from="1512303824659" duration="193000" />
+      <workItem from="1512304085125" duration="788000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7459000" />
+    <option name="totallyTimeSpent" value="8440000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="11" y="115" width="1400" height="1000" extended-state="0" />
+    <frame x="206" y="32" width="1400" height="1000" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3295838" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3290993" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -538,13 +541,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1995">
           <caret line="109" column="11" lean-forward="false" selection-start-line="109" selection-start-column="11" selection-end-line="109" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1146#1154#0" expanded="false" />
-            <element signature="e#1377#1385#0" expanded="false" />
-            <element signature="e#1732#1740#0" expanded="false" />
-            <marker date="1499788788448" expanded="false" signature="3062:3092" ph="/unchecked/" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -552,27 +548,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding>
-            <marker date="1480653291428" expanded="true" signature="479:503" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java基础.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/java基础.iml" />
     <entry file="file://$PROJECT_DIR$/../3-在线编程/src/main/java/alibaba/数组分片.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="665">
           <caret line="36" column="55" lean-forward="true" selection-start-line="36" selection-start-column="55" selection-end-line="36" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -580,29 +563,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
           <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../alibaba/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../alibaba/.idea/workspace.xml" />
     <entry file="file://$PROJECT_DIR$/src/java语言/b_数据/容器/实用容器/基础/MyList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1995">
           <caret line="109" column="11" lean-forward="false" selection-start-line="109" selection-start-column="11" selection-end-line="109" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1146#1154#0" expanded="false" />
-            <element signature="e#1377#1385#0" expanded="false" />
-            <element signature="e#1732#1740#0" expanded="false" />
-            <marker date="1499788788448" expanded="false" signature="3062:3092" ph="/unchecked/" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -610,25 +578,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding>
-            <marker date="1480653291428" expanded="true" signature="479:503" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java基础.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/java基础.iml" />
     <entry file="file://$PROJECT_DIR$/src/java语言/b_数据/容器/实用容器/Mydata.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
           <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -636,9 +593,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="950">
           <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -646,13 +600,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1995">
           <caret line="109" column="11" lean-forward="false" selection-start-line="109" selection-start-column="11" selection-end-line="109" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1146#1154#0" expanded="false" />
-            <element signature="e#1377#1385#0" expanded="false" />
-            <element signature="e#1732#1740#0" expanded="false" />
-            <marker date="1499788788448" expanded="false" signature="3062:3092" ph="/unchecked/" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -660,7 +607,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
           <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -668,9 +614,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding>
-            <marker date="1480653291428" expanded="true" signature="479:503" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -678,7 +621,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
           <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -686,13 +628,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1995">
           <caret line="109" column="11" lean-forward="false" selection-start-line="109" selection-start-column="11" selection-end-line="109" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1146#1154#0" expanded="false" />
-            <element signature="e#1377#1385#0" expanded="false" />
-            <element signature="e#1732#1740#0" expanded="false" />
-            <marker date="1499788788448" expanded="false" signature="3062:3092" ph="/unchecked/" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -700,33 +635,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding>
-            <marker date="1480653291428" expanded="true" signature="479:503" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java基础.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/java基础.iml" />
     <entry file="file://$PROJECT_DIR$/../3-在线编程/src/main/java/alibaba/数组分片.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="665">
           <caret line="36" column="55" lean-forward="false" selection-start-line="36" selection-start-column="55" selection-end-line="36" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../alibaba/.idea/workspace.xml">
+    <entry file="file://$PROJECT_DIR$/../alibaba/.idea/workspace.xml" />
+    <entry file="file://$PROJECT_DIR$/src/java语言/d_系统/io操作/IO读写.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="-1083">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
