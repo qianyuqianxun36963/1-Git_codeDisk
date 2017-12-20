@@ -1,9 +1,11 @@
 <%@ page contentType="text/html; charset=UTF-8"  %>
 <html>
 <head>
-    <meta http-equiv="content-type" content="txt/html; charset=utf-8" />
-    <script src="static/js/lib/jquery/jquery-1.8.3.min.js"></script> <%--js引用要注意顺序--%>
-    <script src="static/js/lib/html5Validate/jquery-html5Validate.js"></script>
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 </head>
 <body>
 <h2>Hello World!</h2>
@@ -18,8 +20,41 @@
 
     <button type="submit" class="btn btn-primary" id="">submit</button>
 
+    <hr>
+
+
 </form>
 
+<div class="container-fluid" style="margin: 20px">
+    <div class="row-fluid">
+        <div class="span12">
+            <ul class="breadcrumb">
+                <li>
+                    <a href="#">主页</a> <span class="divider">/</span>
+                </li>
+                <li>
+                    <a href="#">类目</a> <span class="divider">/</span>
+                </li>
+                <li class="active">
+                    主题
+                </li>
+            </ul>
+            <h3>
+                基础验证
+            </h3>
+            <form id="newform">
+                <fieldset>
+                    <legend>form表单</legend> <label>表签名</label><input type="text" required /> <span class="help-block">这里填写帮助信息.</span> <label class="checkbox"><input type="checkbox"  /> 勾选同意</label>
+                    <button type="submit" class="btn">提交</button>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div class="row-fluid">
+        <div class="span12">
+        </div>
+    </div>
+</div>
 
 </body>
 
