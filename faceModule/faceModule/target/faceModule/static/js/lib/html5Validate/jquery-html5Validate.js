@@ -1,8 +1,6 @@
 /*! jquery-html5Validate.js 基于HTML5表单验证的jQuery插件
  * Create by zhangxinxu(.com) on 2012-12-05
  * Move to Github ( https://github.com/zhangxinxu/html5Validate ) on 2014-12-17
- * update by zzy on 2017-09-16 
- * 添加了:1.提示框z-index;2.滚动时隐藏提示框;3.当validate()中报错时,阻止submit提交动作;
 **/
 (function($, undefined) {
     // 全角半角转换
@@ -22,7 +20,6 @@
     };
 
     // 自定义提示隐藏、绑定事件以及解绑事件
-    //滚动事件
     $.testRemind = (function() {
         var winWidth = $(window).width();
         var fnMouseDown = function(e) {
@@ -42,11 +39,6 @@
                 $.testRemind.hide();
                 winWidth = nowWinWidth;
             }
-        },fnScroll = function(e) {
-            if (!e || !e.target) return;
-            if (e.target.id !== $.testRemind.id && $(e.target).parents("#" + $.testRemind.id).length === 0) {
-                $.testRemind.hide();
-            }
         };
         return {
             id: "validateRemind",
@@ -65,8 +57,7 @@
             bind: function() {
                 $(document).bind({
                     mousedown: 	fnMouseDown,
-                    keydown: fnKeyDown,
-                    scroll:fnScroll
+                    keydown: fnKeyDown
                 });
                 $(window).bind("resize", funResize);
             }
@@ -79,11 +70,15 @@
         NUMBER: "^\\-?\\d+(\\.\\d+)?$",
         URL:"^(http|https|ftp)\\:\\/\\/[a-z0-9\\-\\.]+\\.[a-z]{2,3}(:[a-z0-9]*)?\\/?([a-z0-9\\-\\._\\?\\,\\'\\/\\\\\\+&amp;%\\$#\\=~])*$",
         TEL:"^1\\d{10}$",
+        QQ:"^[1-9][0-9]{4,}$",
+        NICKNAME: "^\\w+$",
         ZIPCODE:"^\\d{6}$",
         "prompt": {
             radio: "请选择一个选项",
             checkbox: "如果要继续，请选中此框",
             "select": "请选择列表中的一项",
+            qq: "请输入qq号",
+            nickname: "只能是字母数字以及下划线",
             email: "请输入电子邮件地址",
             url: "请输入网站地址",
             tel: "请输入手机号码",
@@ -279,13 +274,9 @@
                                 $(window).scrollTop(target.offset().top - 50);
                             }
                             target.testRemind(customTxt);
-                        }else if($(control).attr("data-isbtSel")){
-                            //当该提示是bootstrap-select时
-                            $(control).next(".bootstrap-select").testRemind(customTxt);
-                        }else{
+                        } else {
                             alert(customTxt);
                         }
-
                     }
                     return false;
                 };
@@ -389,7 +380,7 @@
                     color: "#333",
                     fontSize: "12px",
                     padding: "5px 10px",
-                    zIndex: 10050
+                    zIndex: 202
                 }
             };
 
@@ -558,11 +549,10 @@
                         try { this.type = typeReplaced; } catch(e) {}
                     }
                 });
-                event.preventDefault();
                 if ($.html5Validate.isAllpass(elements, params) && params.validate() && $.isFunction(callback)) {
                     callback.call(this);
                 }
-
+                event.preventDefault();
                 return false;
             });
 

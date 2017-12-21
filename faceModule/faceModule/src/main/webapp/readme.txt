@@ -53,14 +53,16 @@
         NUMBER: "^\\-?\\d+(\\.\\d+)?$",
         URL:"^(http|https|ftp)\\:\\/\\/[a-z0-9\\-\\.]+\\.[a-z]{2,3}(:[a-z0-9]*)?\\/?([a-z0-9\\-\\._\\?\\,\\'\\/\\\\\\+&amp;%\\$#\\=~])*$",
         TEL:"^1\\d{10}$",
+        QQ:"^[1-9][0-9]{4,}$",
         ZIPCODE:"^\\d{6}$",
         "prompt": {
             radio: "请选择一个选项",
             checkbox: "如果要继续，请选中此框",
-            "select": "请选择列表中的一项",
+            select: "请选择列表中的一项",
             email: "请输入电子邮件地址",
             url: "请输入网站地址",
             tel: "请输入手机号码",
+            qq: "请输入qq号",
             number: "请输入数值",
             date: "请输入日期",
             pattern: "内容格式不符合要求",
@@ -68,3 +70,22 @@
             multiple: "多条数据使用逗号分隔"
         }
     };
+
+张鑫旭 使用例子：
+
+    http://www.zhangxinxu.com/study/201212/html5validate-objreg-extend.html
+
+    HTML代码：
+    <p>昵称</p>
+    <input type="nickname" class="nickname" required data-min="6" data-max="20" /> 6-20个单词字符
+    <p><a href="javascript:" class="button">检测</a></p>
+    JS代码：
+    OBJREG.NICKNAME = "^\\w+$";
+    OBJREG["prompt"].nickname = "只能是字母数字以及下划线";
+
+    $(".button").bind("click", function() {
+        var nickname = $(".nickname");
+        if ($.html5Validate.isAllpass(nickname)) {
+            alert("验证通过！");
+        }
+    });
