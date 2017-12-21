@@ -1,11 +1,21 @@
 <%@ page contentType="text/html; charset=UTF-8"  %>
 <html>
 <head>
-    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/lib/bootstrap/bootstrap.min.css">
     <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
-    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+    <script src="static/js/lib/jquery/jquery.min.js"></script>
     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
-    <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="static/js/lib/bootstrap/bootstrap.min.js"></script>
+    <%--html5Validata验证的包--%>
+    <script src="static/js/lib/html5Validate/jquery-html5Validate.js"></script>
+
+<%--<style>
+        /*表单认证错误样式*/
+        .error {
+            box-shadow: 0 0 10px #ff4136 !important;
+        }
+    </style>--%>
+
 </head>
 <body>
 <h2>Hello World!</h2>
@@ -18,49 +28,35 @@
 
     <hr>
 
+    <label for="qq">QQ：</label><input id="qq" name="qq" placeholder="请输入QQ" type="qq" required />
+
+    <hr>
+
+    <label>昵称：</label><input type="nickname" class="nickname" required data-min="6" data-max="20" /> 6-20个单词字符
+
+    <hr>
+
+    <button onclick="validate()">检测</button>
+
     <button type="submit" class="btn btn-primary" id="">submit</button>
 
     <hr>
 
-
 </form>
-
-<div class="container-fluid" style="margin: 20px">
-    <div class="row-fluid">
-        <div class="span12">
-            <ul class="breadcrumb">
-                <li>
-                    <a href="#">主页</a> <span class="divider">/</span>
-                </li>
-                <li>
-                    <a href="#">类目</a> <span class="divider">/</span>
-                </li>
-                <li class="active">
-                    主题
-                </li>
-            </ul>
-            <h3>
-                基础验证
-            </h3>
-            <form id="newform">
-                <fieldset>
-                    <legend>form表单</legend> <label>表签名</label><input type="text" required /> <span class="help-block">这里填写帮助信息.</span> <label class="checkbox"><input type="checkbox"  /> 勾选同意</label>
-                    <button type="submit" class="btn">提交</button>
-                </fieldset>
-            </form>
-        </div>
-    </div>
-    <div class="row-fluid">
-        <div class="span12">
-        </div>
-    </div>
-</div>
 
 </body>
 
 <script type="javascript">
+    function validate(){
+        alert("验证中...");
+        OBJREG.NICKNAME = "^\\w+$";
+        OBJREG["prompt"].nickname = "只能是字母数字以及下划线";
 
-
+        var nickname = $(".nickname");
+        if ($.html5Validate.isAllpass(nickname)) {
+            alert("验证通过！");
+        }
+    }
 </script>
 
 </html>
