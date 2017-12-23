@@ -16,6 +16,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
+<<<<<<< HEAD
     <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -24,13 +25,54 @@
         <option value="HTML File" />
       </list>
     </option>
+=======
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="readme.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/faceModule/src/main/webapp/readme.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="12" column="51" lean-forward="false" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/faceModule/src/main/webapp/index.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="437">
+              <caret line="23" column="90" lean-forward="false" selection-start-line="23" selection-start-column="90" selection-end-line="23" selection-end-column="90" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jquery-html5Validate.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/faceModule/src/main/webapp/static/js/lib/html5Validate/jquery-html5Validate.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="5415">
+              <caret line="288" column="29" lean-forward="false" selection-start-line="288" selection-start-column="29" selection-end-line="288" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+>>>>>>> 3881d61774c8b9bd3079ca248df732795bdacd6e
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>包含</find>
       <find>email</find>
       <find>@</find>
+<<<<<<< HEAD
       <find>isallp</find>
+=======
+      <find>OBJREG</find>
+      <find>remind</find>
+      <find>isSupport</find>
+      <find>isRegex</find>
+>>>>>>> 3881d61774c8b9bd3079ca248df732795bdacd6e
     </findStrings>
   </component>
   <component name="GradleLocalSettings">
@@ -43,8 +85,8 @@
       <list>
         <option value="$PROJECT_DIR$/faceModule/pom.xml" />
         <option value="$PROJECT_DIR$/faceModule/src/main/webapp/static/lib/html5Validate/jquery-html5Validate.js" />
-        <option value="$PROJECT_DIR$/faceModule/src/main/webapp/readme.txt" />
         <option value="$PROJECT_DIR$/faceModule/target/faceModule/index.jsp" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/faceModule/src/main/webapp/static/js/lib/html5Validate/jquery-html5Validate.js" />
         <option value="$PROJECT_DIR$/faceModule/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/faceModule/src/main/webapp/static/view/bootstrap_base.html" />
@@ -54,6 +96,11 @@
         <option value="$PROJECT_DIR$/faceModule/src/main/webapp/static/view/base_template/indexTemplate.html" />
         <option value="$PROJECT_DIR$/faceModule/src/main/webapp/static/view/validate/base_validate.html" />
         <option value="$PROJECT_DIR$/faceModule/src/main/webapp/static/view/validate/mouseremove.html" />
+=======
+        <option value="$PROJECT_DIR$/faceModule/src/main/webapp/readme.txt" />
+        <option value="$PROJECT_DIR$/faceModule/src/main/webapp/index.jsp" />
+        <option value="$PROJECT_DIR$/faceModule/src/main/webapp/static/js/lib/html5Validate/jquery-html5Validate.js" />
+>>>>>>> 3881d61774c8b9bd3079ca248df732795bdacd6e
       </list>
     </option>
   </component>
@@ -84,10 +131,17 @@
       </MavenImportingSettings>
     </option>
   </component>
+<<<<<<< HEAD
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-9" />
     <option name="y" value="-9" />
     <option name="width" value="1420" />
+=======
+  <component name="ProjectFrameBounds">
+    <option name="x" value="756" />
+    <option name="y" value="4" />
+    <option name="width" value="1130" />
+>>>>>>> 3881d61774c8b9bd3079ca248df732795bdacd6e
     <option name="height" value="1008" />
   </component>
   <component name="ProjectView">
@@ -174,7 +228,10 @@
       </pane>
       <pane id="Scope" />
       <pane id="AndroidView" />
+<<<<<<< HEAD
       <pane id="Scratches" />
+=======
+>>>>>>> 3881d61774c8b9bd3079ca248df732795bdacd6e
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -390,15 +447,21 @@
       <workItem from="1513771857898" duration="5439000" />
       <workItem from="1513782443033" duration="3426000" />
       <workItem from="1513865897968" duration="1770000" />
+<<<<<<< HEAD
       <workItem from="1513868953222" duration="40000" />
       <workItem from="1513941266186" duration="463000" />
       <workItem from="1513997324386" duration="6152000" />
       <workItem from="1514008170807" duration="2305000" />
       <workItem from="1514010761785" duration="19000" />
+=======
+      <workItem from="1513868953222" duration="2262000" />
+      <workItem from="1513871421761" duration="162000" />
+>>>>>>> 3881d61774c8b9bd3079ca248df732795bdacd6e
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="20486000" />
   </component>
   <component name="TodoView">
@@ -412,6 +475,12 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1064" extended-state="6" />
+=======
+    <option name="totallyTimeSpent" value="13059000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="756" y="4" width="1130" height="1008" extended-state="0" />
+>>>>>>> 3881d61774c8b9bd3079ca248df732795bdacd6e
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31386024" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -425,7 +494,12 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18401287" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+=======
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2989228" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+>>>>>>> 3881d61774c8b9bd3079ca248df732795bdacd6e
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -437,7 +511,11 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+<<<<<<< HEAD
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39911798" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39702517" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+>>>>>>> 3881d61774c8b9bd3079ca248df732795bdacd6e
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44983461" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -456,6 +534,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/faceModule/src/main/webapp/static/lib/bootstrap-4.0.0/js/bootstrap.js" />
     <entry file="file://$PROJECT_DIR$/faceModule/src/main/webapp/WEB-INF/web.xml" />
     <entry file="file://$PROJECT_DIR$/faceModule/src/main/webapp/static/view/templates/bootstrapTemplate.html" />
@@ -466,6 +545,153 @@
     <entry file="file://$PROJECT_DIR$/faceModule/src/main/webapp/static/view/validate/mouseremove.html" />
     <entry file="file://$PROJECT_DIR$/faceModule/src/main/webapp/index.html" />
     <entry file="file://$PROJECT_DIR$/faceModule/src/main/webapp/static/view/validate/base_validate.html" />
+=======
+    <entry file="file://$PROJECT_DIR$/faceModule/src/main/webapp/readme.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="51" lean-forward="false" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/faceModule/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="23" column="90" lean-forward="false" selection-start-line="23" selection-start-column="90" selection-end-line="23" selection-end-column="90" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/faceModule/src/main/webapp/static/js/lib/html5Validate/jquery-html5Validate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2356">
+          <caret line="124" column="25" lean-forward="false" selection-start-line="124" selection-start-column="25" selection-end-line="124" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/faceModule/src/main/webapp/readme.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="39" lean-forward="false" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/faceModule/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="14" lean-forward="false" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/faceModule/target/faceModule/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="34" column="6" lean-forward="true" selection-start-line="34" selection-start-column="6" selection-end-line="34" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/faceModule/src/main/webapp/static/js/lib/html5Validate/jquery-html5Validate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2090">
+          <caret line="110" column="4" lean-forward="true" selection-start-line="110" selection-start-column="4" selection-end-line="110" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/faceModule/src/main/webapp/readme.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="39" lean-forward="false" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/faceModule/target/faceModule/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1102">
+          <caret line="58" column="7" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/faceModule/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1178">
+          <caret line="62" column="0" lean-forward="true" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/faceModule/src/main/webapp/readme.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="39" lean-forward="true" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/faceModule/target/faceModule/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="23" column="7" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/faceModule/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/faceModule/src/main/webapp/static/js/lib/jquery/jquery.form.js" />
+    <entry file="file://$PROJECT_DIR$/faceModule/src/main/webapp/static/js/lib/metronic-4.7/assets/pages/css/faq.css" />
+    <entry file="file://$PROJECT_DIR$/faceModule/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="16" lean-forward="false" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/faceModule/src/main/webapp/static/js/lib/bootstrap/bootstrap.js" />
+    <entry file="file://$PROJECT_DIR$/faceModule/src/main/webapp/static/js/lib/metronic-4.7/assets/global/plugins/jquery.min.js" />
+    <entry file="file://$PROJECT_DIR$/faceModule/src/main/webapp/static/js/lib/jquery/jquery.min.js" />
+    <entry file="file://$PROJECT_DIR$/faceModule/target/faceModule/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/faceModule/src/main/webapp/readme.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="51" lean-forward="false" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/faceModule/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="23" column="90" lean-forward="false" selection-start-line="23" selection-start-column="90" selection-end-line="23" selection-end-column="90" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/faceModule/src/main/webapp/static/js/lib/html5Validate/jquery-html5Validate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5415">
+          <caret line="288" column="29" lean-forward="false" selection-start-line="288" selection-start-column="29" selection-end-line="288" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+>>>>>>> 3881d61774c8b9bd3079ca248df732795bdacd6e
   </component>
   <component name="masterDetails">
     <states>

@@ -105,9 +105,16 @@
     };
     $.html5Validate = (function() {
         // 验证需要的子集方法 如是否为空，是否正则匹配，是否溢出
+        debugger;
         return {
             isSupport: (function() {
+<<<<<<< HEAD:faceModule/faceModule_my/faceModule/target/faceModule/static/lib/html5Validate/jquery-html5Validate.js
                 return $('<input type="phone">').attr("type") === "phone";
+=======
+                var emailsport =  $('<input type="email">').attr("type") === "email";
+                var qqsport =  $('<input type="qq">').attr("type") === "qq";
+                return emailsport || qqsport;
+>>>>>>> 3881d61774c8b9bd3079ca248df732795bdacd6e:faceModule/faceModule/target/faceModule/static/js/lib/html5Validate/jquery-html5Validate.js
             })(),
             isEmpty: function(ele, value) {
                 value = value || $.html5Attr(ele, "placeholder");
@@ -119,6 +126,7 @@
                 return false;
             },
             isRegex: function(ele, regex, params) {
+                debugger;
                 // 原始值和处理值
                 var inputValue = ele.value, dealValue = inputValue, type = ele.getAttribute("type") + "";
                 type = type.replace(/\W+$/, "");
