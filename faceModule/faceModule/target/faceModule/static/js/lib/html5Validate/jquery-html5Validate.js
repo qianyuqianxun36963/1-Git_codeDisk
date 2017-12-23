@@ -105,9 +105,12 @@
     };
     $.html5Validate = (function() {
         // 验证需要的子集方法 如是否为空，是否正则匹配，是否溢出
+        debugger;
         return {
             isSupport: (function() {
-                return $('<input type="email">').attr("type") === "email";
+                var emailsport =  $('<input type="email">').attr("type") === "email";
+                var qqsport =  $('<input type="qq">').attr("type") === "qq";
+                return emailsport || qqsport;
             })(),
             isEmpty: function(ele, value) {
                 value = value || $.html5Attr(ele, "placeholder");
@@ -119,6 +122,7 @@
                 return false;
             },
             isRegex: function(ele, regex, params) {
+                debugger;
                 // 原始值和处理值
                 var inputValue = ele.value, dealValue = inputValue, type = ele.getAttribute("type") + "";
                 type = type.replace(/\W+$/, "");
