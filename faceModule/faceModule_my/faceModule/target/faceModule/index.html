@@ -5,9 +5,8 @@
     <meta charset="UTF-8">
     <title>首页</title>
     <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
 </head>
 
 <body>
@@ -56,9 +55,9 @@
                     <legend>表单项</legend>
 
                     <label class="col-sm-4">表签名</label>
-                    <input class="col-sm-6" type="text" placeholder="请输入文本" />
+                    <input class="col-sm-6" type="text" id="name" placeholder="请输入姓名" />
 
-                    <button class="btn" type="submit">submit</button>
+                    <button class="btn" type="submit" >submit</button>
 
                 </div>
             </form>
@@ -72,5 +71,20 @@
     </div>
 
 </div>
+
 </body>
+
+<script language="javascript">
+    $(function(){
+        var name = $("#name");
+//        name.bind("keyup", function() {
+//            alert("keyup");
+//        });
+
+        name.bind("blur",function(){
+            alert("blur");
+        });
+    });
+</script>
+
 </html>
