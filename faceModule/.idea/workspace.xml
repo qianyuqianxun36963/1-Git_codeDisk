@@ -16,28 +16,8 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-<<<<<<< HEAD
-    <leaf />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="HTML File" />
-      </list>
-    </option>
-=======
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="readme.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/faceModule/src/main/webapp/readme.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="12" column="51" lean-forward="false" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/faceModule/src/main/webapp/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="437">
@@ -47,10 +27,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jquery-html5Validate.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="jquery-html5Validate.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/faceModule/src/main/webapp/static/js/lib/html5Validate/jquery-html5Validate.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5415">
+            <state relative-caret-position="-1668">
               <caret line="288" column="29" lean-forward="false" selection-start-line="288" selection-start-column="29" selection-end-line="288" selection-end-column="29" />
               <folding />
             </state>
@@ -58,21 +38,16 @@
         </entry>
       </file>
     </leaf>
->>>>>>> 3881d61774c8b9bd3079ca248df732795bdacd6e
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>包含</find>
       <find>email</find>
       <find>@</find>
-<<<<<<< HEAD
-      <find>isallp</find>
-=======
       <find>OBJREG</find>
       <find>remind</find>
       <find>isSupport</find>
       <find>isRegex</find>
->>>>>>> 3881d61774c8b9bd3079ca248df732795bdacd6e
     </findStrings>
   </component>
   <component name="GradleLocalSettings">
@@ -86,21 +61,9 @@
         <option value="$PROJECT_DIR$/faceModule/pom.xml" />
         <option value="$PROJECT_DIR$/faceModule/src/main/webapp/static/lib/html5Validate/jquery-html5Validate.js" />
         <option value="$PROJECT_DIR$/faceModule/target/faceModule/index.jsp" />
-<<<<<<< HEAD
-        <option value="$PROJECT_DIR$/faceModule/src/main/webapp/static/js/lib/html5Validate/jquery-html5Validate.js" />
-        <option value="$PROJECT_DIR$/faceModule/src/main/webapp/index.jsp" />
-        <option value="$PROJECT_DIR$/faceModule/src/main/webapp/static/view/bootstrap_base.html" />
-        <option value="$PROJECT_DIR$/faceModule/src/main/webapp/index2.html" />
-        <option value="$PROJECT_DIR$/faceModule/src/main/webapp/index.html" />
-        <option value="$PROJECT_DIR$/faceModule/src/main/webapp/static/view/base_template/empty_bootstrappage.html" />
-        <option value="$PROJECT_DIR$/faceModule/src/main/webapp/static/view/base_template/indexTemplate.html" />
-        <option value="$PROJECT_DIR$/faceModule/src/main/webapp/static/view/validate/base_validate.html" />
-        <option value="$PROJECT_DIR$/faceModule/src/main/webapp/static/view/validate/mouseremove.html" />
-=======
         <option value="$PROJECT_DIR$/faceModule/src/main/webapp/readme.txt" />
         <option value="$PROJECT_DIR$/faceModule/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/faceModule/src/main/webapp/static/js/lib/html5Validate/jquery-html5Validate.js" />
->>>>>>> 3881d61774c8b9bd3079ca248df732795bdacd6e
       </list>
     </option>
   </component>
@@ -131,17 +94,10 @@
       </MavenImportingSettings>
     </option>
   </component>
-<<<<<<< HEAD
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="1420" />
-=======
-  <component name="ProjectFrameBounds">
-    <option name="x" value="756" />
-    <option name="y" value="4" />
+    <option name="x" value="10" />
+    <option name="y" value="21" />
     <option name="width" value="1130" />
->>>>>>> 3881d61774c8b9bd3079ca248df732795bdacd6e
     <option name="height" value="1008" />
   </component>
   <component name="ProjectView">
@@ -159,7 +115,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -200,7 +158,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="faceModule" type="b2602c69:ProjectViewProjectNode" />
@@ -209,8 +167,8 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="faceModule" type="b2602c69:ProjectViewProjectNode" />
@@ -219,23 +177,19 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-              <item name="validate" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="html5Validate" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
-<<<<<<< HEAD
-      <pane id="Scratches" />
-=======
->>>>>>> 3881d61774c8b9bd3079ca248df732795bdacd6e
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/faceModule_my" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path" value="D:/env/nodejs/node" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -243,21 +197,17 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.418483" />
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\a-Code_git\faceModule\faceModule\src\main\webapp\static\lib" />
-      <recent name="F:\a-Code_git\faceModule\faceModule\src\main\webapp\static\lib\jquery" />
-      <recent name="F:\2-template\0-template_frame\3-multiFrame模板\faceModule\faceModule\src\main\webapp\static\js" />
-      <recent name="F:\2-template\0-template_frame\3-multiFrame模板\faceModule\faceModule\src\main\webapp\static\lib" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\a-Code_git\faceModule\faceModule\src\main\webapp\static\lib" />
       <recent name="E:\a-Code_git\faceModule\faceModule\src\main\webapp\static\js\lib\jquery" />
       <recent name="E:\a-Code_git\faceModule\faceModule\src\main\webapp\static\js\lib\bootstrap" />
       <recent name="F:\2-template\0-template_frame\3-multiFrame模板\faceModule\faceModule\src\main\webapp\static\js\lib" />
+      <recent name="F:\2-template\0-template_frame\3-multiFrame模板\faceModule\faceModule\src\main\webapp\static\lib" />
+      <recent name="F:\2-template\0-template_frame\3-multiFrame模板\faceModule\faceModule\src\main\webapp\static" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\2-template\0-template_frame\3-multiFrame模板\faceModule\faceModule\src\main\webapp\static\js" />
       <recent name="F:\2-template\0-template_frame\3-multiFrame模板\faceModule\faceModule\src\main\webapp\static\lib" />
     </key>
   </component>
@@ -355,9 +305,7 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="tomcat7" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.79" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="1.8">
-      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
-      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+    <configuration name="tomcat7" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.54" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="1.8">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="faceModule:war exploded">
@@ -368,7 +316,6 @@
       </deployment>
       <server-settings>
         <option name="BASE_DIRECTORY_NAME" value="Unnamed_faceModule" />
-        <option name="JNDI_PORT" value="1098" />
       </server-settings>
       <predefined_log_file id="Tomcat" enabled="true" />
       <predefined_log_file id="Tomcat Catalina" enabled="true" />
@@ -447,61 +394,36 @@
       <workItem from="1513771857898" duration="5439000" />
       <workItem from="1513782443033" duration="3426000" />
       <workItem from="1513865897968" duration="1770000" />
-<<<<<<< HEAD
-      <workItem from="1513868953222" duration="40000" />
-      <workItem from="1513941266186" duration="463000" />
-      <workItem from="1513997324386" duration="6152000" />
-      <workItem from="1514008170807" duration="2305000" />
-      <workItem from="1514010761785" duration="19000" />
-=======
       <workItem from="1513868953222" duration="2262000" />
       <workItem from="1513871421761" duration="162000" />
->>>>>>> 3881d61774c8b9bd3079ca248df732795bdacd6e
+      <workItem from="1514100754620" duration="33000" />
+      <workItem from="1514102247490" duration="22000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-<<<<<<< HEAD
-    <option name="totallyTimeSpent" value="20486000" />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
+    <option name="totallyTimeSpent" value="13114000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1064" extended-state="6" />
-=======
-    <option name="totallyTimeSpent" value="13059000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="756" y="4" width="1130" height="1008" extended-state="0" />
->>>>>>> 3881d61774c8b9bd3079ca248df732795bdacd6e
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31386024" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3757159" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36270022" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-<<<<<<< HEAD
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18401287" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-=======
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2989228" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1734375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
->>>>>>> 3881d61774c8b9bd3079ca248df732795bdacd6e
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -511,16 +433,11 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-<<<<<<< HEAD
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39911798" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-=======
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39702517" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
->>>>>>> 3881d61774c8b9bd3079ca248df732795bdacd6e
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44983461" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -534,18 +451,54 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/faceModule/src/main/webapp/static/lib/bootstrap-4.0.0/js/bootstrap.js" />
-    <entry file="file://$PROJECT_DIR$/faceModule/src/main/webapp/WEB-INF/web.xml" />
-    <entry file="file://$PROJECT_DIR$/faceModule/src/main/webapp/static/view/templates/bootstrapTemplate.html" />
-    <entry file="file://$PROJECT_DIR$/faceModule/src/main/webapp/static/view/templates/indexTemplate.html" />
-    <entry file="file://$PROJECT_DIR$/faceModule/src/main/webapp/static/view/bootstrap_base.html" />
-    <entry file="file://$PROJECT_DIR$/faceModule/src/main/webapp/static/lib/bootstrap-4.0.0/js/bootstrap.bundle.js" />
-    <entry file="file://$PROJECT_DIR$/faceModule/src/main/webapp/index2.html" />
-    <entry file="file://$PROJECT_DIR$/faceModule/src/main/webapp/static/view/validate/mouseremove.html" />
-    <entry file="file://$PROJECT_DIR$/faceModule/src/main/webapp/index.html" />
-    <entry file="file://$PROJECT_DIR$/faceModule/src/main/webapp/static/view/validate/base_validate.html" />
-=======
+    <entry file="file://$PROJECT_DIR$/faceModule/src/main/webapp/readme.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="51" lean-forward="false" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/faceModule/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="23" column="90" lean-forward="false" selection-start-line="23" selection-start-column="90" selection-end-line="23" selection-end-column="90" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/faceModule/src/main/webapp/static/js/lib/html5Validate/jquery-html5Validate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5472">
+          <caret line="288" column="29" lean-forward="false" selection-start-line="288" selection-start-column="29" selection-end-line="288" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/faceModule/src/main/webapp/readme.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="51" lean-forward="false" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/faceModule/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="23" column="90" lean-forward="false" selection-start-line="23" selection-start-column="90" selection-end-line="23" selection-end-column="90" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/faceModule/src/main/webapp/static/js/lib/html5Validate/jquery-html5Validate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5472">
+          <caret line="288" column="29" lean-forward="false" selection-start-line="288" selection-start-column="29" selection-end-line="288" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/faceModule/src/main/webapp/readme.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
@@ -667,6 +620,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/faceModule/src/main/webapp/static/js/lib/html5Validate/jquery-html5Validate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1668">
+          <caret line="288" column="29" lean-forward="false" selection-start-line="288" selection-start-column="29" selection-end-line="288" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/faceModule/src/main/webapp/readme.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
@@ -683,15 +644,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/faceModule/src/main/webapp/static/js/lib/html5Validate/jquery-html5Validate.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5415">
-          <caret line="288" column="29" lean-forward="false" selection-start-line="288" selection-start-column="29" selection-end-line="288" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
->>>>>>> 3881d61774c8b9bd3079ca248df732795bdacd6e
   </component>
   <component name="masterDetails">
     <states>
