@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <title>首页</title>
     <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="static/lib/jss/html5Validate/jquery-html5Validate.js"></script>
+
 </head>
 
 <body>
@@ -25,7 +27,7 @@
                     <label class="col-sm-4" for="phone">手机：</label>
                     <input class="col-sm-6" id="phone" name="phone" placeholder="请输入手机" type="phone" required />
                     <label class="col-sm-4" for="tel">电话：</label>
-                    <input class="col-sm-6" id="tel" name="tel" placeholder="请输入邮箱" type="tel"  />
+                    <input class="col-sm-6" id="tel" name="tel" placeholder="请输入电话" type="tel"  />
 
                     <button type="submit" class="btn">submit</button>
 
@@ -55,9 +57,9 @@
                     <legend>表单项</legend>
 
                     <label class="col-sm-4">表签名</label>
-                    <input class="col-sm-6" type="text" id="name" placeholder="请输入姓名" />
+                    <input class="col-sm-6" type="text" placeholder="请输入文本" />
 
-                    <button class="btn" type="submit" >submit</button>
+                    <button class="btn" type="submit">submit</button>
 
                 </div>
             </form>
@@ -71,20 +73,14 @@
     </div>
 
 </div>
-
 </body>
 
-<script language="javascript">
-    $(function(){
-        var name = $("#name");
-//        name.bind("keyup", function() {
-//            alert("keyup");
-//        });
-
-        name.bind("blur",function(){
-            alert("blur");
+<script type="javascript">
+    $("#form11").html5Validata(
+        function(){
+            alert("验证通过！");
+            TODO
         });
-    });
 </script>
 
 </html>
