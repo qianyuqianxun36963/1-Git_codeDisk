@@ -16,6 +16,18 @@
         <commons-beanutils.version>1.9.3</commons-beanutils.version>
         <commons-fileupload.version>1.3.2</commons-fileupload.version>
         <commons-compress.version>1.3</commons-compress.version>
+        <!-- htmllexer -->
+        <htmllexer.version>2.1</htmllexer.version>
+        <!-- htmlparser -->
+        <htmlparser.version>1.6</htmlparser.version>
+        <!-- ezmorph -->
+        <ezmorph.version>1.0.6</ezmorph.version>
+        <!-- jna -->
+        <jna.version>4.1.0</jna.version>
+        <!-- jnaExample -->
+        <jnaExample.version>3.0.9</jnaExample.version>
+        <!-- jsonLib -->
+        <jsonlib.version>2.4</jsonlib.version>
         <!-- spring MVC版本号 -->
         <org.springframework.version>4.1.6.RELEASE</org.springframework.version>
         <!-- spring版本号 -->
@@ -36,7 +48,7 @@
         <!-- aspectj版本号 -->
         <aspectj.version>1.8.10</aspectj.version>
         <!-- junit版本号 -->
-        <junit.version>4.10</junit.version>
+        <junit.version>4.12</junit.version>
         <!-- web版本号-->
         <webVersion>3.0</webVersion>
         <!-- maven构建的jre版本号-->
@@ -100,12 +112,63 @@
     </build>  
     
     <dependencies>
-    
+        <!-- junit -->
+		<dependency>
+		    <groupId>junit</groupId>
+		    <artifactId>junit</artifactId>
+		    <version>${junit.version}</version>
+		    <scope>test</scope>
+		</dependency>
+        
+        <!-- htmllexer -->
+        <dependency>
+            <groupId>org.htmlparser</groupId>
+            <artifactId>htmllexer</artifactId>
+            <version>${htmllexer.version}</version>
+        </dependency>
+        
+        <!-- htmlparser -->
+        <dependency>
+            <groupId>org.htmlparser</groupId>
+            <artifactId>htmlparser</artifactId>
+            <version>${htmlparser.version}</version>
+        </dependency>
+        
+        <!-- ezmorph -->
+        <dependency>
+            <groupId>net.sf.ezmorph</groupId>
+            <artifactId>ezmorph</artifactId>
+            <version>${ezmorph.version}</version>
+        </dependency>
+        
+        <!-- jna -->
+        <dependency>
+            <groupId>net.java.dev.jna</groupId>
+            <artifactId>jna</artifactId>
+            <version>${jna.version}</version>
+        </dependency>
+        
+        <!-- jnaExample -->
+        <dependency>
+            <groupId>com.sun.jna</groupId>
+            <artifactId>jna</artifactId>
+            <version>${jnaExample.version}</version>
+        </dependency>
+        
+        
         <!-- freemarker -->
         <dependency>
             <groupId>org.freemarker</groupId>
             <artifactId>freemarker</artifactId>
             <version>${freemarker.version}</version>
+        </dependency>
+        
+        <!-- jsonLib -->
+        <dependency>
+            <groupId>net.sf.json-lib</groupId>
+            <artifactId>json-lib</artifactId>
+            <version>${jsonLib.version}</version>
+            <classifier>jdk15</classifier>
         </dependency>
         
         <!-- springframework -->

@@ -17,7 +17,7 @@ import javax.swing.border.LineBorder;
 import javax.swing.event.ChangeEvent;  
 import javax.swing.event.ChangeListener;  
   
-import com.sun.jna.examples.WindowUtils;  
+//import com.sun.jna.examples.WindowUtils;  
 
 
 public class 不规则窗口和窗口透明 {
@@ -74,13 +74,13 @@ public class 不规则窗口和窗口透明 {
               
             public void stateChanged(ChangeEvent e) {  
                 float value = slider.getValue();  
-                WindowUtils.setWindowAlpha(frame, value * 0.01f);  
+//                WindowUtils.setWindowAlpha(frame, value * 0.01f);  
             }  
         });  
         container.add(slider, BorderLayout.SOUTH);  
         RoundRectangle2D.Float mask = new RoundRectangle2D.Float(0, 0, frame  
                 .getWidth(), frame.getHeight(), 20, 20);  
-        WindowUtils.setWindowMask(frame, mask);  
+//        WindowUtils.setWindowMask(frame, mask);  
         centerWindow(frame);  
     }  
   

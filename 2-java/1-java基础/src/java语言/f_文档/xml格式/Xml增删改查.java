@@ -30,15 +30,15 @@ public class  Xml增删改查{
             
             //新建一個属性节点。如下:<name>新书</name>
             theElem=xmldoc.createElement("name");
-            theElem.setTextContent("新书");
+//            theElem.setTextContent("新书");
             theBook.appendChild(theElem);
             
             theElem=xmldoc.createElement("price");
-            theElem.setTextContent("20");
+//            theElem.setTextContent("20");
             theBook.appendChild(theElem);
             
             theElem=xmldoc.createElement("memo");
-            theElem.setTextContent("新书的更好看。");
+//            theElem.setTextContent("新书的更好看。");
             theBook.appendChild(theElem);
             
             root.appendChild(theBook);
@@ -54,7 +54,7 @@ public class  Xml增删改查{
             System.out.println("--- 查询找《哈里波特》 ----");
             output(theBook);
             //--- 此时修改这本书的价格 -----
-            theBook.getElementsByTagName("price").item(0).setTextContent("15");//getElementsByTagName 返回的是NodeList，所以要跟上item(0)。另外，getElementsByTagName("price")相当于xpath 的".//price"。
+//            theBook.getElementsByTagName("price").item(0).setTextContent("15");//getElementsByTagName 返回的是NodeList，所以要跟上item(0)。另外，getElementsByTagName("price")相当于xpath 的".//price"。
             System.out.println("--- 此时修改这本书的价格 ----");
             output(theBook);
             //--- 另外还想加一个属性id，值为B01 ----
