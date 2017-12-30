@@ -10,9 +10,9 @@ import java.util.Map.Entry;
 import org.junit.Test;
 
 public class MyMap {
-    
-    public static void main(String args[]) {
-                
+
+    @Test
+    public void test() {
         MyMap_HashMap.unique();
         MyMap_HashMap.complexkey();
         MyMap_EnumMap.testEnumMap();
