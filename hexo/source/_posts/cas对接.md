@@ -1,7 +1,8 @@
 ---
 title: cas对接
 date: 2018-01-03 15:26:51
-tags:
+tags: java
+toc: true
 ---
 
 # 教务平台cas对接
@@ -26,6 +27,8 @@ tags:
     <param-value>https://ids3.jsou.cn/logout</param-value>
 </context-param>
 <!-- end1 -->
+
+<!-- more -->
 
 <!-- begin2-->
 <!--统一添加下面的内-->
