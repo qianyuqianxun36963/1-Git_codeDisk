@@ -17,8 +17,12 @@ timezone:
 # in site  directory(source/uploads): /uploads/avatar.jpg
 # default : /images/default_avatar.jpg
 # avatar: /avatar.jpg 由于配置始终没生效。
-# 我修改了 themes\yilia\layout\_partial\left-col.ejs 
-# 把里面图片的地址写死了，第六行：<img src="/avatar.jpg" class="js-avatar">
+# 我修改了 themes\yilia\layout\_partial\left-col.ejs 网页头像
+# 我修改了 themes\yilia\layout\_partial\mobile-nav.ejs 移动端头像
+# 把里面图片的地址写死了，第六/十行：<img src="/girl.jpg" class="js-avatar">
+# 其中 girl2.jpg 图片是放在source目录下的。
+
+# 同时，修改网站图标也很简单，直接修改source下的favicon.png 图片即可。
 
 # When running hexo in a subdirectory (e.g. domain.tld/blog)
 # Remove leading slashes ( "/archives" -> "archives" )
@@ -120,7 +124,6 @@ tag_map:
 # TOC in the Sidebar  #文章自动显示目录
 toc:
   enable: true
-
   # Automatically add list number to toc.  #目录是否自动显示数字序号
   number: false
 
@@ -171,7 +174,7 @@ jsonContent:
     slug: false
     updated: false
     comments: false
-    link: true
+    link: false
     permalink: false
     excerpt: false
     categories: false
