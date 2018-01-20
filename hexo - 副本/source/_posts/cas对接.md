@@ -13,6 +13,8 @@ toc: true
 
 ## 二、CMS应用服务器Web.xml配置如下：
 
+<!-- more -->
+
 ```
 
 //***********统一身份认证对接部分(start)***************
@@ -27,8 +29,6 @@ toc: true
     <param-value>https://ids3.jsou.cn/logout</param-value>
 </context-param>
 <!-- end1 -->
-
-<!-- more -->
 
 <!-- begin2-->
 <!--统一添加下面的内-->
