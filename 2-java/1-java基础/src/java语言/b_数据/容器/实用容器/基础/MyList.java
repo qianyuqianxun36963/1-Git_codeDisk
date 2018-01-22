@@ -36,6 +36,36 @@ public class MyList {
         ListUtil.visitList_for(sk.sk);
         ListUtil.visitList_Enumeration(sk.sk);
         sk.printSelf();
+        
+        Mylist_Transfer.test();
+        Mylist_Transfer.test2();
+    }
+}
+
+class Mylist_Transfer{
+    public static void test(){
+        List<String> listStr = new ArrayList<String>();
+        listStr.add("wang");
+        listStr.add("fang");
+        String[] arrayStr = new String[listStr.size()];
+        for(int i=0;i<listStr.size();i++){
+            arrayStr[i] = listStr.get(i);
+        }
+        
+        for(int i=0;i<listStr.size();i++){
+            System.out.println(arrayStr[i]);
+        }
+    }
+    
+    public static void test2(){
+        List<String> listStr = new ArrayList<String>();
+        listStr.add("wang");
+        listStr.add("fang");
+        String[] arrStr = (String[])listStr.toArray(new String[listStr.size()]);
+        
+        for(int i=0;i<listStr.size();i++){
+            System.out.println(arrStr[i]);
+        }
     }
 }
 
