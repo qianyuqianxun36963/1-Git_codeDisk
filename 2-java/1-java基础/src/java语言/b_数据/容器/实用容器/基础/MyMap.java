@@ -21,8 +21,20 @@ public class MyMap {
         MyMap_EnumMap.testEnumMap();
         
         MapUtil.testTraverse();
+        
+        MyMap_Simple.testNullValue();
     }
+}
 
+class MyMap_Simple{
+    public static void testNullValue(){
+        Map myMap = new HashMap();
+        // if((boolean) myMap.get("name")) 错误写法
+        if(null != myMap.get("name")){
+            //map 获取空 null是可以的，但不能放在判断里，会报null错。
+            System.out.println(myMap.get("name")); 
+        }
+    }
 }
 
 //EnumMap
