@@ -6,6 +6,8 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ConcurrentMap;
 
 import org.junit.Test;
 
@@ -15,7 +17,9 @@ public class MyMap {
     public void test() {
         MyMap_HashMap.unique();
         MyMap_HashMap.complexkey();
+        
         MyMap_EnumMap.testEnumMap();
+        
         MapUtil.testTraverse();
     }
 
@@ -82,6 +86,46 @@ class MyMap_HashMap{
             map1.put(p2, "ABC"); 
             System.out.println(map1.get(p1));
             System.out.println(map1.get(p2));
+        }
+        
+        //用数组作为key 取值是空的，没什么用。
+        public static void checkStrArraykey(){
+            ConcurrentMap<String[], String> map = new ConcurrentHashMap<String[], String>();  
+            String[] str1 = {"1", "001"};  
+            String[] str2 = {"2", "002"};  
+              
+            map.put(str1, "1001");  
+            map.put(str2, "2002");  
+              
+            String[] str3 = {"1", "001"};  
+              
+            System.out.println(map.get(str3)); //这里打印为null。
+            //Map在进行put的时候，如果key作为以数组或其他非字符串为键的时候，
+            //java内部是视为其Object类型的，因此put到内存中的时候，它存在于一个具体的地址。
+            //因此当指定一个相同的字符串数组的时候，也不会找到上述对应的value，因为你给予的str3，在内存中的地址根本就是不存在的。
+        }
+        
+        
+        
+        private String[][] existedScope = {{"1","A"},{"1","B"},{"2","A"},{"2","B"}};
+        private String[][] newScope     = {{"1","A"},{"1","B"},{"2","A"},{"2","B"}};
+        
+        @Test
+        public void checkStrArraykey2(){
+            System.out.println(check(existedScope,newScope));
+        }
+        
+        public boolean check(String[][] existedScope,String[][] newScope){
+            Map<String[],Boolean> existedScopeMap = new HashMap();
+            for(String[] sa: existedScope){
+                existedScopeMap.put(sa,true);
+                System.out.println(existedScopeMap.get(sa));
+            }
+            
+            for(String[] scope:newScope){
+                System.out.println(existedScopeMap.get(scope));
+            }
+            return false;
         }
 }
 
