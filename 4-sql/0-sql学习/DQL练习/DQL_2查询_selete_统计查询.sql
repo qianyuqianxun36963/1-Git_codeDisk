@@ -62,7 +62,6 @@ finance_order id 006 userid 002 account 15
     select
         S.name,
         T.userid,
-        T.account,
         MAX(case T.pay_type when '考试费' then T.account else 0 end) 'scoreFee',
         MAX(case T.pay_type when '学分费' then T.account else 0 end) 'examFee'
     from (
@@ -79,6 +78,9 @@ finance_order id 006 userid 002 account 15
     left join base_stubase S on T.userid = S.id
     group by T.userid
 
+    name    userid        scoreFee     examFee      
+    tom     001           40.00        90.00                 
+    cat     002           50.00        25.00 s                                                        
 
 在江开数据库上练习：
 
