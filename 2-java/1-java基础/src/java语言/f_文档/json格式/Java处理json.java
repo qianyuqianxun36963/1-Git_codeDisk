@@ -9,6 +9,11 @@ import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
 
 public class Java处理json {
+	
+	String jsonArrayStr = "[{\"id\":\"41607db143ba43ddb7516df0d13bc2e1\",\"courseId\":\"2b44fd9eb70841b7a8146c4ea66024ea\",\"examBatchId\":\"8c8b679793c649fa8a0457df554b76cf\",\"examPlaceId\":\"c03b9395152946369a8b42962d62c80f\",\"realNum\":\"88\",\"hasReturn\":\"1\"},{\"id\":\"db7516df0d13bc2e1adczcz51341\",\"courseId\":\"2b44fd9eb70841b7a8146c4ea66024ea\",\"examBatchId\":\"8c8b679793c649fa8a0457df554b76cf\",\"examPlaceId\":\"c03b9395152946369a8b42962d62c80f\",\"realNum\":\"99\",\"hasReturn\":\"0\"}]";
+	
+	JSONArray jsonArray = new JSONArray();
+	
     /**
      * 构造Json数据
      * 
@@ -130,8 +135,8 @@ public class Java处理json {
      * @param args
      */
     public static void main(String[] args) {
-//        testArrayListMaptoJsonString();
-//        ParseJsonStr(BuildJsonStr());
+        testArrayListMaptoJsonString();
+        ParseJsonStr(BuildJsonStr());
         ParseArrayStr(BuildArrayStr());
     }
 }
