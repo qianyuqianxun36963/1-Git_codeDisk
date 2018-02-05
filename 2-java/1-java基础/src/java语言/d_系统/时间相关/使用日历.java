@@ -30,6 +30,20 @@ public class 使用日历 {
         cal.setTime(date);
         cal.add(cal.MONTH, (int)(3.5*12));
         System.out.println(getStrForDate(cal.getTime(),formatstr));
+        
+        
+        //下面是进行时分秒的计算。
+        String timeStr = "2018-01-12  07:10:10";
+        String formatTimeStr = "yyyy-MM-dd HH:mm:ss";
+        Date time = getDateFromStr(timeStr,formatTimeStr);
+        
+        Calendar calTime = Calendar.getInstance();
+        
+        calTime.setTime(time);
+        calTime.add(calTime.HOUR, 2);
+        calTime.add(calTime.MINUTE, 30);
+        System.out.println(getStrForDate(calTime.getTime(),formatTimeStr));
+        
     }
     
     public Date getDateFromStr(String datestr, String formatStr) throws ParseException{
@@ -58,5 +72,8 @@ public class 使用日历 {
         }  
         return cal.getTime();
     }
+    
+    
+    
     
 }
