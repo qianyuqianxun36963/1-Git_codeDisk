@@ -10,4 +10,7 @@ public class TestController {
 	public String show(){
 		return "Hello World";		
 	}
+
+	@RequestMapping("/good")
+	public String good(){return "I'am good, how are you!";}
 }
