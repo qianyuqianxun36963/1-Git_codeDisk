@@ -1,4 +1,6 @@
-create database my_learn
+create database my_learn;
+
+use my_learn;
 
 create table student(
     id varchar(10) primary key, 
