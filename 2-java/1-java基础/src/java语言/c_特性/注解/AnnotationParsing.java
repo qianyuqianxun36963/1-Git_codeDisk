@@ -43,7 +43,8 @@ public class AnnotationParsing {
                 .getClassLoader()
                 .loadClass(("java语言.c_特性.注解.AnnotationExample"))
                 .getMethods()){
-                if(method.isAnnotationPresent((Class<? extends Annotation>) java语言.c_特性.注解.AnnotationExample.class)){
+               // if(method.isAnnotationPresent((Class<? extends Annotation>) java语言.c_特性.注解.AnnotationExample.class)){
+                 if(true){
                     try {
                         for(Annotation anno : method.getDeclaredAnnotations()){
                             System.out.println("Annotation in Method '" + method +"' :" + anno);
