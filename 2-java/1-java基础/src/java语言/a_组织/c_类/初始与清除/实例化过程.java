@@ -6,8 +6,6 @@ public class 实例化过程 {
     }
 }
 
-
-
 class testLoad{
     public static void test(){
         ClassLoadProcess classload = new ClassLoadProcess();//这里执行了class的类加载时候的初始化。
