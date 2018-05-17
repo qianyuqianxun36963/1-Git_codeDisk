@@ -8,6 +8,6 @@ import simple.demo.controller.baseController;
 public class serverletController extends baseController {
     @RequestMapping(value="/hello")
     public String say(){
-        return "hello";
+        return "hello world";
     }
 }
