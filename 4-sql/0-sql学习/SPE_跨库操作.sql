@@ -1,4 +1,4 @@
-//³õÊ¼»¯Ñ§Éú±í
+//åˆå§‹åŒ–å­¦ç”Ÿè¡¨
 drop table if exists student;
 create table student
     (
@@ -8,31 +8,31 @@ create table student
         birthday date
     )
 
-//³õÊ¼»¯¿Î³Ì±í
+//åˆå§‹åŒ–è¯¾ç¨‹è¡¨
 drop table if exists course;
 create table course(
 courseid varchar(32) primary key,
 coursename varchar(32)
 );
 
-//³õÊ¼»¯¿¼ÊÔ±í
+//åˆå§‹åŒ–è€ƒè¯•è¡¨
 drop table if exists test;
 create table test(
 testid varchar(32) primary key,
 studentid varchar(32) ,
-courseid varchar(32) 
+courseid varchar(32)
 );
 
-//³õÊ¼»¯¿¼³¡±í
+//åˆå§‹åŒ–è€ƒåœºè¡¨
 drop table if exists testroom;
 create table testroom(
 testroomid char(32) primary key,
 studentid varchar(32) ,
-courseid varchar(32), 
+courseid varchar(32),
 testid varchar(32)
 );
 
-//³õÊ¼»¯Êı¾İ
+//åˆå§‹åŒ–æ•°æ®
 insert into student values(1,'wang',21,'1990-9-9');
 insert into course values(1,'english');
 insert into test values(1,1,1);
@@ -40,16 +40,15 @@ insert into testroom values(1,1,1,1);
 
 //alter table test  modify   constraint FK_test_student  disable;
 
-//¸øtest±íÔö¼ÓÍâ¼üÔ¼Êø¡£Íâ¼üÊÇstudent±í¡£ Ëü¹ØÁªÁËÒ»¸ö±í£¡
+//ç»™testè¡¨å¢åŠ å¤–é”®çº¦æŸã€‚å¤–é”®æ˜¯studentè¡¨ã€‚ å®ƒå…³è”äº†ä¸€ä¸ªè¡¨ï¼
 alter table test drop  foreign key  FK_test_student;
-//Íâ¼üÔÚÉèÖÃ¶¯×÷µÄÊ±ºò¿ÉÒÔÊÇ -no action;--set null; --restrict; --cascade
-alter table test add  constraint  FK_test_student foreign key(studentid) references student(studentid) on delete cascade on update cascade //cascade ¼¶ÁªÉ¾³ı£¬É¾³ıÑ§Éú»áÉ¾³ıÏà¹Ø¿¼ÊÔ¼ÇÂ¼¡£
-alter table test add  constraint  FK_test_student foreign key(studentid) references student(studentid) on delete restrict on update restrict   //restrict   Ç¿ÖÆÔ¼Êø£¬ÔÚÕâ¸öÑ§ÉúÏà¹ØÁªÊı¾İÃ»É¾³ıÊ±ºò£¬ÕâÌõ¼ÇÂ¼²»ÄÜÉ¾³ı¡£
+//å¤–é”®åœ¨è®¾ç½®åŠ¨ä½œçš„æ—¶å€™å¯ä»¥æ˜¯ -no action;--set null; --restrict; --cascade
+alter table test add  constraint  FK_test_student foreign key(studentid) references student(studentid) on delete cascade on update cascade //cascade çº§è”åˆ é™¤ï¼Œåˆ é™¤å­¦ç”Ÿä¼šåˆ é™¤ç›¸å…³è€ƒè¯•è®°å½•ã€‚
+alter table test add  constraint  FK_test_student foreign key(studentid) references student(studentid) on delete restrict on update restrict   //restrict   å¼ºåˆ¶çº¦æŸï¼Œåœ¨è¿™ä¸ªå­¦ç”Ÿç›¸å…³è”æ•°æ®æ²¡åˆ é™¤æ—¶å€™ï¼Œè¿™æ¡è®°å½•ä¸èƒ½åˆ é™¤ã€‚
 
-//¸øtest±íÔö¼ÓÍâ¼üÔ¼Êø£¬Íâ¼üÊÇstudent±í¡¢course±íÖ÷¼üºÍtest±íÖ÷¼ü¡£ Ëü¹ØÁªÁËÈı¸ö±í£¡
-//É¾³ıÍâ¼üÔ¼Êø
-alter table testroom drop  foreign key  FK_testroom_student;          
+//ç»™testè¡¨å¢åŠ å¤–é”®çº¦æŸï¼Œå¤–é”®æ˜¯studentè¡¨ã€courseè¡¨ä¸»é”®å’Œtestè¡¨ä¸»é”®ã€‚ å®ƒå…³è”äº†ä¸‰ä¸ªè¡¨ï¼
+//åˆ é™¤å¤–é”®çº¦æŸ
+alter table testroom drop  foreign key  FK_testroom_student;
 alter table testroom add  constraint  FK_testroom_student foreign key(studentid) references student(studentid) on delete cascade on update cascade;
 alter table testroom add  constraint  FK_testroom_course foreign key(courseid) references course(courseid) on delete cascade on update cascade;
 alter table testroom add  constraint  FK_testroom_test foreign key(testid) references test(testid) on delete cascade on update cascade;
-
