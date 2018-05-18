@@ -2,9 +2,9 @@
 
 ## 新建支持maven的javaweb基础项目
 
-使用mvn脚手架。
+使用mvn脚手架，建立项目基础。
 
-`mvn archetype:generate -DgroupId=com.wang.ustc -DartifactId=SpringbootCMDgenerate -DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false  [-X] -X 是用来看输出的`
+`mvn archetype:generate -DgroupId=com.wang.ustc -DartifactId=SpringbootCMDgenerate -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false  [-X] -X 是用来看输出的`
 
 使用 Spring Boot 仅仅需要在pom文件中声明使用 Spring Boot，并添加 spring-boot-starter-web 的依赖即可
 
