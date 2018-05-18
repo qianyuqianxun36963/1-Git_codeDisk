@@ -4,7 +4,14 @@
 
 使用mvn脚手架。
 
-`mvn archetype:generate -DgroupId=com.wang.ustc -DartifactId=SpringbootCMDgenerate -DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false  [-X] -X 是用来看输出的`
+`mvn archetype:generate -DgroupId=com.wang.ustc -DartifactId=SpringbootCMDgenerate -DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false [-DarchetypeCatalog=local]  [-X] `
+
+### 上面这条初始语句有几点需要注意：
+
+- -X 是用来看输出的，第一次执行时很慢，就是通过它来定位错误
+
+- -DarchetypeCatalog=local 是指定使用本地模板目录。本地模板目录为：**~/.M2/archetype-catalog.xml**  
+可以用迅雷下载之，路径：https://repo.maven.apache.org/maven2/archetype-catalog.xml
 
 使用 Spring Boot 仅仅需要在pom文件中声明使用 Spring Boot，并添加 spring-boot-starter-web 的依赖即可
 
@@ -62,3 +69,15 @@
 </project>
 
 ```
+
+## 编写java类
+
+在src/main 目录下 新建目录 java
+
+然后根据包名依次创建com/wang/ustc/
+
+### 启动类 MainApplication.java
+
+
+
+### controller类
