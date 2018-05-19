@@ -16,7 +16,7 @@ cnpm install -g vue-cli
 cd mydemo
 
 // 创建一个基于 webpack 模板的新项目
-vue init webpack javalsj-blog-vue
+vue init webpack myblog
 
 // 先进入vue项目目录下再安装该项目的依赖
 cd myblog
