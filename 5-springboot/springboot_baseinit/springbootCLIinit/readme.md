@@ -101,3 +101,9 @@ public class ServletInitializer extends SpringBootServletInitializer {
 }
 
 ```
+
+## 验证执行
+
+在使用 gradle build 进行构建的时候。
+
+上面新建的 gradleJarApp 工程中，命令报错。如果去掉-dweb,jpa,security 就构建成功了。。
