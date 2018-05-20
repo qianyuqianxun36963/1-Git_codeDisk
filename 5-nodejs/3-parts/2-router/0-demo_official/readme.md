@@ -91,7 +91,7 @@ exports.start = start;
 ```
 
 同时，我们会相应扩展 index.js，使得路由函数可以被注入到服务器中：
-### index.js 文件代码：
+### start.js 文件代码：
 ```
 var server = require("./server");
 var router = require("./router");
@@ -106,4 +106,6 @@ server.start(router.route);
 Server has started.
 以上输出已经去掉了比较烦人的 /favicon.ico 请求相关的部分。
 
-浏览器访问 http://127.0.0.1:8888/，输出结果如下：
+浏览器访问 http://127.0.0.1:8888， 输出结果如下：
+
+`Hello World`
