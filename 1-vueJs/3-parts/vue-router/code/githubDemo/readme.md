@@ -22,3 +22,7 @@ npm run build
 ```
 
 For a detailed explanation of the build process, read the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+## 访问项目
+
+点击地址 http://localhost:8080 体验效果
