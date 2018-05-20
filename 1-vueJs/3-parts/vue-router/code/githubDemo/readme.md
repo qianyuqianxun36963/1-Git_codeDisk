@@ -1,8 +1,14 @@
-# Vue 2.0 Simple Routing Example
+# 官网路由示例
+
+`git clone https://github.com/chrisvfritz/vue-2.0-simple-routing-example.git`
+
+[github 项目地址](https://github.com/chrisvfritz/vue-2.0-simple-routing-example.git)
+
+## Vue 2.0 Simple Routing Example
 
 > A simple example of routing with Vue 2.0 without using vue-router. This branch uses the raw HTML5 History API. For an example integrating a 3rd-party routing solution, see the [pagejs branch](https://github.com/chrisvfritz/vue-2.0-simple-routing-example/tree/pagejs).
 
-## Build Setup
+### Build Setup
 
 ``` bash
 # install dependencies
