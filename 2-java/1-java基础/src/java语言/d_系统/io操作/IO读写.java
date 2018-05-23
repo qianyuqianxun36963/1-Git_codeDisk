@@ -8,7 +8,7 @@ public class IO读写 {
         //ReaderAndWriter_chararray.test();     //字符、内存
         //ReaderAndWriter_string.test();        //字符、内存
         //ReaderAndWriter_buffer.test();        //字符、文件缓存
-        //ReaderAndWriter_buffer.test2();        //字符、文件缓存
+        ReaderAndWriter_buffer.test2();        //字符、文件缓存
         
         //InputAndOutputStream_file.test();        //字节、文件
         //InputAndOutpurStream_byteArray.test();//字节、内存
