@@ -90,7 +90,8 @@ function start(route) {
 exports.start = start;
 ```
 
-同时，我们会相应扩展 index.js，使得路由函数可以被注入到服务器中：
+同时，我们会相应扩展 start.js，使得路由函数可以被注入到服务器中：
+
 ### start.js 文件代码：
 ```
 var server = require("./server");
@@ -103,6 +104,7 @@ server.start(router.route);
 如果现在启动应用（node index.js，始终记得这个命令行），随后请求一个URL，你将会看到应用输出相应的信息，这表明我们的HTTP服务器已经在使用路由模块了，并会将请求的路径传递给路由：
 
 `$ node index.js`
+
 Server has started.
 以上输出已经去掉了比较烦人的 /favicon.ico 请求相关的部分。
 

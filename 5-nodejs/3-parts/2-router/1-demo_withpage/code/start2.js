@@ -35,15 +35,18 @@ var error404 = function(res){
 var server = http.createServer(function(req,res){
    console.log(req.url);               //在控制台打印请求
 
-    //判断URL，提供不同的路由
-    if(req.url == '/index' || req.url == '/') {    //主页
-        index.index(res);
-    }
-    else if(req.url == '/context') {   //访问cunxiao.html（特意使用中文命名）
-        Response(res,cx);
-    }
-    else {                              //访问其它静态文件，如/stylesheets/index.css
-        Response(res,"./files"+req.url);
+    switch(req.url){
+      //首页
+      case '/':
+      case '/index':
+          index.index(res);
+          break;
+      case '/context':
+          Response(res,cx);
+          break;
+      default:
+          Response(res,"./files"+req.url);
+          break;
     }
 });
 
