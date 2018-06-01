@@ -22,6 +22,8 @@ System.out.println("filepath:"+storePath + paraPath);
 	<script type="text/javascript" src="plugins/ckeditor/ckeditor.js"></script>
 	<script type="text/javascript" src="plugins/ckfinder/ckfinder.js"></script>
 	<script type="text/javascript" src="plugins/jquery/jquery-1.4.2.min.js"></script>
+	<script type="text/javascript" src="plugins/vuejs/vue.min.js"></script>
+
 	<style type="text/css">
 /* 		#editorbody{ */
 /* 			background: #CC22DD; */
@@ -31,38 +33,41 @@ System.out.println("filepath:"+storePath + paraPath);
 	</style>
 	
   </head>
-  
+
 <body id="editorbody">
 <form action="views/parts/doTest.jsp" name="myform" method="post">
 	<input type="button" onclick="test()" value="preview"/>
 	<input type="button" onclick="savedata()" value="save" accesskey="s" />  
 	<hr/>
-	<textarea name="editor" id="editor" rows="30" cols="80"></textarea>
+	<textarea name="editor"            id="editor"            rows="30" cols="80"></textarea>
+	<textarea name="htmlStateArea"     id="htmlStateArea"     rows="30" cols="80"></textarea>
+	<textarea name="markdownStateArea" id="markdownStateArea" rows="30" cols="80"></textarea>
+
 </form>
 </body>
 
 <script type="text/javascript">
 	var paraPath = "<%=paraPath%>";
 	var storePath = "<%=storePath%>";
+	var state = paraPath.substring(paraPath.indexOf('.')+1, paraPath.length);
 
-	var state = "";
+	//当请求带有参数的时候，会调用，现在基本没用。
+	if (paraPath != ""&&paraPath!=null&&paraPath!="null"){
+		state = paraPath.substring(paraPath.indexOf('.')+1, paraPath.length);
+		changeState(state);
+		initdata(paraPath);
+	} 
 
+	//编辑几个状态实例
 	var myState = new MyState();
 	var htmlState = {};
 	var mdState = {};
 
+	//全局变量，用来保存编辑区域和当前编辑状态
 	var currentState = myState;
-	
-	if (paraPath != ""&&paraPath!=null&&paraPath!="null"){
 
-		state = paraPath.substring(paraPath.indexOf('.')+1, paraPath.length());
 
-		changeState(state);
-
-		initdata();
-
-	} 
-
+	//调用方法的入口，类似了接口，供按钮调用。
 	function initdata(path){
 		var editContext = new EditContext();
         editContext.change(currentState);
@@ -79,12 +84,6 @@ System.out.println("filepath:"+storePath + paraPath);
 		var editContext = new EditContext();
         editContext.change(currentState);
         editContext.test();
-	}
-
-	window.onload = function(){
-		var editContext = new EditContext();
-        editContext.change(currentState);
-        editContext.onload();
 	}
 
 	window.onresize = function(){
@@ -108,105 +107,133 @@ System.out.println("filepath:"+storePath + paraPath);
 	function EditContext(){	}
 	EditContext.prototype = {
 		constructor:EditContext,
-		currentLight:null,
+		currentState:null,
 		change: function (light) {
-	        currentLight = light;
+	        currentState = light;
 	    },
-		onload: function () {
-			currentLight.onload();
-		},
 		onresize: function () {
-			currentLight.onresize();
+			currentState.onresize();
 		},
 		test: function () {
-			currentLight.test();
+			currentState.test();
 		},
 		savedata: function () {
-			currentLight.savedata();
+			currentState.savedata();
 		},
-		initdata: function () {
-			currentLight.initdata();
+		initdata: function (path) {
+			currentState.initdata(path);
 		}
 	}
 
+	//  ***************************** ---- markdown编辑器 状态 的实现代码 ---- **********************************//
+	
+	new Vue({
+        el: '#markdownStateArea',
+        data: {
+            input: ''
+        },
+        computed: {
+            compiledMarkdown: function () {
+                return marked(this.input, { sanitize: true })
+            }
+        },
+        methods: {
+            update: _.debounce(function (e) {
+                this.input = e.target.value
+            }, 300)
+        }
+    })
+
+	//定义了一个状态类，包含了处理'my'类型的文件的所有操作。
+    function MarkdownState() { }
+    
+    MarkdownState.prototype.initdata = function initdata(path){
+	    
+    }
+
+    MarkdownState.prototype.savedata = function savedata(){
+
+    }
+    
+    MarkdownState.prototype.test =function test() {  
+        
+    }
+
+    //窗口改变时候，改变编辑区 
+	MarkdownState.prototype.onresize = function () {
+		
+	};
+
+	//  ***************************** ---- markdown编辑器 状态 的实现代码 ---- **********************************//
+
+
+
+	//  ******************************* ---- 富文本编辑器 状态 的实现代码 ---- ***********************************//
+
+    var	editor = CKEDITOR.replace('editor',{
+			language:'zh-cn',
+			toolbarGroups: [
+				{"name":"basicstyles","groups":["basicstyles"]},
+				{"name":"links","groups":["links"]},
+				{"name":"paragraph","groups":["list","blocks"]},
+				{"name":"document","groups":["mode"]},
+				{"name":"insert","groups":["insert"]},
+				{"name":"styles","groups":["styles"]},
+				{"name":"about","groups":["about"]}
+			]
+		});
+
+	//让编辑器窗口充满编辑模块。
+	CKEDITOR.on('instanceReady', function (e) { 
+		editor.resize( editor.container.getStyle( 'width' ),document.body.offsetHeight-40 );
+	});
+
     //定义了一个状态类，包含了处理'my'类型的文件的所有操作。
     function MyState() { }
-    MyState.prototype.onload = function()
-	    {
-			//配置ckfinder，结合在一起使用。
-			CKFinder.setupCKEditor( editor, '../../plugins/ckfinder/' );	
-			CKEDITOR.editorConfig = function( config ) {
-			    //其他一些配置
-			    filebrowserBrowseUrl = '../../plugins/ckfinder/ckfinder.html';
-			    filebrowserImageBrowseUrl = '../../plugins/ckfinder/ckfinder.html?type=Images';
-			    filebrowserFlashBrowseUrl = '../../plugins/ckfinder/ckfinder.html?type=Flash';
-			    filebrowserUploadUrl = '../../plugins/ckfinder/core/connector/java/connector.java?command=QuickUpload&type=Files';
-			    filebrowserImageUploadUrl = '../../plugins/ckfinder/core/connector/java/connector.java?command=QuickUpload&type=Images';
-			    filebrowserFlashUploadUrl = '../../plugins/ckfinder/core/connector/java/connector.java?command=QuickUpload&type=Flash';
-			};
-	    };
-		
-		//窗口改变时候，改变编辑区 
-		MyState.prototype.onresize = function () {
-			//alert(document.body.offsetHeight-30);
-			editor.resize( editor.container.getStyle( 'width' ),document.body.offsetHeight-40 );
-		};
-	    
-	    MyState.prototype.test =function test() {  
-	        //JavaScript判空，如果确定 
-	        debugger;
-	        var editor_data = editor.getData();  
-	        if(editor_data==null||editor_data==""){  
-	            alert("数据为空不能提交");  
-	        }else{  
-	            //alert(editor_data);
-	            document.myform.submit();  
-	        }         
-	    }  
-	    
-	    MyState.prototype.savedata = function savedata(){
-	    	var editor_data = editor.getData();  
-	        if(editor_data==null||editor_data==""){  
-	            alert("数据为空不能提交");  
-	        }else{  
-	           	var jsondata = {data:editor_data,filePath:storePath + paraPath};
-	           	$.ajax({ type:"POST", data: jsondata, url: "views/function/saveTofile.jsp",success:function(){alert("数据保存成功！");}}); 
-	        }
-	    }
-	    
-	    MyState.prototype.initdata = function initdata(path){
-	    	var editor = CKEDITOR.replace('editor',{
-				language:'zh-cn',
-				toolbarGroups: [
-					{"name":"basicstyles","groups":["basicstyles"]},
-					{"name":"links","groups":["links"]},
-					{"name":"paragraph","groups":["list","blocks"]},
-					{"name":"document","groups":["mode"]},
-					{"name":"insert","groups":["insert"]},
-					{"name":"styles","groups":["styles"]},
-					{"name":"about","groups":["about"]}
-				]
-			});
-			
-			//让编辑器窗口充满编辑模块。
-			CKEDITOR.on('instanceReady', function (e) { 
-				editor.resize( editor.container.getStyle( 'width' ),document.body.offsetHeight-40 );
-			});
+    
+    MyState.prototype.initdata = function initdata(path){
+    	debugger;
+	    paraPath = path;
+    	var jsondata;
+    	//如果是初始化的时候调用的，就直接用页面变量filePath。如果是通过tree上的节点调用的，就使用传来的路径参数。
+    	if(path==null) 	jsondata = {filePath:storePath + paraPath};
+    	else {jsondata = {filePath:storePath+path};}
+    	$.ajax({ type:"GET", data: jsondata, url: "views/function/getFiledata.jsp", dataType: "json",
+    		success:function(data){
+    			editor_data = data[0].data;
+    			editor.setData(editor_data);
+    		;} 
+    	});
+    }
 
-		    paraPath = path;
+    MyState.prototype.savedata = function savedata(){
+    	var editor_data = editor.getData();  
+        if(editor_data==null||editor_data==""){  
+            alert("empty not allowed");  
+        }else{  
+           	var jsondata = {data:editor_data,filePath:storePath + paraPath};
+           	$.ajax({ type:"POST", data: jsondata, url: "views/function/saveTofile.jsp",success:function(){alert("save success!");}}); 
+        }
+    }
+    
+    MyState.prototype.test =function test() {  
+        //JavaScript判空，如果确定 
+        var editor_data = editor.getData();  
+        if(editor_data==null||editor_data==""){  
+            alert("数据为空不能提交");  
+        }else{  
+            //alert(editor_data);
+            document.myform.submit();  
+        }         
+    }
 
-	    	var jsondata;
-	    	//如果是初始化的时候调用的，就直接用页面变量filePath。如果是通过tree上的节点调用的，就使用传来的路径参数。
-	    	if(path==null) 	jsondata = {filePath:storePath + paraPath};
-	    	else {jsondata = {filePath:storePath+path};}
-	    	$.ajax({ type:"GET", data: jsondata, url: "views/function/getFiledata.jsp", dataType: "json",
-	    		success:function(data){
-	    			debugger;
-	    			editor_data = data[0].data;
-	    			editor.setData(editor_data);
-	    		;} 
-	    	});
-	    }
+    //窗口改变时候，改变编辑区 
+	MyState.prototype.onresize = function () {
+		//alert(document.body.offsetHeight-30);
+		editor.resize( editor.container.getStyle( 'width' ),document.body.offsetHeight-40 );
+	};
+
+	//  ******************************* ---- 富文本编辑器 状态 的实现代码 ---- ***********************************//
 
 </script>
 
