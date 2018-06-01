@@ -5,18 +5,18 @@
 	<title>Document</title>
 </head>
 <body>
-	<button id="1" onclick="fun1()">button1</button></br>
+
+	<button id="show" onclick="show()">show</button></br>
+
 </body>
 
 <script type="text/javascript">
-	function fun1(){
+
+	function show(){
 		var trafficlight = new trafficLight();
         trafficlight.change(new RedLight());
-        trafficlight.change(new YellowLight());
         trafficlight.show();
 	}
-
-
 
     function trafficLight(){
 	}
@@ -24,14 +24,12 @@
 		constructor:trafficLight,
 		currentLight:null,
 		change: function (light) {
-	        currentLight = light;
-	        currentLight.go();
-	    },
+	        currentLight = light;	    
+        },
 		show: function () {
 			currentLight.go();
 		}
 	}
-
 
     function RedLight() { }
     RedLight.prototype.go = function () {

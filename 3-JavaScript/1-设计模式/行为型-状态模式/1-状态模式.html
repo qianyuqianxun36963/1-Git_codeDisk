@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<button id="changeRed" onclick="changeState('red')">changeStateRed</button>
+	<button id="changeGreen" onclick="changeState('green')">changeStateGreen</button>
+	<button id="changeYello" onclick="changeState('yellow')">changeStateYellow</button>
+	</br></br>
+	<button id="go" onclick="go()">go</button>
+	<button id="stop" onclick="stop()">stop</button>
+</body>
+
+<script type="text/javascript">
+
+//定义红绿灯状态变量。
+	var redLight = new RedLight();
+	var greenLight = new GreenLight();
+	var yellowLight = new YellowLight();
+
+    var currentLight = redLight;
+
+	function go(){
+		var trafficlight = new TrafficLight();
+        trafficlight.change(currentLight);
+        trafficlight.go();
+	}
+
+	function stop(){
+		var trafficlight = new TrafficLight();
+        trafficlight.change(currentLight);
+        trafficlight.stop();
+	}
+
+	function changeState(state){
+		switch(state){
+			case "red": currentLight = redLight;  break;
+			case "green": currentLight = greenLight;  break;
+			case "yellow": currentLight = yellowLight;  break;
+			default: trafficlight.change(redLight);
+		}
+	}
+
+
+
+    function TrafficLight(){
+	}
+	TrafficLight.prototype = {
+		constructor:TrafficLight,
+		currentLight:null,
+		change: function (light) {
+	        currentLight = light;
+	    },
+		go: function () {
+			currentLight.go();
+		},
+		stop: function(){
+			currentLight.stop();
+		}
+	}
+
+
+    function RedLight() { }
+    RedLight.prototype.go = function () {
+        console.log("this is red light");
+    }
+    RedLight.prototype.stop = function () {
+        console.log("this is red light stop");
+    }
+
+    function GreenLight() { }
+    GreenLight.prototype.go = function () {
+        console.log("this is green light");
+    }
+    GreenLight.prototype.stop = function () {
+        console.log("this is green light stop");
+    }
+
+    function YellowLight() { }
+    YellowLight.prototype.go = function () {
+        console.log("this is yellow light");
+    }
+    YellowLight.prototype.stop = function () {
+        console.log("this is yellow light stop");
+    }
+
+</script>
+
+</html>

@@ -47,75 +47,91 @@ System.out.println("filepath:"+storePath + paraPath);
 
 	var state = "";
 
-	var state_my = create_state_my();
-	var state_html = {};
-	var state_md = {};
+	var myState = new MyState();
+	var htmlState = {};
+	var mdState = {};
 
-	var context = new Context();
+	var currentState = myState;
 	
 	if (paraPath != ""&&paraPath!=null&&paraPath!="null"){
 
 		state = paraPath.substring(paraPath.indexOf('.')+1, paraPath.length());
 
-		if(state == "my"){context.changeState(state_my);}
-		else if(state == "html"){context.changeState(state_html);}
-		else if(state == "md"){context.changeState(state_md);}
-		else{context.changeState(state_my);}
+		changeState(state);
 
 		initdata();
+
 	} 
 
 	function initdata(path){
-		context.initdata(path);
+		var editContext = new EditContext();
+        editContext.change(currentState);
+        editContext.initdata(path);
 	}
 
 	function savedata(){
-		context.savedata();
+		var editContext = new EditContext();
+        editContext.change(currentState);
+        editContext.savedata();
 	}
 
 	function test(){
-		context.test();
+		var editContext = new EditContext();
+        editContext.change(currentState);
+        editContext.test();
 	}
 
 	window.onload = function(){
-		context.onWindowLoad();
+		var editContext = new EditContext();
+        editContext.change(currentState);
+        editContext.onload();
 	}
 
 	window.onresize = function(){
-		context.onWindowResize();
+		var editContext = new EditContext();
+        editContext.change(currentState);
+        editContext.onresize();
 	}
 
 
-    //定义一个全局变量context，他包含了状态信息，并根据状态做出不同行为。
-    function Context(){
+    //状态切换函数，用于切换页面变量'currentState',页面上的状态判断都是以此为基础。
+	function changeState(state){
+		switch(state){
+			case "my": currentState = myState;  break;
+			case "md": currentState = mdState;  break;
+			case "html": currentState = htmlState;  break;
+			default: currentState = myState;
+		}
 	}
-	Context.prototype = {
-		constructor:Context,
-		currentState:null,
-		changeState: function (state) {
-            currentState = state;
-        },
-        initdata: function(path){
-        	currentState.initdata(path);
-        },
-        savedata: function(){
-        	currentState.savedata();
-        },
-        onWindowResize: function(){
-        	currentState.onresize();
-        },
-        onWindowLoad: function(){
-        	currentState.onload();
-        },
-        test: function(){
-        	currentState.test();
-        }
+
+	//定义一个全局变量context，他包含了状态信息，并根据状态做出不同行为。
+	function EditContext(){	}
+	EditContext.prototype = {
+		constructor:EditContext,
+		currentLight:null,
+		change: function (light) {
+	        currentLight = light;
+	    },
+		onload: function () {
+			currentLight.onload();
+		},
+		onresize: function () {
+			currentLight.onresize();
+		},
+		test: function () {
+			currentLight.test();
+		},
+		savedata: function () {
+			currentLight.savedata();
+		},
+		initdata: function () {
+			currentLight.initdata();
+		}
 	}
 
     //定义了一个状态类，包含了处理'my'类型的文件的所有操作。
-    function create_state_my(){
-    	var obj = new Object();
-    	obj.onload = function()
+    function MyState() { }
+    MyState.prototype.onload = function()
 	    {
 			//配置ckfinder，结合在一起使用。
 			CKFinder.setupCKEditor( editor, '../../plugins/ckfinder/' );	
@@ -131,12 +147,12 @@ System.out.println("filepath:"+storePath + paraPath);
 	    };
 		
 		//窗口改变时候，改变编辑区 
-		obj.onresize = function () {
+		MyState.prototype.onresize = function () {
 			//alert(document.body.offsetHeight-30);
 			editor.resize( editor.container.getStyle( 'width' ),document.body.offsetHeight-40 );
 		};
 	    
-	    obj.test =function test() {  
+	    MyState.prototype.test =function test() {  
 	        //JavaScript判空，如果确定 
 	        debugger;
 	        var editor_data = editor.getData();  
@@ -148,7 +164,7 @@ System.out.println("filepath:"+storePath + paraPath);
 	        }         
 	    }  
 	    
-	    obj.savedata = function savedata(){
+	    MyState.prototype.savedata = function savedata(){
 	    	var editor_data = editor.getData();  
 	        if(editor_data==null||editor_data==""){  
 	            alert("数据为空不能提交");  
@@ -158,7 +174,7 @@ System.out.println("filepath:"+storePath + paraPath);
 	        }
 	    }
 	    
-	    obj.initdata = function initdata(path){
+	    MyState.prototype.initdata = function initdata(path){
 	    	var editor = CKEDITOR.replace('editor',{
 				language:'zh-cn',
 				toolbarGroups: [
@@ -191,8 +207,7 @@ System.out.println("filepath:"+storePath + paraPath);
 	    		;} 
 	    	});
 	    }
-	    return obj;
-    }
 
 </script>
+
 </html>
