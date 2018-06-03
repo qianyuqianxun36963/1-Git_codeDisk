@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html style="min-height:600px">
+  <head>
+    <title>Content.html</title>
+	<base target="_blank"></base>
+    <meta name="keywords" content="keyword1,keyword2,keyword3">
+    <meta name="description" content="this is my page">
+    <meta name="content-type" content="text/html; charset=UTF-8">
+    <link type="text/css" href="../css/theme.css" rel="stylesheet">
+    <link type="text/css" href="../../plugins/bootstrap/bootstrap.min.css" rel="stylesheet">
+	<link type="text/css" href="../../plugins/bootstrap/bootstrap-theme.min.css" rel="stylesheet">
+  </head>
+  <body id="contentbody"> 
+
+    <div id="myStateArea"></div>
+
+    <div id="htmlStateArea"></div>
+
+    <div id="markdownStateArea"></div>
+
+  </body>
+
+  	<script type="text/javascript" src="../js/stack.js"></script>
+  	<script type="text/javascript" src="../js/common.js"></script>
+  	<script type="text/javascript" src="../../plugins/jquery/jquery.min.js"></script>
+  	<script type="text/javascript" src="../../plugins/bootstrap/bootstrap.min.js"></script>
+  	<script type="text/javascript" src="../../plugins/markdown/marked.js"></script>
+  	<script type="text/javascript" src="../../plugins/markdown/lodash.js"></script>
+  
+  <script type="text/javascript">
+  	var HlinkLevel = 8;  //设置将多少级的标题作为目录。
+  	var ExpandLevel = 3; //设置目录默认展开多少级。
+    var urlPath = getRootPath() + getProperty("notePath");
+  	
+  	function init(content,path){
+  		$("#myStateArea").html("");
+  		$("#htmlStateArea").html("");
+  		$("#markdownStateArea").html("");
+  		debugger;
+  		var state = path[0].substring(path[0].indexOf('.')+1, path[0].length);
+  		switch(state){
+  			case "my":
+  				$("#myStateArea").html(content);
+  				break;
+  			case "md":
+  				$("#markdownStateArea").html(marked(content, { sanitize: true }));
+  				break;
+  			case "html":
+  				debugger;
+  				//$("#htmlStateArea").load(urlPath + path);
+  				$("#htmlStateArea").html(content);
+  				break;
+  			default:
+  				$("#myStateArea").html(content);
+  				break;
+  		}
+  		add_H_Link(HlinkLevel);
+  	}
+
+	//为h1标签添加锚点。使用的是简单的标签内容替换。
+	function add_H_Link(le){//le 表示标题的等级，如果le=3，代表给h1/h2/h3加锚点
+		for(var i=1;i<le;i++){
+			var chaps = document.getElementsByTagName("h"+i);
+			for(var j=1;j<=chaps.length;j++){
+				chaps[j-1].innerHTML ="<a name='chapter_h"+i+"_"+j+"'></a>" + chaps[j-1].innerHTML;
+			};
+		};
+	};
+  
+	//获取当前文档所有锚点，生成初始化树所需要的数据。
+	function getCatalogdata(){
+		var Catalog=[];
+		var stack=new Stack();  
+		for(var i=-1;i<=document.anchors.length;i++){
+			var el={};
+			if(i==-1){
+				el.id="begin"; el.text="开头"; el.h="H1";//虚构一个头节点。
+			}else if(i==document.anchors.length){
+				el.id="end"; el.text="结尾"; el.h="H1";//虚构一个尾节点。使得 h1-h2-h3 这样的结构变成h1-h2-h3-h1,方便编程。
+			}else{
+				//提取锚点必要信息
+				var chap = document.anchors[i];   //某一个锚点
+				var level=chap.parentNode.tagName;//某一个锚点的类型，h1,h2..
+				//拼接节点。
+				el.id=chap.name; el.text=chap.parentNode.innerText; el.h=level;//生成一个节点。
+				if(level<('H'+ExpandLevel)) el.state={ "opened" : true }; //设置低于多少的目录默认展开。
+			}
+			if(stack.length()==0||el.h==stack.peek().h){stack.push(el);}//如果栈为空就压栈。
+			else{
+				if(el.h>stack.peek().h) stack.push(el);
+				else {
+					var temp = stack.peek();
+					while(el.h<temp.h){
+						var temph = temp.h;
+						var tempstack = new Stack();   
+						tempstack.push(temp);
+						stack.pop();
+						temp = stack.peek();
+						while(temph==temp.h){
+							tempstack.push(temp);
+							stack.pop();
+							temp = stack.peek();
+						}
+						var childarr = [];
+						while(tempstack.length()>0){
+							childarr.push(tempstack.peek()); tempstack.pop();
+						}
+						temp.children = childarr;
+					}
+					stack.push(el);
+				};
+			};
+		}
+		getresult(Catalog,stack);
+		Catalog.shift();//删除第一个元素 因为是虚构的
+		Catalog.pop();//删除第一个元素   因为也是虚构的
+		return Catalog;
+	}
+	
+	//下面函数是调换顺序用的。
+	function getresult(arr,lk){
+		var tp=new Stack(); 
+		while(lk.length()>0){ tp.push(lk.peek());lk.pop();}
+		while(tp.length()>0){arr.push(tp.peek());tp.pop();};
+	}
+
+  </script>
+</html>
