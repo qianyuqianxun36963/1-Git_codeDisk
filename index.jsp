@@ -50,14 +50,26 @@
 	
 	choiseMode();
 	choiseTreeMode();
+	choiseCatalogMode();
 	
-	function initdata(data){
+	function initdata(path){
 		//从性能上考虑，只做其一就可以了，但是右侧状态选择的时候，只能页面调整，缺少后续动作导致问题，故这里现放开了。
 		//if(mode=="display")
-			document.getElementById('display').contentWindow.initdata(data);
+			document.getElementById('display').contentWindow.initdata(path);
 		//else
-			document.getElementById('editor').contentWindow.initdata(data);
-		choiseCatalogMode();
+			document.getElementById('editor').contentWindow.initdata(path);
+		specialPathDeal(path);
+	}
+
+	function specialPathDeal(path){
+		debugger;
+		var infoOnline=new RegExp("在线资料.html");
+		if(infoOnline.test(path)){
+			treemode="none";
+			catalogmode = "none";
+			choiseTreeMode();
+			choiseCatalogMode();
+		}
 	}
 
 	function editOrDisplay(){
