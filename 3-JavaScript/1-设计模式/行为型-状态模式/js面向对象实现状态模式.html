@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<button id="1" onclick="fun1()">button1</button></br>
+</body>
+
+<script type="text/javascript">
+	function fun1(){
+		var trafficlight = new trafficLight();
+        trafficlight.change(new RedLight());
+        trafficlight.change(new YellowLight());
+        trafficlight.show();
+	}
+
+
+
+    function trafficLight(){
+	}
+	trafficLight.prototype = {
+		constructor:trafficLight,
+		currentLight:null,
+		change: function (light) {
+	        currentLight = light;
+	        currentLight.go();
+	    },
+		show: function () {
+			currentLight.go();
+		}
+	}
+
+
+    function RedLight() { }
+    RedLight.prototype.go = function () {
+        console.log("this is red light");
+    }
+
+    function GreenLight() { }
+    GreenLight.prototype.go = function () {
+        console.log("this is green light");
+    }
+
+    function YellowLight() { }
+    YellowLight.prototype.go = function () {
+        console.log("this is yellow light");
+    }
+
+</script>
+
+</html>
