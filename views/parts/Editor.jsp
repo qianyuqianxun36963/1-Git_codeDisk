@@ -23,10 +23,10 @@ System.out.println("filepath:"+servPath + paraPath);
     <script type="text/javascript" src="plugins/jquery/jquery.min.js"></script>
     <script type="text/javascript" src="plugins/bootstrap/bootstrap.min.js"></script>
     <script type="text/javascript" src="plugins/vuejs/vue.min.js"></script>
-
-	<script src="../NoteBook/views/js/common.js"></script>
-    <script src="https://unpkg.com/marked@0.3.6"></script>
-    <script src="https://unpkg.com/lodash@4.16.0"></script>
+    <script type="text/javascript" src="plugins/markdown/marked.js"></script>
+    <script type="text/javascript" src="plugins/markdown/lodash.js"></script>
+	<script type="text/javascript" src="../NoteBook/views/js/common.js"></script>
+    
 
     <style type="text/css">
 /*         #editorbody{ */
