@@ -2,6 +2,19 @@
 
 如前文所述，如果你想仅仅写代码就完成Spring应用程序的开发，那么Spring Boot CLI是个不错的选择。然而， Spring Boot CLI的功能还不限于此，它有一些命令可以帮你使用Initializr，通过它上手开发更传统的Java项目。
 
+## 手工安装Spring Boot CLI
+安装Spring Boot CLI最直接的方法大约是下载、解压，随后将它的bin目录添加到系统路径里。
+
+You can download the Spring CLI distribution from the Spring software repository:
+
+[spring-boot-cli-2.0.2.RELEASE-bin.zip](https://repo.spring.io/release/org/springframework/boot/spring-boot-cli/2.0.2.RELEASE/spring-boot-cli-2.0.2.RELEASE-bin.zip)
+
+[spring-boot-cli-2.0.2.RELEASE-bin.tar.gz](https://repo.spring.io/release/org/springframework/boot/spring-boot-cli/2.0.2.RELEASE/spring-boot-cli-2.0.2.RELEASE-bin.tar.gz)
+
+下载完成之后，把它解压到文件系统的任意目录里。在解压后的目录里，你会找到一个bin目录，其中包含了一个spring.bat脚本（用于Windows环境）和一个spring脚本（用于Unix环境）。
+
+把这个bin目录添加到系统路径里，然后就能使用Spring Boot CLI了。
+
 ## 构建项目基线
 
 Spring Boot CLI包含了一个init命令，可以作为Initializr的客户端界面。 init命令最简单的用法就是创建Spring Boot项目的基线：
