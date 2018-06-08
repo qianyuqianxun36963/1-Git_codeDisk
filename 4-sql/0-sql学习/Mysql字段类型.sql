@@ -126,3 +126,14 @@ SET 类型
     用较小的存储代价换来较高的数据库性能。
 */
 
+create table intTest(tint tinyint(4));
+
+insert into intTest values('0001');
+insert into intTest values("0002");
+insert into intTest values(0003);
+
+SELECT * from intTest where tint = 1;
+SELECT * from intTest where tint = 2;
+SELECT * from intTest where tint = '0003';
+
+mysql里面数据类型都是这么随意的吗...
