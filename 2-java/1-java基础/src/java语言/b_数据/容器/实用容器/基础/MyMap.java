@@ -1,5 +1,6 @@
 package java语言.b_数据.容器.实用容器.基础;
 
+import java.util.ArrayList;
 import java.util.EnumMap;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -86,6 +87,25 @@ class MyMap_HashMap{
                map4.put("3", "C"); 
                map3.putAll(map4); 
                System.out.println(map3);
+               
+               map1.remove("1");
+               System.out.println(map1);
+               
+               List<Map> scores = new ArrayList<Map>();
+               Map<String,Object> score = new HashMap<String,Object>();
+               score.put("wangfang","100");
+               scores.add(score);
+               
+               List<Map> scores2 = new ArrayList<Map>();
+               Map<String,Object> score2 = new HashMap<String,Object>();
+               score2.put("xiaofang","111");
+               scores2.add(score2);
+               
+               map1.put("scores",scores);
+               System.out.println(map1);
+               
+               map1.put("scores",scores2);
+               System.out.println(map1);
         }
         
         //键值对中，键可以是复杂类型吗、
@@ -238,4 +258,5 @@ class Point{
         this.y=y;
     }
 }
+
 

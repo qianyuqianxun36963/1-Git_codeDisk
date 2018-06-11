@@ -15,6 +15,13 @@ public class MyList {
     public void test() {
         MyList_Arraylist arraylist = new MyList_Arraylist();
         arraylist.initlist();
+        
+//        for(int i=0;i<arraylist.arraylist.size();i++){
+//            if(arraylist.arraylist.get(i).equals("字符串")){
+//                arraylist.arraylist.remove(i);
+//            }
+//        }
+        
         ListUtil.visitList_for((arraylist.arraylist));
         ListUtil.visitList_every((arraylist.arraylist));
         ListUtil.visitList_iterator((arraylist.arraylist));
