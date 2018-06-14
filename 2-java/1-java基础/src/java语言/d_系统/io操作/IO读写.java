@@ -274,7 +274,7 @@ class InputAndOutputStream_buffer{
             {
                 if ( bis != null )
                 {
-                    bis.close();
+                    bis.close(); //关闭的时候有，关闭最外层的流就可以了。
                 }
             }
             catch ( IOException e )
@@ -286,7 +286,7 @@ class InputAndOutputStream_buffer{
             {
                 if ( bos != null )
                 {
-                    bos.close();
+                    bos.close(); //关闭的时候有，关闭最外层的流就可以了。
                 }
             }
             catch ( IOException e )
