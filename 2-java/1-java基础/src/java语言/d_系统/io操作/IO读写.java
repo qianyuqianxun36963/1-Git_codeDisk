@@ -8,15 +8,16 @@ public class IO读写 {
         //ReaderAndWriter_chararray.test();     //字符、内存
         //ReaderAndWriter_string.test();        //字符、内存
         //ReaderAndWriter_buffer.test();        //字符、文件缓存
-        ReaderAndWriter_buffer.test2();        //字符、文件缓存
+        //ReaderAndWriter_buffer.test2();        //字符、文件缓存
         
         //InputAndOutputStream_file.test();        //字节、文件
         //InputAndOutpurStream_byteArray.test();//字节、内存
         //InputAndOutputStream_data.test();        //字节、文件和内存
         //InputAndOutputStream_object.test();    //字节、文件和内存
+        InputAndOutputStream_buffer.test();
         
         //MyInputStreamReader.test();
-        MyOutputStreamWriter.test();
+        //MyOutputStreamWriter.test();
     }
 }
 
@@ -25,7 +26,8 @@ class data {
     static String fpath= f.getAbsolutePath();
     static String filename=fpath+"/src/java语言/d_系统/io操作/files/datas.txt";
     static String outfilename=fpath+"/src/java语言/d_系统/io操作/files/outdatas.txt";
-    static File file=new File(filename);
+    static File file    = new File(filename);
+    static File outfile = new File(outfilename);
     
     static char[] chararry="hello world".toCharArray();
     static byte[] bytearry="hello world".getBytes();
@@ -206,11 +208,11 @@ class InputAndOutputStream_file{
 /***************** 分类:字节、内存  *****************/
 //字节"数组流"。 流的目的地是内存。
 class InputAndOutpurStream_byteArray{
-    //ByteArrayInputStream 构造方法:     方法1: ByteArrayInputStream(byte[] buf) 
-    //                                方法2: ByteArrayInputStream(byte[] buf, int offset, int length)
+    //ByteArrayInputStream             方法1: ByteArrayInputStream(byte[] buf) 
+    //                                 方法2: ByteArrayInputStream(byte[] buf, int offset, int length)
     
-    //ByteArrayOutputStream()构造方法: 方法1: ByteArrayOutputStream()
-    //                                方法2: ByteArrayOutputStream(int size)
+    //ByteArrayOutputStream()          方法1: ByteArrayOutputStream()
+    //                                 方法2: ByteArrayOutputStream(int size)
     public static void test(){
         //感觉小数据量的时候用不到他。
         ByteArrayOutputStream baos=new ByteArrayOutputStream();//输出流，他是将内容写出到内存中去的。
@@ -227,18 +229,72 @@ class InputAndOutpurStream_byteArray{
     }
 }
 
-/***************** 分类:字节、文件和内存  *****************/
-//下面两种方法，构造方法是基于InputStream和OutputStream的，而上面说的两种字节流都是InputStream和OutputStream子类。
+/***************** 分类:字节、上层 *****************/
+//上面说的两种字节流都是InputStream和OutputStream子类。
+//下面两种方法，构造方法是基于InputStream和OutputStream的。
 //他们处理过程中数据存在哪，取决于底层流实现。
-//基于InputStream和OutputStream之上的。是InputStream和OutputStream的子类。
+
+//基于InputStream和OutputStream之上的。也就是说，构造方法需要传入OutputStream对象。
+//继承关系: OutputStream -> ObjectOutputStream
 class InputAndOutputStream_object{
     
 }
 
 
-//基于InputStream和OutputStream之上的。
+//基于InputStream和OutputStream之上的。也就是说，构造方法需要传入OutputStream对象。
+//继承关系: OutputStream -> FilterOutputStream -> DataOutputStream
 class InputAndOutputStream_data{
     
+}
+
+//基于InputStream和OutputStream之上的。也就是说，构造方法需要传入OutputStream对象。
+//继承关系: OutputStream -> FilterOutputStream -> BufferedOutputStream
+class InputAndOutputStream_buffer{
+    public static void test(){
+        BufferedInputStream  bis = null;
+        BufferedOutputStream bos = null;
+        try{
+            FileInputStream fi = new FileInputStream(data.file);
+            FileOutputStream fo= new FileOutputStream(data.outfile);
+            bis = new BufferedInputStream(fi);
+            bos = new BufferedOutputStream(fo);
+            
+            byte[] buffer = new byte[2048];
+            int bytesRead;
+            while((bytesRead = bis.read(buffer,0,buffer.length))!= -1){
+                bos.write(buffer);
+            }
+            
+        }
+        catch(IOException e){
+            System.out.println(e);
+        }
+        finally{
+            try
+            {
+                if ( bis != null )
+                {
+                    bis.close();
+                }
+            }
+            catch ( IOException e )
+            {
+                System.out.println("文件输入流关闭异常");
+            }
+
+            try
+            {
+                if ( bos != null )
+                {
+                    bos.close();
+                }
+            }
+            catch ( IOException e )
+            {
+                System.out.println("文件输出流关闭异常");
+            }
+        }
+    }
 }
 
 /*************** 字节流与字符流的转换。***************/

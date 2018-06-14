@@ -1,1 +1,3 @@
-ÕâÀïÊÇºº×Ö
+test bufferedinputStream.
+
+this file will be copyed to outfile.
