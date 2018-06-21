@@ -30,6 +30,7 @@ class NormalBlock{
 
 //构造代码块
 //位置：直接在类中定义，且没有加static关键字的代码块
+//执行时间和顺序：在类实例化时被调用，在类构造方法之前执行。
 class ConstructBlock{
     {
         System.out.println("类定义中的-构造代码块");
@@ -48,13 +49,14 @@ class ConstructBlock{
 
 //静态代码块
 //位置：在java中使用static关键字声明的代码块！不能存在于任何方法体内！
+//执行时间和顺序：在调用静态方法时被执行，在类实例化之前执行。执行一次。
 class StaticBlock{
     static{
         System.out.println("StaticBlock的静态代码块");
     }
     
     {
-        System.out.println("StaticBlock的构造块");    
+        System.out.println("StaticBlock的构造代码块");    
     }
      
     public StaticBlock(){
@@ -71,14 +73,18 @@ class StaticBlock{
 }
 
 class Code{
+    static String staticString = "staticString";
+    String normalString = "normalString";
     //静态块用于初始化类，为类的属性初始化。每个静态代码块只会执行一次。由于JVM在加载类时会执行静态代码块，所以静态代码块先于主方法执行。
-    //1 静态代码块不能存在于任何方法体内。2 静态代码块不能直接访问静态实例变量和实例方法，需要通过类的实例对象来访问。
+    //1 静态代码块不能存在于任何方法体内。2 静态代码块不能直接访问实例变量和实例方法，需要通过类的实例对象来访问。
     static{
         System.out.println("Code的静态代码块");
+        //System.out.println(staticString);
+        //System.out.println(normalString); //报错，
     }
     
     {
-        System.out.println("Code的构造块");
+        System.out.println("Code的构造代码块");
     }
         
     public Code(){
