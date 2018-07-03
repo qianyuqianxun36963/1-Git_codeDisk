@@ -6,20 +6,66 @@
     <meta name="keywords" content="keyword1,keyword2,keyword3">
     <meta name="description" content="this is my page">
     <meta name="content-type" content="text/html; charset=UTF-8">
-    <link href="../css/theme.css" rel="stylesheet" type="text/css">
+    <link type="text/css" href="../css/theme.css" rel="stylesheet">
+    <link type="text/css" href="../../plugins/bootstrap/bootstrap.min.css" rel="stylesheet">
+	<link type="text/css" href="../../plugins/bootstrap/bootstrap-theme.min.css" rel="stylesheet">
   </head>
   <body id="contentbody"> 
-    <div id="content"></div>
+
+    <div id="myStateArea"></div>
+
+    <div id="htmlStateArea"></div>
+
+    <div id="markdownStateArea"></div>
+
   </body>
-  <script src="../js/stack.js"></script>
+
+  	<script type="text/javascript" src="../js/stack.js"></script>
+  	<script type="text/javascript" src="../js/common.js"></script>
+  	<script type="text/javascript" src="../../plugins/jquery/jquery.min.js"></script>
+  	<script type="text/javascript" src="../../plugins/bootstrap/bootstrap.min.js"></script>
+  	<script type="text/javascript" src="../../plugins/markdown/marked.js"></script>
+  	<script type="text/javascript" src="../../plugins/markdown/lodash.js"></script>
+  
   <script type="text/javascript">
   	var HlinkLevel = 8;  //设置将多少级的标题作为目录。
   	var ExpandLevel = 3; //设置目录默认展开多少级。
-  
-  	function init(content){
-  		document.getElementById('content').innerHTML = content;
+    var urlPath = getRootPath() + getProperty("notePath");
+  	
+  	function init(content,path){
+  		$("#myStateArea").html("");
+  		$("#htmlStateArea").html("");
+  		$("#markdownStateArea").html("");
+  		debugger;
+  		var state = path[0].substring(path[0].indexOf('.')+1, path[0].length);
+  		switch(state){
+  			case "my":
+  				$("#myStateArea").html(content);
+  				break;
+  			case "md":
+  				$("#markdownStateArea").html(marked(content, { sanitize: true }));
+  				break;
+  			case "html":
+  				debugger;
+  				//$("#htmlStateArea").load(urlPath + path);
+  				$("#htmlStateArea").html(content);
+  				break;
+  			default:
+  				$("#myStateArea").html(content);
+  				break;
+  		}
   		add_H_Link(HlinkLevel);
   	}
+
+	//为h1标签添加锚点。使用的是简单的标签内容替换。
+	function add_H_Link(le){//le 表示标题的等级，如果le=3，代表给h1/h2/h3加锚点
+		for(var i=1;i<le;i++){
+			var chaps = document.getElementsByTagName("h"+i);
+			for(var j=1;j<=chaps.length;j++){
+				chaps[j-1].innerHTML ="<a name='chapter_h"+i+"_"+j+"'></a>" + chaps[j-1].innerHTML;
+			};
+		};
+	};
   
 	//获取当前文档所有锚点，生成初始化树所需要的数据。
 	function getCatalogdata(){
@@ -71,20 +117,12 @@
 		return Catalog;
 	}
 	
+	//下面函数是调换顺序用的。
 	function getresult(arr,lk){
 		var tp=new Stack(); 
 		while(lk.length()>0){ tp.push(lk.peek());lk.pop();}
 		while(tp.length()>0){arr.push(tp.peek());tp.pop();};
 	}
-	
-	//为h1标签添加锚点。使用的是简单的标签内容替换。
-	function add_H_Link(le){//le 表示标题的等级，如果le=3，代表给h1/h2/h3加锚点
-		for(var i=1;i<le;i++){
-			var chaps = document.getElementsByTagName("h"+i);
-			for(var j=1;j<=chaps.length;j++){
-				chaps[j-1].innerHTML ="<a name='chapter_h"+i+"_"+j+"'></a>" + chaps[j-1].innerHTML;
-			};
-		};
-	};
+
   </script>
 </html>

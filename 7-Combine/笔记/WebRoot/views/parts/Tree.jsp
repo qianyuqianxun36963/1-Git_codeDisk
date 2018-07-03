@@ -152,7 +152,7 @@
 					}else if(treemode.equals("all")){	
 						Map<Object, Object> resmap = new HashMap<Object, Object>();resmap.put("text",item);resmap.put("children",false);resmap.put("id",this.id(filepath));resmap.put("type","file");resmap.put("icon","file file-"+"mp4"); res.add(resmap);
 					}else{
-						if(ext.equals("my")||ext.equals("txt")||ext.equals("html")||ext.equals("")){
+						if(ext.equals("my")||ext.equals("txt")||ext.equals("html")||ext.equals("md")||ext.equals("")){
 							Map<Object, Object> resmap = new HashMap<Object, Object>();resmap.put("text",item);resmap.put("children",false);resmap.put("id",this.id(filepath));resmap.put("type","file");resmap.put("icon","file file-"+"mp4"); res.add(resmap);
 						}
 					}
@@ -293,8 +293,6 @@
 	<body id="treebody">
 		<a id="link" href="http://www.baidu.com/" target="content"></a>
 	
-		<div id="path" style="border:1px solid; border-radius:25px; padding:5px"></div>
-	
 		<div id="container" role="main">
 			<div id="tree"></div>
 		</div>
@@ -434,13 +432,10 @@
 // 						document.getElementById("link").href="Editor.jsp?filePath="+data.selected.join(':');
 // 						document.getElementById("link").click();
 
-// 						下面这种方法是直接通过调用Editor.jsp页面的js方法来实现初始化的，局部刷新，效率高。
+// 						下面这种方法，是直接通过调用Editor.jsp页面的js方法来实现初始化的，局部刷新，效率高。
 						if(data.selected!=null)
-						{
-							document.getElementById("path").innerHTML="http://localhost:8080/NoteBook/<\/br>datas/notes/"+data.selected;
-							//window.parent.document.getElementById('content').contentWindow.initdata(data.selected);
-							window.parent.initdata(data.selected);
-						}
+						//window.parent.document.getElementById('content').contentWindow.initdata(data.selected);
+						window.parent.initdata(data.selected);
 					}
 					else {
 // 						$('#data .content').hide();

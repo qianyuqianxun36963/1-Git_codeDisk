@@ -1,6 +1,6 @@
 <config>
 	<enabled>true</enabled>
-	<baseDir>C:/a_practice/2-java/.metadata/.me_tcat/webapps/NoteBook/datas/files</baseDir>
+	<baseDir>D:/server/apache-tomcat-6.0.48/webapps/NoteBook/datas/notes</baseDir>
 	<baseURL>datas/files</baseURL>
 	<licenseKey></licenseKey>
 	<licenseName></licenseName>
