@@ -10,8 +10,6 @@ import net.sf.json.JSONObject;
 
 public class Java处理json {
 	
-	String jsonArrayStr = "[{\"id\":\"41607db143ba43ddb7516df0d13bc2e1\",\"courseId\":\"2b44fd9eb70841b7a8146c4ea66024ea\",\"examBatchId\":\"8c8b679793c649fa8a0457df554b76cf\",\"examPlaceId\":\"c03b9395152946369a8b42962d62c80f\",\"realNum\":\"88\",\"hasReturn\":\"1\"},{\"id\":\"db7516df0d13bc2e1adczcz51341\",\"courseId\":\"2b44fd9eb70841b7a8146c4ea66024ea\",\"examBatchId\":\"8c8b679793c649fa8a0457df554b76cf\",\"examPlaceId\":\"c03b9395152946369a8b42962d62c80f\",\"realNum\":\"99\",\"hasReturn\":\"0\"}]";
-	
 	JSONArray jsonArray = new JSONArray();
 	
     /**
@@ -101,7 +99,8 @@ public class Java处理json {
     public static String BuildArrayStr() {
         /*将一个json格式的数组直接转换成JSONArray*/
         String arrayStr = "['123','123']";
-        return arrayStr;
+        String jsonArrayStr = "[{\"id\":\"41607db143ba43ddb7516df0d13bc2e1\",\"courseId\":\"2b44fd9eb70841b7a8146c4ea66024ea\",\"examBatchId\":\"8c8b679793c649fa8a0457df554b76cf\",\"examPlaceId\":\"c03b9395152946369a8b42962d62c80f\",\"realNum\":\"88\",\"hasReturn\":\"1\"},{\"id\":\"db7516df0d13bc2e1adczcz51341\",\"courseId\":\"2b44fd9eb70841b7a8146c4ea66024ea\",\"examBatchId\":\"8c8b679793c649fa8a0457df554b76cf\",\"examPlaceId\":\"c03b9395152946369a8b42962d62c80f\",\"realNum\":\"99\",\"hasReturn\":\"0\"}]";
+        return jsonArrayStr;
     }
     
     public static void ParseArrayStr(String ArrayString) {
@@ -126,6 +125,7 @@ public class Java处理json {
     public static void testArrayListMaptoJsonString(){
         ArrayList<Map<Object, Object>> res = new ArrayList<Map<Object, Object>>();
         Map<Object, Object> resmap = new HashMap<Object, Object>();resmap.put("id","id");
+        res.add(resmap);
         res.add(resmap);
         JSONArray json = JSONArray.fromObject(res);
         System.out.println(json.toString());

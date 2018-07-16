@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>打印报名表</title>
+	
+	<style>
+	
+	table {
+        margin: auto;
+        width: 100%;
+        border-collapse: collapse;
+        border: 1px solid #444444;
+    }
+    
+    th,td {
+        border: 1px solid #444444;
+        font-size: 10px;
+        padding: 1px 5px;
+         margin: 1px 5px;
+         min-width:35px;
+    }
+	
+	</style>
+	
+</head>
+<body>
+	
+	<table style="border:0;">
+		<tr>
+			<td style="border:none;" width="60%"></td>
+			<td style="border:none;display:none;" width="20%"><button class="btn blue noprint" data-toggle="modal" dta-target="" style="background-color:#ccc;" onclick="exportRegInfoToPdf();">导出PDF</button></td>
+			<td style="border:none;" width="20%"><button type="button" class="btn blue btn-default noprint" style="background-color:#ccc;" onclick="printRegisterInfo('printRegisterInfo')">打印</button></td>
+		</tr>
+	</table>
+	
+	<div id="container" style="width:800px">
+
+	<div id="header" style="background-color:#FFA500;">
+	<h1 align="center" style="margin-bottom: 0">江苏开放大学报名登记表</h1>
+	</div>
+	
+	<div id="menu" style="background-color:#FFD700;height:250px;width:100px;float:left;">学生基本信息</div>
+
+	<div id="content" style="background-color:#EEEEEE;height:200px;width:700px;float:left;">
+	
+		<div style="background-color:#EEEEEE;height:100px;width:700px;float:left;">
+			<div style="background-color:#EED700; height:90px;width:75%;display:block;float:left">
+				<div style="background-color:#1199EE;height:25px;width:100%;float:left;"></div>
+				<div style="background-color:#2222EE;height:25px;width:100%;float:left;"></div>
+				<div style="background-color:#3333EE;height:25px;width:100%;float:left;"></div>
+				<div style="background-color:#4444EE;height:25px;width:100%;float:left;"></div>
+				<div style="background-color:#3333EE;height:25px;width:100%;float:left;"></div>
+				<div style="background-color:#4444EE;height:25px;width:100%;float:left;"></div>
+			</div>
+			<div style="background-color:#CCD700; height:150px;width:25%;display:block;float:left">123</div>
+		</div>
+	
+	    <div style="background-color:#EE99EE;height:75px;width:700px;float:left;">
+		
+		</div>
+		
+		<div>
+			<div style="background-color:#EED700; height:25px;width:25%;display:block;float:left">123</div>
+			<div style="background-color:#CCD700; height:25px;width:75%;display:block;float:left">123</div>
+		</div>
+	</div>
+	
+	<div id="menu" style="background-color:#FFD700;height:75px;width:100px;float:left;">最高学历信息</div>
+
+	<div id="content" style="background-color:#EEEEEE;height:75px;width:700px;float:left;">
+		<div style="background-color:#1199EE;height:25px;width:700px;float:left;"></div>
+		<div style="background-color:#1199EE;height:25px;width:700px;float:left;"></div>
+		<div style="background-color:#1199EE;height:25px;width:700px;float:left;"></div>
+	</div>
+
+	<div id="menu" style="background-color:#FFD700;height:50px;width:100px;float:left;">报名信息</div>
+
+	<div id="content" style="background-color:#EEEEEE;height:50px;width:700px;float:left;">
+		<div style="background-color:#1199EE;height:25px;width:700px;float:left;"></div>
+		<div style="background-color:#1199EE;height:25px;width:700px;float:left;"></div>
+	</div>
+	
+	<div id="menu" style="background-color:#FFD700;height:200px;width:100px;float:left;">证件上传</div>
+
+	<div id="content" style="background-color:#EEEEEE;height:200px;width:700px;float:left;">Content goes here</div>
+
+	<div id="menu" style="background-color:#FFD700;height:200px;width:800px;float:left;">JavaScript</div>
+	
+	<div id="menu" style="background-color:#FFD700;height:125px;width:100px;float:left;">JavaScript</div>
+
+	<div id="content" style="background-color:#EEEEEE;height:25px;width:300px;float:left;">
+		<div style="background-color:#1199EE;height:25px;width:300px;float:left;"> 
+			<div style="background-color:#1199EE;height:25px;width:40%;float:left;"></div>
+			<div style="background-color:#1199EE;height:25px;width:60%;float:left;"></div>
+		</div>
+		<div style="background-color:#1199EE;height:100px;width:300px;float:left;"></div>
+	</div>
+	
+	<div id="menu" style="background-color:#FFD700;height:125px;width:100px;float:left;">JavaScript</div>
+
+	<div id="content" style="background-color:#EEEEEE;height:25px;width:300px;float:left;">
+		<div style="background-color:#1199EE;height:25px;width:300px;float:left;">
+			<div style="background-color:#1199EE;height:25px;width:40%;float:left;"></div>
+			<div style="background-color:#1199EE;height:25px;width:60%;float:left;"></div>
+		</div>
+		<div style="background-color:#1199EE;height:100px;width:300px;float:left;"></div>
+	</div>
+	
+	
+	<div id="footer" style="background-color:#FFA500;clear:both;text-align:center;">
+	Copyright © w3cschool.cn</div>
+
+	</div>
+
+</body>
+</html>
