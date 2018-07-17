@@ -1,0 +1,316 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>打印报名表</title>
+  
+  <style type="text/css" media="print">
+      .noprint {
+          display: none;
+      }
+  </style>
+  
+  <style type="text/css">
+    body {
+        margin-left: 45px;
+        margin-right: 45px;
+        font-family: Arial Unicode MS;
+        font-size: 12px;
+        width: 615px;
+        /*a4纸宽度  */
+        margin: 0 auto;
+    }
+    
+    h1 {
+         text-align:center;
+    }
+    
+    table {
+        margin: auto;
+        width: 100%;
+        border-collapse: collapse;
+        border: 1px solid #444444;
+    }
+    
+    th,td {
+        border: 1px solid #444444;
+        font-size: 10px;
+        padding: 1px 5px;
+         margin: 1px 5px;
+         min-width:35px;
+    }
+    
+    .cell_p{
+    text-indent:20px;
+      margin-top: 1px;
+      margin-bottom: 1px;
+    }
+    .cell_h{
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+    
+    .notearea{
+        text-align: right;
+        bottom: 0px;
+        right: 5px;
+        position: absolute;
+    }
+    
+    .mcContent {
+        line-height: 180%;
+        padding: 20px;
+    }
+    
+    .logo {
+        text-align: center;
+    }
+    
+    .title {
+        text-align: center;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    
+    .notes {
+        font-weight: normal;
+        margin-left: 5px;
+        margin-right: 5px;
+        line-height: 18px;
+    }
+    
+    .text_content {
+        margin-left: 5px;
+        margin-right: 5px;
+        line-height: 18px;
+    }
+    
+    .sum_insured_first_row {
+        width: 20%;
+    }
+    
+    .sum_insured_span {
+        font-size: 10px;
+    }
+    
+    .special_agreements_div {
+        page-break-before: always;
+        font-size: 14px;
+        margin-top: 20px;
+    }
+    
+    .special_agreements_div .special_agreements {
+        font-size: 18px;
+        font-weight: bold;
+    }
+    
+    .title_right {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .title_right p {
+        text-align: left;
+        margin: 0;
+        margin-left: 50%;
+        padding: 0;
+    }
+    
+    @page {
+        size: 8.5in 11in;
+        @
+        bottom-center
+        {
+        content
+        :
+        "page "
+        counter(
+        page
+        )
+        " of  "
+        counter(
+        pages
+        );
+    }
+    
+    .signature {
+        margin: 0 auto;
+        clear: both;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    
+    .signature_table {
+    /*  font-size: 16px; */
+        font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+
+<table style="border:0;">
+    <tr>
+        <td style="border:none;" width="60%"></td>
+        <td style="border:none;display:none;" width="20%"><button class="btn blue noprint" data-toggle="modal" dta-target="" style="background-color:#ccc;" onclick="exportRegInfoToPdf();">导出PDF</button></td>
+        <td style="border:none;" width="20%"><button type="button" class="btn blue btn-default noprint" style="background-color:#ccc;" onclick="printRegisterInfo('printRegisterInfo')">打印</button></td>
+    </tr>
+</table>
+
+<h1>江苏开放大学报名登记表</h1>
+
+<table width="600" height="1200" border="1">
+  <tr>
+    <td  rowspan="10">学生基本信息</td>
+    <td style="min-width:70px;">*姓名</td>
+    <td  colspan="2">&nbsp;${(stuRegInfos.stuName)!}</td>
+    <td style="min-width:80px;">*性别</td>
+    <td  colspan="3">&nbsp;${(stuRegInfos.stuSexName)!}</td>
+    <td  rowspan="6" align="center" valign="middle">
+        <img id="stuHeadPhotoPath"
+             src="${(stuRegInfos.stuHeadPhotoPath)!}"
+             style="max-width:85px;max-height: 105px;background:#ccc;">
+        </img>
+    </td>
+  </tr>
+  <tr>
+    <td>政治面貌</td>
+    <td colspan="2">&nbsp;${(stuRegInfos.stuPoliticalStatusName)!}</td>
+    <td>*民族</td>
+    <td colspan="3">&nbsp;${(stuRegInfos.stuNationName)!}</td>
+  </tr>
+  <tr>
+    <td>*证件类型</td>
+    <td colspan="2">&nbsp;${(stuRegInfos.stuCertificateTypeName)!}</td>
+    <td>*证件号码</td>
+    <td colspan="3">&nbsp;${(stuRegInfos.stuCertificateId)!}</td>
+  </tr>
+  <tr>
+    <td>*出生日期</td>
+    <td colspan="2">&nbsp;${(stuRegInfos.stuBirthday)!}</td>
+    <td>*户口性质</td>
+    <td colspan="3">&nbsp;${(stuRegInfos.stuAccountsNatureName)!}</td>
+  </tr>
+  <tr>
+    <td>*在职状态</td>
+    <td colspan="2">&nbsp;${(stuRegInfos.stuPositionStatusName)!}</td>
+    <td style="padding:5px 0px">参加工作时间</td>
+    <td colspan="3">&nbsp;${(stuRegInfos.stuJoinWorkTime)!}</td>
+  </tr>
+  <tr>
+    <td>籍贯</td>
+    <td colspan="2">&nbsp;${(stuRegInfos.stuNativePlace)!}</td>
+    <td>户籍所在地</td>
+    <td colspan="3">&nbsp;${(stuRegInfos.stuDomicilePlace)!}</td>
+  </tr>
+  <tr>
+    <td>工作单位名称</td>
+    <td colspan="2">&nbsp;${(stuRegInfos.stuCompany)!}</td>
+    <td>*移动电话</td>
+    <td colspan="4">&nbsp;${(stuRegInfos.stuMobilephone)!}</td>
+  </tr>
+  <tr>
+    <td>固定电话</td>
+    <td colspan="2">&nbsp;${(stuRegInfos.stuTelephone)!}</td>
+    <td>*QQ号码</td>
+    <td colspan="4">&nbsp;${(stuRegInfos.stuQq)!}</td>
+  </tr>
+  <tr>
+    <td>*E-mail</td>
+    <td colspan="2">&nbsp;${(stuRegInfos.stuEmail)!}</td>
+    <td>邮政编码</td>
+    <td colspan="4">&nbsp;${(stuRegInfos.stuPostalCode)!}</td>
+  </tr>
+  <tr>
+    <td>通讯地址</td>
+    <td colspan="7">&nbsp;${(stuRegInfos.stuPostalAddress)!} </td>
+  </tr>
+  <tr>
+    <td rowspan="3">最高学历信息</td>
+    <td>*原学历所学专业</td>
+    <td width="20%">&nbsp;${(stuRegInfos.stuLCSubject)!}</td>
+    <td width="10%">*原毕业学校</td>
+    <td width="20%" colspan="2">&nbsp;${(stuRegInfos.stuLGCollege)!}</td>
+    <td width="10%">*毕业时间</td>
+    <td width="25%" colspan="2">&nbsp;${(stuRegInfos.stuLGTime)!}</td>
+  </tr>
+  <tr>
+    <td>*原学历毕业证号</td>
+    <td>&nbsp;${(stuRegInfos.stuLGCode)!}</td>
+    <td>*原学历层次</td>
+    <td colspan="2">&nbsp;${(stuRegInfos.stuLCLecelName)!}</td>
+    <td>原学科门类</td>
+    <td colspan="2">&nbsp;${(stuRegInfos.stuLCCertName)!}</td>
+  </tr>
+  <tr>
+    <td>*原学位证书编号</td>
+    <td>&nbsp;${(stuRegInfos.stuLCBookCode)!}</td>
+    <td>原学历姓名</td>
+    <td colspan="2">&nbsp;${(stuRegInfos.stuLCPersonName)!}</td>
+    <td>原学历证件号</td>
+    <td colspan="2">&nbsp;${(stuRegInfos.stulCCertCode)!}</td>
+  </tr>
+  <tr>
+    <td rowspan="2">报名信息</td>
+    <td>*层次</td>
+    <td >&nbsp;${(stuRegInfos.stuLevelName)!}</td>
+    <td >*学生类型</td>
+    <td colspan="2">&nbsp;${(stuRegInfos.stuTypeName)!}</td>
+    <td >*学生来源</td>
+    <td colspan="2">&nbsp;${(stuRegInfos.stuSourceName)!}</td>
+  </tr>
+  <tr>
+    <td>*专业</td>
+    <td>&nbsp;${(stuRegInfos.stuMajorName)!}</td>
+    <td>*学制</td>
+    <td colspan="2">&nbsp;${(stuRegInfos.educationalSystemName)!}</td>
+    <td>*教学点</td>
+    <td colspan="2">&nbsp;${(stuRegInfos.stuPointName)!}</td>
+  </tr>
+  <tr>
+    <td rowspan="1">证件上传</td>
+    <td height="200" colspan="8" align="center" valign="middle">
+        <img id="stuIdPhotoFrontPath"
+             src="${(stuRegInfos.stuIdPhotoFrontPath)!}"
+             style="max-width: 90%;max-height:180px;background:#ccc; ">
+        </img>
+    </td>
+  </tr>
+  
+  <tr>
+    <td colspan="10" align="left">
+      <p class = "cell_h"><strong>学生本人郑重确认并承诺： </strong> </p>
+      <p class = "cell_p">1.本人认可开放教育为面向成人的非全日制教育，属成人教育范畴，采取业余学习形式。 </p>
+      <p class = "cell_p">2.本人愿意按要求提交相关材料，接受开放大学的入学资格审核，同时了解本人的入学资格在入学前和毕业前还须经过教育部相关部门的审核，若未能通过审核将不予在教育部进行学籍注册及学习，不能毕业和进行毕业证书电子注册。 </p>
+      <p class = "cell_p">3.本人承诺所提供的一切证明材料和填写的个人信息真实、有效，若有不实或不符合条件情况，一经查实，本人愿意承担完全责任和因此产生的一切后果（包括取消学籍、不予颁发毕业证书、追回各类证件和不予退还已交纳费用等）。 </p>
+      <p class = "cell_h" style="padding-left:25px"><strong>以上承诺真实、有效，是承诺人本人的真实意愿。 </strong> </p>
+            <p class = "cell_h" style="padding-left:25px"><strong>学生本人（承诺人）签字：______________ &nbsp;&nbsp;&nbsp;日期：_______年___月___日&nbsp;&nbsp;&nbsp;&nbsp;经办人：______________</strong></p>
+    </td>
+  </tr>
+  <tr>
+    <td rowspan="2" ><p align="center">教学点审核意见</p></td>
+    <td>审核人</td>
+    <td colspan="2">&nbsp;</td>
+    <td rowspan="2" colspan="2" ><p align="center">省级电大审核意见</p></td>
+    <td>审核人</td>
+    <td colspan="2">&nbsp;</td>
+  </tr>
+  <tr>
+     <td height="80" colspan="3" style="position: relative;">
+        <div  class = "notearea">盖&nbsp;&nbsp;章&nbsp;&nbsp;</br></br>_______年___月___日</div>
+    </td>
+    <td colspan="3" style="position: relative;">
+        <div class = "notearea">盖&nbsp;&nbsp;章&nbsp;&nbsp;</br></br>_______年___月___日</div>
+    </td>
+  </tr>
+</table>
+</body>
+
+<script type="text/javascript">
+    //打印
+    function printRegisterInfo(printpage) {
+        window.print();
+        return false;
+    }
+</script>
+
+</html>
