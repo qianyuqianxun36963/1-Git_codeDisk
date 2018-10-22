@@ -9,6 +9,8 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
+import java.util.Calendar;
+import java.util.Date;
 
 import javax.servlet.http.HttpServletResponse;
 
@@ -168,6 +170,15 @@ public class FileUtils
         return path;
     }
     
+	public static String getDateFilePath(){
+		Calendar cal = Calendar.getInstance();
+		cal.setTime(new Date());
+		String year = String.valueOf(cal.get(Calendar.YEAR));
+		String month = String.valueOf(cal.get(Calendar.MONTH)+1);
+		String day = String.valueOf(cal.get(Calendar.DAY_OF_MONTH));
+		String datePath = year + "/" + month + "/" + day;
+		return datePath;
+	}
     
     /**
      * 

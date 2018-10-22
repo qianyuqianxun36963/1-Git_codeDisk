@@ -59,10 +59,10 @@
                         </div>
                         
                         <div class="progress"  id="fileprogress" style="display:none;">
-                          <div id="fileprogressOne" class="progress-bar" role="progressbar progress-bar-success" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
-                          <div id="fileprogressTwo">0%</div>
-                   </div>
-                   </div>
+                            <div id="fileprogressOne" class="progress-bar" role="progressbar progress-bar-success" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+	                            <div id="fileprogressTwo">0%</div>
+	                        </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -152,7 +152,6 @@
          */
         function uploadLOGO(tagid,progressBarDivId,progressBarBackgroundId,progressBarNumberId)
         {
-             debugger;
              $("#"+progressBarDivId).show(); //显示进度条。
              var fileInfos = getFileInfos(tagid,"0","file");//0代表测试,"file"代表二级目录。
              uploadFiles(tagid,progressBarDivId,progressBarBackgroundId,progressBarNumberId,fileInfos);

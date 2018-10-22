@@ -7,7 +7,7 @@ var BSHfileUpload = function()
 { 
   
     /**上传访问服务地址**/
-    var common_upload_url = "http://localhost:8080/FileServer_Local";
+    var common_upload_url = "http://localhost:8082/FileServer_Local";
     //私有变量和函数
     var Fileurl = null;//文件名称
     var paragraph = 1024*200;//每次分片传输文件的大小 200k
