@@ -1,0 +1,6 @@
+projectKey=com.neo:spring-boot-mybatis-xml
+serverUrl=http://localhost:9000
+serverVersion=7.3.0.15553
+dashboardUrl=http://localhost:9000/dashboard?id=com.neo%3Aspring-boot-mybatis-xml
+ceTaskId=AWa2Pb79KcdVMEz5rnWy
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AWa2Pb79KcdVMEz5rnWy
