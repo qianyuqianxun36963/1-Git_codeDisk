@@ -14,7 +14,7 @@ public class UserService {
     private UserMapper userMapper;
 
     public  List<UserEntity> getAll() {
-        PageHelper.startPage(0,2);
+        PageHelper.startPage(0,2,"id");
         List<UserEntity>  users = userMapper.getAll();
         return users;
     }
