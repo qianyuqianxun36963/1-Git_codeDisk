@@ -17,5 +17,7 @@ faceModule/faceModule_my/.idea/workspace.xml
 node_modules/
 gitClone/
 srcCode/
+ignore/
+lib/
 code/
 5-springcloud/2-微笑的课程代码/myCode/spring-cloud-examples/

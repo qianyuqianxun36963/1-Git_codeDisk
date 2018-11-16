@@ -1,5 +1,0 @@
-#parse ("macro.vm")
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<form id="modifyForm">
-#generateLabelAndInput($classNameLowCase $attrs "modify")
-</form>

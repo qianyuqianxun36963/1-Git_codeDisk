@@ -1,1 +1,0 @@
-00031,xmlbook,this is good book for readers,2008-03-26,add + ,000031,xmlbook,this is good book for readers,2008-03-26,add + ,0

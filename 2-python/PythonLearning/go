@@ -1,5 +1,0 @@
-#!/bin/bash
-i=0;
-for path in $(find . -maxdepth 1  -type d); 
-do echo cd $path; arr[$i]=$path;i=$i+1;
-done; 
