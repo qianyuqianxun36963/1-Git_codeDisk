@@ -1,0 +1,150 @@
+Java与C++的区别
+
+
+因为即会C++又懂点Java的缘故，就朋友的邀请，共同合作一个项目——“把一个Java工程的项目转成C++”。这个项目前前后后历时约两周，采了不少坑……现把Java和C++的主要区别总结一个，从中吸取教训。
+
+1.定义变量和数组时，Java默认初始化，C++不初始化；
+
+    在类中，方法中定义变量、动态数组时，Java默认初始化，C++不初始化。 
+    如下Java代码
+
+    public class Test {
+        public void testValue() {
+            int arr[] = new int[4];
+            System.out.println("int value:  " + iValue);
+            System.out.println("float value:" + fValue);
+            for (int i = 0; i < arr.length; i++) {
+                System.out.print(arr[i] + "\t");
+            }
+        }
+
+        private int iValue;
+        private float fValue;
+    }
+
+    结果如下：
+
+    int value: 0 
+    float value:0.0 
+    0 0 0 0
+    如下C++代码： 
+    [cpp] 
+    class Test 
+    { 
+    public: 
+    void TestValue() 
+    { 
+    int arr[4]; 
+    std::cout << “int Value: ” << iValue << std::endl; 
+    std::cout << “float Value: ” << fValue << std::endl; 
+    for (int i = 0; i < 4; i ++) 
+    { 
+    std::cout << arr[i] << “\t”; 
+    } 
+    std::cout << std::endl; 
+    } 
+    private: 
+    int iValue; 
+    int fValue; 
+    }; 
+    [/cpp]
+
+    结果如下：
+
+    int Value: -858993460 
+    float Value: -858993460 
+    -858993460 -858993460 -858993460 -858993460
+    因为变量未进行初始化，结果是一个任意的值，这将是非常危险的。因此C++的代码在定义变量后必须给其进行初始化。
+
+2.Java中有垃圾回收机制，C++没有。
+
+    Java中有垃圾回收机制,Java中new对象后不用管，不用考虑释放；虚拟机会自动去回收内存；C++中new了对象或分配内存后一定要记得释放，不然就会内存泄漏；要使C++创建对象自行释放，要自己实现一套引用计数的机制。
+
+    int* pArr = new int[5];
+    // todo: add your operation code
+    delete[] pArr;
+    pArr = NULL;
+
+    Test* p = new Test();
+    // todo: add your operation code
+    delete p;
+    p = NULL;
+
+3.Java中只有引用，没有指针；C++中有引用，也有指针。
+
+    如下面的Java代码中
+
+        Test t = new Test();
+    1
+    1
+    new Test()创建了一个Test类的对象，t是指向这一对象的引用。
+
+    C++中有指针，也有引用：
+
+    // 创建一个Test的对象，并将该对象的内存地址赋给指针p
+    Test* p = new Test();
+    // 定义一个Test的对象
+    Test t;
+    // 定义一个Test的引用t2，并将其t的对象.相当于t的别名
+    Test& t2 = t;
+
+    因为没有指针，Java代码的可读性好，更也安全；相较而言，C++就更难懂，但更灵活(特别是算法的一些操作时，指针的存在使数据和内存的操作变得极大的方便和灵活)。
+
+4.在定义类的成员时，Java可以赋初值，C++不可以
+
+    如Java中，可以这样定义：
+
+    public class Test {
+        private int iValue = 0;
+        private float fValue = 10.5f;
+        private String name = "zhangsan";
+    }
+
+    而C++中则不可以这样定义：
+
+    class Test
+    {
+    public:
+        int iValue = 0;
+        int fValue = 10.5;
+        std::string name = "zhangsan";
+    };
+
+    C++11之前都不能有上面这样的定义。编译时将报类似如下的错误：
+
+    error C2864: ‘Test::iValue’ : only static const integral data members can be initialized within a class
+    但VS2015支持上面的定义，但VS2015好像已经支持C++14、C++17标准了。
+
+5.函数的参数，C++可以有默认形参，Java不可以
+
+    C++的函数可以有这样的定义：
+
+    void Func(int arg1, int arg2 = 10)
+        {
+            // todo: add your code.s
+        }
+    Java不支持这样定义
+
+6.Java中用final修饰不改变的成员，C++用const修饰不可改变的变量
+
+    Java中可以有这样的定义：
+
+    public class Test {
+        public static final float PI = 3.141592653f;
+        // todo: other code.
+    }
+
+    C++中可以有这样的定义：
+
+    const float PI = 3.141592653;
+    class Test
+    {
+    public:
+        float CircleArea(float r)
+        {
+            return PI * r * r;
+        }
+
+        static const int R = 1; // 颜色标志，1代表红色
+        static const int B = 2; // 颜色标志，2代表红色
+    };
