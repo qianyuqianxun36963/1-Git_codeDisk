@@ -1,8 +1,9 @@
 ﻿ignore/
+git-clone/
 gitClone/
 srcCode/
 lib/
 .svn/
+.idea/
 *.class
 node_modules/
-git-clone/
