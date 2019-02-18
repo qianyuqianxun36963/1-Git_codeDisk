@@ -24,15 +24,17 @@ public class SenderTest {
         String str = "this is test string";
         template.convertAndSend("hi",new User());
         template.convertAndSend("hi",str);
-        template.convertAndSend("out","",str);
+        template.convertAndSend("fanout","",str);
         template.convertAndSend("direct","topic",str);
         template.convertAndSend("topic","topic.my",str);
     }
 
     @Test
     public void testSend2Hi(){
-        sender.sendStrToHiQueue("hahaha");
-        sender.sendUserToHiQueue(new User());
+        for(int i=0;i<10;i++)
+            sender.sendStrToHiQueue("hahaha");
+        for(int i=0;i<10;i++)
+            sender.sendUserToHiQueue(new User());
     }
 
     @Test

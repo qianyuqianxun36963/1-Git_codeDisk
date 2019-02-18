@@ -9,17 +9,17 @@ import static java.lang.Thread.sleep;
 
 @Component
 @RabbitListener(queues = "hi")
-public class ReceiveHiService {
+public class ReceiveHi2Service {
 
     @RabbitHandler
     public void process(String hello) throws Exception {
-        sleep(3000);
-        System.out.println("Receive from queue hi  : " + hello);
+        sleep(2000);
+        System.out.println("this is 2222222222, Receive from queue hi  : " + hello);
     }
 
     @RabbitHandler
     public void process(User user) {
-        System.out.println("Receive from queue hi  : " + user);
+        System.out.println("this is 2222222222, Receive from queue hi  : " + user);
     }
 
 }

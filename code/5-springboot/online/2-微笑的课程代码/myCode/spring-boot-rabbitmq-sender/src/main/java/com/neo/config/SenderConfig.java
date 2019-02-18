@@ -28,7 +28,7 @@ public class SenderConfig {
 
     @Bean
     FanoutExchange fanoutExchange() {
-        return new FanoutExchange("out");
+        return new FanoutExchange("fanout");
     }
 
     @Bean
